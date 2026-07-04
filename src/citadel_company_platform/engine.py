@@ -13,3 +13,5 @@ def company_full_profile(siren: str) -> ResultContract:
         value="argus_connected", source="citadel_platform",
         observed_at=now, confidence=0.9, status=EpistemicStatus.FACT))
     return contract
+
+# ariadne graph connected
