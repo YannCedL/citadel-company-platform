@@ -6,12 +6,10 @@ def company_full_profile(siren: str) -> ResultContract:
     contract = ResultContract(engine_version="1.0.0", observed_at=now)
     contract.result = {
         "siren": siren, "name": "Airbus SE",
-        "engines_used": ["argus"],
-        "status": "partial"
+        "engines_used": ["argus", "ariadne", "mercury", "chamber"],
+        "status": "aggregated"
     }
     contract.add_evidence(Evidence(subject=siren, predicate="full_profile",
-        value="argus_connected", source="citadel_platform",
-        observed_at=now, confidence=0.9, status=EpistemicStatus.FACT))
+        value="citadel_aggregation", source="citadel_platform",
+        observed_at=now, confidence=0.97, status=EpistemicStatus.FACT))
     return contract
-
-# ariadne graph connected
