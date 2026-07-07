@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/citadel_company_platform/__init__.py
+src/citadel_company_platform/api.py
+src/citadel_company_platform/engine.py
+src/citadel_company_platform.egg-info/PKG-INFO
+src/citadel_company_platform.egg-info/SOURCES.txt
+src/citadel_company_platform.egg-info/dependency_links.txt
+src/citadel_company_platform.egg-info/requires.txt
+src/citadel_company_platform.egg-info/top_level.txt
+tests/test_citadel.py

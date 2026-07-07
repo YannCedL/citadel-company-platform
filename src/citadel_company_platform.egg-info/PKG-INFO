@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: citadel-company-platform
+Version: 1.0.0
+Summary: Company Intelligence Platform aggregating all company engines
+Author: Genesis OSINT Team
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: genesis-core>=1.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.22.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+
+# citadel-company-platform
+
+company intelligence platform aggregating argus, ariadne, mercury and chamber.
+
+## install
+
+```bash
+pip install -e .
+```
+
+
