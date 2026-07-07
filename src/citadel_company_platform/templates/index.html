@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITADEL — Platform Intelligence Corporate 360°</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #080c14;
+            --card-bg: rgba(15, 23, 42, 0.85);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-color: #3b82f6;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            padding: 2rem;
+            background-image: radial-gradient(circle at 50% 10%, rgba(59, 130, 246, 0.12) 0%, transparent 50%);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+        }
+
+        .logo-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 0.75rem;
+            background: var(--card-bg);
+            padding: 0.6rem;
+            border-radius: 14px;
+            border: 1px solid var(--border-color);
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .search-box input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            font-size: 1.05rem;
+        }
+
+        .search-box button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.75rem;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .grid-360 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(12px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.95rem;
+        }
+
+        .info-label { color: var(--text-muted); }
+        .info-val { font-weight: 600; text-align: right; }
+
+        .badge {
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">🏰</div>
+            <div>
+                <div class="logo-title">CITADEL</div>
+                <div class="logo-subtitle">Plateforme d'Agrégation Corporate 360°</div>
+            </div>
+        </div>
+        <div class="badge">4 MOTEURS CONNECTÉS (ARGUS + ARIADNE + CHAMBER + MERCURY)</div>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Entrez un nom d'entreprise ou SIREN pour l'analyse 360° (ex: Airbus, Total, 383474814)..." value="Airbus">
+        <button onclick="lancerAnalyse360()">Lancer l'Enquête 360°</button>
+    </div>
+
+    <div class="grid-360">
+        <div class="card">
+            <div class="card-header">
+                <div>🏢 Identité Légale (ARGUS)</div>
+                <span class="badge" id="legalStatus">ACTIF</span>
+            </div>
+            <div class="info-row"><span class="info-label">Nom Officiel</span><span class="info-val" id="compName">-</span></div>
+            <div class="info-row"><span class="info-label">SIREN / SIRET</span><span class="info-val" id="compSiren">-</span></div>
+            <div class="info-row"><span class="info-label">Siège Social</span><span class="info-val" id="compAddress">-</span></div>
+            <div class="info-row"><span class="info-label">Code NAF</span><span class="info-val" id="compNaf">-</span></div>
+            <div class="info-row"><span class="info-label">Effectifs</span><span class="info-val" id="compStaff">-</span></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>👔 Dirigeants & Mandats (CHAMBER)</div>
+                <span class="badge" id="execCount">0 Dirigeants</span>
+            </div>
+            <div id="execList" style="display:flex; flex-direction:column; gap:0.5rem;"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>🕸️ Actionnariat & Filiales (ARIADNE)</div>
+                <span class="badge" id="graphNodes">0 Nœuds</span>
+            </div>
+            <div id="graphSummary" style="font-size:0.9rem; color:var(--text-muted);">
+                Recherche requise pour générer l'arbre des filiales.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>💰 Analyse Financière (MERCURY)</div>
+                <span class="badge" id="financialYear">2023</span>
+            </div>
+            <div class="info-row"><span class="info-label">Chiffre d'Affaires</span><span class="info-val" id="finCa">-</span></div>
+            <div class="info-row"><span class="info-label">Résultat Net</span><span class="info-val" id="finNet">-</span></div>
+            <div class="info-row"><span class="info-label">Marge Nette</span><span class="info-val" id="finMargin">-</span></div>
+            <div class="info-row"><span class="info-label">Risque Solvabilité</span><span class="info-val" id="finRisk">-</span></div>
+        </div>
+    </div>
+
+    <script>
+        function fmt(val) {
+            if (!val) return '-';
+            return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(val);
+        }
+
+        async function lancerAnalyse360() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (!query) return;
+
+            try {
+                const response = await fetch(`/api/v1/company/${encodeURIComponent(query)}/full`);
+                const contract = await response.json();
+                const res = contract.result;
+
+                // 1. Argus Legal Profile
+                const legal = res.legal_profile || {};
+                document.getElementById('compName').textContent = legal.name || '-';
+                document.getElementById('compSiren').textContent = `${legal.siren || '-'} / ${legal.siret_siege || '-'}`;
+                document.getElementById('compAddress').textContent = legal.address || '-';
+                document.getElementById('compNaf').textContent = legal.code_naf || '-';
+                document.getElementById('compStaff').textContent = legal.tranche_effectifs || '-';
+                document.getElementById('legalStatus').textContent = (legal.status || 'ACTIF').toUpperCase();
+
+                // 2. Chamber Execs
+                const execs = res.executives || [];
+                document.getElementById('execCount').textContent = `${execs.length} Dirigeant(s)`;
+                const execList = document.getElementById('execList');
+                execList.innerHTML = '';
+                execs.forEach(e => {
+                    const role = e.roles && e.roles.length > 0 ? e.roles[0].title : 'Dirigeant';
+                    execList.innerHTML += `
+                        <div style="background:rgba(255,255,255,0.03); padding:0.6rem; border-radius:8px; display:flex; justify-content:space-between;">
+                            <span style="font-weight:600;">${e.full_name}</span>
+                            <span style="color:#60a5fa; font-size:0.85rem;">${role}</span>
+                        </div>
+                    `;
+                });
+
+                // 3. Ariadne Graph
+                const graph = res.ownership_graph || {};
+                document.getElementById('graphNodes').textContent = `${graph.total_nodes || 0} Nœuds`;
+                const graphSummary = document.getElementById('graphSummary');
+                graphSummary.innerHTML = `
+                    <div style="padding:0.5rem 0;">Graphe d'actionnariat généré avec <strong>${graph.total_nodes || 0} entreprises</strong> et <strong>${graph.total_edges || 0} liens de détention</strong>.</div>
+                `;
+
+                // 4. Mercury Financials
+                const fin = (res.financials || {}).balance_sheet || {};
+                const ratios = (res.financials || {}).ratios || {};
+                document.getElementById('finCa').textContent = fmt(fin.revenue);
+                document.getElementById('finNet').textContent = fmt(fin.net_income);
+                document.getElementById('finMargin').textContent = ratios.profit_margin_percent ? `${ratios.profit_margin_percent}%` : '-';
+                document.getElementById('finRisk').textContent = ratios.solvency_risk || 'Faible';
+
+            } catch (err) {
+                alert("Erreur lors de l'analyse Corporate 360°.");
+            }
+        }
+
+        window.onload = lancerAnalyse360;
+    </script>
+</body>
+</html>
