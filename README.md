@@ -7,3 +7,5 @@ company intelligence platform aggregating argus, ariadne, mercury and chamber.
 ```bash
 pip install -e .
 ```
+
+
