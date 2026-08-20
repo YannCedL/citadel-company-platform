@@ -1,229 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CITADEL PLATFORM — Registre & Analyse Légale / Financière Complète</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-base: #06080e;
-      --bg-surface: rgba(13, 17, 26, 0.85);
-      --bg-card: rgba(18, 24, 38, 0.65);
-      --border-subtle: rgba(56, 189, 248, 0.12);
-      --border-glow: rgba(56, 189, 248, 0.35);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --cyan: #38bdf8;
-      --emerald: #10b981;
-      --gold: #f59e0b;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      background: radial-gradient(circle at 50% 0%, #0d1527 0%, var(--bg-base) 70%);
-      color: var(--text-main);
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-    }
-
-    .top-bar {
-      height: 64px;
-      padding: 0 32px;
-      background: rgba(6, 8, 14, 0.8);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-subtle);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      font-size: 1.15rem;
-      letter-spacing: 2px;
-      color: #ffffff;
-    }
-    .brand-logo span { color: var(--cyan); }
-    .status-badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.25);
-      color: var(--emerald);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-    .led-pulse {
-      width: 8px;
-      height: 8px;
-      background: var(--emerald);
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--emerald);
-    }
-
-    .app-container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 32px;
-    }
-
-    .search-section { margin-bottom: 32px; }
-    .search-wrapper {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      backdrop-filter: blur(12px);
-      border-radius: 16px;
-      padding: 8px 12px 8px 24px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    }
-    .search-input {
-      flex: 1;
-      background: transparent;
-      border: none;
-      color: white;
-      font-size: 1.1rem;
-      outline: none;
-    }
-    .btn-submit {
-      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-      color: white;
-      border: none;
-      padding: 12px 28px;
-      border-radius: 12px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .glass-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 24px;
-    }
-    .card-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--cyan);
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      margin-bottom: 15px;
-    }
-    .data-table th, .data-table td {
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      text-align: left;
-    }
-    .data-table th { color: var(--text-muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; }
-    .mono { font-family: 'JetBrains Mono', monospace; }
-
-    .sub-section-header {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--emerald);
-      margin: 20px 0 10px 0;
-      padding-bottom: 5px;
-      border-bottom: 1px dashed var(--border-subtle);
-    }
-  </style>
+  {% include "layout/head.html" %}
 </head>
-<body>
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen">
+  <div id="app">
+    <div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col relative overflow-x-hidden">
+      <!-- Cyber Grid Background -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
 
-  <div class="top-bar">
-    <div class="brand-logo">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
-      CITADEL <span>CORPORATE & FINANCIAL HUB</span>
-    </div>
-    <div class="status-badge">
-      <div class="led-pulse"></div>
-      LIASSE FISCALE & RNE INTEGRAL (PORT 8000)
+      <!-- Sticky Command Header & Floating Alerts -->
+      {% include "layout/header.html" %}
+
+      <!-- STATE 1: GOOGLE OSINT LANDING PAGE -->
+      {% include "tabs/landing.html" %}
+
+      <!-- STATE 2: LOADING STATE -->
+      {% include "tabs/loading.html" %}
+
+      <!-- STATE 3: FULL DASHBOARD RESULTS MODE -->
+      <main v-else-if="resultData" class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 relative z-10">
+        <!-- Company Title Banner & Main Mode Switcher -->
+        {% include "layout/company_banner.html" %}
+
+        <!-- TAB 1: INVESTIGATION OSINT 360° VIEW -->
+        {% include "tabs/osint_view.html" %}
+
+        <!-- TAB 2: ANALYTICS & BI STUDIO VIEW -->
+        {% include "tabs/bi_studio.html" %}
+      </main>
+
+      <!-- 10 MODALS & INSPECTORS -->
+      {% include "modals/modal_disambiguation.html" %}
+      {% include "modals/modal_benchmark_disambiguation.html" %}
+      {% include "modals/modal_interconnections.html" %}
+      {% include "modals/modal_notice_inspector.html" %}
+      {% include "modals/modal_legal.html" %}
+      {% include "modals/modal_governance.html" %}
+      {% include "modals/modal_executive.html" %}
+      {% include "modals/modal_financials.html" %}
+      {% include "modals/modal_establishments.html" %}
+      {% include "modals/modal_site_inspector.html" %}
     </div>
   </div>
 
-  <div class="app-container">
-
-    <div class="search-section">
-      <div class="search-wrapper">
-        <input type="text" class="search-input" id="search-input" placeholder="Rechercher par SIREN, Nom d'entreprise ou Dirigeant..." value="400394306">
-        <button class="btn-submit" onclick="executeCitadelDeepSearch()">Extraire Liasse Fiscale & RNE Complète</button>
-      </div>
-    </div>
-
-    <!-- CARTE D'IDENTITÉ JURIDIQUE EXHAUSTIVE -->
-    <div class="glass-card">
-      <div class="card-title">🏢 Fiche Légale Intégrale & Registre National des Entreprises (RNE)</div>
-      <table class="data-table">
-        <tr><th>Raison Sociale</th><td id="c-rs">LVMH MOET HENNESSY LOUIS VUITTON</td></tr>
-        <tr><th>Numéro SIREN</th><td class="mono" id="c-siren">400 394 306</td></tr>
-        <tr><th>Numéro SIRET du Siège</th><td class="mono" id="c-siret">400 394 306 00012</td></tr>
-        <tr><th>Forme Juridique</th><td id="c-fj">Société Européenne (SE)</td></tr>
-        <tr><th>Capital Social</th><td class="mono" id="c-cap">151 595 038,00 €</td></tr>
-        <tr><th>Date d'Immatriculation</th><td id="c-date">01/01/1923</td></tr>
-        <tr><th>Greffe du Tribunal</th><td id="c-greffe">Tribunal de Commerce de Paris</td></tr>
-        <tr><th>Code NAF / APE</th><td id="c-ape">7010Z (Activités des sièges sociaux)</td></tr>
-        <tr><th>Adresse Légale Siège</th><td id="c-siege">22 Avenue Montaigne, 75008 Paris, France</td></tr>
-      </table>
-
-      <div class="sub-section-header">📑 Extrait Liasse Fiscale Complète (Compte de Résultat & Bilan Cerfa)</div>
-      <table class="data-table">
-        <thead>
-          <tr><th>Poste Comptable</th><th>Montant Exercice (N)</th><th>Montant Exercice (N-1)</th><th>Variation (%)</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Chiffre d'Affaires Net</td><td class="mono" style="color:var(--emerald);">86 153 000 000 €</td><td class="mono">79 184 000 000 €</td><td class="mono" style="color:var(--emerald);">+ 8.8 %</td></tr>
-          <tr><td>Achats de Marchandises & Consommations</td><td class="mono">26 953 000 000 €</td><td class="mono">25 100 000 000 €</td><td class="mono">+ 7.3 %</td></tr>
-          <tr><td>Charges de Personnel</td><td class="mono">14 200 000 000 €</td><td class="mono">13 100 000 000 €</td><td class="mono">+ 8.4 %</td></tr>
-          <tr><td>Dotations aux Amortissements et Provisions</td><td class="mono">4 400 000 000 €</td><td class="mono">4 100 000 000 €</td><td class="mono">+ 7.3 %</td></tr>
-          <tr><td>Résultat d'Exploitation (EBIT)</td><td class="mono" style="color:var(--emerald);">22 802 000 000 €</td><td class="mono">21 055 000 000 €</td><td class="mono" style="color:var(--emerald);">+ 8.3 %</td></tr>
-          <tr><td>Résultat Financier</td><td class="mono">- 850 000 000 €</td><td class="mono">- 620 000 000 €</td><td class="mono">- 37.0 %</td></tr>
-          <tr><th>Résultat Net Comptable</th><td class="mono" style="color:var(--emerald); font-weight:bold;">15 174 000 000 €</td><td class="mono" style="font-weight:bold;">14 084 000 000 €</td><td class="mono" style="color:var(--emerald); font-weight:bold;">+ 7.7 %</td></tr>
-        </tbody>
-      </table>
-
-      <div class="sub-section-header">👥 Bénéficiaires Effectifs & Organigramme des Filiales (RBE)</div>
-      <table class="data-table">
-        <thead>
-          <tr><th>Entité / Filiale</th><th>Pourcentage de Détention</th><th>Pays de Résidence Fiscale</th><th>Activité Principale</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Christian Dior SE</td><td class="mono">97.5 %</td><td>France</td><td>Holding Couture & Luxe</td></tr>
-          <tr><td>Louis Vuitton Malletier SAS</td><td class="mono">100.0 %</td><td>France</td><td>Maroquinerie & Bagages</td></tr>
-          <tr><td>Jas Hennessy & Co SAS</td><td class="mono">66.0 %</td><td>France</td><td>Cogne & Spiritueux</td></tr>
-          <tr><td>Sephora SA</td><td class="mono">100.0 %</td><td>France</td><td>Distribution Cosmétiques</td></tr>
-          <tr><td>Tiffany & Co. Inc.</td><td class="mono">100.0 %</td><td>États-Unis</td><td>Haute Joaillerie</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-  </div>
-
-  <script>
-    function executeCitadelDeepSearch() {
-      const q = document.getElementById('search-input').value.trim();
-      if (!q) return;
-      alert("Extraction complète de la liasse fiscale et des filiales réalisée pour " + q);
-    }
-  </script>
+  <!-- CITADEL VUE 3 APPLICATION LOGIC -->
+  <script src="/static/js/citadel_app.js"></script>
 </body>
 </html>
