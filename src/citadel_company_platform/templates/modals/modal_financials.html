@@ -1,0 +1,94 @@
+{% raw %}
+<!-- MODAL 4: MERCURY FINANCES & SOLVABILITÉ 100% INSPECTOR -->
+      <div v-if="showFinancialsModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="cyber-glass rounded-2xl max-w-4xl w-full p-6 border border-slate-700 shadow-2xl space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
+          <div class="flex justify-between items-start pb-4 border-b border-slate-800 shrink-0">
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">MERCURY 100% FINANCES</span>
+                <h3 class="text-lg font-black text-white font-mono-cyber">Comptes Annuels & Ratio de Solvabilité</h3>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Historique des bilans comptables déposés pour {{ displayCompanyName }}</p>
+            </div>
+            <button @click="showFinancialsModal = false" class="text-slate-400 hover:text-white font-mono-cyber text-sm">✕</button>
+          </div>
+
+          <div class="overflow-y-auto space-y-6 pr-1 font-mono-cyber text-xs flex-1">
+            <!-- Confidentiality Alert Banner (Décret L. 232-25) -->
+            <div v-if="hasConfidentialAccounts" class="p-4 rounded-xl bg-amber-950/40 border border-amber-500/50 flex items-start space-x-3 text-xs font-mono-cyber text-amber-200">
+              <div class="text-lg">🔒</div>
+              <div>
+                <div class="font-bold text-amber-400 uppercase">RÉGIME DE CONFIDENTIALITÉ LÉGAL (DÉCRET L. 232-25)</div>
+                <div class="mt-0.5">{{ confidentialityLabel }}</div>
+                <div class="text-[10px] text-amber-300/80 mt-1">Conformément aux dispositions du Décret L. 232-25 (Option de confidentialité des comptes des micro-entreprises / PME), les comptes annuels sont masqués au Registre sans création de données fictives.</div>
+              </div>
+            </div>
+
+            <!-- Altman Summary -->
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+              <div>
+                <div class="text-slate-400 text-[11px]">Score Solvabilité Altman Z'</div>
+                <div class="text-2xl font-black text-amber-400 mt-1">{{ displayAltmanScore }}</div>
+              </div>
+              <div>
+                <div class="text-slate-400 text-[11px]">Évaluation de Solvabilité</div>
+                <div class="text-sm font-bold text-amber-300 mt-2">{{ displayAltmanStatus }}</div>
+              </div>
+              <div>
+                <div class="text-slate-400 text-[11px]">Dernier Chiffre d'Affaires</div>
+                <div class="text-xl font-bold text-emerald-400 mt-1">{{ displayRevenue }}</div>
+              </div>
+            </div>
+
+            <!-- Multi-Year Financial Table -->
+            <div class="space-y-2">
+              <div class="text-slate-400 font-bold uppercase text-[11px]">Tableau Pluriannuel des Bilans Comptables & Ratios (INPI RNE) :</div>
+              <div class="overflow-x-auto rounded-xl border border-slate-800">
+                <table class="w-full text-left text-xs font-mono-cyber">
+                  <thead class="bg-slate-900 text-slate-400 border-b border-slate-800">
+                    <tr>
+                      <th class="py-2.5 px-3">ANNÉE</th>
+                      <th class="py-2.5 px-3">CHIFFRE D'AFFAIRES</th>
+                      <th class="py-2.5 px-3">EBITDA / EBE</th>
+                      <th class="py-2.5 px-3">{{ resultData?.financials?.accounting_scope === 'consolidated' ? 'RÉSULTAT NET (PART DU GROUPE)' : 'RÉSULTAT NET DE L\'EXERCICE' }}</th>
+                      <th class="py-2.5 px-3">TOTAL ACTIF</th>
+                      <th class="py-2.5 px-3">CAPITAUX PROPRES</th>
+                      <th class="py-2.5 px-3">MARGE NETTE</th>
+                      <th class="py-2.5 px-3">ALTMAN Z'</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-800/60">
+                    <tr v-for="yr in financialYears" :key="yr.year" class="hover:bg-slate-900/50">
+                      <td class="py-2.5 px-3 font-bold text-white">{{ yr.year }}</td>
+                      <td class="py-2.5 px-3 text-amber-400 font-bold">{{ formatEuros(yr.revenue) }}</td>
+                      <td class="py-2.5 px-3 text-indigo-300 font-bold">{{ formatEuros(yr.ebitda) }}</td>
+                      <td class="py-2.5 px-3 font-bold" :class="(yr.net_income || 0) >= 0 ? 'text-emerald-400' : 'text-rose-400'">
+                        {{ formatEuros(yr.net_income) }}
+                      </td>
+                      <td class="py-2.5 px-3 text-slate-300 font-bold">{{ formatEuros(yr.total_assets) }}</td>
+                      <td class="py-2.5 px-3 text-amber-300 font-bold">{{ formatEuros(yr.equity) }}</td>
+                      <td class="py-2.5 px-3 text-cyan-300 font-bold">{{ yr.profit_margin_percent != null ? yr.profit_margin_percent + '%' : 'N/D' }}</td>
+                      <td class="py-2.5 px-3 font-bold" :class="yr.altman_z_score > 2.9 ? 'text-emerald-400' : (yr.altman_z_score > 1.23 ? 'text-amber-400' : (yr.altman_z_score != null ? 'text-rose-400' : 'text-slate-500'))">
+                        {{ yr.altman_z_score != null ? yr.altman_z_score.toFixed(2) : 'N/D' }}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- RAW FINANCIAL JSON -->
+            <div class="space-y-2 pt-2 border-t border-slate-800">
+              <div class="text-slate-400 font-bold uppercase text-[11px]">Données Financières Brutes (JSON) :</div>
+              <pre class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-[11px] text-emerald-300 overflow-x-auto max-h-48 selection:bg-emerald-500 selection:text-slate-950">{{ JSON.stringify(resultData?.financials || {}, null, 2) }}</pre>
+            </div>
+          </div>
+
+          <div class="flex justify-end pt-4 border-t border-slate-800 shrink-0">
+            <button @click="showFinancialsModal = false" class="px-5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-mono-cyber text-xs transition">
+              Fermer l'inspecteur
+            </button>
+          </div>
+        </div>
+      </div>
+{% endraw %}

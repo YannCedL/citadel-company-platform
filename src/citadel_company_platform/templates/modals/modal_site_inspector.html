@@ -1,0 +1,64 @@
+{% raw %}
+<!-- MODAL 6: INDIVIDUAL SITE / ESTABLISHMENT INSPECTOR MODAL -->
+      <div v-if="selectedSiteNode" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="cyber-glass rounded-2xl max-w-3xl w-full p-6 border border-slate-700 shadow-2xl space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
+          <div class="flex justify-between items-start pb-4 border-b border-slate-800 shrink-0">
+            <div>
+              <div class="flex items-center space-x-2">
+                <span 
+                  class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber uppercase border"
+                  :class="selectedSiteNode.etat_administratif === 'A' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40'"
+                >
+                  {{ selectedSiteNode.etat_administratif === 'A' ? '🟢 ÉTABLISSEMENT ACTIF' : '🔴 ÉTABLISSEMENT FERMÉ' }}
+                </span>
+                <span class="text-xs text-indigo-400 font-mono-cyber font-bold">{{ selectedSiteNode.role }}</span>
+              </div>
+              <h3 class="text-lg font-black text-white font-mono-cyber mt-1">{{ selectedSiteNode.name }}</h3>
+            </div>
+            <button @click="selectedSiteNode = null" class="text-slate-400 hover:text-white font-mono-cyber text-sm">✕</button>
+          </div>
+
+          <div class="overflow-y-auto space-y-4 pr-1 font-mono-cyber text-xs flex-1">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
+                <div class="text-slate-400">SIRET de l'Établissement</div>
+                <div class="text-amber-400 font-bold text-sm">{{ selectedSiteNode.siren || selectedSiteNode.siret }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
+                <div class="text-slate-400">Commune & Code Postal</div>
+                <div class="text-white font-bold">{{ selectedSiteNode.details?.commune || 'Inconnue' }} ({{ selectedSiteNode.details?.code_postal || 'N/A' }})</div>
+              </div>
+              <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1 sm:col-span-2">
+                <div class="text-slate-400">Adresse Complète du Site</div>
+                <div class="text-indigo-200 font-bold text-sm">{{ selectedSiteNode.details?.adresse || selectedSiteNode.name }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
+                <div class="text-slate-400">Coordonnées GPS Réelles</div>
+                <div class="text-amber-300 font-bold font-mono">
+                  {{ (selectedSiteNode.details && selectedSiteNode.details.geoloc) ? selectedSiteNode.details.geoloc.join(', ') : 'Non géolocalisé' }}
+                </div>
+              </div>
+              <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
+                <div class="text-slate-400">Code NAF / APE du Site</div>
+                <div class="text-white font-bold">{{ selectedSiteNode.details?.code_naf || 'Activité de l\'entreprise' }}</div>
+              </div>
+            </div>
+
+            <!-- RAW JSON OF SITE -->
+            <div class="space-y-2 pt-2 border-t border-slate-800">
+              <div class="text-slate-400 font-bold uppercase text-[11px]">Notice Technique & Objet Nœud Graph (NetworkX / OpenData) :</div>
+              <pre class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-[11px] text-indigo-300 overflow-x-auto max-h-48 selection:bg-indigo-500 selection:text-slate-950">{{ JSON.stringify(selectedSiteNode, null, 2) }}</pre>
+          </div>
+
+          <div class="flex items-center justify-between pt-4 border-t border-slate-800 shrink-0 font-mono-cyber text-xs">
+            <button @click="selectedSiteNode = null" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">
+              Fermer l'inspecteur
+            </button>
+            <button @click="centerMapOnSite(selectedSiteNode)" class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold transition flex items-center space-x-1.5">
+              <span>📍 Centrer sur la Carte Leaflet</span>
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+{% endraw %}

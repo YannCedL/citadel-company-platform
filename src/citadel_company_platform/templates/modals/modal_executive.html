@@ -1,0 +1,84 @@
+{% raw %}
+<!-- MODAL 3: INDIVIDUAL EXECUTIVE INSPECTOR MODAL -->
+      <div v-if="selectedExecutive" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="cyber-glass rounded-2xl max-w-2xl w-full p-6 border border-slate-700 shadow-2xl space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
+          <div class="flex justify-between items-start pb-4 border-b border-slate-800 shrink-0">
+            <div>
+              <div class="flex items-center space-x-2">
+                <span 
+                  class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber uppercase border"
+                  :class="selectedExecutive.type_person === 'personne morale' ? 'bg-amber-500/20 text-amber-200 border-amber-500/40' : 'bg-amber-500/20 text-amber-300 border-amber-500/40'"
+                >
+                  {{ selectedExecutive.type_person === 'personne morale' ? 'PERSONNE MORALE' : 'PERSONNE PHYSIQUE' }}
+                </span>
+                <span class="text-xs text-slate-400 font-mono-cyber">MANDATAIRE SOCIAL</span>
+              </div>
+              <h3 class="text-lg font-black text-white font-mono-cyber mt-1">{{ selectedExecutive.full_name || selectedExecutive.denomination }}</h3>
+            </div>
+            <button @click="selectedExecutive = null" class="text-slate-400 hover:text-white font-mono-cyber text-sm">✕</button>
+          </div>
+
+          <div class="overflow-y-auto space-y-4 pr-1 font-mono-cyber text-xs flex-1">
+            <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-800 space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Rôle / Mandat Officiel</span>
+                <span 
+                  class="px-2 py-0.5 rounded text-[10px] font-mono-cyber font-bold uppercase border"
+                  :class="isExecutiveActive(selectedExecutive) ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-slate-800 text-slate-400 border-slate-700'"
+                >
+                  {{ isExecutiveActive(selectedExecutive) ? '🟢 EN POSTE ACTIF' : '⚪ ANCIEN DIRIGEANT' }}
+                </span>
+              </div>
+              <div class="text-amber-400 font-bold text-sm">{{ getRoleTitle(selectedExecutive) }}</div>
+            </div>
+
+            <div class="p-3 bg-slate-900/20 rounded-xl border border-amber-500/30 space-y-1">
+              <div class="text-slate-400">Période du Mandat & Durée (INPI RNE)</div>
+              <div class="text-purple-200 font-bold text-sm">📅 {{ getMandatePeriodLabel(selectedExecutive) }}</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+                <div class="text-slate-400">Nom & Prénoms / Dénomination</div>
+                <div class="text-white font-bold">{{ selectedExecutive.full_name || selectedExecutive.denomination }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+                <div class="text-slate-400">Type de Personne Juridique</div>
+                <div class="text-white font-bold uppercase">{{ selectedExecutive.type_person || 'Non spécifié' }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1" v-if="selectedExecutive.type_person === 'personne physique'">
+                <div class="text-slate-400">Année / Date de Naissance</div>
+                <div class="text-slate-200 font-bold">{{ selectedExecutive.birth_year ? 'Né(e) en ' + selectedExecutive.birth_year : 'Non renseignée' }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1" v-else>
+                <div class="text-slate-400">SIREN Entité Morale</div>
+                <div class="text-amber-200 font-bold">{{ selectedExecutive.siren_entity || 'N/A' }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1" v-if="selectedExecutive.type_person === 'personne physique'">
+                <div class="text-slate-400">Nationalité</div>
+                <div class="text-slate-200 font-bold">{{ selectedExecutive.nationality || 'Non précisée' }}</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1 sm:col-span-2">
+                <div class="text-slate-400">Adresse / Domiciliation</div>
+                <div class="text-indigo-200 font-bold">{{ selectedExecutive.address || 'Adresse au siège social' }}</div>
+              </div>
+            </div>
+
+            <!-- RAW JSON DATA OF EXECUTIVE -->
+            <div class="space-y-2 pt-2 border-t border-slate-800">
+              <div class="text-slate-400 font-bold uppercase text-[11px]">Notice Technique & Données Brutes :</div>
+              <pre class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-[11px] text-amber-200 overflow-x-auto max-h-48 selection:bg-purple-500 selection:text-slate-950">{{ JSON.stringify(selectedExecutive, null, 2) }}</pre>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-4 border-t border-slate-800 shrink-0 font-mono-cyber text-xs">
+            <button @click="selectedExecutive = null" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">
+              Fermer l'inspecteur
+            </button>
+            <a :href="getBodaccUrl(selectedExecutive)" target="_blank" class="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold transition">
+              Consulter au BODACC / Greffe ↗
+            </a>
+          </div>
+        </div>
+      </div>
+{% endraw %}
