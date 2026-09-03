@@ -1,0 +1,186 @@
+/* ==========================================================================
+   CITADEL 360° — INSTITUTIONAL DESIGN SYSTEM
+   Theme: Or Ambré & Carbone Minéral (High Finance & Sovereign OSINT)
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Canvas */
+  --bg-app: #090D14;
+  --bg-surface: #111726;
+  --bg-card: #0F172A;
+  --bg-card-hover: #162032;
+  --border-card: #1E293B;
+  --border-subtle: rgba(30, 41, 59, 0.6);
+  --border-gold: rgba(217, 155, 67, 0.35);
+
+  /* Gold & Metallic Accents */
+  --accent-gold: #D99B43;
+  --accent-gold-hover: #B88032;
+  --accent-gold-light: #F3BA63;
+  --accent-gold-glow: rgba(217, 155, 67, 0.2);
+  --accent-bronze: #8C6239;
+  --accent-steel: #4A6FA5;
+  --accent-silver: #94A3B8;
+
+  /* Semantic Data Colors */
+  --status-success: #10B981;
+  --status-success-bg: rgba(16, 185, 129, 0.12);
+  --status-danger: #E11D48;
+  --status-danger-bg: rgba(225, 29, 72, 0.12);
+  --status-warning: #D99B43;
+  --status-warning-bg: rgba(217, 155, 67, 0.12);
+  --status-info: #3B82F6;
+
+  /* Typography */
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Base Body Setup */
+body {
+  background-color: var(--bg-app) !important;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* 1. SELECTION OR SOUVERAINE */
+::selection {
+  background-color: var(--accent-gold) !important;
+  color: #090D14 !important;
+}
+
+/* 2. SCROLLBARS FURTIVES */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-card);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* 3. ALIGNEMENT COMPTABLE ABSOLU (TABULAR NUMS) */
+.citadel-data-value,
+.font-mono-cyber,
+td,
+th,
+.tabular-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+}
+
+/* 4. OPTIMISATION DES CARTES (ANTI-BLUR HEAVY GPU) */
+.cyber-glass {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border-card) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 8px !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.cyber-glass:hover {
+  border-color: rgba(217, 155, 67, 0.25) !important;
+}
+
+/* 5. CARTOGRAPHIE LEAFLET (RADAR CARTOUCHIÈRE SOUVERAINE) */
+#mapContainer {
+  min-height: 420px;
+  height: 420px;
+  width: 100%;
+  border-radius: 8px !important;
+  border: 1px solid var(--border-card) !important;
+}
+
+.leaflet-container {
+  background: #090D14 !important;
+  font-family: var(--font-mono) !important;
+}
+
+.dark-map-tiles {
+  filter: brightness(0.55) invert(1) contrast(3) hue-rotate(210deg) saturate(0.2) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: transparent !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.8) !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+}
+
+.leaflet-popup-tip {
+  background: #090D14 !important;
+  border: 1px solid var(--accent-gold) !important;
+}
+
+/* 6. MODALES & DIALOGUES */
+.fixed.inset-0.z-50 {
+  background: rgba(9, 13, 20, 0.85) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* 7. BADGES & PILLS INSTITUTIONNELS */
+.badge-gold {
+  background: var(--status-warning-bg);
+  color: var(--accent-gold);
+  border: 1px solid var(--border-gold);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+
+.badge-sauge {
+  background: var(--status-success-bg);
+  color: var(--status-success);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+
+.badge-vermillon {
+  background: var(--status-danger-bg);
+  color: var(--status-danger);
+  border: 1px solid rgba(225, 29, 72, 0.3);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+
+/* 8. BOUTONS D'ACTION OR AMBRÉ */
+.btn-gold {
+  background-color: var(--accent-gold);
+  color: #090D14;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 12px var(--accent-gold-glow);
+}
+
+.btn-gold:hover {
+  background-color: var(--accent-gold-hover);
+  color: #090D14;
+}
