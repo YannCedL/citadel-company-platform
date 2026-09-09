@@ -23,6 +23,16 @@ env/
 *.sqlite
 *.sqlite3
 .cache/
+.pytest_cache/
+
+# Scratch & Temporary
+scratch/
+*.backup
+
+# Build & Dependencies
+*.egg-info/
+node_modules/
+dist/
 
 # OS Specific
 .DS_Store
