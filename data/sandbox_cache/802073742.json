@@ -1,0 +1,897 @@
+{
+  "result": {
+    "siren": "802073742",
+    "name": "SCI A.E.P.M",
+    "company_name": "SCI A.E.P.M",
+    "date_creation_origine": "2014-05-05",
+    "age_in_years": 12,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "SCI A.E.P.M",
+      "siren": "802073742",
+      "siret_siege": "80207374200016",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2014-05-05",
+      "address": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+      "status": "fermé/inactif",
+      "code_naf": "68.20B",
+      "libelle_naf": null,
+      "section_activite": "L",
+      "forme_juridique": "6540",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-08-09T05:07:30",
+      "date_mise_a_jour_rne": "2024-05-19T00:02:06",
+      "dirigeants": [
+        {
+          "nom": "MENES",
+          "prenoms": "ANNE-EMMANUELLE MICHELLE CLAIRE",
+          "qualite": "Associé indéfiniment responsable",
+          "annee_de_naissance": "1988",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "MENES",
+          "prenoms": "PIERRE BERNARD PAUL",
+          "qualite": "Gérant et associé indéfiniment responsable",
+          "annee_de_naissance": "1963",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 12,
+      "historical_summary": {
+        "date_immatriculation_origine": "2014-05-05",
+        "annee_immatriculation": 2014,
+        "anciennete_annees": 12,
+        "nombre_dirigeants_historiques_identifies": 2,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2014,
+          "date": "2014-03-26",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 802073742 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "802073742",
+          "name": "SCI A.E.P.M",
+          "siret_siege": "80207374200016",
+          "code_postal": "77400",
+          "commune": "77209",
+          "code_naf": "68.20B",
+          "forme_juridique": "6540",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": "1 000,00 EUR",
+      "objet_social": "L'acquisition et la détention pour son propre compte de tout bien immobilier ou mobilier et notamment l'acquisition d'un bien situé 5 rue de l'Est 92100 Boulogne Billancourt Lots n°12 et n°21",
+      "date_immatriculation_origine": "2014-05-05",
+      "rne_certitude_score": 1.0,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 402,
+        "reference_date": "2025-08-09",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "802073742",
+      "root_name": "SCI A.E.P.M",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "802073742",
+          "siren": "802073742",
+          "siret": "80207374200016",
+          "node_type": "siege",
+          "name": "SCI A.E.P.M",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2014,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "80207374200016",
+            "adresse": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+            "code_postal": "77400",
+            "commune": "77209",
+            "departement": "77",
+            "region": "11",
+            "code_naf": "68.20B",
+            "date_creation": "2014-03-26",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "2014": [
+          {
+            "id": "802073742",
+            "siren": "802073742",
+            "siret": "80207374200016",
+            "node_type": "siege",
+            "name": "SCI A.E.P.M",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2014,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "80207374200016",
+              "adresse": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+              "code_postal": "77400",
+              "commune": "77209",
+              "departement": "77",
+              "region": "11",
+              "code_naf": "68.20B",
+              "date_creation": "2014-03-26",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "77": {
+          "department_name": "77",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Anne-Emmanuelle Michelle Claire MENES",
+        "type_person": "personne physique",
+        "first_name": "Anne-Emmanuelle Michelle Claire",
+        "last_name": "MENES",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1988",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Associé indéfiniment responsable",
+            "company_siren": "802073742",
+            "company_name": "SCI A.E.P.M",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Commissaire aux comptes suppléant",
+            "company_siren": "802073742",
+            "company_name": "SCI A.E.P.M",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "Pierre Bernard Paul MENES",
+        "type_person": "personne physique",
+        "first_name": "Pierre Bernard Paul",
+        "last_name": "MENES",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1963",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Gérant et associé indéfiniment responsable",
+            "company_siren": "802073742",
+            "company_name": "SCI A.E.P.M",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "802073742",
+            "company_name": "SCI A.E.P.M",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "802073742",
+      "company_name": "802073742",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [
+      {
+        "id": "A20140096741",
+        "year": "2014",
+        "date": "2014-05-20",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Créations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": {
+          "creation": {
+            "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+          },
+          "dateImmatriculation": "2014-05-05",
+          "dateCommencementActivite": "2014-03-26"
+        },
+        "source": "BODACC-A",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MEAUX",
+        "reference": "A20140096741",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A20140096741"
+      },
+      {
+        "id": "63ec6dab5d20d6ea630868e7",
+        "year": "2014",
+        "date": "2014-05-05",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-23T22:05:14+02:00",
+          "siren": "802073742",
+          "denomination": "SCI A.E.P.M",
+          "dateDepot": "2014-05-05",
+          "numChrono": "3089",
+          "nomDocument": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ec6dab5d20d6ea630868e7",
+          "typeRdd": [
+            {
+              "typeActe": "Statuts constitutifs",
+              "decision": "Formation de société civile "
+            },
+            {
+              "typeActe": "Statuts constitutifs",
+              "decision": "Nomination(s) de gérant(s) "
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/802073742/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "2014": {
+        "year": "2014",
+        "milestones": [
+          {
+            "date": "2014-05-05",
+            "event": "Immatriculation officielle SIREN 802073742"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "A20140096741",
+            "year": "2014",
+            "date": "2014-05-20",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Créations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": {
+              "creation": {
+                "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+              },
+              "dateImmatriculation": "2014-05-05",
+              "dateCommencementActivite": "2014-03-26"
+            },
+            "source": "BODACC-A",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MEAUX",
+            "reference": "A20140096741",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A20140096741"
+          },
+          {
+            "id": "63ec6dab5d20d6ea630868e7",
+            "year": "2014",
+            "date": "2014-05-05",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-23T22:05:14+02:00",
+              "siren": "802073742",
+              "denomination": "SCI A.E.P.M",
+              "dateDepot": "2014-05-05",
+              "numChrono": "3089",
+              "nomDocument": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ec6dab5d20d6ea630868e7",
+              "typeRdd": [
+                {
+                  "typeActe": "Statuts constitutifs",
+                  "decision": "Formation de société civile "
+                },
+                {
+                  "typeActe": "Statuts constitutifs",
+                  "decision": "Nomination(s) de gérant(s) "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/802073742/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "802073742",
+            "siren": "802073742",
+            "siret": "80207374200016",
+            "node_type": "siege",
+            "name": "SCI A.E.P.M",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2014,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "80207374200016",
+              "adresse": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+              "code_postal": "77400",
+              "commune": "77209",
+              "departement": "77",
+              "region": "11",
+              "code_naf": "68.20B",
+              "date_creation": "2014-03-26",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2014"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "SCI A.E.P.M",
+        "siren": "802073742",
+        "siret_siege": "80207374200016",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2014-05-05",
+        "address": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+        "status": "fermé/inactif",
+        "code_naf": "68.20B",
+        "libelle_naf": null,
+        "section_activite": "L",
+        "forme_juridique": "6540",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-08-09T05:07:30",
+        "date_mise_a_jour_rne": "2024-05-19T00:02:06",
+        "dirigeants": [
+          {
+            "nom": "MENES",
+            "prenoms": "ANNE-EMMANUELLE MICHELLE CLAIRE",
+            "qualite": "Associé indéfiniment responsable",
+            "annee_de_naissance": "1988",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "MENES",
+            "prenoms": "PIERRE BERNARD PAUL",
+            "qualite": "Gérant et associé indéfiniment responsable",
+            "annee_de_naissance": "1963",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 12,
+        "historical_summary": {
+          "date_immatriculation_origine": "2014-05-05",
+          "annee_immatriculation": 2014,
+          "anciennete_annees": 12,
+          "nombre_dirigeants_historiques_identifies": 2,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2014,
+            "date": "2014-03-26",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 802073742 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "802073742",
+            "name": "SCI A.E.P.M",
+            "siret_siege": "80207374200016",
+            "code_postal": "77400",
+            "commune": "77209",
+            "code_naf": "68.20B",
+            "forme_juridique": "6540",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": "1 000,00 EUR",
+        "objet_social": "L'acquisition et la détention pour son propre compte de tout bien immobilier ou mobilier et notamment l'acquisition d'un bien situé 5 rue de l'Est 92100 Boulogne Billancourt Lots n°12 et n°21",
+        "date_immatriculation_origine": "2014-05-05",
+        "rne_certitude_score": 1.0,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 402,
+          "reference_date": "2025-08-09",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "802073742",
+        "root_name": "SCI A.E.P.M",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "802073742",
+            "siren": "802073742",
+            "siret": "80207374200016",
+            "node_type": "siege",
+            "name": "SCI A.E.P.M",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2014,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "80207374200016",
+              "adresse": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+              "code_postal": "77400",
+              "commune": "77209",
+              "departement": "77",
+              "region": "11",
+              "code_naf": "68.20B",
+              "date_creation": "2014-03-26",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "2014": [
+            {
+              "id": "802073742",
+              "siren": "802073742",
+              "siret": "80207374200016",
+              "node_type": "siege",
+              "name": "SCI A.E.P.M",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2014,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "80207374200016",
+                "adresse": "22 RUE DU HAUT VILLIERS 77400 GOUVERNES",
+                "code_postal": "77400",
+                "commune": "77209",
+                "departement": "77",
+                "region": "11",
+                "code_naf": "68.20B",
+                "date_creation": "2014-03-26",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "77": {
+            "department_name": "77",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Anne-Emmanuelle Michelle Claire MENES",
+            "type_person": "personne physique",
+            "first_name": "Anne-Emmanuelle Michelle Claire",
+            "last_name": "MENES",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1988",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Associé indéfiniment responsable",
+                "company_siren": "802073742",
+                "company_name": "SCI A.E.P.M",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Commissaire aux comptes suppléant",
+                "company_siren": "802073742",
+                "company_name": "SCI A.E.P.M",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "Pierre Bernard Paul MENES",
+            "type_person": "personne physique",
+            "first_name": "Pierre Bernard Paul",
+            "last_name": "MENES",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1963",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Gérant et associé indéfiniment responsable",
+                "company_siren": "802073742",
+                "company_name": "SCI A.E.P.M",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "802073742",
+                "company_name": "SCI A.E.P.M",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "802073742",
+        "company_name": "802073742",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "A20140096741",
+            "year": "2014",
+            "date": "2014-05-20",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Créations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": {
+              "creation": {
+                "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+              },
+              "dateImmatriculation": "2014-05-05",
+              "dateCommencementActivite": "2014-03-26"
+            },
+            "source": "BODACC-A",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MEAUX",
+            "reference": "A20140096741",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A20140096741"
+          },
+          {
+            "id": "63ec6dab5d20d6ea630868e7",
+            "year": "2014",
+            "date": "2014-05-05",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-23T22:05:14+02:00",
+              "siren": "802073742",
+              "denomination": "SCI A.E.P.M",
+              "dateDepot": "2014-05-05",
+              "numChrono": "3089",
+              "nomDocument": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ec6dab5d20d6ea630868e7",
+              "typeRdd": [
+                {
+                  "typeActe": "Statuts constitutifs",
+                  "decision": "Formation de société civile "
+                },
+                {
+                  "typeActe": "Statuts constitutifs",
+                  "decision": "Nomination(s) de gérant(s) "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "22349271000000_C0022A1001L018188D20140522H075133TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/802073742/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "SCI A.E.P.M",
+      "predicate": "siren",
+      "value": "802073742",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:27:43.667682+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "SCI A.E.P.M",
+      "predicate": "capital_social",
+      "value": "1 000,00 EUR",
+      "source": "data.inpi.fr (RNE)",
+      "observed_at": "2026-09-15T23:27:43.667682+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "802073742",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (0 actifs, 1 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:27:47.793205+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "SCI A.E.P.M",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "2 dirigeants actifs, 0 anciens dirigeants (2 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:27:47.821945+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "802073742",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:27:47.853568+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "802073742",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "2 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:27:47.886380+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "data.inpi.fr (RNE)",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.97,
+  "observed_at": "2026-09-15T23:27:43.667682+00:00",
+  "processed_at": "2026-09-15T23:27:50.898313Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

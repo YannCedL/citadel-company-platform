@@ -1,0 +1,1469 @@
+{
+  "result": {
+    "siren": "345131049",
+    "name": "SCI DU SABLIER",
+    "company_name": "SCI DU SABLIER",
+    "date_creation_origine": "2002-11-28",
+    "age_in_years": 38,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "SCI DU SABLIER",
+      "siren": "345131049",
+      "siret_siege": "34513104900024",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2002-11-28",
+      "address": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+      "status": "fermé/inactif",
+      "code_naf": "68.20B",
+      "libelle_naf": null,
+      "section_activite": "L",
+      "forme_juridique": "6540",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": "2024-02-27T18:20:32",
+      "dirigeants": [
+        {
+          "nom": "PERROUD (GATET)",
+          "prenoms": "YVONNE",
+          "qualite": "Autre",
+          "annee_de_naissance": "1952",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "PERROUD",
+          "prenoms": "LUC JEAN MARIE",
+          "qualite": "Autre",
+          "annee_de_naissance": "1947",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 38,
+      "historical_summary": {
+        "date_immatriculation_origine": "2002-11-28",
+        "annee_immatriculation": 1988,
+        "anciennete_annees": 38,
+        "nombre_dirigeants_historiques_identifies": 2,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1988,
+          "date": "1988-06-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 345131049 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "345131049",
+          "name": "SCI DU SABLIER",
+          "siret_siege": "34513104900024",
+          "code_postal": "69430",
+          "commune": "69109",
+          "code_naf": "68.20B",
+          "forme_juridique": "6540",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 2,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": "152,45 EUR",
+      "objet_social": "Acquisition construction location gestion administration vente et mise en valeur de tous immeubles",
+      "date_immatriculation_origine": "2002-11-28",
+      "rne_certitude_score": 1.0,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "345131049",
+      "root_name": "SCI DU SABLIER",
+      "total_nodes": 2,
+      "total_edges": 1,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 2,
+      "nodes": [
+        {
+          "id": "345131049",
+          "siren": "345131049",
+          "siret": "34513104900024",
+          "node_type": "siege",
+          "name": "SCI DU SABLIER",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1988,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "34513104900024",
+            "adresse": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+            "code_postal": "69430",
+            "commune": "69109",
+            "departement": "69",
+            "region": "84",
+            "code_naf": "68.20B",
+            "date_creation": "1988-06-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "34513104900016",
+          "siren": "345131049",
+          "siret": "34513104900016",
+          "node_type": "etablissement",
+          "name": "SCI DU SABLIER - CONDRIEU (69420)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1988,
+          "fermeture_year": 2002,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "34513104900016",
+            "enseigne": null,
+            "adresse": "2 Rue DU SABLIER",
+            "code_postal": "69420",
+            "commune": "CONDRIEU",
+            "departement": "Rhône",
+            "region": "Auvergne-Rhône-Alpes",
+            "geoloc": [
+              45.458323,
+              4.77013
+            ],
+            "date_creation": "1988-06-01",
+            "date_fermeture": "2002-10-15",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "345131049",
+          "target": "34513104900016",
+          "source_siren": "345131049",
+          "target_siren": "34513104900016",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "1988": [
+          {
+            "id": "345131049",
+            "siren": "345131049",
+            "siret": "34513104900024",
+            "node_type": "siege",
+            "name": "SCI DU SABLIER",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1988,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "34513104900024",
+              "adresse": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+              "code_postal": "69430",
+              "commune": "69109",
+              "departement": "69",
+              "region": "84",
+              "code_naf": "68.20B",
+              "date_creation": "1988-06-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "34513104900016",
+            "siren": "345131049",
+            "siret": "34513104900016",
+            "node_type": "etablissement",
+            "name": "SCI DU SABLIER - CONDRIEU (69420)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 2002,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "34513104900016",
+              "enseigne": null,
+              "adresse": "2 Rue DU SABLIER",
+              "code_postal": "69420",
+              "commune": "CONDRIEU",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.458323,
+                4.77013
+              ],
+              "date_creation": "1988-06-01",
+              "date_fermeture": "2002-10-15",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "69": {
+          "department_name": "69",
+          "total": 2,
+          "active": 0,
+          "closed": 2
+        }
+      },
+      "regional_breakdown": {
+        "84": {
+          "region_name": "84",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Auvergne-Rhône-Alpes": {
+          "region_name": "Auvergne-Rhône-Alpes",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 2,
+        "number_of_edges": 1,
+        "out_degree_root": 1,
+        "density": 0.5
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Yvonne PERROUD (GATET)",
+        "type_person": "personne physique",
+        "first_name": "Yvonne",
+        "last_name": "PERROUD (GATET)",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1952",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Autre",
+            "company_siren": "345131049",
+            "company_name": "SCI DU SABLIER",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "Luc Jean Marie PERROUD",
+        "type_person": "personne physique",
+        "first_name": "Luc Jean Marie",
+        "last_name": "PERROUD",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1947",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Autre",
+            "company_siren": "345131049",
+            "company_name": "SCI DU SABLIER",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+          },
+          {
+            "title": "Membre ou Représentant",
+            "company_siren": "345131049",
+            "company_name": "SCI DU SABLIER",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+          }
+        ]
+      },
+      {
+        "full_name": "Yvonne GATET",
+        "type_person": "personne physique",
+        "first_name": "Yvonne",
+        "last_name": "GATET",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1952",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Membre ou Représentant",
+            "company_siren": "345131049",
+            "company_name": "SCI DU SABLIER",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "345131049",
+      "company_name": "SCI DU SABLIER",
+      "company_naf_code": "68.20B",
+      "date_creation_origine": "1988-06-01",
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "bodacc_account_filings": [
+        {
+          "notice_id": "B202001512935",
+          "year": "2020",
+          "date_publication": "2020-08-06",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935",
+          "detail": null
+        },
+        {
+          "notice_id": "B202000982184",
+          "year": "2020",
+          "date_publication": "2020-05-22",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184",
+          "detail": null
+        }
+      ],
+      "bodacc_filings_by_year": {
+        "2020": [
+          {
+            "notice_id": "B202001512935",
+            "year": "2020",
+            "date_publication": "2020-08-06",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935",
+            "detail": null
+          },
+          {
+            "notice_id": "B202000982184",
+            "year": "2020",
+            "date_publication": "2020-05-22",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184",
+            "detail": null
+          }
+        ]
+      },
+      "financials_published": false,
+      "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+    },
+    "legal_monitor_events": [
+      {
+        "id": "B202001512935",
+        "year": "2020",
+        "date": "2020-08-06",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE VILLEFRANCHE-TARARE",
+        "reference": "B202001512935",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935"
+      },
+      {
+        "id": "63ed40dfeaa69331530a8bb0",
+        "year": "2020",
+        "date": "2020-07-31",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T04:31:35+02:00",
+          "siren": "345131049",
+          "denomination": "SCI DU SABLIER",
+          "dateDepot": "2020-07-31",
+          "numChrono": "A2020/002238",
+          "nomDocument": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ed40dfeaa69331530a8bb0",
+          "typeRdd": [
+            {
+              "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+              "decision": " Radiation de la personne morale"
+            },
+            {
+              "typeActe": "Comptes de clôture de la liquidation",
+              "decision": " Radiation de la personne morale"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+      },
+      {
+        "id": "B202000982184",
+        "year": "2020",
+        "date": "2020-05-22",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Dissolution de la société. Modification de l'administration. Cessation d'activité de la société.",
+        "modificationsgenerales": {
+          "descriptif": "Dissolution de la société. Modification de l'administration. Cessation d'activité de la société."
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE VILLEFRANCHE-TARARE",
+        "reference": "B202000982184",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+      },
+      {
+        "id": "63ed40e0eaa69331530a8bb1",
+        "year": "2020",
+        "date": "2020-05-12",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T04:31:35+02:00",
+          "siren": "345131049",
+          "denomination": "SCI DU SABLIER",
+          "dateDepot": "2020-05-12",
+          "numChrono": "A2020/001345",
+          "nomDocument": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ed40e0eaa69331530a8bb1",
+          "typeRdd": [
+            {
+              "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+              "decision": " Dissolution de la personne morale"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+      },
+      {
+        "id": "63ed40dfeaa69331530a8baf",
+        "year": "2002",
+        "date": "2002-11-28",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "cXrB5YwXt0xB_RACT0201110043 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T04:31:35+02:00",
+          "siren": "345131049",
+          "denomination": "SCI DU SABLIER",
+          "dateDepot": "2002-11-28",
+          "numChrono": "2361",
+          "nomDocument": "cXrB5YwXt0xB_RACT0201110043",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ed40dfeaa69331530a8baf",
+          "typeRdd": [
+            {
+              "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+              "decision": " Immatriculation principale d'une société civile suite à transfert"
+            },
+            {
+              "typeActe": "Statuts mis à jour",
+              "decision": " Immatriculation principale d'une société civile suite à transfert"
+            },
+            {
+              "typeActe": "Liste des sièges sociaux antérieurs",
+              "decision": " Immatriculation principale d'une société civile suite à transfert"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "cXrB5YwXt0xB_RACT0201110043",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "2002": {
+        "year": "2002",
+        "milestones": [
+          {
+            "date": "2002-11-28",
+            "event": "Immatriculation officielle SIREN 345131049"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63ed40dfeaa69331530a8baf",
+            "year": "2002",
+            "date": "2002-11-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "cXrB5YwXt0xB_RACT0201110043 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T04:31:35+02:00",
+              "siren": "345131049",
+              "denomination": "SCI DU SABLIER",
+              "dateDepot": "2002-11-28",
+              "numChrono": "2361",
+              "nomDocument": "cXrB5YwXt0xB_RACT0201110043",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed40dfeaa69331530a8baf",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": " Immatriculation principale d'une société civile suite à transfert"
+                },
+                {
+                  "typeActe": "Statuts mis à jour",
+                  "decision": " Immatriculation principale d'une société civile suite à transfert"
+                },
+                {
+                  "typeActe": "Liste des sièges sociaux antérieurs",
+                  "decision": " Immatriculation principale d'une société civile suite à transfert"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "cXrB5YwXt0xB_RACT0201110043",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "1988": {
+        "year": "1988",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "345131049",
+            "siren": "345131049",
+            "siret": "34513104900024",
+            "node_type": "siege",
+            "name": "SCI DU SABLIER",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1988,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "34513104900024",
+              "adresse": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+              "code_postal": "69430",
+              "commune": "69109",
+              "departement": "69",
+              "region": "84",
+              "code_naf": "68.20B",
+              "date_creation": "1988-06-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "34513104900016",
+            "siren": "345131049",
+            "siret": "34513104900016",
+            "node_type": "etablissement",
+            "name": "SCI DU SABLIER - CONDRIEU (69420)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 2002,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "34513104900016",
+              "enseigne": null,
+              "adresse": "2 Rue DU SABLIER",
+              "code_postal": "69420",
+              "commune": "CONDRIEU",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.458323,
+                4.77013
+              ],
+              "date_creation": "1988-06-01",
+              "date_fermeture": "2002-10-15",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2020": {
+        "year": "2020",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2020,
+            "date": "2020-08-06",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935"
+          },
+          {
+            "year": 2020,
+            "date": "2020-05-22",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "PERROUD Luc Jean Marie nom d'usage : PERROUD n'est plus gérant. PERROUD Luc Jean Marie nom d'usage : PERROUD devient liquidateur. GATET Yvonne nom d'usage : PERROUD n'est plus gérant",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B202001512935",
+            "year": "2020",
+            "date": "2020-08-06",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE VILLEFRANCHE-TARARE",
+            "reference": "B202001512935",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935"
+          },
+          {
+            "id": "63ed40dfeaa69331530a8bb0",
+            "year": "2020",
+            "date": "2020-07-31",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T04:31:35+02:00",
+              "siren": "345131049",
+              "denomination": "SCI DU SABLIER",
+              "dateDepot": "2020-07-31",
+              "numChrono": "A2020/002238",
+              "nomDocument": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed40dfeaa69331530a8bb0",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": " Radiation de la personne morale"
+                },
+                {
+                  "typeActe": "Comptes de clôture de la liquidation",
+                  "decision": " Radiation de la personne morale"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+          },
+          {
+            "id": "B202000982184",
+            "year": "2020",
+            "date": "2020-05-22",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dissolution de la société. Modification de l'administration. Cessation d'activité de la société.",
+            "modificationsgenerales": {
+              "descriptif": "Dissolution de la société. Modification de l'administration. Cessation d'activité de la société."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE VILLEFRANCHE-TARARE",
+            "reference": "B202000982184",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+          },
+          {
+            "id": "63ed40e0eaa69331530a8bb1",
+            "year": "2020",
+            "date": "2020-05-12",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T04:31:35+02:00",
+              "siren": "345131049",
+              "denomination": "SCI DU SABLIER",
+              "dateDepot": "2020-05-12",
+              "numChrono": "A2020/001345",
+              "nomDocument": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed40e0eaa69331530a8bb1",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": " Dissolution de la personne morale"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2020",
+      "2002",
+      "1988"
+    ],
+    "total_years_tracked": 3,
+    "profile": {
+      "argus": {
+        "name": "SCI DU SABLIER",
+        "siren": "345131049",
+        "siret_siege": "34513104900024",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2002-11-28",
+        "address": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+        "status": "fermé/inactif",
+        "code_naf": "68.20B",
+        "libelle_naf": null,
+        "section_activite": "L",
+        "forme_juridique": "6540",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": "2024-02-27T18:20:32",
+        "dirigeants": [
+          {
+            "nom": "PERROUD (GATET)",
+            "prenoms": "YVONNE",
+            "qualite": "Autre",
+            "annee_de_naissance": "1952",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "PERROUD",
+            "prenoms": "LUC JEAN MARIE",
+            "qualite": "Autre",
+            "annee_de_naissance": "1947",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 38,
+        "historical_summary": {
+          "date_immatriculation_origine": "2002-11-28",
+          "annee_immatriculation": 1988,
+          "anciennete_annees": 38,
+          "nombre_dirigeants_historiques_identifies": 2,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1988,
+            "date": "1988-06-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 345131049 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "345131049",
+            "name": "SCI DU SABLIER",
+            "siret_siege": "34513104900024",
+            "code_postal": "69430",
+            "commune": "69109",
+            "code_naf": "68.20B",
+            "forme_juridique": "6540",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 2,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": "152,45 EUR",
+        "objet_social": "Acquisition construction location gestion administration vente et mise en valeur de tous immeubles",
+        "date_immatriculation_origine": "2002-11-28",
+        "rne_certitude_score": 1.0,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "345131049",
+        "root_name": "SCI DU SABLIER",
+        "total_nodes": 2,
+        "total_edges": 1,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 2,
+        "nodes": [
+          {
+            "id": "345131049",
+            "siren": "345131049",
+            "siret": "34513104900024",
+            "node_type": "siege",
+            "name": "SCI DU SABLIER",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1988,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "34513104900024",
+              "adresse": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+              "code_postal": "69430",
+              "commune": "69109",
+              "departement": "69",
+              "region": "84",
+              "code_naf": "68.20B",
+              "date_creation": "1988-06-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "34513104900016",
+            "siren": "345131049",
+            "siret": "34513104900016",
+            "node_type": "etablissement",
+            "name": "SCI DU SABLIER - CONDRIEU (69420)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 2002,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "34513104900016",
+              "enseigne": null,
+              "adresse": "2 Rue DU SABLIER",
+              "code_postal": "69420",
+              "commune": "CONDRIEU",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.458323,
+                4.77013
+              ],
+              "date_creation": "1988-06-01",
+              "date_fermeture": "2002-10-15",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "345131049",
+            "target": "34513104900016",
+            "source_siren": "345131049",
+            "target_siren": "34513104900016",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "1988": [
+            {
+              "id": "345131049",
+              "siren": "345131049",
+              "siret": "34513104900024",
+              "node_type": "siege",
+              "name": "SCI DU SABLIER",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1988,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "34513104900024",
+                "adresse": "245 CHE DES MONTERNIERS 69430 LANTIGNIE",
+                "code_postal": "69430",
+                "commune": "69109",
+                "departement": "69",
+                "region": "84",
+                "code_naf": "68.20B",
+                "date_creation": "1988-06-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "34513104900016",
+              "siren": "345131049",
+              "siret": "34513104900016",
+              "node_type": "etablissement",
+              "name": "SCI DU SABLIER - CONDRIEU (69420)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1988,
+              "fermeture_year": 2002,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "34513104900016",
+                "enseigne": null,
+                "adresse": "2 Rue DU SABLIER",
+                "code_postal": "69420",
+                "commune": "CONDRIEU",
+                "departement": "Rhône",
+                "region": "Auvergne-Rhône-Alpes",
+                "geoloc": [
+                  45.458323,
+                  4.77013
+                ],
+                "date_creation": "1988-06-01",
+                "date_fermeture": "2002-10-15",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "69": {
+            "department_name": "69",
+            "total": 2,
+            "active": 0,
+            "closed": 2
+          }
+        },
+        "regional_breakdown": {
+          "84": {
+            "region_name": "84",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Auvergne-Rhône-Alpes": {
+            "region_name": "Auvergne-Rhône-Alpes",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 2,
+          "number_of_edges": 1,
+          "out_degree_root": 1,
+          "density": 0.5
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Yvonne PERROUD (GATET)",
+            "type_person": "personne physique",
+            "first_name": "Yvonne",
+            "last_name": "PERROUD (GATET)",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1952",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Autre",
+                "company_siren": "345131049",
+                "company_name": "SCI DU SABLIER",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "Luc Jean Marie PERROUD",
+            "type_person": "personne physique",
+            "first_name": "Luc Jean Marie",
+            "last_name": "PERROUD",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1947",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Autre",
+                "company_siren": "345131049",
+                "company_name": "SCI DU SABLIER",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+              },
+              {
+                "title": "Membre ou Représentant",
+                "company_siren": "345131049",
+                "company_name": "SCI DU SABLIER",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+              }
+            ]
+          },
+          {
+            "full_name": "Yvonne GATET",
+            "type_person": "personne physique",
+            "first_name": "Yvonne",
+            "last_name": "GATET",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1952",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Membre ou Représentant",
+                "company_siren": "345131049",
+                "company_name": "SCI DU SABLIER",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "345131049",
+        "company_name": "SCI DU SABLIER",
+        "company_naf_code": "68.20B",
+        "date_creation_origine": "1988-06-01",
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "bodacc_account_filings": [
+          {
+            "notice_id": "B202001512935",
+            "year": "2020",
+            "date_publication": "2020-08-06",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935",
+            "detail": null
+          },
+          {
+            "notice_id": "B202000982184",
+            "year": "2020",
+            "date_publication": "2020-05-22",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184",
+            "detail": null
+          }
+        ],
+        "bodacc_filings_by_year": {
+          "2020": [
+            {
+              "notice_id": "B202001512935",
+              "year": "2020",
+              "date_publication": "2020-08-06",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935",
+              "detail": null
+            },
+            {
+              "notice_id": "B202000982184",
+              "year": "2020",
+              "date_publication": "2020-05-22",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184",
+              "detail": null
+            }
+          ]
+        },
+        "financials_published": false,
+        "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "B202001512935",
+            "year": "2020",
+            "date": "2020-08-06",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE VILLEFRANCHE-TARARE",
+            "reference": "B202001512935",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202001512935"
+          },
+          {
+            "id": "63ed40dfeaa69331530a8bb0",
+            "year": "2020",
+            "date": "2020-07-31",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T04:31:35+02:00",
+              "siren": "345131049",
+              "denomination": "SCI DU SABLIER",
+              "dateDepot": "2020-07-31",
+              "numChrono": "A2020/002238",
+              "nomDocument": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed40dfeaa69331530a8bb0",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": " Radiation de la personne morale"
+                },
+                {
+                  "typeActe": "Comptes de clôture de la liquidation",
+                  "decision": " Radiation de la personne morale"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "SjpSoJOXV7cn_C0022A1001L172247D20200806H220745TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+          },
+          {
+            "id": "B202000982184",
+            "year": "2020",
+            "date": "2020-05-22",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dissolution de la société. Modification de l'administration. Cessation d'activité de la société.",
+            "modificationsgenerales": {
+              "descriptif": "Dissolution de la société. Modification de l'administration. Cessation d'activité de la société."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE VILLEFRANCHE-TARARE",
+            "reference": "B202000982184",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202000982184"
+          },
+          {
+            "id": "63ed40e0eaa69331530a8bb1",
+            "year": "2020",
+            "date": "2020-05-12",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T04:31:35+02:00",
+              "siren": "345131049",
+              "denomination": "SCI DU SABLIER",
+              "dateDepot": "2020-05-12",
+              "numChrono": "A2020/001345",
+              "nomDocument": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed40e0eaa69331530a8bb1",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": " Dissolution de la personne morale"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "gSFD11ciKitD_C0022A1001L735325D20200519H213256TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+          },
+          {
+            "id": "63ed40dfeaa69331530a8baf",
+            "year": "2002",
+            "date": "2002-11-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "cXrB5YwXt0xB_RACT0201110043 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T04:31:35+02:00",
+              "siren": "345131049",
+              "denomination": "SCI DU SABLIER",
+              "dateDepot": "2002-11-28",
+              "numChrono": "2361",
+              "nomDocument": "cXrB5YwXt0xB_RACT0201110043",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed40dfeaa69331530a8baf",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": " Immatriculation principale d'une société civile suite à transfert"
+                },
+                {
+                  "typeActe": "Statuts mis à jour",
+                  "decision": " Immatriculation principale d'une société civile suite à transfert"
+                },
+                {
+                  "typeActe": "Liste des sièges sociaux antérieurs",
+                  "decision": " Immatriculation principale d'une société civile suite à transfert"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "cXrB5YwXt0xB_RACT0201110043",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345131049/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "SCI DU SABLIER",
+      "predicate": "siren",
+      "value": "345131049",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:33:37.093617+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "SCI DU SABLIER",
+      "predicate": "capital_social",
+      "value": "152,45 EUR",
+      "source": "data.inpi.fr (RNE)",
+      "observed_at": "2026-09-15T23:33:37.093617+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "345131049",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "2 nœuds extraits (0 actifs, 2 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:33:41.792828+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "SCI DU SABLIER",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "3 dirigeants actifs, 0 anciens dirigeants (3 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:33:41.807132+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "345131049",
+      "predicate": "depots_comptes_bodacc",
+      "value": "2 dépôts de comptes enregistrés au BODACC",
+      "source": "bodacc-datadila.opendatasoft.com",
+      "observed_at": "2026-09-15T23:33:41.825040+00:00",
+      "collection_method": "api",
+      "confidence": 0.95,
+      "status": "fact"
+    },
+    {
+      "subject": "345131049",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "5 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:33:41.839178+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "data.inpi.fr (RNE)",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "bodacc-datadila.opendatasoft.com",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.96,
+  "observed_at": "2026-09-15T23:33:37.093617+00:00",
+  "processed_at": "2026-09-15T23:33:45.103432Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

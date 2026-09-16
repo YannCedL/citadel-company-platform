@@ -1,0 +1,594 @@
+{
+  "result": {
+    "siren": "418907861",
+    "name": "JEAN-PIERRE MOLE",
+    "company_name": "JEAN-PIERRE MOLE",
+    "date_creation_origine": "1998-02-13",
+    "age_in_years": 28,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "JEAN-PIERRE MOLE",
+      "siren": "418907861",
+      "siret_siege": "41890786100011",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1998-02-13",
+      "address": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+      "status": "fermé/inactif",
+      "code_naf": "55.3B",
+      "libelle_naf": null,
+      "section_activite": "I",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": "2024-05-20T03:05:05",
+      "dirigeants": [
+        {
+          "nom": "MOLE",
+          "prenoms": "JEAN-PIERRE",
+          "qualite": null,
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 28,
+      "historical_summary": {
+        "date_immatriculation_origine": "1998-02-13",
+        "annee_immatriculation": 1998,
+        "anciennete_annees": 28,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1998,
+          "date": "1998-02-13",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 418907861 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "418907861",
+          "name": "JEAN-PIERRE MOLE",
+          "siret_siege": "41890786100011",
+          "code_postal": "45000",
+          "commune": "45234",
+          "code_naf": "55.3B",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1998-02-13",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "418907861",
+      "root_name": "JEAN-PIERRE MOLE",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "418907861",
+          "siren": "418907861",
+          "siret": "41890786100011",
+          "node_type": "siege",
+          "name": "JEAN-PIERRE MOLE",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1998,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "41890786100011",
+            "adresse": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+            "code_postal": "45000",
+            "commune": "45234",
+            "departement": "45",
+            "region": "24",
+            "code_naf": "55.3B",
+            "date_creation": "1998-02-13",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "1998": [
+          {
+            "id": "418907861",
+            "siren": "418907861",
+            "siret": "41890786100011",
+            "node_type": "siege",
+            "name": "JEAN-PIERRE MOLE",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1998,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "41890786100011",
+              "adresse": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+              "code_postal": "45000",
+              "commune": "45234",
+              "departement": "45",
+              "region": "24",
+              "code_naf": "55.3B",
+              "date_creation": "1998-02-13",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "45": {
+          "department_name": "45",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "24": {
+          "region_name": "24",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Jean-Pierre MOLE",
+        "type_person": "personne physique",
+        "first_name": "Jean-Pierre",
+        "last_name": "MOLE",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "418907861",
+            "company_name": "JEAN-PIERRE MOLE",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "418907861",
+      "company_name": "418907861",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "1998": {
+        "year": "1998",
+        "milestones": [
+          {
+            "date": "1998-02-13",
+            "event": "Immatriculation officielle SIREN 418907861"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "418907861",
+            "siren": "418907861",
+            "siret": "41890786100011",
+            "node_type": "siege",
+            "name": "JEAN-PIERRE MOLE",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1998,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "41890786100011",
+              "adresse": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+              "code_postal": "45000",
+              "commune": "45234",
+              "departement": "45",
+              "region": "24",
+              "code_naf": "55.3B",
+              "date_creation": "1998-02-13",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "1998"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "JEAN-PIERRE MOLE",
+        "siren": "418907861",
+        "siret_siege": "41890786100011",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1998-02-13",
+        "address": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+        "status": "fermé/inactif",
+        "code_naf": "55.3B",
+        "libelle_naf": null,
+        "section_activite": "I",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": "2024-05-20T03:05:05",
+        "dirigeants": [
+          {
+            "nom": "MOLE",
+            "prenoms": "JEAN-PIERRE",
+            "qualite": null,
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 28,
+        "historical_summary": {
+          "date_immatriculation_origine": "1998-02-13",
+          "annee_immatriculation": 1998,
+          "anciennete_annees": 28,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1998,
+            "date": "1998-02-13",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 418907861 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "418907861",
+            "name": "JEAN-PIERRE MOLE",
+            "siret_siege": "41890786100011",
+            "code_postal": "45000",
+            "commune": "45234",
+            "code_naf": "55.3B",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1998-02-13",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "418907861",
+        "root_name": "JEAN-PIERRE MOLE",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "418907861",
+            "siren": "418907861",
+            "siret": "41890786100011",
+            "node_type": "siege",
+            "name": "JEAN-PIERRE MOLE",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1998,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "41890786100011",
+              "adresse": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+              "code_postal": "45000",
+              "commune": "45234",
+              "departement": "45",
+              "region": "24",
+              "code_naf": "55.3B",
+              "date_creation": "1998-02-13",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "1998": [
+            {
+              "id": "418907861",
+              "siren": "418907861",
+              "siret": "41890786100011",
+              "node_type": "siege",
+              "name": "JEAN-PIERRE MOLE",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1998,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "41890786100011",
+                "adresse": "20 RUE DU FAUBOURG SAINT-VINCENT 45000 ORLEANS",
+                "code_postal": "45000",
+                "commune": "45234",
+                "departement": "45",
+                "region": "24",
+                "code_naf": "55.3B",
+                "date_creation": "1998-02-13",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "45": {
+            "department_name": "45",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "24": {
+            "region_name": "24",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Jean-Pierre MOLE",
+            "type_person": "personne physique",
+            "first_name": "Jean-Pierre",
+            "last_name": "MOLE",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "418907861",
+                "company_name": "JEAN-PIERRE MOLE",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "418907861",
+        "company_name": "418907861",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "JEAN-PIERRE MOLE",
+      "predicate": "siren",
+      "value": "418907861",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:29:29.866303+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "418907861",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (0 actifs, 1 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:29:33.725624+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "JEAN-PIERRE MOLE",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:29:33.740775+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "418907861",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:29:33.755368+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.95,
+  "observed_at": "2026-09-15T23:29:29.866303+00:00",
+  "processed_at": "2026-09-15T23:29:36.775217Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

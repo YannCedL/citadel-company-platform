@@ -1,0 +1,766 @@
+{
+  "result": {
+    "siren": "398436576",
+    "name": "MARIE BARBE (ARBELOT)",
+    "company_name": "MARIE BARBE (ARBELOT)",
+    "date_creation_origine": "1994-10-03",
+    "age_in_years": 31,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "MARIE BARBE (ARBELOT)",
+      "siren": "398436576",
+      "siret_siege": "39843657600027",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1994-10-03",
+      "address": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+      "status": "fermé/inactif",
+      "code_naf": "96.02A",
+      "libelle_naf": null,
+      "section_activite": "S",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-07-07T19:40:34",
+      "date_mise_a_jour_rne": "2025-07-07T20:04:53",
+      "dirigeants": [
+        {
+          "nom": "BARBE (ARBELOT)",
+          "prenoms": "MARIE JOSEPHE SIMONNE GINETTE",
+          "qualite": null,
+          "annee_de_naissance": "1960",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 31,
+      "historical_summary": {
+        "date_immatriculation_origine": "1994-10-03",
+        "annee_immatriculation": 1994,
+        "anciennete_annees": 31,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1994,
+          "date": "1994-10-03",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 398436576 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "398436576",
+          "name": "MARIE BARBE (ARBELOT)",
+          "siret_siege": "39843657600027",
+          "code_postal": "21490",
+          "commune": "21657",
+          "code_naf": "96.02A",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 2,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1994-10-03",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 435,
+        "reference_date": "2025-07-07",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "398436576",
+      "root_name": "MARIE BARBE (ARBELOT)",
+      "total_nodes": 2,
+      "total_edges": 1,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 2,
+      "nodes": [
+        {
+          "id": "398436576",
+          "siren": "398436576",
+          "siret": "39843657600027",
+          "node_type": "siege",
+          "name": "MARIE BARBE (ARBELOT)",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1994,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "39843657600027",
+            "adresse": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+            "code_postal": "21490",
+            "commune": "21657",
+            "departement": "21",
+            "region": "27",
+            "code_naf": "96.02A",
+            "date_creation": "1994-10-03",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "39843657600019",
+          "siren": "398436576",
+          "siret": "39843657600019",
+          "node_type": "etablissement",
+          "name": "MARIE BARBE (ARBELOT) - VAROIS-ET-CHAIGNOT (21490)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1994,
+          "fermeture_year": 2000,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "39843657600019",
+            "enseigne": null,
+            "adresse": "26 Route DE FONTAINE",
+            "code_postal": "21490",
+            "commune": "VAROIS-ET-CHAIGNOT",
+            "departement": "Côte-d'Or",
+            "region": "Bourgogne-Franche-Comté",
+            "geoloc": [
+              47.352469,
+              5.13559
+            ],
+            "date_creation": "1994-10-03",
+            "date_fermeture": "2000-06-30",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "398436576",
+          "target": "39843657600019",
+          "source_siren": "398436576",
+          "target_siren": "39843657600019",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "1994": [
+          {
+            "id": "398436576",
+            "siren": "398436576",
+            "siret": "39843657600027",
+            "node_type": "siege",
+            "name": "MARIE BARBE (ARBELOT)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1994,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "39843657600027",
+              "adresse": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+              "code_postal": "21490",
+              "commune": "21657",
+              "departement": "21",
+              "region": "27",
+              "code_naf": "96.02A",
+              "date_creation": "1994-10-03",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "39843657600019",
+            "siren": "398436576",
+            "siret": "39843657600019",
+            "node_type": "etablissement",
+            "name": "MARIE BARBE (ARBELOT) - VAROIS-ET-CHAIGNOT (21490)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1994,
+            "fermeture_year": 2000,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "39843657600019",
+              "enseigne": null,
+              "adresse": "26 Route DE FONTAINE",
+              "code_postal": "21490",
+              "commune": "VAROIS-ET-CHAIGNOT",
+              "departement": "Côte-d'Or",
+              "region": "Bourgogne-Franche-Comté",
+              "geoloc": [
+                47.352469,
+                5.13559
+              ],
+              "date_creation": "1994-10-03",
+              "date_fermeture": "2000-06-30",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "21": {
+          "department_name": "21",
+          "total": 2,
+          "active": 0,
+          "closed": 2
+        }
+      },
+      "regional_breakdown": {
+        "27": {
+          "region_name": "27",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Bourgogne-Franche-Comté": {
+          "region_name": "Bourgogne-Franche-Comté",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 2,
+        "number_of_edges": 1,
+        "out_degree_root": 1,
+        "density": 0.5
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Marie Josephe Simonne Ginette BARBE (ARBELOT)",
+        "type_person": "personne physique",
+        "first_name": "Marie Josephe Simonne Ginette",
+        "last_name": "BARBE (ARBELOT)",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1960",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "398436576",
+            "company_name": "MARIE BARBE (ARBELOT)",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "398436576",
+      "company_name": "398436576",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "1994": {
+        "year": "1994",
+        "milestones": [
+          {
+            "date": "1994-10-03",
+            "event": "Immatriculation officielle SIREN 398436576"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "398436576",
+            "siren": "398436576",
+            "siret": "39843657600027",
+            "node_type": "siege",
+            "name": "MARIE BARBE (ARBELOT)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1994,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "39843657600027",
+              "adresse": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+              "code_postal": "21490",
+              "commune": "21657",
+              "departement": "21",
+              "region": "27",
+              "code_naf": "96.02A",
+              "date_creation": "1994-10-03",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "39843657600019",
+            "siren": "398436576",
+            "siret": "39843657600019",
+            "node_type": "etablissement",
+            "name": "MARIE BARBE (ARBELOT) - VAROIS-ET-CHAIGNOT (21490)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1994,
+            "fermeture_year": 2000,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "39843657600019",
+              "enseigne": null,
+              "adresse": "26 Route DE FONTAINE",
+              "code_postal": "21490",
+              "commune": "VAROIS-ET-CHAIGNOT",
+              "departement": "Côte-d'Or",
+              "region": "Bourgogne-Franche-Comté",
+              "geoloc": [
+                47.352469,
+                5.13559
+              ],
+              "date_creation": "1994-10-03",
+              "date_fermeture": "2000-06-30",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "1994"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "MARIE BARBE (ARBELOT)",
+        "siren": "398436576",
+        "siret_siege": "39843657600027",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1994-10-03",
+        "address": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+        "status": "fermé/inactif",
+        "code_naf": "96.02A",
+        "libelle_naf": null,
+        "section_activite": "S",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-07-07T19:40:34",
+        "date_mise_a_jour_rne": "2025-07-07T20:04:53",
+        "dirigeants": [
+          {
+            "nom": "BARBE (ARBELOT)",
+            "prenoms": "MARIE JOSEPHE SIMONNE GINETTE",
+            "qualite": null,
+            "annee_de_naissance": "1960",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 31,
+        "historical_summary": {
+          "date_immatriculation_origine": "1994-10-03",
+          "annee_immatriculation": 1994,
+          "anciennete_annees": 31,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1994,
+            "date": "1994-10-03",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 398436576 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "398436576",
+            "name": "MARIE BARBE (ARBELOT)",
+            "siret_siege": "39843657600027",
+            "code_postal": "21490",
+            "commune": "21657",
+            "code_naf": "96.02A",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 2,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1994-10-03",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 435,
+          "reference_date": "2025-07-07",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "398436576",
+        "root_name": "MARIE BARBE (ARBELOT)",
+        "total_nodes": 2,
+        "total_edges": 1,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 2,
+        "nodes": [
+          {
+            "id": "398436576",
+            "siren": "398436576",
+            "siret": "39843657600027",
+            "node_type": "siege",
+            "name": "MARIE BARBE (ARBELOT)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1994,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "39843657600027",
+              "adresse": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+              "code_postal": "21490",
+              "commune": "21657",
+              "departement": "21",
+              "region": "27",
+              "code_naf": "96.02A",
+              "date_creation": "1994-10-03",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "39843657600019",
+            "siren": "398436576",
+            "siret": "39843657600019",
+            "node_type": "etablissement",
+            "name": "MARIE BARBE (ARBELOT) - VAROIS-ET-CHAIGNOT (21490)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1994,
+            "fermeture_year": 2000,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "39843657600019",
+              "enseigne": null,
+              "adresse": "26 Route DE FONTAINE",
+              "code_postal": "21490",
+              "commune": "VAROIS-ET-CHAIGNOT",
+              "departement": "Côte-d'Or",
+              "region": "Bourgogne-Franche-Comté",
+              "geoloc": [
+                47.352469,
+                5.13559
+              ],
+              "date_creation": "1994-10-03",
+              "date_fermeture": "2000-06-30",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "398436576",
+            "target": "39843657600019",
+            "source_siren": "398436576",
+            "target_siren": "39843657600019",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "1994": [
+            {
+              "id": "398436576",
+              "siren": "398436576",
+              "siret": "39843657600027",
+              "node_type": "siege",
+              "name": "MARIE BARBE (ARBELOT)",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1994,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "39843657600027",
+                "adresse": "26 ROUTE DE FONTAINE-FRANCAISE 21490 VAROIS-ET-CHAIGNOT",
+                "code_postal": "21490",
+                "commune": "21657",
+                "departement": "21",
+                "region": "27",
+                "code_naf": "96.02A",
+                "date_creation": "1994-10-03",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "39843657600019",
+              "siren": "398436576",
+              "siret": "39843657600019",
+              "node_type": "etablissement",
+              "name": "MARIE BARBE (ARBELOT) - VAROIS-ET-CHAIGNOT (21490)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1994,
+              "fermeture_year": 2000,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "39843657600019",
+                "enseigne": null,
+                "adresse": "26 Route DE FONTAINE",
+                "code_postal": "21490",
+                "commune": "VAROIS-ET-CHAIGNOT",
+                "departement": "Côte-d'Or",
+                "region": "Bourgogne-Franche-Comté",
+                "geoloc": [
+                  47.352469,
+                  5.13559
+                ],
+                "date_creation": "1994-10-03",
+                "date_fermeture": "2000-06-30",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "21": {
+            "department_name": "21",
+            "total": 2,
+            "active": 0,
+            "closed": 2
+          }
+        },
+        "regional_breakdown": {
+          "27": {
+            "region_name": "27",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Bourgogne-Franche-Comté": {
+            "region_name": "Bourgogne-Franche-Comté",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 2,
+          "number_of_edges": 1,
+          "out_degree_root": 1,
+          "density": 0.5
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Marie Josephe Simonne Ginette BARBE (ARBELOT)",
+            "type_person": "personne physique",
+            "first_name": "Marie Josephe Simonne Ginette",
+            "last_name": "BARBE (ARBELOT)",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1960",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "398436576",
+                "company_name": "MARIE BARBE (ARBELOT)",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "398436576",
+        "company_name": "398436576",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "MARIE BARBE (ARBELOT)",
+      "predicate": "siren",
+      "value": "398436576",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:42:41.276798+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "398436576",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "2 nœuds extraits (0 actifs, 2 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:42:45.299897+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "MARIE BARBE (ARBELOT)",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:42:45.313481+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "398436576",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:42:45.332432+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.95,
+  "observed_at": "2026-09-15T23:42:41.276798+00:00",
+  "processed_at": "2026-09-15T23:42:48.454110Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

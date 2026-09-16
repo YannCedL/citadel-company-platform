@@ -1,0 +1,962 @@
+{
+  "result": {
+    "siren": "445074602",
+    "name": "[NON-DIFFUSIBLE]",
+    "company_name": "[NON-DIFFUSIBLE]",
+    "date_creation_origine": "2003-02-01",
+    "age_in_years": 23,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "[NON-DIFFUSIBLE]",
+      "siren": "445074602",
+      "siret_siege": "44507460200035",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2003-02-01",
+      "address": "[NON-DIFFUSIBLE]",
+      "status": "fermé/inactif",
+      "code_naf": "70.10Z",
+      "libelle_naf": null,
+      "section_activite": "M",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-04-15T12:23:04",
+      "date_mise_a_jour_rne": "2025-07-03T12:55:20",
+      "dirigeants": [
+        {
+          "nom": "[NON-DIFFUSIBLE]",
+          "prenoms": "[NON-DIFFUSIBLE]",
+          "qualite": null,
+          "annee_de_naissance": "[NON-DIFFUSIBLE]",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 23,
+      "historical_summary": {
+        "date_immatriculation_origine": "2003-02-01",
+        "annee_immatriculation": 2003,
+        "anciennete_annees": 23,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2003,
+          "date": "2003-02-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 445074602 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "445074602",
+          "name": "[NON-DIFFUSIBLE]",
+          "siret_siege": "44507460200035",
+          "code_postal": "[NON-DIFFUSIBLE]",
+          "commune": "34032",
+          "code_naf": "70.10Z",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 3,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "2003-02-01",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 518,
+        "reference_date": "2025-04-15",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "445074602",
+      "root_name": "[NON-DIFFUSIBLE]",
+      "total_nodes": 3,
+      "total_edges": 2,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 3,
+      "nodes": [
+        {
+          "id": "445074602",
+          "siren": "445074602",
+          "siret": "44507460200035",
+          "node_type": "siege",
+          "name": "[NON-DIFFUSIBLE]",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2003,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "44507460200035",
+            "adresse": "[NON-DIFFUSIBLE]",
+            "code_postal": "[NON-DIFFUSIBLE]",
+            "commune": "34032",
+            "departement": "34",
+            "region": "76",
+            "code_naf": "70.10Z",
+            "date_creation": "2003-02-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "44507460200027",
+          "siren": "445074602",
+          "siret": "44507460200027",
+          "node_type": "etablissement",
+          "name": "[ND] - BEZIERS ([ND])",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2009,
+          "fermeture_year": 2016,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "44507460200027",
+            "enseigne": "[ND]",
+            "adresse": "[ND] [ND] [ND] [ND]",
+            "code_postal": "[ND]",
+            "commune": "BEZIERS",
+            "departement": "Hérault",
+            "region": "Occitanie",
+            "geoloc": [
+              43.347466983,
+              3.230859399
+            ],
+            "date_creation": "2009-09-01",
+            "date_fermeture": "2016-03-31",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "44507460200019",
+          "siren": "445074602",
+          "siret": "44507460200019",
+          "node_type": "etablissement",
+          "name": "[ND] - ECHIROLLES ([ND])",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2003,
+          "fermeture_year": 2009,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "44507460200019",
+            "enseigne": "[ND]",
+            "adresse": "[ND] [ND] [ND] [ND]",
+            "code_postal": "[ND]",
+            "commune": "ECHIROLLES",
+            "departement": "Isère",
+            "region": "Auvergne-Rhône-Alpes",
+            "geoloc": [
+              45.147068594,
+              5.715311764
+            ],
+            "date_creation": "2003-02-01",
+            "date_fermeture": "2009-09-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "445074602",
+          "target": "44507460200027",
+          "source_siren": "445074602",
+          "target_siren": "44507460200027",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "445074602",
+          "target": "44507460200019",
+          "source_siren": "445074602",
+          "target_siren": "44507460200019",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "2003": [
+          {
+            "id": "445074602",
+            "siren": "445074602",
+            "siret": "44507460200035",
+            "node_type": "siege",
+            "name": "[NON-DIFFUSIBLE]",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2003,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "44507460200035",
+              "adresse": "[NON-DIFFUSIBLE]",
+              "code_postal": "[NON-DIFFUSIBLE]",
+              "commune": "34032",
+              "departement": "34",
+              "region": "76",
+              "code_naf": "70.10Z",
+              "date_creation": "2003-02-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "44507460200019",
+            "siren": "445074602",
+            "siret": "44507460200019",
+            "node_type": "etablissement",
+            "name": "[ND] - ECHIROLLES ([ND])",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2003,
+            "fermeture_year": 2009,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "44507460200019",
+              "enseigne": "[ND]",
+              "adresse": "[ND] [ND] [ND] [ND]",
+              "code_postal": "[ND]",
+              "commune": "ECHIROLLES",
+              "departement": "Isère",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.147068594,
+                5.715311764
+              ],
+              "date_creation": "2003-02-01",
+              "date_fermeture": "2009-09-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "2009": [
+          {
+            "id": "44507460200027",
+            "siren": "445074602",
+            "siret": "44507460200027",
+            "node_type": "etablissement",
+            "name": "[ND] - BEZIERS ([ND])",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2009,
+            "fermeture_year": 2016,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "44507460200027",
+              "enseigne": "[ND]",
+              "adresse": "[ND] [ND] [ND] [ND]",
+              "code_postal": "[ND]",
+              "commune": "BEZIERS",
+              "departement": "Hérault",
+              "region": "Occitanie",
+              "geoloc": [
+                43.347466983,
+                3.230859399
+              ],
+              "date_creation": "2009-09-01",
+              "date_fermeture": "2016-03-31",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "34": {
+          "department_name": "34",
+          "total": 2,
+          "active": 0,
+          "closed": 2
+        },
+        "38": {
+          "department_name": "Isère",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "76": {
+          "region_name": "76",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Occitanie": {
+          "region_name": "Occitanie",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Auvergne-Rhône-Alpes": {
+          "region_name": "Auvergne-Rhône-Alpes",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 3,
+        "number_of_edges": 2,
+        "out_degree_root": 2,
+        "density": 0.3333333333333333
+      }
+    },
+    "executives": [
+      {
+        "full_name": "[Non-Diffusible] [NON-DIFFUSIBLE]",
+        "type_person": "personne physique",
+        "first_name": "[Non-Diffusible]",
+        "last_name": "[NON-DIFFUSIBLE]",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "[NON-DIFFUSIBLE]",
+        "nationality": "[NON-DIFFUSIBLE]",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "445074602",
+            "company_name": "[NON-DIFFUSIBLE]",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "445074602",
+      "company_name": "445074602",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "2003": {
+        "year": "2003",
+        "milestones": [
+          {
+            "date": "2003-02-01",
+            "event": "Immatriculation officielle SIREN 445074602"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "445074602",
+            "siren": "445074602",
+            "siret": "44507460200035",
+            "node_type": "siege",
+            "name": "[NON-DIFFUSIBLE]",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2003,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "44507460200035",
+              "adresse": "[NON-DIFFUSIBLE]",
+              "code_postal": "[NON-DIFFUSIBLE]",
+              "commune": "34032",
+              "departement": "34",
+              "region": "76",
+              "code_naf": "70.10Z",
+              "date_creation": "2003-02-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "44507460200019",
+            "siren": "445074602",
+            "siret": "44507460200019",
+            "node_type": "etablissement",
+            "name": "[ND] - ECHIROLLES ([ND])",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2003,
+            "fermeture_year": 2009,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "44507460200019",
+              "enseigne": "[ND]",
+              "adresse": "[ND] [ND] [ND] [ND]",
+              "code_postal": "[ND]",
+              "commune": "ECHIROLLES",
+              "departement": "Isère",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.147068594,
+                5.715311764
+              ],
+              "date_creation": "2003-02-01",
+              "date_fermeture": "2009-09-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2009": {
+        "year": "2009",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "44507460200027",
+            "siren": "445074602",
+            "siret": "44507460200027",
+            "node_type": "etablissement",
+            "name": "[ND] - BEZIERS ([ND])",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2009,
+            "fermeture_year": 2016,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "44507460200027",
+              "enseigne": "[ND]",
+              "adresse": "[ND] [ND] [ND] [ND]",
+              "code_postal": "[ND]",
+              "commune": "BEZIERS",
+              "departement": "Hérault",
+              "region": "Occitanie",
+              "geoloc": [
+                43.347466983,
+                3.230859399
+              ],
+              "date_creation": "2009-09-01",
+              "date_fermeture": "2016-03-31",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2009",
+      "2003"
+    ],
+    "total_years_tracked": 2,
+    "profile": {
+      "argus": {
+        "name": "[NON-DIFFUSIBLE]",
+        "siren": "445074602",
+        "siret_siege": "44507460200035",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2003-02-01",
+        "address": "[NON-DIFFUSIBLE]",
+        "status": "fermé/inactif",
+        "code_naf": "70.10Z",
+        "libelle_naf": null,
+        "section_activite": "M",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-04-15T12:23:04",
+        "date_mise_a_jour_rne": "2025-07-03T12:55:20",
+        "dirigeants": [
+          {
+            "nom": "[NON-DIFFUSIBLE]",
+            "prenoms": "[NON-DIFFUSIBLE]",
+            "qualite": null,
+            "annee_de_naissance": "[NON-DIFFUSIBLE]",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 23,
+        "historical_summary": {
+          "date_immatriculation_origine": "2003-02-01",
+          "annee_immatriculation": 2003,
+          "anciennete_annees": 23,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2003,
+            "date": "2003-02-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 445074602 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "445074602",
+            "name": "[NON-DIFFUSIBLE]",
+            "siret_siege": "44507460200035",
+            "code_postal": "[NON-DIFFUSIBLE]",
+            "commune": "34032",
+            "code_naf": "70.10Z",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 3,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "2003-02-01",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 518,
+          "reference_date": "2025-04-15",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "445074602",
+        "root_name": "[NON-DIFFUSIBLE]",
+        "total_nodes": 3,
+        "total_edges": 2,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 3,
+        "nodes": [
+          {
+            "id": "445074602",
+            "siren": "445074602",
+            "siret": "44507460200035",
+            "node_type": "siege",
+            "name": "[NON-DIFFUSIBLE]",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2003,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "44507460200035",
+              "adresse": "[NON-DIFFUSIBLE]",
+              "code_postal": "[NON-DIFFUSIBLE]",
+              "commune": "34032",
+              "departement": "34",
+              "region": "76",
+              "code_naf": "70.10Z",
+              "date_creation": "2003-02-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "44507460200027",
+            "siren": "445074602",
+            "siret": "44507460200027",
+            "node_type": "etablissement",
+            "name": "[ND] - BEZIERS ([ND])",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2009,
+            "fermeture_year": 2016,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "44507460200027",
+              "enseigne": "[ND]",
+              "adresse": "[ND] [ND] [ND] [ND]",
+              "code_postal": "[ND]",
+              "commune": "BEZIERS",
+              "departement": "Hérault",
+              "region": "Occitanie",
+              "geoloc": [
+                43.347466983,
+                3.230859399
+              ],
+              "date_creation": "2009-09-01",
+              "date_fermeture": "2016-03-31",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "44507460200019",
+            "siren": "445074602",
+            "siret": "44507460200019",
+            "node_type": "etablissement",
+            "name": "[ND] - ECHIROLLES ([ND])",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2003,
+            "fermeture_year": 2009,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "44507460200019",
+              "enseigne": "[ND]",
+              "adresse": "[ND] [ND] [ND] [ND]",
+              "code_postal": "[ND]",
+              "commune": "ECHIROLLES",
+              "departement": "Isère",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.147068594,
+                5.715311764
+              ],
+              "date_creation": "2003-02-01",
+              "date_fermeture": "2009-09-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "445074602",
+            "target": "44507460200027",
+            "source_siren": "445074602",
+            "target_siren": "44507460200027",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "445074602",
+            "target": "44507460200019",
+            "source_siren": "445074602",
+            "target_siren": "44507460200019",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "2003": [
+            {
+              "id": "445074602",
+              "siren": "445074602",
+              "siret": "44507460200035",
+              "node_type": "siege",
+              "name": "[NON-DIFFUSIBLE]",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2003,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "44507460200035",
+                "adresse": "[NON-DIFFUSIBLE]",
+                "code_postal": "[NON-DIFFUSIBLE]",
+                "commune": "34032",
+                "departement": "34",
+                "region": "76",
+                "code_naf": "70.10Z",
+                "date_creation": "2003-02-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "44507460200019",
+              "siren": "445074602",
+              "siret": "44507460200019",
+              "node_type": "etablissement",
+              "name": "[ND] - ECHIROLLES ([ND])",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2003,
+              "fermeture_year": 2009,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "44507460200019",
+                "enseigne": "[ND]",
+                "adresse": "[ND] [ND] [ND] [ND]",
+                "code_postal": "[ND]",
+                "commune": "ECHIROLLES",
+                "departement": "Isère",
+                "region": "Auvergne-Rhône-Alpes",
+                "geoloc": [
+                  45.147068594,
+                  5.715311764
+                ],
+                "date_creation": "2003-02-01",
+                "date_fermeture": "2009-09-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "2009": [
+            {
+              "id": "44507460200027",
+              "siren": "445074602",
+              "siret": "44507460200027",
+              "node_type": "etablissement",
+              "name": "[ND] - BEZIERS ([ND])",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2009,
+              "fermeture_year": 2016,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "44507460200027",
+                "enseigne": "[ND]",
+                "adresse": "[ND] [ND] [ND] [ND]",
+                "code_postal": "[ND]",
+                "commune": "BEZIERS",
+                "departement": "Hérault",
+                "region": "Occitanie",
+                "geoloc": [
+                  43.347466983,
+                  3.230859399
+                ],
+                "date_creation": "2009-09-01",
+                "date_fermeture": "2016-03-31",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "34": {
+            "department_name": "34",
+            "total": 2,
+            "active": 0,
+            "closed": 2
+          },
+          "38": {
+            "department_name": "Isère",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "76": {
+            "region_name": "76",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Occitanie": {
+            "region_name": "Occitanie",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Auvergne-Rhône-Alpes": {
+            "region_name": "Auvergne-Rhône-Alpes",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 3,
+          "number_of_edges": 2,
+          "out_degree_root": 2,
+          "density": 0.3333333333333333
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "[Non-Diffusible] [NON-DIFFUSIBLE]",
+            "type_person": "personne physique",
+            "first_name": "[Non-Diffusible]",
+            "last_name": "[NON-DIFFUSIBLE]",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "[NON-DIFFUSIBLE]",
+            "nationality": "[NON-DIFFUSIBLE]",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "445074602",
+                "company_name": "[NON-DIFFUSIBLE]",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "445074602",
+        "company_name": "445074602",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "[NON-DIFFUSIBLE]",
+      "predicate": "siren",
+      "value": "445074602",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:36:39.594607+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "445074602",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "3 nœuds extraits (0 actifs, 3 fermés sur 2 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:36:43.375354+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "[NON-DIFFUSIBLE]",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:36:43.393665+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "445074602",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:36:43.411342+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.95,
+  "observed_at": "2026-09-15T23:36:39.594607+00:00",
+  "processed_at": "2026-09-15T23:36:46.809480Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

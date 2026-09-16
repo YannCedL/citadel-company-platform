@@ -1,0 +1,2028 @@
+{
+  "result": {
+    "siren": "337651061",
+    "name": "SCI LE BOULAY",
+    "company_name": "SCI LE BOULAY",
+    "date_creation_origine": "1986-05-13",
+    "age_in_years": 40,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "SCI LE BOULAY",
+      "siren": "337651061",
+      "siret_siege": "33765106100018",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1986-05-13",
+      "address": "LIEU DIT LE BOULAY 72140 ROUEZ",
+      "status": "fermé/inactif",
+      "code_naf": "41.10D",
+      "libelle_naf": null,
+      "section_activite": "F",
+      "forme_juridique": "6541",
+      "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-06-28T05:07:13",
+      "date_mise_a_jour_rne": "2025-11-18T09:44:28",
+      "dirigeants": [
+        {
+          "nom": "FOURNIER",
+          "prenoms": "CHRISTIAN",
+          "qualite": "Liquidateur",
+          "annee_de_naissance": "1958",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "MILCENT",
+          "prenoms": "PIERRE",
+          "qualite": null,
+          "annee_de_naissance": "1928",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "ROUSSEAU",
+          "prenoms": "OLIVIER",
+          "qualite": "Associé indéfiniment responsable",
+          "annee_de_naissance": "1955",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 40,
+      "historical_summary": {
+        "date_immatriculation_origine": "1986-05-13",
+        "annee_immatriculation": 1986,
+        "anciennete_annees": 40,
+        "nombre_dirigeants_historiques_identifies": 3,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1986,
+          "date": "1986-05-06",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 337651061 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "337651061",
+          "name": "SCI LE BOULAY",
+          "siret_siege": "33765106100018",
+          "code_postal": "72140",
+          "commune": "72256",
+          "code_naf": "41.10D",
+          "forme_juridique": "6541",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": "1 524,49 EUR",
+      "objet_social": null,
+      "date_immatriculation_origine": "1986-05-13",
+      "rne_certitude_score": 1.0,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 809,
+        "reference_date": "2024-06-28",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "337651061",
+      "root_name": "SCI LE BOULAY",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "337651061",
+          "siren": "337651061",
+          "siret": "33765106100018",
+          "node_type": "siege",
+          "name": "SCI LE BOULAY",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1986,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "33765106100018",
+            "adresse": "LIEU DIT LE BOULAY 72140 ROUEZ",
+            "code_postal": "72140",
+            "commune": "72256",
+            "departement": "72",
+            "region": "52",
+            "code_naf": "41.10D",
+            "date_creation": "1986-05-06",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "1986": [
+          {
+            "id": "337651061",
+            "siren": "337651061",
+            "siret": "33765106100018",
+            "node_type": "siege",
+            "name": "SCI LE BOULAY",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1986,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "33765106100018",
+              "adresse": "LIEU DIT LE BOULAY 72140 ROUEZ",
+              "code_postal": "72140",
+              "commune": "72256",
+              "departement": "72",
+              "region": "52",
+              "code_naf": "41.10D",
+              "date_creation": "1986-05-06",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "72": {
+          "department_name": "72",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "52": {
+          "region_name": "52",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Christian FOURNIER",
+        "type_person": "personne physique",
+        "first_name": "Christian",
+        "last_name": "FOURNIER",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1958",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Liquidateur",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+          }
+        ]
+      },
+      {
+        "full_name": "Pierre MILCENT",
+        "type_person": "personne physique",
+        "first_name": "Pierre",
+        "last_name": "MILCENT",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1928",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Commissaire aux comptes suppléant",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "Olivier ROUSSEAU",
+        "type_person": "personne physique",
+        "first_name": "Olivier",
+        "last_name": "ROUSSEAU",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1955",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Associé indéfiniment responsable",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Commissaire aux comptes suppléant",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "Pierre MILCENT",
+        "type_person": "personne physique",
+        "first_name": "Pierre",
+        "last_name": "MILCENT",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "2028",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Commissaire aux comptes suppléant",
+            "company_siren": "337651061",
+            "company_name": "SCI LE BOULAY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "337651061",
+      "company_name": "SCI LE BOULAY",
+      "company_naf_code": "41.10D",
+      "date_creation_origine": "1986-05-06",
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "bodacc_account_filings": [
+        {
+          "notice_id": "B202401251861",
+          "year": "2024",
+          "date_publication": "2024-06-30",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861",
+          "detail": null
+        },
+        {
+          "notice_id": "B201200672244",
+          "year": "2012",
+          "date_publication": "2012-04-04",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244",
+          "detail": null
+        },
+        {
+          "notice_id": "B202302481915",
+          "year": "2023",
+          "date_publication": "2023-12-24",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915",
+          "detail": null
+        }
+      ],
+      "bodacc_filings_by_year": {
+        "2024": [
+          {
+            "notice_id": "B202401251861",
+            "year": "2024",
+            "date_publication": "2024-06-30",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861",
+            "detail": null
+          }
+        ],
+        "2012": [
+          {
+            "notice_id": "B201200672244",
+            "year": "2012",
+            "date_publication": "2012-04-04",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244",
+            "detail": null
+          }
+        ],
+        "2023": [
+          {
+            "notice_id": "B202302481915",
+            "year": "2023",
+            "date_publication": "2023-12-24",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915",
+            "detail": null
+          }
+        ]
+      },
+      "financials_published": false,
+      "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+    },
+    "legal_monitor_events": [
+      {
+        "id": "B202401251861",
+        "year": "2024",
+        "date": "2024-06-30",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal de Commerce du Mans",
+        "reference": "B202401251861",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861"
+      },
+      {
+        "id": "B202302481915",
+        "year": "2023",
+        "date": "2023-12-24",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Modification survenue sur l'administration, cessation d'activité, dissolution de la société.",
+        "modificationsgenerales": {
+          "descriptif": "Modification survenue sur l'administration, cessation d'activité, dissolution de la société."
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal de Commerce du Mans",
+        "reference": "B202302481915",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915"
+      },
+      {
+        "id": "6596c8978b44a1cc9d0ca6d4",
+        "year": "2023",
+        "date": "2023-12-20",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2024-01-04T16:02:47+01:00",
+          "siren": "337651061",
+          "denomination": "SCI LE BOULAY",
+          "dateDepot": "2023-12-20",
+          "numChrono": "7458",
+          "nomDocument": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "6596c8978b44a1cc9d0ca6d4"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "B201200672244",
+        "year": "2012",
+        "date": "2012-04-04",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Modification survenue sur l'administration",
+        "modificationsgenerales": {
+          "descriptif": "Modification survenue sur l'administration"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DU MANS",
+        "reference": "B201200672244",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+      },
+      {
+        "id": "63e4d19c998acaecf8089001",
+        "year": "2012",
+        "date": "2012-03-22",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SCI LE BOULAY",
+          "dateDepot": "2012-03-22",
+          "numChrono": "1180",
+          "nomDocument": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8089001",
+          "typeRdd": [
+            {
+              "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+              "decision": "Changement(s) de gérant(s) "
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "63e4d19c998acaecf8088ffb",
+        "year": "2004",
+        "date": "2004-01-29",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Htah3WNm2uKR_RACT0400307638 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+          "dateDepot": "2004-01-29",
+          "numChrono": "301",
+          "nomDocument": "Htah3WNm2uKR_RACT0400307638",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8088ffb",
+          "typeRdd": [
+            {
+              "typeActe": "Procès-verbal d'assemblée",
+              "decision": "Changement(s) de gérant(s) "
+            },
+            {
+              "typeActe": "Statuts mis à jour"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "Htah3WNm2uKR_RACT0400307638",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "63e4d19c998acaecf8088ffc",
+        "year": "2003",
+        "date": "2003-09-15",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "c4wdt3bALilr_RACT0300278808 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+          "dateDepot": "2003-09-15",
+          "numChrono": "2528",
+          "nomDocument": "c4wdt3bALilr_RACT0300278808",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8088ffc",
+          "typeRdd": [
+            {
+              "typeActe": "Acte sous seing privé",
+              "decision": "Cession de parts "
+            },
+            {
+              "typeActe": "Statuts mis à jour"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "c4wdt3bALilr_RACT0300278808",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "63e4d19c998acaecf8089000",
+        "year": "1995",
+        "date": "1995-03-27",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "628YU9HfcrhB_RACT9500256552 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+          "dateDepot": "1995-03-27",
+          "numChrono": "584",
+          "nomDocument": "628YU9HfcrhB_RACT9500256552",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8089000",
+          "typeRdd": [
+            {
+              "typeActe": "Procès-verbal d'assemblée",
+              "decision": "Changement(s) de gérant(s) "
+            },
+            {
+              "typeActe": "Statuts mis à jour"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "628YU9HfcrhB_RACT9500256552",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "63e4d19c998acaecf8088ffd",
+        "year": "1994",
+        "date": "1994-09-20",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "xySeixZovUTZ_RACT9400513741 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+          "dateDepot": "1994-09-20",
+          "numChrono": "1806",
+          "nomDocument": "xySeixZovUTZ_RACT9400513741",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8088ffd",
+          "typeRdd": [
+            {
+              "typeActe": "Acte notarié",
+              "decision": "Cession de parts "
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "xySeixZovUTZ_RACT9400513741",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "63e4d19c998acaecf8088ffe",
+        "year": "1994",
+        "date": "1994-03-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "oVhod6n1rXxc_RACT9400291619 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+          "dateDepot": "1994-03-11",
+          "numChrono": "510",
+          "nomDocument": "oVhod6n1rXxc_RACT9400291619",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8088ffe",
+          "typeRdd": [
+            {
+              "typeActe": "Acte notarié",
+              "decision": "Cession de parts "
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "oVhod6n1rXxc_RACT9400291619",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      },
+      {
+        "id": "63e4d19c998acaecf8088fff",
+        "year": "1994",
+        "date": "1994-03-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "rv1W3Im9xPcS_RACT9400291621 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T11:28:33+02:00",
+          "siren": "337651061",
+          "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+          "dateDepot": "1994-03-11",
+          "numChrono": "510",
+          "nomDocument": "rv1W3Im9xPcS_RACT9400291621",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e4d19c998acaecf8088fff",
+          "typeRdd": [
+            {
+              "typeActe": "Acte notarié",
+              "decision": "Cession de parts "
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "rv1W3Im9xPcS_RACT9400291621",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "1986": {
+        "year": "1986",
+        "milestones": [
+          {
+            "date": "1986-05-13",
+            "event": "Immatriculation officielle SIREN 337651061"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "337651061",
+            "siren": "337651061",
+            "siret": "33765106100018",
+            "node_type": "siege",
+            "name": "SCI LE BOULAY",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1986,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "33765106100018",
+              "adresse": "LIEU DIT LE BOULAY 72140 ROUEZ",
+              "code_postal": "72140",
+              "commune": "72256",
+              "departement": "72",
+              "region": "52",
+              "code_naf": "41.10D",
+              "date_creation": "1986-05-06",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2024": {
+        "year": "2024",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2024,
+            "date": "2024-06-30",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B202401251861",
+            "year": "2024",
+            "date": "2024-06-30",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce du Mans",
+            "reference": "B202401251861",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2023": {
+        "year": "2023",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2023,
+            "date": "2023-12-24",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "Liquidateur : FOURNIER Christian",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B202302481915",
+            "year": "2023",
+            "date": "2023-12-24",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Modification survenue sur l'administration, cessation d'activité, dissolution de la société.",
+            "modificationsgenerales": {
+              "descriptif": "Modification survenue sur l'administration, cessation d'activité, dissolution de la société."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce du Mans",
+            "reference": "B202302481915",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915"
+          },
+          {
+            "id": "6596c8978b44a1cc9d0ca6d4",
+            "year": "2023",
+            "date": "2023-12-20",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2024-01-04T16:02:47+01:00",
+              "siren": "337651061",
+              "denomination": "SCI LE BOULAY",
+              "dateDepot": "2023-12-20",
+              "numChrono": "7458",
+              "nomDocument": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "6596c8978b44a1cc9d0ca6d4"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2012": {
+        "year": "2012",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2012,
+            "date": "2012-04-04",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "Gérant(e) : FOURNIER Christian",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B201200672244",
+            "year": "2012",
+            "date": "2012-04-04",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Modification survenue sur l'administration",
+            "modificationsgenerales": {
+              "descriptif": "Modification survenue sur l'administration"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DU MANS",
+            "reference": "B201200672244",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+          },
+          {
+            "id": "63e4d19c998acaecf8089001",
+            "year": "2012",
+            "date": "2012-03-22",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SCI LE BOULAY",
+              "dateDepot": "2012-03-22",
+              "numChrono": "1180",
+              "nomDocument": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8089001",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": "Changement(s) de gérant(s) "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2004": {
+        "year": "2004",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63e4d19c998acaecf8088ffb",
+            "year": "2004",
+            "date": "2004-01-29",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Htah3WNm2uKR_RACT0400307638 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "2004-01-29",
+              "numChrono": "301",
+              "nomDocument": "Htah3WNm2uKR_RACT0400307638",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffb",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée",
+                  "decision": "Changement(s) de gérant(s) "
+                },
+                {
+                  "typeActe": "Statuts mis à jour"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Htah3WNm2uKR_RACT0400307638",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2003": {
+        "year": "2003",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63e4d19c998acaecf8088ffc",
+            "year": "2003",
+            "date": "2003-09-15",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "c4wdt3bALilr_RACT0300278808 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "2003-09-15",
+              "numChrono": "2528",
+              "nomDocument": "c4wdt3bALilr_RACT0300278808",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffc",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte sous seing privé",
+                  "decision": "Cession de parts "
+                },
+                {
+                  "typeActe": "Statuts mis à jour"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "c4wdt3bALilr_RACT0300278808",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "1995": {
+        "year": "1995",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63e4d19c998acaecf8089000",
+            "year": "1995",
+            "date": "1995-03-27",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "628YU9HfcrhB_RACT9500256552 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1995-03-27",
+              "numChrono": "584",
+              "nomDocument": "628YU9HfcrhB_RACT9500256552",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8089000",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée",
+                  "decision": "Changement(s) de gérant(s) "
+                },
+                {
+                  "typeActe": "Statuts mis à jour"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "628YU9HfcrhB_RACT9500256552",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "1994": {
+        "year": "1994",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63e4d19c998acaecf8088ffd",
+            "year": "1994",
+            "date": "1994-09-20",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "xySeixZovUTZ_RACT9400513741 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1994-09-20",
+              "numChrono": "1806",
+              "nomDocument": "xySeixZovUTZ_RACT9400513741",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffd",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte notarié",
+                  "decision": "Cession de parts "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "xySeixZovUTZ_RACT9400513741",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088ffe",
+            "year": "1994",
+            "date": "1994-03-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "oVhod6n1rXxc_RACT9400291619 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1994-03-11",
+              "numChrono": "510",
+              "nomDocument": "oVhod6n1rXxc_RACT9400291619",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffe",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte notarié",
+                  "decision": "Cession de parts "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "oVhod6n1rXxc_RACT9400291619",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088fff",
+            "year": "1994",
+            "date": "1994-03-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "rv1W3Im9xPcS_RACT9400291621 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1994-03-11",
+              "numChrono": "510",
+              "nomDocument": "rv1W3Im9xPcS_RACT9400291621",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088fff",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte notarié",
+                  "decision": "Cession de parts "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "rv1W3Im9xPcS_RACT9400291621",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2024",
+      "2023",
+      "2012",
+      "2004",
+      "2003",
+      "1995",
+      "1994",
+      "1986"
+    ],
+    "total_years_tracked": 8,
+    "profile": {
+      "argus": {
+        "name": "SCI LE BOULAY",
+        "siren": "337651061",
+        "siret_siege": "33765106100018",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1986-05-13",
+        "address": "LIEU DIT LE BOULAY 72140 ROUEZ",
+        "status": "fermé/inactif",
+        "code_naf": "41.10D",
+        "libelle_naf": null,
+        "section_activite": "F",
+        "forme_juridique": "6541",
+        "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-06-28T05:07:13",
+        "date_mise_a_jour_rne": "2025-11-18T09:44:28",
+        "dirigeants": [
+          {
+            "nom": "FOURNIER",
+            "prenoms": "CHRISTIAN",
+            "qualite": "Liquidateur",
+            "annee_de_naissance": "1958",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "MILCENT",
+            "prenoms": "PIERRE",
+            "qualite": null,
+            "annee_de_naissance": "1928",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "ROUSSEAU",
+            "prenoms": "OLIVIER",
+            "qualite": "Associé indéfiniment responsable",
+            "annee_de_naissance": "1955",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 40,
+        "historical_summary": {
+          "date_immatriculation_origine": "1986-05-13",
+          "annee_immatriculation": 1986,
+          "anciennete_annees": 40,
+          "nombre_dirigeants_historiques_identifies": 3,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1986,
+            "date": "1986-05-06",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 337651061 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "337651061",
+            "name": "SCI LE BOULAY",
+            "siret_siege": "33765106100018",
+            "code_postal": "72140",
+            "commune": "72256",
+            "code_naf": "41.10D",
+            "forme_juridique": "6541",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": "1 524,49 EUR",
+        "objet_social": null,
+        "date_immatriculation_origine": "1986-05-13",
+        "rne_certitude_score": 1.0,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 809,
+          "reference_date": "2024-06-28",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "337651061",
+        "root_name": "SCI LE BOULAY",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "337651061",
+            "siren": "337651061",
+            "siret": "33765106100018",
+            "node_type": "siege",
+            "name": "SCI LE BOULAY",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1986,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "33765106100018",
+              "adresse": "LIEU DIT LE BOULAY 72140 ROUEZ",
+              "code_postal": "72140",
+              "commune": "72256",
+              "departement": "72",
+              "region": "52",
+              "code_naf": "41.10D",
+              "date_creation": "1986-05-06",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "1986": [
+            {
+              "id": "337651061",
+              "siren": "337651061",
+              "siret": "33765106100018",
+              "node_type": "siege",
+              "name": "SCI LE BOULAY",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1986,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "33765106100018",
+                "adresse": "LIEU DIT LE BOULAY 72140 ROUEZ",
+                "code_postal": "72140",
+                "commune": "72256",
+                "departement": "72",
+                "region": "52",
+                "code_naf": "41.10D",
+                "date_creation": "1986-05-06",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "72": {
+            "department_name": "72",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "52": {
+            "region_name": "52",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Christian FOURNIER",
+            "type_person": "personne physique",
+            "first_name": "Christian",
+            "last_name": "FOURNIER",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1958",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Liquidateur",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+              }
+            ]
+          },
+          {
+            "full_name": "Pierre MILCENT",
+            "type_person": "personne physique",
+            "first_name": "Pierre",
+            "last_name": "MILCENT",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1928",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Commissaire aux comptes suppléant",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "Olivier ROUSSEAU",
+            "type_person": "personne physique",
+            "first_name": "Olivier",
+            "last_name": "ROUSSEAU",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1955",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Associé indéfiniment responsable",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Commissaire aux comptes suppléant",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "Pierre MILCENT",
+            "type_person": "personne physique",
+            "first_name": "Pierre",
+            "last_name": "MILCENT",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "2028",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Commissaire aux comptes suppléant",
+                "company_siren": "337651061",
+                "company_name": "SCI LE BOULAY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "337651061",
+        "company_name": "SCI LE BOULAY",
+        "company_naf_code": "41.10D",
+        "date_creation_origine": "1986-05-06",
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "bodacc_account_filings": [
+          {
+            "notice_id": "B202401251861",
+            "year": "2024",
+            "date_publication": "2024-06-30",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861",
+            "detail": null
+          },
+          {
+            "notice_id": "B201200672244",
+            "year": "2012",
+            "date_publication": "2012-04-04",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244",
+            "detail": null
+          },
+          {
+            "notice_id": "B202302481915",
+            "year": "2023",
+            "date_publication": "2023-12-24",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915",
+            "detail": null
+          }
+        ],
+        "bodacc_filings_by_year": {
+          "2024": [
+            {
+              "notice_id": "B202401251861",
+              "year": "2024",
+              "date_publication": "2024-06-30",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861",
+              "detail": null
+            }
+          ],
+          "2012": [
+            {
+              "notice_id": "B201200672244",
+              "year": "2012",
+              "date_publication": "2012-04-04",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244",
+              "detail": null
+            }
+          ],
+          "2023": [
+            {
+              "notice_id": "B202302481915",
+              "year": "2023",
+              "date_publication": "2023-12-24",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915",
+              "detail": null
+            }
+          ]
+        },
+        "financials_published": false,
+        "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "B202401251861",
+            "year": "2024",
+            "date": "2024-06-30",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce du Mans",
+            "reference": "B202401251861",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202401251861"
+          },
+          {
+            "id": "B202302481915",
+            "year": "2023",
+            "date": "2023-12-24",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Modification survenue sur l'administration, cessation d'activité, dissolution de la société.",
+            "modificationsgenerales": {
+              "descriptif": "Modification survenue sur l'administration, cessation d'activité, dissolution de la société."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce du Mans",
+            "reference": "B202302481915",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202302481915"
+          },
+          {
+            "id": "6596c8978b44a1cc9d0ca6d4",
+            "year": "2023",
+            "date": "2023-12-20",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2024-01-04T16:02:47+01:00",
+              "siren": "337651061",
+              "denomination": "SCI LE BOULAY",
+              "dateDepot": "2023-12-20",
+              "numChrono": "7458",
+              "nomDocument": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "6596c8978b44a1cc9d0ca6d4"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "40rfL5YU1ah1_C0022A1001L475333D20231225H164849TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "B201200672244",
+            "year": "2012",
+            "date": "2012-04-04",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Modification survenue sur l'administration",
+            "modificationsgenerales": {
+              "descriptif": "Modification survenue sur l'administration"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DU MANS",
+            "reference": "B201200672244",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201200672244"
+          },
+          {
+            "id": "63e4d19c998acaecf8089001",
+            "year": "2012",
+            "date": "2012-03-22",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SCI LE BOULAY",
+              "dateDepot": "2012-03-22",
+              "numChrono": "1180",
+              "nomDocument": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8089001",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+                  "decision": "Changement(s) de gérant(s) "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "sFM0mCshBjlI_RACT2_337651061_7202_1986D00070_2012_118001",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088ffb",
+            "year": "2004",
+            "date": "2004-01-29",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Htah3WNm2uKR_RACT0400307638 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "2004-01-29",
+              "numChrono": "301",
+              "nomDocument": "Htah3WNm2uKR_RACT0400307638",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffb",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée",
+                  "decision": "Changement(s) de gérant(s) "
+                },
+                {
+                  "typeActe": "Statuts mis à jour"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Htah3WNm2uKR_RACT0400307638",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088ffc",
+            "year": "2003",
+            "date": "2003-09-15",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "c4wdt3bALilr_RACT0300278808 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "2003-09-15",
+              "numChrono": "2528",
+              "nomDocument": "c4wdt3bALilr_RACT0300278808",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffc",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte sous seing privé",
+                  "decision": "Cession de parts "
+                },
+                {
+                  "typeActe": "Statuts mis à jour"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "c4wdt3bALilr_RACT0300278808",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8089000",
+            "year": "1995",
+            "date": "1995-03-27",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "628YU9HfcrhB_RACT9500256552 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1995-03-27",
+              "numChrono": "584",
+              "nomDocument": "628YU9HfcrhB_RACT9500256552",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8089000",
+              "typeRdd": [
+                {
+                  "typeActe": "Procès-verbal d'assemblée",
+                  "decision": "Changement(s) de gérant(s) "
+                },
+                {
+                  "typeActe": "Statuts mis à jour"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "628YU9HfcrhB_RACT9500256552",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088ffd",
+            "year": "1994",
+            "date": "1994-09-20",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "xySeixZovUTZ_RACT9400513741 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1994-09-20",
+              "numChrono": "1806",
+              "nomDocument": "xySeixZovUTZ_RACT9400513741",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffd",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte notarié",
+                  "decision": "Cession de parts "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "xySeixZovUTZ_RACT9400513741",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088ffe",
+            "year": "1994",
+            "date": "1994-03-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "oVhod6n1rXxc_RACT9400291619 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1994-03-11",
+              "numChrono": "510",
+              "nomDocument": "oVhod6n1rXxc_RACT9400291619",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088ffe",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte notarié",
+                  "decision": "Cession de parts "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "oVhod6n1rXxc_RACT9400291619",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          },
+          {
+            "id": "63e4d19c998acaecf8088fff",
+            "year": "1994",
+            "date": "1994-03-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "rv1W3Im9xPcS_RACT9400291621 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T11:28:33+02:00",
+              "siren": "337651061",
+              "denomination": "SOCIETE CIVILE IMMOBILIERE LE BOULAY",
+              "dateDepot": "1994-03-11",
+              "numChrono": "510",
+              "nomDocument": "rv1W3Im9xPcS_RACT9400291621",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e4d19c998acaecf8088fff",
+              "typeRdd": [
+                {
+                  "typeActe": "Acte notarié",
+                  "decision": "Cession de parts "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "rv1W3Im9xPcS_RACT9400291621",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/337651061/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "SCI LE BOULAY",
+      "predicate": "siren",
+      "value": "337651061",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:45:39.576033+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "SCI LE BOULAY",
+      "predicate": "capital_social",
+      "value": "1 524,49 EUR",
+      "source": "data.inpi.fr (RNE)",
+      "observed_at": "2026-09-15T23:45:39.576033+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "337651061",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (0 actifs, 1 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:45:43.387023+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "SCI LE BOULAY",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "4 dirigeants actifs, 0 anciens dirigeants (4 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:45:43.400369+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "337651061",
+      "predicate": "depots_comptes_bodacc",
+      "value": "3 dépôts de comptes enregistrés au BODACC",
+      "source": "bodacc-datadila.opendatasoft.com",
+      "observed_at": "2026-09-15T23:45:43.420709+00:00",
+      "collection_method": "api",
+      "confidence": 0.95,
+      "status": "fact"
+    },
+    {
+      "subject": "337651061",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "11 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:45:43.431473+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "data.inpi.fr (RNE)",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "bodacc-datadila.opendatasoft.com",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.96,
+  "observed_at": "2026-09-15T23:45:39.576033+00:00",
+  "processed_at": "2026-09-15T23:45:46.514327Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

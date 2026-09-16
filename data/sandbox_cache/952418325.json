@@ -1,0 +1,3884 @@
+{
+  "result": {
+    "siren": "952418325",
+    "name": "MISTRAL AI",
+    "company_name": "MISTRAL AI",
+    "date_creation_origine": "2023-04-28",
+    "age_in_years": 3,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "MISTRAL AI",
+      "siren": "952418325",
+      "siret_siege": "95241832500025",
+      "lei": "894500Q9JNDV9YXSOL64",
+      "tva_intracommunautaire": "FR95952418325",
+      "country": "FR",
+      "registration_date": "2023-04-28",
+      "address": "15 RUE DES HALLES 75001 PARIS",
+      "status": "actif",
+      "code_naf": "82.11Z",
+      "libelle_naf": null,
+      "section_activite": "N",
+      "forme_juridique": "5710",
+      "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+      "tranche_effectifs": "12",
+      "conventions_collectives": [
+        "1486"
+      ],
+      "date_mise_a_jour_insee": "2026-07-17T13:31:57",
+      "date_mise_a_jour_rne": "2026-08-11T15:42:55",
+      "dirigeants": [
+        {
+          "nom": "LACROIX",
+          "prenoms": "TIMOTHÉE PIERRE JEAN",
+          "qualite": "Directeur Général",
+          "annee_de_naissance": "1991",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "LAMPLE",
+          "prenoms": "GUILLAUME",
+          "qualite": "Directeur Général",
+          "annee_de_naissance": "1990",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "MENSCH",
+          "prenoms": "ARTHUR HUBERT JEAN",
+          "qualite": "Président de SAS",
+          "annee_de_naissance": "1992",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": null,
+          "prenoms": null,
+          "qualite": "Commissaire aux comptes titulaire",
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne morale"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": true,
+        "liste_idcc": [
+          "1486"
+        ],
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": true,
+        "est_achats_responsables": false,
+        "est_alim_confiance": true,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": true,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 3,
+      "historical_summary": {
+        "date_immatriculation_origine": "2023-04-28",
+        "annee_immatriculation": 2023,
+        "anciennete_annees": 3,
+        "nombre_dirigeants_historiques_identifies": 4,
+        "nombre_etablissements_historiques_ouverts": 3
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2023,
+          "date": "2023-04-28",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 952418325 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "952418325",
+          "name": "MISTRAL AI",
+          "siret_siege": "95241832500025",
+          "code_postal": "75001",
+          "commune": "75101",
+          "code_naf": "82.11Z",
+          "forme_juridique": "5710",
+          "tranche_effectifs": "12",
+          "effectifs_label": "20 à 49 salariés",
+          "total_etablissements": 4,
+          "etablissements_ouverts": 3,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": "2 860 405,51 EUR",
+      "objet_social": "Le développement de systèmes d'aide à la saisie pour entreprise, la réalisation\nde prestations de services, dans tous domaines d'activités, permettant\nnotamment l'édition de logiciels informatiques, la conception, l'édition, la\nproduction, l'exploitation, la distribution, la commercialisation et la diffusion,\nsur tout support connu ou inconnu à ce jour, de contenus notamment\nrédactionnels, graphiques, photographiques, audiovisuels, multimédias ou\nIllustratifs",
+      "date_immatriculation_origine": "2023-04-28",
+      "rne_certitude_score": 1.0,
+      "epistemic_freshness": {
+        "status": "certifie_recent",
+        "days_stale": 60,
+        "reference_date": "2026-07-17",
+        "advice": "Donnée administrative ultra-récente certifiée",
+        "epistemic_confidence": 1.0
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "952418325",
+      "root_name": "MISTRAL AI",
+      "total_nodes": 4,
+      "total_edges": 3,
+      "active_establishments_count": 3,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "952418325",
+          "siren": "952418325",
+          "siret": "95241832500025",
+          "node_type": "siege",
+          "name": "MISTRAL AI",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2023,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "95241832500025",
+            "adresse": "15 RUE DES HALLES 75001 PARIS",
+            "code_postal": "75001",
+            "commune": "75101",
+            "departement": "75",
+            "region": "11",
+            "code_naf": "82.11Z",
+            "date_creation": "2023-04-28",
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "95241832500033",
+          "siren": "952418325",
+          "siret": "95241832500033",
+          "node_type": "etablissement",
+          "name": "MISTRAL AI - MARSEILLE 1ER (13001)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2025,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "95241832500033",
+            "enseigne": null,
+            "adresse": "21 Rue HAXO",
+            "code_postal": "13001",
+            "commune": "MARSEILLE 1ER",
+            "departement": "Bouches-du-Rhône",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "geoloc": [
+              43.294103,
+              5.377143
+            ],
+            "date_creation": "2025-12-01",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "95241832500041",
+          "siren": "952418325",
+          "siret": "95241832500041",
+          "node_type": "etablissement",
+          "name": "MISTRAL AI - PARIS (75018)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2026,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "95241832500041",
+            "enseigne": null,
+            "adresse": "92 Rue DES POISSONNIERS",
+            "code_postal": "75018",
+            "commune": "PARIS",
+            "departement": "Paris",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.892422,
+              2.352321
+            ],
+            "date_creation": "2026-06-29",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "95241832500017",
+          "siren": "952418325",
+          "siret": "95241832500017",
+          "node_type": "etablissement",
+          "name": "MISTRAL AI - PARIS (75019)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2023,
+          "fermeture_year": 2023,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "95241832500017",
+            "enseigne": null,
+            "adresse": "21 Rue TANDOU",
+            "code_postal": "75019",
+            "commune": "PARIS",
+            "departement": "Paris",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.88632,
+              2.379985
+            ],
+            "date_creation": "2023-04-28",
+            "date_fermeture": "2023-12-11",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "952418325",
+          "target": "95241832500033",
+          "source_siren": "952418325",
+          "target_siren": "95241832500033",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "952418325",
+          "target": "95241832500041",
+          "source_siren": "952418325",
+          "target_siren": "95241832500041",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "952418325",
+          "target": "95241832500017",
+          "source_siren": "952418325",
+          "target_siren": "95241832500017",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "2023": [
+          {
+            "id": "952418325",
+            "siren": "952418325",
+            "siret": "95241832500025",
+            "node_type": "siege",
+            "name": "MISTRAL AI",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2023,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "95241832500025",
+              "adresse": "15 RUE DES HALLES 75001 PARIS",
+              "code_postal": "75001",
+              "commune": "75101",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "82.11Z",
+              "date_creation": "2023-04-28",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "95241832500017",
+            "siren": "952418325",
+            "siret": "95241832500017",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - PARIS (75019)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2023,
+            "fermeture_year": 2023,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "95241832500017",
+              "enseigne": null,
+              "adresse": "21 Rue TANDOU",
+              "code_postal": "75019",
+              "commune": "PARIS",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.88632,
+                2.379985
+              ],
+              "date_creation": "2023-04-28",
+              "date_fermeture": "2023-12-11",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "2025": [
+          {
+            "id": "95241832500033",
+            "siren": "952418325",
+            "siret": "95241832500033",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - MARSEILLE 1ER (13001)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2025,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "95241832500033",
+              "enseigne": null,
+              "adresse": "21 Rue HAXO",
+              "code_postal": "13001",
+              "commune": "MARSEILLE 1ER",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.294103,
+                5.377143
+              ],
+              "date_creation": "2025-12-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "2026": [
+          {
+            "id": "95241832500041",
+            "siren": "952418325",
+            "siret": "95241832500041",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - PARIS (75018)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2026,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "95241832500041",
+              "enseigne": null,
+              "adresse": "92 Rue DES POISSONNIERS",
+              "code_postal": "75018",
+              "commune": "PARIS",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.892422,
+                2.352321
+              ],
+              "date_creation": "2026-06-29",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "75": {
+          "department_name": "75",
+          "total": 3,
+          "active": 2,
+          "closed": 1
+        },
+        "13": {
+          "department_name": "Bouches-du-Rhône",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "Provence-Alpes-Côte d'Azur": {
+          "region_name": "Provence-Alpes-Côte d'Azur",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "Île-de-France": {
+          "region_name": "Île-de-France",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 4,
+        "number_of_edges": 3,
+        "out_degree_root": 3,
+        "density": 0.25
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Timothée Pierre Jean LACROIX",
+        "type_person": "personne physique",
+        "first_name": "Timothée Pierre Jean",
+        "last_name": "LACROIX",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1991",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Directeur Général",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          }
+        ]
+      },
+      {
+        "full_name": "Guillaume LAMPLE",
+        "type_person": "personne physique",
+        "first_name": "Guillaume",
+        "last_name": "LAMPLE",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1990",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Directeur Général",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          }
+        ]
+      },
+      {
+        "full_name": "Arthur Hubert Jean MENSCH",
+        "type_person": "personne physique",
+        "first_name": "Arthur Hubert Jean",
+        "last_name": "MENSCH",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1992",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Président de SAS",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          },
+          {
+            "title": "Directeur Général",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          }
+        ]
+      },
+      {
+        "full_name": "FORVIS MAZARS SA (SIREN 784824153)",
+        "type_person": "personne morale",
+        "first_name": null,
+        "last_name": null,
+        "denomination": "FORVIS MAZARS SA",
+        "siren_entity": "784824153",
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Commissaire aux comptes titulaire",
+            "company_siren": "952418325",
+            "company_name": "MISTRAL AI",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270"
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "952418325",
+      "company_name": "MISTRAL AI",
+      "company_naf_code": "82.11Z",
+      "date_creation_origine": "2023-04-28",
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "bodacc_account_filings": [
+        {
+          "notice_id": "B20260158664",
+          "year": "2026",
+          "date_publication": "2026-08-20",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601471505",
+          "year": "2026",
+          "date_publication": "2026-08-05",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601764343",
+          "year": "2026",
+          "date_publication": "2026-09-15",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343",
+          "detail": null
+        },
+        {
+          "notice_id": "B202400821674",
+          "year": "2024",
+          "date_publication": "2024-04-25",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674",
+          "detail": null
+        },
+        {
+          "notice_id": "B202400374634",
+          "year": "2024",
+          "date_publication": "2024-02-22",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634",
+          "detail": null
+        },
+        {
+          "notice_id": "B202400821673",
+          "year": "2024",
+          "date_publication": "2024-04-25",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601372301",
+          "year": "2026",
+          "date_publication": "2026-07-22",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601342269",
+          "year": "2026",
+          "date_publication": "2026-07-17",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601212131",
+          "year": "2026",
+          "date_publication": "2026-06-28",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601342270",
+          "year": "2026",
+          "date_publication": "2026-07-17",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270",
+          "detail": null
+        }
+      ],
+      "bodacc_filings_by_year": {
+        "2026": [
+          {
+            "notice_id": "B20260158664",
+            "year": "2026",
+            "date_publication": "2026-08-20",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601471505",
+            "year": "2026",
+            "date_publication": "2026-08-05",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601764343",
+            "year": "2026",
+            "date_publication": "2026-09-15",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601372301",
+            "year": "2026",
+            "date_publication": "2026-07-22",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601342269",
+            "year": "2026",
+            "date_publication": "2026-07-17",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601212131",
+            "year": "2026",
+            "date_publication": "2026-06-28",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601342270",
+            "year": "2026",
+            "date_publication": "2026-07-17",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270",
+            "detail": null
+          }
+        ],
+        "2024": [
+          {
+            "notice_id": "B202400821674",
+            "year": "2024",
+            "date_publication": "2024-04-25",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674",
+            "detail": null
+          },
+          {
+            "notice_id": "B202400374634",
+            "year": "2024",
+            "date_publication": "2024-02-22",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634",
+            "detail": null
+          },
+          {
+            "notice_id": "B202400821673",
+            "year": "2024",
+            "date_publication": "2024-04-25",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673",
+            "detail": null
+          }
+        ]
+      },
+      "financials_published": false,
+      "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+    },
+    "legal_monitor_events": [
+      {
+        "id": "B202601764343",
+        "year": "2026",
+        "date": "2026-09-15",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B202601764343",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343"
+      },
+      {
+        "id": "6aa3db2fb502c33d260eb5cd",
+        "year": "2026",
+        "date": "2026-09-04",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00278206537)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-09-11T12:42:55+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-09-04",
+          "nomDocument": "04_Series_B_-_Tranche_1_bis_-_PV_President_Constatation_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_54",
+          "libelle": "Procès verbal de décision d'assemblée générale",
+          "numNat": "J00278206537",
+          "id": "6aa3db2fb502c33d260eb5cd"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00278206537",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6a9a92206be245cc320c62cb",
+        "year": "2026",
+        "date": "2026-08-26",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00275181642)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-09-04T11:40:48+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-08-26",
+          "nomDocument": "02_Series_B_-_Tranche_1_Conversion_-_Extraits_PV_President_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_54",
+          "libelle": "Procès verbal de décision d'assemblée générale",
+          "numNat": "J00275181642",
+          "id": "6a9a92206be245cc320c62cb"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00275181642",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "B20260158664",
+        "year": "2026",
+        "date": "2026-08-20",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B20260158664",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664"
+      },
+      {
+        "id": "6a7b26dfc66c84005c017a07",
+        "year": "2026",
+        "date": "2026-08-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Décision de modification certifiée conforme par le représentant légal (N° National: J00271979502)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-08-11T15:42:55+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-08-11",
+          "nomDocument": "07_Series_A_-_T3-4_-_Extraits_PV_President_Constatation_-_06-04-2024_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_52",
+          "libelle": "Décision de modification certifiée conforme par le représentant légal",
+          "numNat": "J00271979502",
+          "id": "6a7b26dfc66c84005c017a07"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00271979502",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "B202601471505",
+        "year": "2026",
+        "date": "2026-08-05",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B202601471505",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505"
+      },
+      {
+        "id": "B202601372301",
+        "year": "2026",
+        "date": "2026-07-22",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B202601372301",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301"
+      },
+      {
+        "id": "6a6719c65d520210f9016feb",
+        "year": "2026",
+        "date": "2026-07-20",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00263676652)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-07-27T10:41:42+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-07-20",
+          "nomDocument": "0_Series_A_-_Extrait_PV_DUA_-_05-12-2023_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_54",
+          "libelle": "Procès verbal de décision d'assemblée générale",
+          "numNat": "J00263676652",
+          "id": "6a6719c65d520210f9016feb"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00263676652",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "B202601342269",
+        "year": "2026",
+        "date": "2026-07-17",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation) et l'activité de l'établissement principal",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation) et l'activité de l'établissement principal"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B202601342269",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269"
+      },
+      {
+        "id": "B202601342270",
+        "year": "2026",
+        "date": "2026-07-17",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur l'administration",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur l'administration"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B202601342270",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270"
+      },
+      {
+        "id": "6a54eb808b3fcdcd540e9403",
+        "year": "2026",
+        "date": "2026-07-09",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Copie des statuts mis à jour (N° National: J00260906417)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-07-13T15:43:28+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-07-09",
+          "nomDocument": "04_Series_A_-_T3-1_-_Statuts_intermediaires_constatation_-_20-02-2024_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_02",
+          "libelle": "Copie des statuts mis à jour",
+          "numNat": "J00260906417",
+          "id": "6a54eb808b3fcdcd540e9403"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00260906417",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "B202601212131",
+        "year": "2026",
+        "date": "2026-06-28",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+        "reference": "B202601212131",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131"
+      },
+      {
+        "id": "6a4e415f2d6433ee4c02765e",
+        "year": "2026",
+        "date": "2026-06-24",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00255190027)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-07-08T14:23:59+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-06-24",
+          "nomDocument": "02_Series_A_-_Tranche_2_-_Extraits_PV_President_Delegations_-_12-12-2023_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_54",
+          "libelle": "Procès verbal de décision d'assemblée générale",
+          "numNat": "J00255190027",
+          "id": "6a4e415f2d6433ee4c02765e"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00255190027",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6a4e8924aa0c703304056d6a",
+        "year": "2026",
+        "date": "2026-06-19",
+        "type": "Dépôt d'Acte RNE",
+        "category": "NOMINATION_GERANCE",
+        "category_label": "Nomination & Gérance",
+        "category_color": "sky",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Copie des actes de nomination des membres des organes de gestion, d’administration, de direction, de surveillance et de contrôle de la société (N° National: J00254581085)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-07-08T19:30:12+02:00",
+          "siren": "952418325",
+          "denomination": "MISTRAL AI",
+          "dateDepot": "2026-06-19",
+          "nomDocument": "Mistral_AI_-_Comptes_31-01-2025_-_Extraits_PV_Consultation_ecrite_CAC_uniquement_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_03",
+          "libelle": "Copie des actes de nomination des membres des organes de gestion, d’administration, de direction, de surveillance et de contrôle de la société",
+          "numNat": "J00254581085",
+          "id": "6a4e8924aa0c703304056d6a"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00254581085",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6a33f5c7a022f5baf505e65e",
+        "year": "2026",
+        "date": "2026-06-12",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00250512027)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-06-18T15:42:31+02:00",
+          "siren": "952418325",
+          "denomination": "Mistral AI",
+          "dateDepot": "2026-06-12",
+          "nomDocument": "01_Series_A_-_Tranche_1_-_Extraits_PV_President_constatation_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_54",
+          "libelle": "Procès verbal de décision d'assemblée générale",
+          "numNat": "J00250512027",
+          "id": "6a33f5c7a022f5baf505e65e"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "J00250512027",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6a2013e441415129270739d6",
+        "year": "2026",
+        "date": "2026-06-03",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Le rapport du commissaire aux apports (N° National: A00247355886)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-06-03T13:45:40+02:00",
+          "siren": "952418325",
+          "denomination": "Mistral AI",
+          "dateDepot": "2026-06-03",
+          "nomDocument": "MISTRAL_AI_-_Rapport_CAA_signe",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_163",
+          "libelle": "Le rapport du commissaire aux apports",
+          "numNat": "A00247355886",
+          "id": "6a2013e441415129270739d6"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "A00247355886",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "69967a3265b7a6b5f808696d",
+        "year": "2026",
+        "date": "2026-02-18",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Le rapport du commissaire aux apports (N° National: A00218065076)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2026-02-19T03:49:22+01:00",
+          "siren": "952418325",
+          "denomination": "Mistral AI",
+          "dateDepot": "2026-02-18",
+          "nomDocument": "2026_02_18_-_Koyeb_-_Rapport_CAA_signed_-_VF",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_163",
+          "libelle": "Le rapport du commissaire aux apports",
+          "numNat": "A00218065076",
+          "id": "69967a3265b7a6b5f808696d"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "A00218065076",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6932bd1b320795b0ce0d2054",
+        "year": "2025",
+        "date": "2025-11-19",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Copie des statuts (N° National: B00174832345)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2025-12-05T12:08:11+01:00",
+          "siren": "952418325",
+          "denomination": "Mistral AI",
+          "dateDepot": "2025-11-19",
+          "nomDocument": "liste_des_souscripteurs_confi_2",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_01",
+          "libelle": "Copie des statuts",
+          "numNat": "B00174832345",
+          "id": "6932bd1b320795b0ce0d2054"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "B00174832345",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "B202400821674",
+        "year": "2024",
+        "date": "2024-04-25",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal de Commerce de Paris",
+        "reference": "B202400821674",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674"
+      },
+      {
+        "id": "B202400821673",
+        "year": "2024",
+        "date": "2024-04-25",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur le capital (augmentation)"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal de Commerce de Paris",
+        "reference": "B202400821673",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673"
+      },
+      {
+        "id": "B202400374634",
+        "year": "2024",
+        "date": "2024-02-22",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "modification survenue sur l'adresse du siège et l'adresse de l'établissement",
+        "modificationsgenerales": {
+          "descriptif": "modification survenue sur l'adresse du siège et l'adresse de l'établissement"
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal de Commerce de Paris",
+        "reference": "B202400374634",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634"
+      },
+      {
+        "id": "A202300981327",
+        "year": "2023",
+        "date": "2023-05-23",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Créations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": {
+          "dateImmatriculation": "2023-05-12",
+          "dateCommencementActivite": "2023-04-28",
+          "creation": {
+            "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+          }
+        },
+        "source": "BODACC-A",
+        "tribunal": "Greffe du Tribunal de Commerce de Paris",
+        "reference": "A202300981327",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+      },
+      {
+        "id": "645e4120ef39701a6207359b",
+        "year": "2023",
+        "date": "2023-05-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-26T15:50:05+02:00",
+          "siren": "952418325",
+          "dateDepot": "2023-05-11",
+          "nomDocument": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_01",
+          "id": "645e4120ef39701a6207359b"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "645e4120ef39701a6207359e",
+        "year": "2023",
+        "date": "2023-05-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Attestation_de_depot_des_fonds_20335954 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-26T15:50:05+02:00",
+          "siren": "952418325",
+          "dateDepot": "2023-05-11",
+          "nomDocument": "Attestation_de_depot_des_fonds_20335954",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_06",
+          "id": "645e4120ef39701a6207359e"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "Attestation_de_depot_des_fonds_20335954",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "645e4120ef39701a620735a7",
+        "year": "2023",
+        "date": "2023-05-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Statuts_constitutifs (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-26T15:50:05+02:00",
+          "siren": "952418325",
+          "dateDepot": "2023-05-11",
+          "nomDocument": "Statuts_constitutifs",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_01",
+          "id": "645e4120ef39701a620735a7"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "Statuts_constitutifs",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6786a03f8c819da8ce06cf6d",
+        "year": "2023",
+        "date": "2023-05-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procès-verbal décidant de la mise à jour des statuts (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2025-01-14T18:34:55+01:00",
+          "siren": "952418325",
+          "dateDepot": "2023-05-11",
+          "nomDocument": "Mistral_AI_-_Modification_Exercice_Social_-_Extraits_PV_Consultation_ecrite_4133-8255-6246_2_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_152",
+          "libelle": "Procès-verbal décidant de la mise à jour des statuts",
+          "id": "6786a03f8c819da8ce06cf6d"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "Mistral_AI_-_Modification_Exercice_Social_-_Extraits_PV_Consultation_ecrite_4133-8255-6246_2_docx",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      },
+      {
+        "id": "6786a03f8c819da8ce06cf6e",
+        "year": "2023",
+        "date": "2023-05-11",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Copie des statuts mis à jour (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2025-01-14T18:34:55+01:00",
+          "siren": "952418325",
+          "dateDepot": "2023-05-11",
+          "nomDocument": "Mistral_AI_-_Modification_Exercice_Social_-_Statuts_4147-9081-7365_2_docx",
+          "confidentiality": "Public",
+          "deleted": false,
+          "typeDocument": "PJ_02",
+          "libelle": "Copie des statuts mis à jour",
+          "id": "6786a03f8c819da8ce06cf6e"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "Mistral_AI_-_Modification_Exercice_Social_-_Statuts_4147-9081-7365_2_docx",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "2023": {
+        "year": "2023",
+        "milestones": [
+          {
+            "date": "2023-04-28",
+            "event": "Immatriculation officielle SIREN 952418325"
+          }
+        ],
+        "governance_events": [
+          {
+            "year": 2023,
+            "date": "2023-05-23",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "Président : Mensch, Arthur Hubert Jean, Directeur général : Lacroix, Timothée Pierre Jean, Directeur général : Lample, Guillaume",
+            "source": "BODACC-A",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "A202300981327",
+            "year": "2023",
+            "date": "2023-05-23",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Créations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": {
+              "dateImmatriculation": "2023-05-12",
+              "dateCommencementActivite": "2023-04-28",
+              "creation": {
+                "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+              }
+            },
+            "source": "BODACC-A",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "A202300981327",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          },
+          {
+            "id": "645e4120ef39701a6207359b",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-26T15:50:05+02:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_01",
+              "id": "645e4120ef39701a6207359b"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "645e4120ef39701a6207359e",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Attestation_de_depot_des_fonds_20335954 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-26T15:50:05+02:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Attestation_de_depot_des_fonds_20335954",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_06",
+              "id": "645e4120ef39701a6207359e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Attestation_de_depot_des_fonds_20335954",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "645e4120ef39701a620735a7",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Statuts_constitutifs (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-26T15:50:05+02:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Statuts_constitutifs",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_01",
+              "id": "645e4120ef39701a620735a7"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Statuts_constitutifs",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6786a03f8c819da8ce06cf6d",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès-verbal décidant de la mise à jour des statuts (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2025-01-14T18:34:55+01:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Mistral_AI_-_Modification_Exercice_Social_-_Extraits_PV_Consultation_ecrite_4133-8255-6246_2_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_152",
+              "libelle": "Procès-verbal décidant de la mise à jour des statuts",
+              "id": "6786a03f8c819da8ce06cf6d"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Mistral_AI_-_Modification_Exercice_Social_-_Extraits_PV_Consultation_ecrite_4133-8255-6246_2_docx",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6786a03f8c819da8ce06cf6e",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des statuts mis à jour (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2025-01-14T18:34:55+01:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Mistral_AI_-_Modification_Exercice_Social_-_Statuts_4147-9081-7365_2_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_02",
+              "libelle": "Copie des statuts mis à jour",
+              "id": "6786a03f8c819da8ce06cf6e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Mistral_AI_-_Modification_Exercice_Social_-_Statuts_4147-9081-7365_2_docx",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "952418325",
+            "siren": "952418325",
+            "siret": "95241832500025",
+            "node_type": "siege",
+            "name": "MISTRAL AI",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2023,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "95241832500025",
+              "adresse": "15 RUE DES HALLES 75001 PARIS",
+              "code_postal": "75001",
+              "commune": "75101",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "82.11Z",
+              "date_creation": "2023-04-28",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "95241832500017",
+            "siren": "952418325",
+            "siret": "95241832500017",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - PARIS (75019)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2023,
+            "fermeture_year": 2023,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "95241832500017",
+              "enseigne": null,
+              "adresse": "21 Rue TANDOU",
+              "code_postal": "75019",
+              "commune": "PARIS",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.88632,
+                2.379985
+              ],
+              "date_creation": "2023-04-28",
+              "date_fermeture": "2023-12-11",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2025": {
+        "year": "2025",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "6932bd1b320795b0ce0d2054",
+            "year": "2025",
+            "date": "2025-11-19",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des statuts (N° National: B00174832345)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2025-12-05T12:08:11+01:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2025-11-19",
+              "nomDocument": "liste_des_souscripteurs_confi_2",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_01",
+              "libelle": "Copie des statuts",
+              "numNat": "B00174832345",
+              "id": "6932bd1b320795b0ce0d2054"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "B00174832345",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "95241832500033",
+            "siren": "952418325",
+            "siret": "95241832500033",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - MARSEILLE 1ER (13001)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2025,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "95241832500033",
+              "enseigne": null,
+              "adresse": "21 Rue HAXO",
+              "code_postal": "13001",
+              "commune": "MARSEILLE 1ER",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.294103,
+                5.377143
+              ],
+              "date_creation": "2025-12-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2026": {
+        "year": "2026",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2026,
+            "date": "2026-09-15",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343"
+          },
+          {
+            "year": 2026,
+            "date": "2026-08-20",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664"
+          },
+          {
+            "year": 2026,
+            "date": "2026-08-05",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505"
+          },
+          {
+            "year": 2026,
+            "date": "2026-07-22",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301"
+          },
+          {
+            "year": 2026,
+            "date": "2026-07-17",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "nomination du Commissaire aux comptes titulaire : FORVIS MAZARS SA",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270"
+          },
+          {
+            "year": 2026,
+            "date": "2026-07-17",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269"
+          },
+          {
+            "year": 2026,
+            "date": "2026-06-28",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B202601764343",
+            "year": "2026",
+            "date": "2026-09-15",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601764343",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343"
+          },
+          {
+            "id": "6aa3db2fb502c33d260eb5cd",
+            "year": "2026",
+            "date": "2026-09-04",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00278206537)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-09-11T12:42:55+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-09-04",
+              "nomDocument": "04_Series_B_-_Tranche_1_bis_-_PV_President_Constatation_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00278206537",
+              "id": "6aa3db2fb502c33d260eb5cd"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00278206537",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a9a92206be245cc320c62cb",
+            "year": "2026",
+            "date": "2026-08-26",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00275181642)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-09-04T11:40:48+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-08-26",
+              "nomDocument": "02_Series_B_-_Tranche_1_Conversion_-_Extraits_PV_President_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00275181642",
+              "id": "6a9a92206be245cc320c62cb"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00275181642",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B20260158664",
+            "year": "2026",
+            "date": "2026-08-20",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B20260158664",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664"
+          },
+          {
+            "id": "6a7b26dfc66c84005c017a07",
+            "year": "2026",
+            "date": "2026-08-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Décision de modification certifiée conforme par le représentant légal (N° National: J00271979502)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-08-11T15:42:55+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-08-11",
+              "nomDocument": "07_Series_A_-_T3-4_-_Extraits_PV_President_Constatation_-_06-04-2024_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_52",
+              "libelle": "Décision de modification certifiée conforme par le représentant légal",
+              "numNat": "J00271979502",
+              "id": "6a7b26dfc66c84005c017a07"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00271979502",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202601471505",
+            "year": "2026",
+            "date": "2026-08-05",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601471505",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505"
+          },
+          {
+            "id": "B202601372301",
+            "year": "2026",
+            "date": "2026-07-22",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601372301",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301"
+          },
+          {
+            "id": "6a6719c65d520210f9016feb",
+            "year": "2026",
+            "date": "2026-07-20",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00263676652)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-27T10:41:42+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-07-20",
+              "nomDocument": "0_Series_A_-_Extrait_PV_DUA_-_05-12-2023_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00263676652",
+              "id": "6a6719c65d520210f9016feb"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00263676652",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202601342269",
+            "year": "2026",
+            "date": "2026-07-17",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation) et l'activité de l'établissement principal",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation) et l'activité de l'établissement principal"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601342269",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269"
+          },
+          {
+            "id": "B202601342270",
+            "year": "2026",
+            "date": "2026-07-17",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur l'administration",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur l'administration"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601342270",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270"
+          },
+          {
+            "id": "6a54eb808b3fcdcd540e9403",
+            "year": "2026",
+            "date": "2026-07-09",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des statuts mis à jour (N° National: J00260906417)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-13T15:43:28+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-07-09",
+              "nomDocument": "04_Series_A_-_T3-1_-_Statuts_intermediaires_constatation_-_20-02-2024_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_02",
+              "libelle": "Copie des statuts mis à jour",
+              "numNat": "J00260906417",
+              "id": "6a54eb808b3fcdcd540e9403"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00260906417",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202601212131",
+            "year": "2026",
+            "date": "2026-06-28",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601212131",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131"
+          },
+          {
+            "id": "6a4e415f2d6433ee4c02765e",
+            "year": "2026",
+            "date": "2026-06-24",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00255190027)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-08T14:23:59+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-06-24",
+              "nomDocument": "02_Series_A_-_Tranche_2_-_Extraits_PV_President_Delegations_-_12-12-2023_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00255190027",
+              "id": "6a4e415f2d6433ee4c02765e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00255190027",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a4e8924aa0c703304056d6a",
+            "year": "2026",
+            "date": "2026-06-19",
+            "type": "Dépôt d'Acte RNE",
+            "category": "NOMINATION_GERANCE",
+            "category_label": "Nomination & Gérance",
+            "category_color": "sky",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des actes de nomination des membres des organes de gestion, d’administration, de direction, de surveillance et de contrôle de la société (N° National: J00254581085)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-08T19:30:12+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-06-19",
+              "nomDocument": "Mistral_AI_-_Comptes_31-01-2025_-_Extraits_PV_Consultation_ecrite_CAC_uniquement_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_03",
+              "libelle": "Copie des actes de nomination des membres des organes de gestion, d’administration, de direction, de surveillance et de contrôle de la société",
+              "numNat": "J00254581085",
+              "id": "6a4e8924aa0c703304056d6a"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00254581085",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a33f5c7a022f5baf505e65e",
+            "year": "2026",
+            "date": "2026-06-12",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00250512027)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-06-18T15:42:31+02:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2026-06-12",
+              "nomDocument": "01_Series_A_-_Tranche_1_-_Extraits_PV_President_constatation_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00250512027",
+              "id": "6a33f5c7a022f5baf505e65e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00250512027",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a2013e441415129270739d6",
+            "year": "2026",
+            "date": "2026-06-03",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Le rapport du commissaire aux apports (N° National: A00247355886)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-06-03T13:45:40+02:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2026-06-03",
+              "nomDocument": "MISTRAL_AI_-_Rapport_CAA_signe",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_163",
+              "libelle": "Le rapport du commissaire aux apports",
+              "numNat": "A00247355886",
+              "id": "6a2013e441415129270739d6"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "A00247355886",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "69967a3265b7a6b5f808696d",
+            "year": "2026",
+            "date": "2026-02-18",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Le rapport du commissaire aux apports (N° National: A00218065076)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-02-19T03:49:22+01:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2026-02-18",
+              "nomDocument": "2026_02_18_-_Koyeb_-_Rapport_CAA_signed_-_VF",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_163",
+              "libelle": "Le rapport du commissaire aux apports",
+              "numNat": "A00218065076",
+              "id": "69967a3265b7a6b5f808696d"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "A00218065076",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "95241832500041",
+            "siren": "952418325",
+            "siret": "95241832500041",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - PARIS (75018)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2026,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "95241832500041",
+              "enseigne": null,
+              "adresse": "92 Rue DES POISSONNIERS",
+              "code_postal": "75018",
+              "commune": "PARIS",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.892422,
+                2.352321
+              ],
+              "date_creation": "2026-06-29",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2024": {
+        "year": "2024",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2024,
+            "date": "2024-04-25",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674"
+          },
+          {
+            "year": 2024,
+            "date": "2024-04-25",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673"
+          },
+          {
+            "year": 2024,
+            "date": "2024-02-22",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B202400821674",
+            "year": "2024",
+            "date": "2024-04-25",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "B202400821674",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674"
+          },
+          {
+            "id": "B202400821673",
+            "year": "2024",
+            "date": "2024-04-25",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "B202400821673",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673"
+          },
+          {
+            "id": "B202400374634",
+            "year": "2024",
+            "date": "2024-02-22",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur l'adresse du siège et l'adresse de l'établissement",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur l'adresse du siège et l'adresse de l'établissement"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "B202400374634",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2026",
+      "2025",
+      "2024",
+      "2023"
+    ],
+    "total_years_tracked": 4,
+    "profile": {
+      "argus": {
+        "name": "MISTRAL AI",
+        "siren": "952418325",
+        "siret_siege": "95241832500025",
+        "lei": "894500Q9JNDV9YXSOL64",
+        "tva_intracommunautaire": "FR95952418325",
+        "country": "FR",
+        "registration_date": "2023-04-28",
+        "address": "15 RUE DES HALLES 75001 PARIS",
+        "status": "actif",
+        "code_naf": "82.11Z",
+        "libelle_naf": null,
+        "section_activite": "N",
+        "forme_juridique": "5710",
+        "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+        "tranche_effectifs": "12",
+        "conventions_collectives": [
+          "1486"
+        ],
+        "date_mise_a_jour_insee": "2026-07-17T13:31:57",
+        "date_mise_a_jour_rne": "2026-08-11T15:42:55",
+        "dirigeants": [
+          {
+            "nom": "LACROIX",
+            "prenoms": "TIMOTHÉE PIERRE JEAN",
+            "qualite": "Directeur Général",
+            "annee_de_naissance": "1991",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "LAMPLE",
+            "prenoms": "GUILLAUME",
+            "qualite": "Directeur Général",
+            "annee_de_naissance": "1990",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "MENSCH",
+            "prenoms": "ARTHUR HUBERT JEAN",
+            "qualite": "Président de SAS",
+            "annee_de_naissance": "1992",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": null,
+            "prenoms": null,
+            "qualite": "Commissaire aux comptes titulaire",
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1486"
+          ],
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": true,
+          "est_achats_responsables": false,
+          "est_alim_confiance": true,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": true,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 3,
+        "historical_summary": {
+          "date_immatriculation_origine": "2023-04-28",
+          "annee_immatriculation": 2023,
+          "anciennete_annees": 3,
+          "nombre_dirigeants_historiques_identifies": 4,
+          "nombre_etablissements_historiques_ouverts": 3
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2023,
+            "date": "2023-04-28",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 952418325 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "952418325",
+            "name": "MISTRAL AI",
+            "siret_siege": "95241832500025",
+            "code_postal": "75001",
+            "commune": "75101",
+            "code_naf": "82.11Z",
+            "forme_juridique": "5710",
+            "tranche_effectifs": "12",
+            "effectifs_label": "20 à 49 salariés",
+            "total_etablissements": 4,
+            "etablissements_ouverts": 3,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": "2 860 405,51 EUR",
+        "objet_social": "Le développement de systèmes d'aide à la saisie pour entreprise, la réalisation\nde prestations de services, dans tous domaines d'activités, permettant\nnotamment l'édition de logiciels informatiques, la conception, l'édition, la\nproduction, l'exploitation, la distribution, la commercialisation et la diffusion,\nsur tout support connu ou inconnu à ce jour, de contenus notamment\nrédactionnels, graphiques, photographiques, audiovisuels, multimédias ou\nIllustratifs",
+        "date_immatriculation_origine": "2023-04-28",
+        "rne_certitude_score": 1.0,
+        "epistemic_freshness": {
+          "status": "certifie_recent",
+          "days_stale": 60,
+          "reference_date": "2026-07-17",
+          "advice": "Donnée administrative ultra-récente certifiée",
+          "epistemic_confidence": 1.0
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "952418325",
+        "root_name": "MISTRAL AI",
+        "total_nodes": 4,
+        "total_edges": 3,
+        "active_establishments_count": 3,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "952418325",
+            "siren": "952418325",
+            "siret": "95241832500025",
+            "node_type": "siege",
+            "name": "MISTRAL AI",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2023,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "95241832500025",
+              "adresse": "15 RUE DES HALLES 75001 PARIS",
+              "code_postal": "75001",
+              "commune": "75101",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "82.11Z",
+              "date_creation": "2023-04-28",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "95241832500033",
+            "siren": "952418325",
+            "siret": "95241832500033",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - MARSEILLE 1ER (13001)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2025,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "95241832500033",
+              "enseigne": null,
+              "adresse": "21 Rue HAXO",
+              "code_postal": "13001",
+              "commune": "MARSEILLE 1ER",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.294103,
+                5.377143
+              ],
+              "date_creation": "2025-12-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "95241832500041",
+            "siren": "952418325",
+            "siret": "95241832500041",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - PARIS (75018)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2026,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "95241832500041",
+              "enseigne": null,
+              "adresse": "92 Rue DES POISSONNIERS",
+              "code_postal": "75018",
+              "commune": "PARIS",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.892422,
+                2.352321
+              ],
+              "date_creation": "2026-06-29",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "95241832500017",
+            "siren": "952418325",
+            "siret": "95241832500017",
+            "node_type": "etablissement",
+            "name": "MISTRAL AI - PARIS (75019)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2023,
+            "fermeture_year": 2023,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "95241832500017",
+              "enseigne": null,
+              "adresse": "21 Rue TANDOU",
+              "code_postal": "75019",
+              "commune": "PARIS",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.88632,
+                2.379985
+              ],
+              "date_creation": "2023-04-28",
+              "date_fermeture": "2023-12-11",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "952418325",
+            "target": "95241832500033",
+            "source_siren": "952418325",
+            "target_siren": "95241832500033",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "952418325",
+            "target": "95241832500041",
+            "source_siren": "952418325",
+            "target_siren": "95241832500041",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "952418325",
+            "target": "95241832500017",
+            "source_siren": "952418325",
+            "target_siren": "95241832500017",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "2023": [
+            {
+              "id": "952418325",
+              "siren": "952418325",
+              "siret": "95241832500025",
+              "node_type": "siege",
+              "name": "MISTRAL AI",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2023,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "95241832500025",
+                "adresse": "15 RUE DES HALLES 75001 PARIS",
+                "code_postal": "75001",
+                "commune": "75101",
+                "departement": "75",
+                "region": "11",
+                "code_naf": "82.11Z",
+                "date_creation": "2023-04-28",
+                "statut": "🟢 Actif (État A)"
+              }
+            },
+            {
+              "id": "95241832500017",
+              "siren": "952418325",
+              "siret": "95241832500017",
+              "node_type": "etablissement",
+              "name": "MISTRAL AI - PARIS (75019)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2023,
+              "fermeture_year": 2023,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "95241832500017",
+                "enseigne": null,
+                "adresse": "21 Rue TANDOU",
+                "code_postal": "75019",
+                "commune": "PARIS",
+                "departement": "Paris",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.88632,
+                  2.379985
+                ],
+                "date_creation": "2023-04-28",
+                "date_fermeture": "2023-12-11",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "2025": [
+            {
+              "id": "95241832500033",
+              "siren": "952418325",
+              "siret": "95241832500033",
+              "node_type": "etablissement",
+              "name": "MISTRAL AI - MARSEILLE 1ER (13001)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2025,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "95241832500033",
+                "enseigne": null,
+                "adresse": "21 Rue HAXO",
+                "code_postal": "13001",
+                "commune": "MARSEILLE 1ER",
+                "departement": "Bouches-du-Rhône",
+                "region": "Provence-Alpes-Côte d'Azur",
+                "geoloc": [
+                  43.294103,
+                  5.377143
+                ],
+                "date_creation": "2025-12-01",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ],
+          "2026": [
+            {
+              "id": "95241832500041",
+              "siren": "952418325",
+              "siret": "95241832500041",
+              "node_type": "etablissement",
+              "name": "MISTRAL AI - PARIS (75018)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2026,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "95241832500041",
+                "enseigne": null,
+                "adresse": "92 Rue DES POISSONNIERS",
+                "code_postal": "75018",
+                "commune": "PARIS",
+                "departement": "Paris",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.892422,
+                  2.352321
+                ],
+                "date_creation": "2026-06-29",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "75": {
+            "department_name": "75",
+            "total": 3,
+            "active": 2,
+            "closed": 1
+          },
+          "13": {
+            "department_name": "Bouches-du-Rhône",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "Provence-Alpes-Côte d'Azur": {
+            "region_name": "Provence-Alpes-Côte d'Azur",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "Île-de-France": {
+            "region_name": "Île-de-France",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 4,
+          "number_of_edges": 3,
+          "out_degree_root": 3,
+          "density": 0.25
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Timothée Pierre Jean LACROIX",
+            "type_person": "personne physique",
+            "first_name": "Timothée Pierre Jean",
+            "last_name": "LACROIX",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1991",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Directeur Général",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+              }
+            ]
+          },
+          {
+            "full_name": "Guillaume LAMPLE",
+            "type_person": "personne physique",
+            "first_name": "Guillaume",
+            "last_name": "LAMPLE",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1990",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Directeur Général",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+              }
+            ]
+          },
+          {
+            "full_name": "Arthur Hubert Jean MENSCH",
+            "type_person": "personne physique",
+            "first_name": "Arthur Hubert Jean",
+            "last_name": "MENSCH",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1992",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Président de SAS",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+              },
+              {
+                "title": "Directeur Général",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+              }
+            ]
+          },
+          {
+            "full_name": "FORVIS MAZARS SA (SIREN 784824153)",
+            "type_person": "personne morale",
+            "first_name": null,
+            "last_name": null,
+            "denomination": "FORVIS MAZARS SA",
+            "siren_entity": "784824153",
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Commissaire aux comptes titulaire",
+                "company_siren": "952418325",
+                "company_name": "MISTRAL AI",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270"
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "952418325",
+        "company_name": "MISTRAL AI",
+        "company_naf_code": "82.11Z",
+        "date_creation_origine": "2023-04-28",
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "bodacc_account_filings": [
+          {
+            "notice_id": "B20260158664",
+            "year": "2026",
+            "date_publication": "2026-08-20",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601471505",
+            "year": "2026",
+            "date_publication": "2026-08-05",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601764343",
+            "year": "2026",
+            "date_publication": "2026-09-15",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343",
+            "detail": null
+          },
+          {
+            "notice_id": "B202400821674",
+            "year": "2024",
+            "date_publication": "2024-04-25",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674",
+            "detail": null
+          },
+          {
+            "notice_id": "B202400374634",
+            "year": "2024",
+            "date_publication": "2024-02-22",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634",
+            "detail": null
+          },
+          {
+            "notice_id": "B202400821673",
+            "year": "2024",
+            "date_publication": "2024-04-25",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601372301",
+            "year": "2026",
+            "date_publication": "2026-07-22",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601342269",
+            "year": "2026",
+            "date_publication": "2026-07-17",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601212131",
+            "year": "2026",
+            "date_publication": "2026-06-28",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601342270",
+            "year": "2026",
+            "date_publication": "2026-07-17",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270",
+            "detail": null
+          }
+        ],
+        "bodacc_filings_by_year": {
+          "2026": [
+            {
+              "notice_id": "B20260158664",
+              "year": "2026",
+              "date_publication": "2026-08-20",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664",
+              "detail": null
+            },
+            {
+              "notice_id": "B202601471505",
+              "year": "2026",
+              "date_publication": "2026-08-05",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505",
+              "detail": null
+            },
+            {
+              "notice_id": "B202601764343",
+              "year": "2026",
+              "date_publication": "2026-09-15",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343",
+              "detail": null
+            },
+            {
+              "notice_id": "B202601372301",
+              "year": "2026",
+              "date_publication": "2026-07-22",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301",
+              "detail": null
+            },
+            {
+              "notice_id": "B202601342269",
+              "year": "2026",
+              "date_publication": "2026-07-17",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269",
+              "detail": null
+            },
+            {
+              "notice_id": "B202601212131",
+              "year": "2026",
+              "date_publication": "2026-06-28",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131",
+              "detail": null
+            },
+            {
+              "notice_id": "B202601342270",
+              "year": "2026",
+              "date_publication": "2026-07-17",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270",
+              "detail": null
+            }
+          ],
+          "2024": [
+            {
+              "notice_id": "B202400821674",
+              "year": "2024",
+              "date_publication": "2024-04-25",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674",
+              "detail": null
+            },
+            {
+              "notice_id": "B202400374634",
+              "year": "2024",
+              "date_publication": "2024-02-22",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634",
+              "detail": null
+            },
+            {
+              "notice_id": "B202400821673",
+              "year": "2024",
+              "date_publication": "2024-04-25",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673",
+              "detail": null
+            }
+          ]
+        },
+        "financials_published": false,
+        "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "B202601764343",
+            "year": "2026",
+            "date": "2026-09-15",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601764343",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601764343"
+          },
+          {
+            "id": "6aa3db2fb502c33d260eb5cd",
+            "year": "2026",
+            "date": "2026-09-04",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00278206537)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-09-11T12:42:55+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-09-04",
+              "nomDocument": "04_Series_B_-_Tranche_1_bis_-_PV_President_Constatation_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00278206537",
+              "id": "6aa3db2fb502c33d260eb5cd"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00278206537",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a9a92206be245cc320c62cb",
+            "year": "2026",
+            "date": "2026-08-26",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00275181642)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-09-04T11:40:48+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-08-26",
+              "nomDocument": "02_Series_B_-_Tranche_1_Conversion_-_Extraits_PV_President_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00275181642",
+              "id": "6a9a92206be245cc320c62cb"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00275181642",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B20260158664",
+            "year": "2026",
+            "date": "2026-08-20",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B20260158664",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20260158664"
+          },
+          {
+            "id": "6a7b26dfc66c84005c017a07",
+            "year": "2026",
+            "date": "2026-08-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Décision de modification certifiée conforme par le représentant légal (N° National: J00271979502)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-08-11T15:42:55+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-08-11",
+              "nomDocument": "07_Series_A_-_T3-4_-_Extraits_PV_President_Constatation_-_06-04-2024_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_52",
+              "libelle": "Décision de modification certifiée conforme par le représentant légal",
+              "numNat": "J00271979502",
+              "id": "6a7b26dfc66c84005c017a07"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00271979502",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202601471505",
+            "year": "2026",
+            "date": "2026-08-05",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601471505",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601471505"
+          },
+          {
+            "id": "B202601372301",
+            "year": "2026",
+            "date": "2026-07-22",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601372301",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601372301"
+          },
+          {
+            "id": "6a6719c65d520210f9016feb",
+            "year": "2026",
+            "date": "2026-07-20",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00263676652)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-27T10:41:42+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-07-20",
+              "nomDocument": "0_Series_A_-_Extrait_PV_DUA_-_05-12-2023_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00263676652",
+              "id": "6a6719c65d520210f9016feb"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00263676652",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202601342269",
+            "year": "2026",
+            "date": "2026-07-17",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation) et l'activité de l'établissement principal",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation) et l'activité de l'établissement principal"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601342269",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342269"
+          },
+          {
+            "id": "B202601342270",
+            "year": "2026",
+            "date": "2026-07-17",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur l'administration",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur l'administration"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601342270",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601342270"
+          },
+          {
+            "id": "6a54eb808b3fcdcd540e9403",
+            "year": "2026",
+            "date": "2026-07-09",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des statuts mis à jour (N° National: J00260906417)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-13T15:43:28+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-07-09",
+              "nomDocument": "04_Series_A_-_T3-1_-_Statuts_intermediaires_constatation_-_20-02-2024_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_02",
+              "libelle": "Copie des statuts mis à jour",
+              "numNat": "J00260906417",
+              "id": "6a54eb808b3fcdcd540e9403"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00260906417",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202601212131",
+            "year": "2026",
+            "date": "2026-06-28",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Paris",
+            "reference": "B202601212131",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601212131"
+          },
+          {
+            "id": "6a4e415f2d6433ee4c02765e",
+            "year": "2026",
+            "date": "2026-06-24",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00255190027)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-08T14:23:59+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-06-24",
+              "nomDocument": "02_Series_A_-_Tranche_2_-_Extraits_PV_President_Delegations_-_12-12-2023_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00255190027",
+              "id": "6a4e415f2d6433ee4c02765e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00255190027",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a4e8924aa0c703304056d6a",
+            "year": "2026",
+            "date": "2026-06-19",
+            "type": "Dépôt d'Acte RNE",
+            "category": "NOMINATION_GERANCE",
+            "category_label": "Nomination & Gérance",
+            "category_color": "sky",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des actes de nomination des membres des organes de gestion, d’administration, de direction, de surveillance et de contrôle de la société (N° National: J00254581085)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-07-08T19:30:12+02:00",
+              "siren": "952418325",
+              "denomination": "MISTRAL AI",
+              "dateDepot": "2026-06-19",
+              "nomDocument": "Mistral_AI_-_Comptes_31-01-2025_-_Extraits_PV_Consultation_ecrite_CAC_uniquement_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_03",
+              "libelle": "Copie des actes de nomination des membres des organes de gestion, d’administration, de direction, de surveillance et de contrôle de la société",
+              "numNat": "J00254581085",
+              "id": "6a4e8924aa0c703304056d6a"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00254581085",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a33f5c7a022f5baf505e65e",
+            "year": "2026",
+            "date": "2026-06-12",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès verbal de décision d'assemblée générale (N° National: J00250512027)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-06-18T15:42:31+02:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2026-06-12",
+              "nomDocument": "01_Series_A_-_Tranche_1_-_Extraits_PV_President_constatation_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_54",
+              "libelle": "Procès verbal de décision d'assemblée générale",
+              "numNat": "J00250512027",
+              "id": "6a33f5c7a022f5baf505e65e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "J00250512027",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6a2013e441415129270739d6",
+            "year": "2026",
+            "date": "2026-06-03",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Le rapport du commissaire aux apports (N° National: A00247355886)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-06-03T13:45:40+02:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2026-06-03",
+              "nomDocument": "MISTRAL_AI_-_Rapport_CAA_signe",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_163",
+              "libelle": "Le rapport du commissaire aux apports",
+              "numNat": "A00247355886",
+              "id": "6a2013e441415129270739d6"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "A00247355886",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "69967a3265b7a6b5f808696d",
+            "year": "2026",
+            "date": "2026-02-18",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Le rapport du commissaire aux apports (N° National: A00218065076)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2026-02-19T03:49:22+01:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2026-02-18",
+              "nomDocument": "2026_02_18_-_Koyeb_-_Rapport_CAA_signed_-_VF",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_163",
+              "libelle": "Le rapport du commissaire aux apports",
+              "numNat": "A00218065076",
+              "id": "69967a3265b7a6b5f808696d"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "A00218065076",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6932bd1b320795b0ce0d2054",
+            "year": "2025",
+            "date": "2025-11-19",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des statuts (N° National: B00174832345)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2025-12-05T12:08:11+01:00",
+              "siren": "952418325",
+              "denomination": "Mistral AI",
+              "dateDepot": "2025-11-19",
+              "nomDocument": "liste_des_souscripteurs_confi_2",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_01",
+              "libelle": "Copie des statuts",
+              "numNat": "B00174832345",
+              "id": "6932bd1b320795b0ce0d2054"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "B00174832345",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "B202400821674",
+            "year": "2024",
+            "date": "2024-04-25",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "B202400821674",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821674"
+          },
+          {
+            "id": "B202400821673",
+            "year": "2024",
+            "date": "2024-04-25",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur le capital (augmentation)",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur le capital (augmentation)"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "B202400821673",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400821673"
+          },
+          {
+            "id": "B202400374634",
+            "year": "2024",
+            "date": "2024-02-22",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "modification survenue sur l'adresse du siège et l'adresse de l'établissement",
+            "modificationsgenerales": {
+              "descriptif": "modification survenue sur l'adresse du siège et l'adresse de l'établissement"
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "B202400374634",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202400374634"
+          },
+          {
+            "id": "A202300981327",
+            "year": "2023",
+            "date": "2023-05-23",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Créations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": {
+              "dateImmatriculation": "2023-05-12",
+              "dateCommencementActivite": "2023-04-28",
+              "creation": {
+                "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+              }
+            },
+            "source": "BODACC-A",
+            "tribunal": "Greffe du Tribunal de Commerce de Paris",
+            "reference": "A202300981327",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202300981327"
+          },
+          {
+            "id": "645e4120ef39701a6207359b",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-26T15:50:05+02:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_01",
+              "id": "645e4120ef39701a6207359b"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Mistral_AI_-_Immatriculation_-_Liste_des_souscripteurs_-_28-04-2023",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "645e4120ef39701a6207359e",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Attestation_de_depot_des_fonds_20335954 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-26T15:50:05+02:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Attestation_de_depot_des_fonds_20335954",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_06",
+              "id": "645e4120ef39701a6207359e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Attestation_de_depot_des_fonds_20335954",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "645e4120ef39701a620735a7",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Statuts_constitutifs (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-26T15:50:05+02:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Statuts_constitutifs",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_01",
+              "id": "645e4120ef39701a620735a7"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Statuts_constitutifs",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6786a03f8c819da8ce06cf6d",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procès-verbal décidant de la mise à jour des statuts (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2025-01-14T18:34:55+01:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Mistral_AI_-_Modification_Exercice_Social_-_Extraits_PV_Consultation_ecrite_4133-8255-6246_2_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_152",
+              "libelle": "Procès-verbal décidant de la mise à jour des statuts",
+              "id": "6786a03f8c819da8ce06cf6d"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Mistral_AI_-_Modification_Exercice_Social_-_Extraits_PV_Consultation_ecrite_4133-8255-6246_2_docx",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          },
+          {
+            "id": "6786a03f8c819da8ce06cf6e",
+            "year": "2023",
+            "date": "2023-05-11",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Copie des statuts mis à jour (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2025-01-14T18:34:55+01:00",
+              "siren": "952418325",
+              "dateDepot": "2023-05-11",
+              "nomDocument": "Mistral_AI_-_Modification_Exercice_Social_-_Statuts_4147-9081-7365_2_docx",
+              "confidentiality": "Public",
+              "deleted": false,
+              "typeDocument": "PJ_02",
+              "libelle": "Copie des statuts mis à jour",
+              "id": "6786a03f8c819da8ce06cf6e"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "Mistral_AI_-_Modification_Exercice_Social_-_Statuts_4147-9081-7365_2_docx",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/952418325/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "MISTRAL AI",
+      "predicate": "siren",
+      "value": "952418325",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:30:27.020934+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "MISTRAL AI",
+      "predicate": "tva_intracommunautaire",
+      "value": "FR95952418325",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:30:27.020934+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "MISTRAL AI",
+      "predicate": "capital_social",
+      "value": "2 860 405,51 EUR",
+      "source": "data.inpi.fr (RNE)",
+      "observed_at": "2026-09-15T23:30:27.020934+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "MISTRAL AI",
+      "predicate": "code_lei",
+      "value": "894500Q9JNDV9YXSOL64",
+      "source": "api.gleif.org",
+      "observed_at": "2026-09-15T23:30:27.020934+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "952418325",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "4 nœuds extraits (3 actifs, 1 fermés sur 2 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:30:31.108867+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "MISTRAL AI",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "4 dirigeants actifs, 0 anciens dirigeants (3 personnes physiques et 1 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:30:31.129250+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "952418325",
+      "predicate": "depots_comptes_bodacc",
+      "value": "10 dépôts de comptes enregistrés au BODACC",
+      "source": "bodacc-datadila.opendatasoft.com",
+      "observed_at": "2026-09-15T23:30:31.151408+00:00",
+      "collection_method": "api",
+      "confidence": 0.95,
+      "status": "fact"
+    },
+    {
+      "subject": "952418325",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "27 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:30:31.167962+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "data.inpi.fr (RNE)",
+    "api.gleif.org",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "bodacc-datadila.opendatasoft.com",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.99,
+  "observed_at": "2026-09-15T23:30:27.020934+00:00",
+  "processed_at": "2026-09-15T23:30:34.331449Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

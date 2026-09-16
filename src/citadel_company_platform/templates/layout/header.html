@@ -41,30 +41,9 @@
             >
               <span>{{ isLoading ? 'Analyse...' : 'ANALYSER 360°' }}</span>
             </button>
-
-            <button 
-              @click="clearServerAndSessionCache"
-              class="px-3 py-2 rounded-xl text-xs font-bold font-mono-cyber bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 shrink-0 transition flex items-center space-x-1"
-              title="Vider le cache Serveur In-Memory & SessionStorage"
-            >
-              <span>🧹</span>
-              <span class="hidden sm:inline">VIDER LE CACHE</span>
-            </button>
           </div>
         </div>
       </header>
-
-      <!-- CACHE NOTICE FLOATING BANNER -->
-      <div v-if="showCacheNotice" class="sticky top-[65px] z-40 max-w-7xl mx-auto px-4 py-2 w-full animate-in fade-in slide-in-from-top-2 duration-200">
-        <div class="p-3 bg-emerald-950/90 border border-emerald-500/60 rounded-xl text-xs font-mono-cyber text-emerald-200 shadow-2xl flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <span>🧹</span>
-            <span>{{ cacheNoticeMessage }}</span>
-          </div>
-          <button @click="showCacheNotice = false" class="text-emerald-400 hover:text-white ml-4 font-bold">✕</button>
-        </div>
-      </div>
-
       <!-- GLOBAL CYBER FLOATING LOADING BADGE -->
       <div v-if="isLoading" class="fixed top-4 right-4 z-50 px-4 py-2.5 rounded-xl bg-slate-900/90 border border-amber-500/50 backdrop-blur-md shadow-2xl flex items-center space-x-3 text-xs font-mono-cyber text-amber-300 animate-in fade-in slide-in-from-top-2 duration-200">
         <div class="w-4 h-4 rounded-full border-2 border-amber-400 border-t-transparent animate-spin"></div>

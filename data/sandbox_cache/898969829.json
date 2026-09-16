@@ -1,0 +1,938 @@
+{
+  "result": {
+    "siren": "898969829",
+    "name": "RESIDENCE D'ALBOY",
+    "company_name": "RESIDENCE D'ALBOY",
+    "date_creation_origine": "2021-05-04",
+    "age_in_years": 5,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "RESIDENCE D'ALBOY",
+      "siren": "898969829",
+      "siret_siege": "89896982900016",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2021-05-04",
+      "address": "4 RUE BERZELIUS 75017 PARIS",
+      "status": "actif",
+      "code_naf": "68.20B",
+      "libelle_naf": null,
+      "section_activite": "L",
+      "forme_juridique": "6540",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-12-06T10:22:14",
+      "date_mise_a_jour_rne": "2026-07-27T14:55:12",
+      "dirigeants": [
+        {
+          "nom": "KHENTEUR",
+          "prenoms": "LILA",
+          "qualite": "Autre",
+          "annee_de_naissance": "1988",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": null,
+          "prenoms": null,
+          "qualite": "Gérant",
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne morale"
+        },
+        {
+          "nom": null,
+          "prenoms": null,
+          "qualite": "Autre",
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne morale"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 5,
+      "historical_summary": {
+        "date_immatriculation_origine": "2021-05-04",
+        "annee_immatriculation": 2021,
+        "anciennete_annees": 5,
+        "nombre_dirigeants_historiques_identifies": 3,
+        "nombre_etablissements_historiques_ouverts": 1
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2021,
+          "date": "2021-04-15",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 898969829 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "898969829",
+          "name": "RESIDENCE D'ALBOY",
+          "siret_siege": "89896982900016",
+          "code_postal": "75017",
+          "commune": "75117",
+          "code_naf": "68.20B",
+          "forme_juridique": "6540",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 1,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": "1 000,00 EUR",
+      "objet_social": "L'acquisition, en état futur d'achèvement ou achevés, l'apport, la propriété, la mise en valeur, la transformation, la construction, l'aménagement, l'administration, la location et la vente (exceptionnelle) de tous biens et droits immobiliers, ainsi que de tous biens et droits pouvant constituer l'accessoire, l'annexe ou le complément des biens et droits immobiliers en question.",
+      "date_immatriculation_origine": "2021-05-04",
+      "rne_certitude_score": 1.0,
+      "epistemic_freshness": {
+        "status": "recent",
+        "days_stale": 283,
+        "reference_date": "2025-12-06",
+        "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+        "epistemic_confidence": 0.9
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "898969829",
+      "root_name": "RESIDENCE D'ALBOY",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 1,
+      "closed_establishments_count": 0,
+      "nodes": [
+        {
+          "id": "898969829",
+          "siren": "898969829",
+          "siret": "89896982900016",
+          "node_type": "siege",
+          "name": "RESIDENCE D'ALBOY",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2021,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "89896982900016",
+            "adresse": "4 RUE BERZELIUS 75017 PARIS",
+            "code_postal": "75017",
+            "commune": "75117",
+            "departement": "75",
+            "region": "11",
+            "code_naf": "68.20B",
+            "date_creation": "2021-04-15",
+            "statut": "🟢 Actif (État A)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "2021": [
+          {
+            "id": "898969829",
+            "siren": "898969829",
+            "siret": "89896982900016",
+            "node_type": "siege",
+            "name": "RESIDENCE D'ALBOY",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2021,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "89896982900016",
+              "adresse": "4 RUE BERZELIUS 75017 PARIS",
+              "code_postal": "75017",
+              "commune": "75117",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "68.20B",
+              "date_creation": "2021-04-15",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "75": {
+          "department_name": "75",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Lila KHENTEUR",
+        "type_person": "personne physique",
+        "first_name": "Lila",
+        "last_name": "KHENTEUR",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1988",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Autre",
+            "company_siren": "898969829",
+            "company_name": "RESIDENCE D'ALBOY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Membre ou Représentant",
+            "company_siren": "898969829",
+            "company_name": "RESIDENCE D'ALBOY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "FRANCILIEN GESTION",
+        "type_person": "personne morale",
+        "first_name": null,
+        "last_name": null,
+        "denomination": "FRANCILIEN GESTION",
+        "siren_entity": "898782693",
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Autre",
+            "company_siren": "898969829",
+            "company_name": "RESIDENCE D'ALBOY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "898969829",
+            "company_name": "RESIDENCE D'ALBOY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "FRANCILIEN GESTION",
+        "type_person": "personne morale",
+        "first_name": null,
+        "last_name": null,
+        "denomination": "FRANCILIEN GESTION",
+        "siren_entity": null,
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Membre ou Représentant",
+            "company_siren": "898969829",
+            "company_name": "RESIDENCE D'ALBOY",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "898969829",
+      "company_name": "898969829",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [
+      {
+        "id": "A202100941759",
+        "year": "2021",
+        "date": "2021-05-14",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Créations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": {
+          "creation": {
+            "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+          },
+          "dateImmatriculation": "2021-05-04",
+          "dateCommencementActivite": "2021-04-15"
+        },
+        "source": "BODACC-A",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE PARIS",
+        "reference": "A202100941759",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202100941759"
+      },
+      {
+        "id": "63e919c0998acaecf8232026",
+        "year": "2021",
+        "date": "2021-05-04",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T21:51:13+02:00",
+          "siren": "898969829",
+          "denomination": "RESIDENCE D'ALBOY",
+          "dateDepot": "2021-05-04",
+          "numChrono": "57942",
+          "nomDocument": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e919c0998acaecf8232026",
+          "typeRdd": [
+            {
+              "typeActe": "Statuts constitutifs"
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/898969829/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "2021": {
+        "year": "2021",
+        "milestones": [
+          {
+            "date": "2021-05-04",
+            "event": "Immatriculation officielle SIREN 898969829"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "A202100941759",
+            "year": "2021",
+            "date": "2021-05-14",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Créations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": {
+              "creation": {
+                "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+              },
+              "dateImmatriculation": "2021-05-04",
+              "dateCommencementActivite": "2021-04-15"
+            },
+            "source": "BODACC-A",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE PARIS",
+            "reference": "A202100941759",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202100941759"
+          },
+          {
+            "id": "63e919c0998acaecf8232026",
+            "year": "2021",
+            "date": "2021-05-04",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T21:51:13+02:00",
+              "siren": "898969829",
+              "denomination": "RESIDENCE D'ALBOY",
+              "dateDepot": "2021-05-04",
+              "numChrono": "57942",
+              "nomDocument": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e919c0998acaecf8232026",
+              "typeRdd": [
+                {
+                  "typeActe": "Statuts constitutifs"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/898969829/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "898969829",
+            "siren": "898969829",
+            "siret": "89896982900016",
+            "node_type": "siege",
+            "name": "RESIDENCE D'ALBOY",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2021,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "89896982900016",
+              "adresse": "4 RUE BERZELIUS 75017 PARIS",
+              "code_postal": "75017",
+              "commune": "75117",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "68.20B",
+              "date_creation": "2021-04-15",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2021"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "RESIDENCE D'ALBOY",
+        "siren": "898969829",
+        "siret_siege": "89896982900016",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2021-05-04",
+        "address": "4 RUE BERZELIUS 75017 PARIS",
+        "status": "actif",
+        "code_naf": "68.20B",
+        "libelle_naf": null,
+        "section_activite": "L",
+        "forme_juridique": "6540",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-12-06T10:22:14",
+        "date_mise_a_jour_rne": "2026-07-27T14:55:12",
+        "dirigeants": [
+          {
+            "nom": "KHENTEUR",
+            "prenoms": "LILA",
+            "qualite": "Autre",
+            "annee_de_naissance": "1988",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": null,
+            "prenoms": null,
+            "qualite": "Gérant",
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "nom": null,
+            "prenoms": null,
+            "qualite": "Autre",
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 5,
+        "historical_summary": {
+          "date_immatriculation_origine": "2021-05-04",
+          "annee_immatriculation": 2021,
+          "anciennete_annees": 5,
+          "nombre_dirigeants_historiques_identifies": 3,
+          "nombre_etablissements_historiques_ouverts": 1
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2021,
+            "date": "2021-04-15",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 898969829 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "898969829",
+            "name": "RESIDENCE D'ALBOY",
+            "siret_siege": "89896982900016",
+            "code_postal": "75017",
+            "commune": "75117",
+            "code_naf": "68.20B",
+            "forme_juridique": "6540",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 1,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": "1 000,00 EUR",
+        "objet_social": "L'acquisition, en état futur d'achèvement ou achevés, l'apport, la propriété, la mise en valeur, la transformation, la construction, l'aménagement, l'administration, la location et la vente (exceptionnelle) de tous biens et droits immobiliers, ainsi que de tous biens et droits pouvant constituer l'accessoire, l'annexe ou le complément des biens et droits immobiliers en question.",
+        "date_immatriculation_origine": "2021-05-04",
+        "rne_certitude_score": 1.0,
+        "epistemic_freshness": {
+          "status": "recent",
+          "days_stale": 283,
+          "reference_date": "2025-12-06",
+          "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+          "epistemic_confidence": 0.9
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "898969829",
+        "root_name": "RESIDENCE D'ALBOY",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 1,
+        "closed_establishments_count": 0,
+        "nodes": [
+          {
+            "id": "898969829",
+            "siren": "898969829",
+            "siret": "89896982900016",
+            "node_type": "siege",
+            "name": "RESIDENCE D'ALBOY",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2021,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "89896982900016",
+              "adresse": "4 RUE BERZELIUS 75017 PARIS",
+              "code_postal": "75017",
+              "commune": "75117",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "68.20B",
+              "date_creation": "2021-04-15",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "2021": [
+            {
+              "id": "898969829",
+              "siren": "898969829",
+              "siret": "89896982900016",
+              "node_type": "siege",
+              "name": "RESIDENCE D'ALBOY",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2021,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "89896982900016",
+                "adresse": "4 RUE BERZELIUS 75017 PARIS",
+                "code_postal": "75017",
+                "commune": "75117",
+                "departement": "75",
+                "region": "11",
+                "code_naf": "68.20B",
+                "date_creation": "2021-04-15",
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "75": {
+            "department_name": "75",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Lila KHENTEUR",
+            "type_person": "personne physique",
+            "first_name": "Lila",
+            "last_name": "KHENTEUR",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1988",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Autre",
+                "company_siren": "898969829",
+                "company_name": "RESIDENCE D'ALBOY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Membre ou Représentant",
+                "company_siren": "898969829",
+                "company_name": "RESIDENCE D'ALBOY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "FRANCILIEN GESTION",
+            "type_person": "personne morale",
+            "first_name": null,
+            "last_name": null,
+            "denomination": "FRANCILIEN GESTION",
+            "siren_entity": "898782693",
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Autre",
+                "company_siren": "898969829",
+                "company_name": "RESIDENCE D'ALBOY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "898969829",
+                "company_name": "RESIDENCE D'ALBOY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "FRANCILIEN GESTION",
+            "type_person": "personne morale",
+            "first_name": null,
+            "last_name": null,
+            "denomination": "FRANCILIEN GESTION",
+            "siren_entity": null,
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Membre ou Représentant",
+                "company_siren": "898969829",
+                "company_name": "RESIDENCE D'ALBOY",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "898969829",
+        "company_name": "898969829",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "A202100941759",
+            "year": "2021",
+            "date": "2021-05-14",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Créations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": {
+              "creation": {
+                "categorieCreation": "Immatriculation d'une personne morale (B, C, D) suite à création d'un établissement principal"
+              },
+              "dateImmatriculation": "2021-05-04",
+              "dateCommencementActivite": "2021-04-15"
+            },
+            "source": "BODACC-A",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE PARIS",
+            "reference": "A202100941759",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A202100941759"
+          },
+          {
+            "id": "63e919c0998acaecf8232026",
+            "year": "2021",
+            "date": "2021-05-04",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T21:51:13+02:00",
+              "siren": "898969829",
+              "denomination": "RESIDENCE D'ALBOY",
+              "dateDepot": "2021-05-04",
+              "numChrono": "57942",
+              "nomDocument": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e919c0998acaecf8232026",
+              "typeRdd": [
+                {
+                  "typeActe": "Statuts constitutifs"
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "HsjAcY0zfLdx_C0022A1001L959495D20210509H173831TPIJTES003PDBOR",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/898969829/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "RESIDENCE D'ALBOY",
+      "predicate": "siren",
+      "value": "898969829",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:28:18.633269+00:00",
+      "collection_method": "api",
+      "confidence": 0.9,
+      "status": "fact"
+    },
+    {
+      "subject": "RESIDENCE D'ALBOY",
+      "predicate": "capital_social",
+      "value": "1 000,00 EUR",
+      "source": "data.inpi.fr (RNE)",
+      "observed_at": "2026-09-15T23:28:18.633269+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "898969829",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (1 actifs, 0 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:28:22.572120+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "RESIDENCE D'ALBOY",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "3 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 2 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:28:22.602912+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "898969829",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:28:22.633648+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "898969829",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "2 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:28:22.660725+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "data.inpi.fr (RNE)",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.98,
+  "observed_at": "2026-09-15T23:28:18.633269+00:00",
+  "processed_at": "2026-09-15T23:28:25.752767Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

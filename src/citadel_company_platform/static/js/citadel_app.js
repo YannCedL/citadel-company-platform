@@ -3,16 +3,29 @@
 // Theme: Or Ambré & Carbone Minéral (High Finance & Sovereign OSINT)
 // ==========================================================================
 const CITADEL_PALETTE = {
-  // Sovereign Entity (Or Ambré — Prestige, Autorité, Cible Principale)
-  gold: '#D99B43',
-  goldLight: '#F3BA63',
-  goldDark: '#9A6A2F',
-  goldGlow: 'rgba(217, 155, 67, 0.25)',
+  // Signature Chromatique Maîtresse Comparative (Règle Entreprise × État)
+  primary: '#F59E0B',        // Or Ambré Cible Principale
+  primaryLight: '#FBBF24',
+  primaryDark: '#D97706',
+  primaryBorder: '#FBBF24',
+  primaryMuted: 'rgba(245, 158, 11, 0.20)',
 
-  // Benchmark / Competitor (Bleu Acier & Argent Métallique — Altérité, Neutralité)
-  steel: '#4A6FA5',
-  steelLight: '#7B9EC8',
-  steelMuted: 'rgba(74, 111, 165, 0.25)',
+  competitor: '#06B6D4',     // Bleu Cyan Électrique Concurrent Benchmark
+  competitorLight: '#22D3EE',
+  competitorDark: '#0891B2',
+  competitorBorder: '#22D3EE',
+  competitorMuted: 'rgba(6, 182, 212, 0.20)',
+
+  // Sovereign Entity (Or Ambré — Prestige, Autorité, Cible Principale)
+  gold: '#F59E0B',
+  goldLight: '#FBBF24',
+  goldDark: '#D97706',
+  goldGlow: 'rgba(245, 158, 11, 0.25)',
+
+  // Benchmark / Competitor (Bleu Cyan & Saphir Électrique — Altérité, Contrasté)
+  steel: '#06B6D4',
+  steelLight: '#22D3EE',
+  steelMuted: 'rgba(6, 182, 212, 0.25)',
   silver: '#94A3B8',
 
   // Vitalité Opérationnelle & Solvabilité (Vert Émeraude / Sauge — Santé, Actifs, Fonds Propres)
@@ -22,9 +35,9 @@ const CITADEL_PALETTE = {
   sauge: '#10B981',
 
   // Risque Légal, Cessation & Passif (Rouge Vermillon / Carmin — Alerte, Fermeture, Dette)
-  vermillon: '#E11D48',
-  vermillonLight: '#FB7185',
-  vermillonMuted: 'rgba(225, 29, 72, 0.25)',
+  vermillon: '#EF4444',
+  vermillonLight: '#F87171',
+  vermillonMuted: 'rgba(239, 68, 68, 0.25)',
 
   // Mobilité Stratégique & Opérations (Bleu Cobalt / Saphir — Transfert, M&A, EBITDA)
   cobalt: '#3B82F6',
@@ -32,9 +45,9 @@ const CITADEL_PALETTE = {
   cobaltMuted: 'rgba(59, 130, 246, 0.25)',
 
   // Gouvernance Neutre & Historique (Ardoise Minérale — Mandats secondaires, Statuts)
-  slate: '#475569',
-  slateDark: '#334155',
-  slateMuted: '#64748B',
+  slate: '#64748B',
+  slateDark: '#475569',
+  slateMuted: '#94A3B8',
 
   // Surfaces & Base (Carbone Minéral)
   carbon: '#090D14',
@@ -44,7 +57,7 @@ const CITADEL_PALETTE = {
   gridLine: 'rgba(30, 41, 59, 0.45)',
   textMuted: '#64748B',
   textLight: '#F1F5F9',
-  nobleDonut: ['#D99B43', '#10B981', '#3B82F6', '#4A6FA5', '#E11D48', '#94A3B8']
+  nobleDonut: ['#F59E0B', '#10B981', '#3B82F6', '#06B6D4', '#EF4444', '#94A3B8']
 };
 
 if (window.Chart) {
@@ -118,13 +131,12 @@ if (window.Chart) {
         let biTransfersChart = null;
         let biClosureReasonChart = null;
 
-        // Cache & Session Storage Management States
-        const showCacheNotice = ref(false);
-        const cacheNoticeMessage = ref('');
 
-        // Disambiguation Modal States
+        // Disambiguation & Error Modal States
         const showDisambiguationModal = ref(false);
         const candidateList = ref([]);
+        const showErrorModal = ref(false);
+        const errorMessage = ref('');
 
         // New Inspector Modals States
         const showLegalProfileModal = ref(false);
@@ -265,16 +277,19 @@ if (window.Chart) {
           nextTick(() => {
             setTimeout(() => {
               if (activeTab.value !== 'analytics') return;
-
-              if (analyticsSubTab.value === 'network') {
-                renderNetworkCharts();
-                renderBiStudioCharts();
-              } else if (analyticsSubTab.value === 'governance') {
-                renderGovernanceCharts();
-              } else if (analyticsSubTab.value === 'regulatory') {
-                renderBodaccCharts();
-              } else if (analyticsSubTab.value === 'financials') {
-                renderFinancialCharts();
+              try {
+                if (analyticsSubTab.value === 'network') {
+                  renderNetworkCharts();
+                  renderBiStudioCharts();
+                } else if (analyticsSubTab.value === 'governance') {
+                  renderGovernanceCharts();
+                } else if (analyticsSubTab.value === 'regulatory') {
+                  renderBodaccCharts();
+                } else if (analyticsSubTab.value === 'financials') {
+                  renderFinancialCharts();
+                }
+              } catch (tabErr) {
+                console.error("Erreur non-bloquante lors du rendu des graphiques analytiques:", tabErr);
               }
             }, 50);
           });
@@ -342,455 +357,576 @@ if (window.Chart) {
           renderCurrentAnalyticsTab();
         }
 
-        async function clearServerAndSessionCache() {
-          let sessionClearedCount = 0;
-          try {
-            for (let i = sessionStorage.length - 1; i >= 0; i--) {
-              const key = sessionStorage.key(i);
-              if (key && key.startsWith('citadel_cache_')) {
-                sessionStorage.removeItem(key);
-                sessionClearedCount++;
-              }
-            }
-          } catch(e) {}
-
-          try {
-            const res = await fetch('/api/v1/cache/clear', { method: 'POST' });
-            if (res.ok) {
-              const data = await res.json();
-              cacheNoticeMessage.value = `🧹 Cache in-memory vuidé avec succès : ${data.entries_before} entreprise(s) en cache avant suppression → ${data.entries_after} entreprise(s) restante(s) à la fin. (${sessionClearedCount} ancienne(s) recherche(s) purgée(s) de sessionStorage).`;
-              showCacheNotice.value = true;
-              setTimeout(() => { showCacheNotice.value = false; }, 8000);
-            }
-          } catch(e) {
-            console.error(e);
-          }
-        }
 
         // BI Metrics & Formulas
         function calculateMarginRate(data) {
-          if (!data) return 'N/D (Confidentiel)';
-          const balance = data?.legal_profile?.financials?.latest_balance_sheet || data?.financials?.latest_balance_sheet;
-          const rev = balance?.revenue;
-          const net = balance?.net_income;
-          if (rev && net && rev > 0) {
+          if (!data) return 'N/D';
+          const d = (data && data.value !== undefined) ? data.value : data;
+          if (!d) return 'N/D';
+          const balance = d?.legal_profile?.financials?.latest_balance_sheet || d?.financials?.latest_balance_sheet;
+          let rev = balance?.revenue;
+          let net = balance?.net_income;
+          
+          if ((rev === undefined || rev === null || rev === 0 || net === undefined || net === null) && d?.financials?.yearly_financial_timeline) {
+            const timelineVals = Object.values(d.financials.yearly_financial_timeline || {});
+            const yrs = timelineVals.sort((a, b) => ((b?.year || 0) - (a?.year || 0)));
+            for (const yr of yrs) {
+              if (yr && yr.revenue && yr.revenue > 0 && yr.net_income !== undefined && yr.net_income !== null) {
+                rev = yr.revenue;
+                net = yr.net_income;
+                break;
+              }
+            }
+          }
+
+          if ((rev === undefined || rev === null || rev === 0 || net === undefined || net === null) && d?.legal_profile?.finances) {
+            const sFin = d.legal_profile.finances;
+            if (typeof sFin === 'object' && sFin !== null) {
+              const yrs = Object.keys(sFin).sort().reverse();
+              for (const yr of yrs) {
+                const it = sFin[yr];
+                if (it && it.ca && it.ca > 0 && (it.resultat_net !== undefined && it.resultat_net !== null)) {
+                  rev = it.ca;
+                  net = it.resultat_net;
+                  break;
+                }
+              }
+            }
+          }
+
+          if (rev && net !== undefined && net !== null && rev > 0) {
             const rate = ((net / rev) * 100).toFixed(1);
             return (rate >= 0 ? '+' : '') + rate + '%';
           }
-          return 'N/D (Confidentiel)';
+          return 'N/D';
         }
 
         function calculateRealignmentIndex(nodes) {
-          if (!nodes || !Array.isArray(nodes) || nodes.length === 0) return '0.0';
-          const closedCount = nodes.filter(n => n.etat_administratif === 'F').length;
-          return ((closedCount / nodes.length) * 100).toFixed(1);
+          const list = (nodes && nodes.value !== undefined) ? nodes.value : nodes;
+          if (!list || !Array.isArray(list) || list.length === 0) return '0.0';
+          const closedCount = list.filter(n => n && n.etat_administratif === 'F').length;
+          return ((closedCount / list.length) * 100).toFixed(1);
         }
 
         // Chart.js renderers
         function renderNetworkCharts() {
-          const donutCtx = document.getElementById('networkDonutCanvas');
-          if (donutCtx) {
-            if (networkDonutChart) { networkDonutChart.destroy(); networkDonutChart = null; }
-            if (window.Chart && Chart.getChart) {
-              const existing = Chart.getChart(donutCtx);
-              if (existing) existing.destroy();
-            }
-
-            const activeCount = activeEstablishments.value;
-            const closedCount = closedEstablishments.value;
-
-            const datasets = [{
-              label: displayCompanyName.value,
-              data: [activeCount, closedCount],
-              backgroundColor: [CITADEL_PALETTE.emerald, CITADEL_PALETTE.slate],
-              borderWidth: 2,
-              borderColor: CITADEL_PALETTE.surface
-            }];
-
-            if (benchmarkData.value) {
-              datasets.push({
-                label: benchmarkCompanyName.value,
-                data: [benchmarkActiveEstablishments.value, benchmarkTotalEstablishments.value - benchmarkActiveEstablishments.value],
-                backgroundColor: [CITADEL_PALETTE.steel, CITADEL_PALETTE.slateDark],
-                borderWidth: 2,
-                borderColor: CITADEL_PALETTE.surface
-              });
-            }
-
-            networkDonutChart = new Chart(donutCtx, {
-              type: 'doughnut',
-              data: {
-                labels: benchmarkData.value 
-                  ? ['🟢 Actifs (' + displayCompanyName.value + ')', '⚪ Clos (' + displayCompanyName.value + ')', '🟢 Actifs (' + benchmarkCompanyName.value + ')', '⚪ Clos (' + benchmarkCompanyName.value + ')']
-                  : ['🟢 Établissements Actifs', '⚪ Établissements Historiques Clos'],
-                datasets: datasets
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
-                }
+          try {
+            const donutCtx = document.getElementById('networkDonutCanvas');
+            if (donutCtx) {
+              if (networkDonutChart) { networkDonutChart.destroy(); networkDonutChart = null; }
+              if (window.Chart && Chart.getChart) {
+                const existing = Chart.getChart(donutCtx);
+                if (existing) existing.destroy();
               }
-            });
-          }
 
-          const decadesCtx = document.getElementById('decadesBarCanvas');
-          if (decadesCtx) {
-            if (decadesBarChart) { decadesBarChart.destroy(); decadesBarChart = null; }
-            if (window.Chart && Chart.getChart) {
-              const existing = Chart.getChart(decadesCtx);
-              if (existing) existing.destroy();
-            }
+              const activeCount = activeEstablishments.value || 0;
+              const closedCount = closedEstablishments.value || 0;
 
-            const getYearMap = (nodes, graphData) => {
-              const map = {};
-              if (nodes && Array.isArray(nodes) && nodes.length > 0) {
-                nodes.forEach(n => {
-                  if (expansionStatusFilter.value === 'active' && n.etat_administratif !== 'A') return;
-                  if (expansionStatusFilter.value === 'closed' && n.etat_administratif !== 'F') return;
-                  
-                  let yrStr = null;
-                  const rawDate = n.details?.date_creation || n.details?.creation_date || n.creation_date;
-                  if (rawDate && typeof rawDate === 'string' && rawDate.length >= 4) {
-                    yrStr = rawDate.substring(0, 4);
-                  } else if (n.creation_year) {
-                    yrStr = String(n.creation_year);
+              if (benchmarkData.value) {
+                const benchActive = benchmarkActiveEstablishments.value || 0;
+                const benchClosed = Math.max(0, (benchmarkTotalEstablishments.value || 0) - benchActive);
+
+                networkDonutChart = new Chart(donutCtx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['🟢 Établissements Actifs', '⚪ Historiques Clos'],
+                    datasets: [
+                      {
+                        label: displayCompanyName.value,
+                        data: [activeCount, closedCount],
+                        backgroundColor: CITADEL_PALETTE.primary,
+                        borderColor: CITADEL_PALETTE.primaryLight,
+                        borderWidth: 1.5,
+                        borderRadius: 6
+                      },
+                      {
+                        label: benchmarkCompanyName.value,
+                        data: [benchActive, benchClosed],
+                        backgroundColor: CITADEL_PALETTE.competitor,
+                        borderColor: CITADEL_PALETTE.competitorLight,
+                        borderWidth: 1.5,
+                        borderRadius: 6
+                      }
+                    ]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                      x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } }, grid: { color: '#1e293b' } },
+                      y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    },
+                    plugins: {
+                      legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    }
                   }
-
-                  if (yrStr && /^\d{4}$/.test(yrStr)) {
-                    map[yrStr] = (map[yrStr] || 0) + 1;
+                });
+              } else {
+                networkDonutChart = new Chart(donutCtx, {
+                  type: 'doughnut',
+                  data: {
+                    labels: ['🟢 Établissements Actifs', '⚪ Établissements Historiques Clos'],
+                    datasets: [{
+                      label: displayCompanyName.value,
+                      data: [activeCount, closedCount],
+                      backgroundColor: [CITADEL_PALETTE.emerald, CITADEL_PALETTE.slate],
+                      borderWidth: 2,
+                      borderColor: CITADEL_PALETTE.surface
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    }
                   }
                 });
               }
+            }
+            // Déclencher automatiquement la vélocité d'expansion physique
+            renderExpansionDecadesChart();
+          } catch(err) {
+            console.error("Erreur renderNetworkCharts:", err);
+          }
+        }
 
-              if (Object.keys(map).length === 0 && graphData?.yearly_network_expansion) {
-                Object.entries(graphData.yearly_network_expansion).forEach(([yr, list]) => {
-                  if (!Array.isArray(list)) return;
-                  let count = 0;
-                  list.forEach(n => {
+        function renderExpansionDecadesChart() {
+          try {
+            const decadesCtx = document.getElementById('decadesBarCanvas');
+            if (decadesCtx) {
+              if (decadesBarChart) { decadesBarChart.destroy(); decadesBarChart = null; }
+              if (window.Chart && Chart.getChart) {
+                const existing = Chart.getChart(decadesCtx);
+                if (existing) existing.destroy();
+              }
+
+              const getYearMap = (nodes, graphData) => {
+                const map = {};
+                if (nodes && Array.isArray(nodes) && nodes.length > 0) {
+                  nodes.forEach(n => {
+                    if (!n) return;
                     if (expansionStatusFilter.value === 'active' && n.etat_administratif !== 'A') return;
                     if (expansionStatusFilter.value === 'closed' && n.etat_administratif !== 'F') return;
-                    count++;
+                    
+                    let yrStr = null;
+                    const rawDate = n.details?.date_creation || n.details?.creation_date || n.creation_date;
+                    if (rawDate && typeof rawDate === 'string' && rawDate.length >= 4) {
+                      yrStr = rawDate.substring(0, 4);
+                    } else if (n.creation_year) {
+                      yrStr = String(n.creation_year);
+                    }
+
+                    if (yrStr && /^\d{4}$/.test(yrStr)) {
+                      map[yrStr] = (map[yrStr] || 0) + 1;
+                    }
                   });
-                  if (count > 0 && /^\d{4}$/.test(yr)) {
-                    map[yr] = count;
-                  }
+                }
+
+                if (Object.keys(map).length === 0 && graphData?.yearly_network_expansion) {
+                  Object.entries(graphData.yearly_network_expansion).forEach(([yr, list]) => {
+                    if (!Array.isArray(list)) return;
+                    let count = 0;
+                    list.forEach(n => {
+                      if (!n) return;
+                      if (expansionStatusFilter.value === 'active' && n.etat_administratif !== 'A') return;
+                      if (expansionStatusFilter.value === 'closed' && n.etat_administratif !== 'F') return;
+                      count++;
+                    });
+                    if (count > 0 && /^\d{4}$/.test(yr)) {
+                      map[yr] = count;
+                    }
+                  });
+                }
+
+                return map;
+              };
+
+              const mainMap = getYearMap(displayNodes.value, resultData.value?.ownership_graph);
+              const benchMap = benchmarkData.value ? getYearMap(benchmarkNodes.value, benchmarkData.value?.ownership_graph) : {};
+
+              const allYearsSet = new Set([...Object.keys(mainMap), ...Object.keys(benchMap)]);
+              let sortedYears = Array.from(allYearsSet).map(y => parseInt(y)).filter(y => !isNaN(y)).sort((a, b) => a - b);
+
+              if (sortedYears.length > 0) {
+                const maxYr = sortedYears[sortedYears.length - 1];
+                if (expansionTimeRange.value === 'last10') {
+                  sortedYears = sortedYears.filter(y => y >= maxYr - 10);
+                } else if (expansionTimeRange.value === 'last5') {
+                  sortedYears = sortedYears.filter(y => y >= maxYr - 5);
+                } else if (expansionTimeRange.value === 'peak') {
+                  sortedYears = sortedYears
+                    .sort((a, b) => ((mainMap[b] || 0) + (benchMap[b] || 0)) - ((mainMap[a] || 0) + (benchMap[a] || 0)))
+                    .slice(0, 10)
+                    .sort((a, b) => a - b);
+                }
+              }
+
+              const labels = sortedYears.map(y => String(y));
+              const datasets = [{
+                label: displayCompanyName.value,
+                data: sortedYears.map(y => mainMap[y] || 0),
+                backgroundColor: CITADEL_PALETTE.gold,
+                borderColor: CITADEL_PALETTE.goldLight,
+                borderWidth: 1,
+                borderRadius: 6
+              }];
+
+              if (benchmarkData.value) {
+                datasets.push({
+                  label: benchmarkCompanyName.value,
+                  data: sortedYears.map(y => benchMap[y] || 0),
+                  backgroundColor: CITADEL_PALETTE.competitor,
+                  borderColor: CITADEL_PALETTE.competitorLight,
+                  borderWidth: 1,
+                  borderRadius: 6
                 });
               }
 
-              return map;
-            };
-
-            const mainMap = getYearMap(displayNodes.value, resultData.value?.ownership_graph);
-            const benchMap = benchmarkData.value ? getYearMap(benchmarkNodes.value, benchmarkData.value?.ownership_graph) : {};
-
-            const allYearsSet = new Set([...Object.keys(mainMap), ...Object.keys(benchMap)]);
-            let sortedYears = Array.from(allYearsSet).map(y => parseInt(y)).sort((a, b) => a - b);
-
-            if (sortedYears.length > 0) {
-              const maxYr = sortedYears[sortedYears.length - 1];
-              if (expansionTimeRange.value === 'last10') {
-                sortedYears = sortedYears.filter(y => y >= maxYr - 10);
-              } else if (expansionTimeRange.value === 'last5') {
-                sortedYears = sortedYears.filter(y => y >= maxYr - 5);
-              } else if (expansionTimeRange.value === 'peak') {
-                sortedYears = sortedYears
-                  .sort((a, b) => ((mainMap[b] || 0) + (benchMap[b] || 0)) - ((mainMap[a] || 0) + (benchMap[a] || 0)))
-                  .slice(0, 10)
-                  .sort((a, b) => a - b);
-              }
-            }
-
-            const labels = sortedYears.map(y => String(y));
-            const datasets = [{
-              label: displayCompanyName.value,
-              data: sortedYears.map(y => mainMap[y] || 0),
-              backgroundColor: CITADEL_PALETTE.gold,
-              borderColor: CITADEL_PALETTE.goldLight,
-              borderWidth: 1,
-              borderRadius: 6
-            }];
-
-            if (benchmarkData.value) {
-              datasets.push({
-                label: benchmarkCompanyName.value,
-                data: sortedYears.map(y => benchMap[y] || 0),
-                backgroundColor: CITADEL_PALETTE.steel,
-                borderColor: CITADEL_PALETTE.steelLight,
-                borderWidth: 1,
-                borderRadius: 6
+              decadesBarChart = new Chart(decadesCtx, {
+                type: 'bar',
+                data: { labels, datasets },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                  },
+                  plugins: {
+                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  }
+                }
               });
             }
-
-            decadesBarChart = new Chart(decadesCtx, {
-              type: 'bar',
-              data: { labels, datasets },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
-                },
-                plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
-                }
-              }
-            });
+          } catch(err) {
+            console.error("Erreur renderExpansionDecadesChart:", err);
           }
         }
 
         function renderGovernanceCharts() {
-          const execCtx = document.getElementById('executivesDonutCanvas');
-          if (execCtx) {
-            if (executivesDonutChart) { executivesDonutChart.destroy(); executivesDonutChart = null; }
-            if (window.Chart && Chart.getChart) {
-              const existing = Chart.getChart(execCtx);
-              if (existing) existing.destroy();
-            }
-
-            const datasets = [{
-              label: displayCompanyName.value,
-              data: [physicalCount.value, moralCount.value],
-              backgroundColor: [CITADEL_PALETTE.goldLight, CITADEL_PALETTE.steel],
-              borderWidth: 2,
-              borderColor: CITADEL_PALETTE.surface
-            }];
-
-            if (benchmarkData.value) {
-              datasets.push({
-                label: benchmarkCompanyName.value,
-                data: [benchmarkPhysicalCount.value, benchmarkMoralCount.value],
-                backgroundColor: [CITADEL_PALETTE.goldDark, CITADEL_PALETTE.slateDark],
-                borderWidth: 2,
-                borderColor: CITADEL_PALETTE.surface
-              });
-            }
-
-            executivesDonutChart = new Chart(execCtx, {
-              type: 'doughnut',
-              data: {
-                labels: benchmarkData.value
-                  ? ['👤 Physiques (' + displayCompanyName.value + ')', '🏢 Morales (' + displayCompanyName.value + ')', '👤 Physiques (' + benchmarkCompanyName.value + ')', '🏢 Morales (' + benchmarkCompanyName.value + ')']
-                  : ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
-                datasets: datasets
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
-                }
+          try {
+            const execCtx = document.getElementById('executivesDonutCanvas');
+            if (execCtx) {
+              if (executivesDonutChart) { executivesDonutChart.destroy(); executivesDonutChart = null; }
+              if (window.Chart && Chart.getChart) {
+                const existing = Chart.getChart(execCtx);
+                if (existing) existing.destroy();
               }
-            });
-          }
 
-          const roleCtx = document.getElementById('executivesRoleCanvas');
-          if (roleCtx) {
-            if (executivesRoleChart) { executivesRoleChart.destroy(); executivesRoleChart = null; }
-            if (window.Chart && Chart.getChart) {
-              const existing = Chart.getChart(roleCtx);
-              if (existing) existing.destroy();
-            }
-
-            const getRoleCounts = (execs) => {
-              const map = { 'Gérant': 0, 'Président': 0, 'Directeur Gen.': 0, 'Administrateur': 0, 'Holding/Moral': 0, 'Autre': 0 };
-              execs.forEach(e => {
-                if (e.type_person === 'personne morale') {
-                  map['Holding/Moral']++;
-                } else {
-                  const r = (e.roles && e.roles.length > 0 ? e.roles[0].title : '').toLowerCase();
-                  if (r.includes('gérant')) map['Gérant']++;
-                  else if (r.includes('président')) map['Président']++;
-                  else if (r.includes('directeur')) map['Directeur Gen.']++;
-                  else if (r.includes('administrateur')) map['Administrateur']++;
-                  else map['Autre']++;
-                }
-              });
-              return map;
-            };
-
-            const mainRoles = getRoleCounts(displayExecutives.value);
-            const rLabels = Object.keys(mainRoles);
-            const roleColorMap = {
-              'Président': CITADEL_PALETTE.gold,
-              'Directeur Gen.': CITADEL_PALETTE.goldLight,
-              'Gérant': '#E5A93C',
-              'Administrateur': CITADEL_PALETTE.emerald,
-              'Holding/Moral': CITADEL_PALETTE.steel,
-              'Autre': CITADEL_PALETTE.slateMuted
-            };
-            const roleColors = rLabels.map(r => roleColorMap[r] || CITADEL_PALETTE.gold);
-
-            const datasets = [{
-              label: displayCompanyName.value,
-              data: Object.values(mainRoles),
-              backgroundColor: roleColors,
-              borderRadius: 6
-            }];
-
-            if (benchmarkData.value) {
-              const benchRoles = getRoleCounts(benchmarkExecutives.value);
-              datasets.push({
-                label: benchmarkCompanyName.value,
-                data: Object.values(benchRoles),
-                backgroundColor: CITADEL_PALETTE.steelMuted,
-                borderColor: CITADEL_PALETTE.steel,
-                borderWidth: 1.5,
-                borderRadius: 6
-              });
-            }
-
-            executivesRoleChart = new Chart(roleCtx, {
-              type: 'bar',
-              data: { labels: rLabels, datasets },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
-                },
-                plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
-                }
+              if (benchmarkData.value) {
+                executivesDonutChart = new Chart(execCtx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
+                    datasets: [
+                      {
+                        label: displayCompanyName.value,
+                        data: [physicalCount.value || 0, moralCount.value || 0],
+                        backgroundColor: CITADEL_PALETTE.primary,
+                        borderColor: CITADEL_PALETTE.primaryLight,
+                        borderWidth: 1.5,
+                        borderRadius: 6
+                      },
+                      {
+                        label: benchmarkCompanyName.value,
+                        data: [benchmarkPhysicalCount.value || 0, benchmarkMoralCount.value || 0],
+                        backgroundColor: CITADEL_PALETTE.competitor,
+                        borderColor: CITADEL_PALETTE.competitorLight,
+                        borderWidth: 1.5,
+                        borderRadius: 6
+                      }
+                    ]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                      x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } }, grid: { color: '#1e293b' } },
+                      y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    },
+                    plugins: {
+                      legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    }
+                  }
+                });
+              } else {
+                executivesDonutChart = new Chart(execCtx, {
+                  type: 'doughnut',
+                  data: {
+                    labels: ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
+                    datasets: [{
+                      label: displayCompanyName.value,
+                      data: [physicalCount.value || 0, moralCount.value || 0],
+                      backgroundColor: [CITADEL_PALETTE.primary, CITADEL_PALETTE.cobalt],
+                      borderWidth: 2,
+                      borderColor: CITADEL_PALETTE.surface
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    }
+                  }
+                });
               }
-            });
+            }
+
+            const roleCtx = document.getElementById('executivesRoleCanvas');
+            if (roleCtx) {
+              if (executivesRoleChart) { executivesRoleChart.destroy(); executivesRoleChart = null; }
+              if (window.Chart && Chart.getChart) {
+                const existing = Chart.getChart(roleCtx);
+                if (existing) existing.destroy();
+              }
+
+              const getRoleCounts = (execs) => {
+                const map = { 'Gérant': 0, 'Président': 0, 'Directeur Gen.': 0, 'Administrateur': 0, 'Holding/Moral': 0, 'Autre': 0 };
+                (execs || []).forEach(e => {
+                  if (!e) return;
+                  if (e.type_person === 'personne morale') {
+                    map['Holding/Moral']++;
+                  } else {
+                    const r = (e.roles && Array.isArray(e.roles) && e.roles[0] ? (e.roles[0].title || e.roles[0].label || e.roles[0] || '') : (e.role || e.qualite || '')).toString().toLowerCase();
+                    if (r.includes('gérant')) map['Gérant']++;
+                    else if (r.includes('président')) map['Président']++;
+                    else if (r.includes('directeur')) map['Directeur Gen.']++;
+                    else if (r.includes('administrateur')) map['Administrateur']++;
+                    else map['Autre']++;
+                  }
+                });
+                return map;
+              };
+
+              const roleLabels = ['Gérant', 'Président', 'Directeur Gen.', 'Administrateur', 'Holding/Moral', 'Autre'];
+              const mainRoles = getRoleCounts(displayExecutives.value);
+              const roleColorMap = {
+                'Président': CITADEL_PALETTE.gold,
+                'Directeur Gen.': CITADEL_PALETTE.goldLight,
+                'Gérant': '#E5A93C',
+                'Administrateur': CITADEL_PALETTE.emerald,
+                'Holding/Moral': CITADEL_PALETTE.steel,
+                'Autre': CITADEL_PALETTE.slateMuted
+              };
+              const roleColors = roleLabels.map(r => roleColorMap[r] || CITADEL_PALETTE.gold);
+
+              let datasets;
+              if (benchmarkData.value) {
+                const benchRoles = getRoleCounts(benchmarkExecutives.value);
+                datasets = [
+                  {
+                    label: displayCompanyName.value,
+                    data: roleLabels.map(r => mainRoles[r] || 0),
+                    backgroundColor: CITADEL_PALETTE.primary,
+                    borderColor: CITADEL_PALETTE.primaryLight,
+                    borderWidth: 1.5,
+                    borderRadius: 6
+                  },
+                  {
+                    label: benchmarkCompanyName.value,
+                    data: roleLabels.map(r => benchRoles[r] || 0),
+                    backgroundColor: CITADEL_PALETTE.competitor,
+                    borderColor: CITADEL_PALETTE.competitorLight,
+                    borderWidth: 1.5,
+                    borderRadius: 6
+                  }
+                ];
+              } else {
+                datasets = [{
+                  label: displayCompanyName.value,
+                  data: roleLabels.map(r => mainRoles[r] || 0),
+                  backgroundColor: roleColors,
+                  borderRadius: 6
+                }];
+              }
+
+              executivesRoleChart = new Chart(roleCtx, {
+                type: 'bar',
+                data: { labels: roleLabels, datasets },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                  },
+                  plugins: {
+                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  }
+                }
+              });
+            }
+          } catch(err) {
+            console.error("Erreur renderGovernanceCharts:", err);
           }
         }
 
         function renderBodaccCharts() {
-          const bodaccCtx = document.getElementById('bodaccCategoryCanvas');
-          if (bodaccCtx) {
-            if (bodaccCategoryChart) { bodaccCategoryChart.destroy(); bodaccCategoryChart = null; }
-            if (window.Chart && Chart.getChart) {
-              const existing = Chart.getChart(bodaccCtx);
-              if (existing) existing.destroy();
+          try {
+            const bodaccCtx = document.getElementById('bodaccCategoryCanvas');
+            if (bodaccCtx) {
+              if (bodaccCategoryChart) { bodaccCategoryChart.destroy(); bodaccCategoryChart = null; }
+              if (window.Chart && Chart.getChart) {
+                const existing = Chart.getChart(bodaccCtx);
+                if (existing) existing.destroy();
+              }
+
+              const catLabels = ['Dépôts de Comptes', 'Nomination/Gérance', 'Fusions/Apports', 'Procédures/Risques', 'Modifications'];
+              const catKeys = ['DEPOT_COMPTES', 'NOMINATION_GERANCE', 'FUSION_APPORT', 'PROCEDURE_COLLECTIVE', 'MODIFICATION_DIVERS'];
+              const counts = catKeys.map(k => (categoryCounts.value && categoryCounts.value[k]) || 0);
+              const catColors = [
+                CITADEL_PALETTE.emerald,   // Dépôts de Comptes: Transparence & Conformité saine
+                CITADEL_PALETTE.gold,      // Nomination/Gérance: Vie statutaire & Gouvernance
+                CITADEL_PALETTE.cobalt,    // Fusions/Apports: Opérations M&A & Capital
+                CITADEL_PALETTE.vermillon, // Procédures/Risques: Alerte légale / Défaillance
+                CITADEL_PALETTE.slateMuted // Modifications Diverses: Actes administratifs
+              ];
+
+              let datasets;
+              if (benchmarkData.value) {
+                const benchCounts = { DEPOT_COMPTES: 0, NOMINATION_GERANCE: 0, FUSION_APPORT: 0, PROCEDURE_COLLECTIVE: 0, MODIFICATION_DIVERS: 0 };
+                (benchmarkEvents.value || []).forEach(ev => {
+                  if (!ev) return;
+                  const cat = ev.category || 'MODIFICATION_DIVERS';
+                  benchCounts[cat] = (benchCounts[cat] || 0) + 1;
+                });
+                datasets = [
+                  {
+                    label: displayCompanyName.value,
+                    data: counts,
+                    backgroundColor: CITADEL_PALETTE.primary,
+                    borderColor: CITADEL_PALETTE.primaryLight,
+                    borderWidth: 1.5,
+                    borderRadius: 6
+                  },
+                  {
+                    label: benchmarkCompanyName.value,
+                    data: catKeys.map(k => benchCounts[k] || 0),
+                    backgroundColor: CITADEL_PALETTE.competitor,
+                    borderColor: CITADEL_PALETTE.competitorLight,
+                    borderWidth: 1.5,
+                    borderRadius: 6
+                  }
+                ];
+              } else {
+                datasets = [{
+                  label: displayCompanyName.value,
+                  data: counts,
+                  backgroundColor: catColors,
+                  borderRadius: 6
+                }];
+              }
+
+              bodaccCategoryChart = new Chart(bodaccCtx, {
+                type: 'bar',
+                data: { labels: catLabels, datasets },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                  },
+                  plugins: {
+                    legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  }
+                }
+              });
             }
 
-            const catLabels = ['Dépôts de Comptes', 'Nomination/Gérance', 'Fusions/Apports', 'Procédures/Risques', 'Modifications'];
-            const catKeys = ['DEPOT_COMPTES', 'NOMINATION_GERANCE', 'FUSION_APPORT', 'PROCEDURE_COLLECTIVE', 'MODIFICATION_DIVERS'];
-            const counts = catKeys.map(k => categoryCounts.value[k] || 0);
-            const catColors = [
-              CITADEL_PALETTE.emerald,   // Dépôts de Comptes: Transparence & Conformité saine
-              CITADEL_PALETTE.gold,      // Nomination/Gérance: Vie statutaire & Gouvernance
-              CITADEL_PALETTE.cobalt,    // Fusions/Apports: Opérations M&A & Capital
-              CITADEL_PALETTE.vermillon, // Procédures/Risques: Alerte légale / Défaillance
-              CITADEL_PALETTE.slateMuted // Modifications Diverses: Actes administratifs
-            ];
+            const timeCtx = document.getElementById('bodaccTimelineCanvas');
+            if (timeCtx) {
+              if (bodaccTimelineChart) { bodaccTimelineChart.destroy(); bodaccTimelineChart = null; }
+              if (window.Chart && Chart.getChart) {
+                const existing = Chart.getChart(timeCtx);
+                if (existing) existing.destroy();
+              }
 
-            const datasets = [{
-              label: displayCompanyName.value,
-              data: counts,
-              backgroundColor: catColors,
-              borderRadius: 6
-            }];
+              const getYearlyEventsMap = (evs) => {
+                const map = {};
+                (evs || []).forEach(ev => {
+                  if (!ev) return;
+                  let y = ev.year;
+                  if (!y && ev.date && typeof ev.date === 'string' && ev.date.length >= 4) {
+                    y = parseInt(ev.date.substring(0, 4), 10);
+                  } else if (typeof y === 'string') {
+                    y = parseInt(y, 10);
+                  }
+                  if (typeof y === 'number' && !isNaN(y) && y >= 1900 && y <= 2100) {
+                    map[y] = (map[y] || 0) + 1;
+                  }
+                });
+                return map;
+              };
 
-            if (benchmarkData.value) {
-              const benchCounts = { DEPOT_COMPTES: 0, NOMINATION_GERANCE: 0, FUSION_APPORT: 0, PROCEDURE_COLLECTIVE: 0, MODIFICATION_DIVERS: 0 };
-              benchmarkEvents.value.forEach(ev => {
-                const cat = ev.category || 'MODIFICATION_DIVERS';
-                benchCounts[cat] = (benchCounts[cat] || 0) + 1;
-              });
-              datasets.push({
-                label: benchmarkCompanyName.value,
-                data: catKeys.map(k => benchCounts[k] || 0),
-                backgroundColor: CITADEL_PALETTE.steelMuted,
-                borderColor: CITADEL_PALETTE.steel,
+              const mainYearMap = getYearlyEventsMap(displayEvents.value);
+              const benchYearMap = benchmarkData.value ? getYearlyEventsMap(benchmarkEvents.value) : {};
+              const allYears = Array.from(new Set([...Object.keys(mainYearMap), ...Object.keys(benchYearMap)]))
+                .map(Number)
+                .filter(y => !isNaN(y))
+                .sort((a, b) => a - b);
+              const labels = allYears.map(String);
+
+              const datasets = [{
+                label: displayCompanyName.value,
+                data: allYears.map(y => mainYearMap[y] || 0),
+                backgroundColor: CITADEL_PALETTE.primary,
+                borderColor: CITADEL_PALETTE.primaryLight,
                 borderWidth: 1.5,
                 borderRadius: 6
-              });
-            }
+              }];
 
-            bodaccCategoryChart = new Chart(bodaccCtx, {
-              type: 'bar',
-              data: { labels: catLabels, datasets },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
-                },
-                plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
-                }
+              if (benchmarkData.value) {
+                datasets.push({
+                  label: benchmarkCompanyName.value,
+                  data: allYears.map(y => benchYearMap[y] || 0),
+                  backgroundColor: CITADEL_PALETTE.competitor,
+                  borderColor: CITADEL_PALETTE.competitorLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                });
               }
-            });
-          }
 
-          const timeCtx = document.getElementById('bodaccTimelineCanvas');
-          if (timeCtx) {
-            if (bodaccTimelineChart) { bodaccTimelineChart.destroy(); bodaccTimelineChart = null; }
-            if (window.Chart && Chart.getChart) {
-              const existing = Chart.getChart(timeCtx);
-              if (existing) existing.destroy();
-            }
-
-            const getYearlyEventsMap = (evs) => {
-              const map = {};
-              (evs || []).forEach(ev => {
-                let y = ev.year;
-                if (!y && ev.date && typeof ev.date === 'string' && ev.date.length >= 4) {
-                  y = parseInt(ev.date.substring(0, 4), 10);
-                } else if (typeof y === 'string') {
-                  y = parseInt(y, 10);
-                }
-                if (typeof y === 'number' && !isNaN(y) && y >= 1900 && y <= 2100) {
-                  map[y] = (map[y] || 0) + 1;
+              bodaccTimelineChart = new Chart(timeCtx, {
+                type: 'bar',
+                data: { labels, datasets },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                  },
+                  plugins: {
+                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  }
                 }
               });
-              return map;
-            };
-
-            const mainYearMap = getYearlyEventsMap(displayEvents.value);
-            const benchYearMap = benchmarkData.value ? getYearlyEventsMap(benchmarkEvents.value) : {};
-            const allYears = Array.from(new Set([...Object.keys(mainYearMap), ...Object.keys(benchYearMap)]))
-              .map(Number)
-              .filter(y => !isNaN(y))
-              .sort((a, b) => a - b);
-            const labels = allYears.map(String);
-
-            const datasets = [{
-              label: displayCompanyName.value,
-              data: allYears.map(y => mainYearMap[y] || 0),
-              backgroundColor: CITADEL_PALETTE.gold,
-              borderColor: CITADEL_PALETTE.goldLight,
-              borderWidth: 1,
-              borderRadius: 6
-            }];
-
-            if (benchmarkData.value) {
-              datasets.push({
-                label: benchmarkCompanyName.value,
-                data: allYears.map(y => benchYearMap[y] || 0),
-                backgroundColor: CITADEL_PALETTE.steel,
-                borderColor: CITADEL_PALETTE.steelLight,
-                borderWidth: 1,
-                borderRadius: 6
-              });
             }
-
-            bodaccTimelineChart = new Chart(timeCtx, {
-              type: 'bar',
-              data: { labels, datasets },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
-                },
-                plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
-                }
-              }
-            });
+          } catch(err) {
+            console.error("Erreur renderBodaccCharts:", err);
           }
         }
 
         function renderFinancialCharts() {
+          try {
+            const mainYrs = Array.isArray(financialYearsWithData.value) ? financialYearsWithData.value : [];
+            const benchYrs = (benchmarkData.value && Array.isArray(benchmarkFinancialYears.value)) ? benchmarkFinancialYears.value : [];
+            const mainMap = {};
+            mainYrs.forEach(y => { if (y && y.year) mainMap[y.year] = y; });
+            const benchMap = {};
+            benchYrs.forEach(y => { if (y && y.year) benchMap[y.year] = y; });
+
+            const allYears = Array.from(new Set([
+              ...mainYrs.map(y => parseInt(y.year)),
+              ...(benchmarkData.value ? benchYrs.map(y => parseInt(y.year)) : [])
+            ])).filter(y => !isNaN(y)).sort((a, b) => a - b);
+
+            const labels = allYears.map(String);
+
+          // 1. FINANCIAL BAR CHART (CA, EBITDA, NET INCOME, ALTMAN Z')
           const finCtx = document.getElementById('financialsBarCanvas');
           if (finCtx) {
             if (financialsBarChart) { financialsBarChart.destroy(); financialsBarChart = null; }
@@ -799,80 +935,120 @@ if (window.Chart) {
               if (existing) existing.destroy();
             }
 
-            const yrs = financialYearsWithData.value;
-            const labels = yrs.map(y => String(y.year));
-            const datasets = [
-              {
-                type: 'bar',
-                label: 'Chiffre d\'Affaires (CA)',
-                data: yrs.map(y => y.revenue || 0),
-                backgroundColor: CITADEL_PALETTE.gold,
-                borderColor: CITADEL_PALETTE.goldLight,
-                borderWidth: 1,
-                borderRadius: 6,
-                yAxisID: 'y'
-              },
-              {
-                type: 'bar',
-                label: 'EBITDA (Exploitation)',
-                data: yrs.map(y => y.ebitda || 0),
-                backgroundColor: CITADEL_PALETTE.cobalt,
-                borderColor: CITADEL_PALETTE.cobaltLight,
-                borderWidth: 1,
-                borderRadius: 6,
-                yAxisID: 'y'
-              },
-              {
-                type: 'bar',
-                label: 'Résultat Net',
-                data: yrs.map(y => y.net_income || 0),
-                backgroundColor: CITADEL_PALETTE.emerald,
-                borderColor: CITADEL_PALETTE.emeraldLight,
-                borderWidth: 1,
-                borderRadius: 6,
-                yAxisID: 'y'
-              },
-              {
-                type: 'line',
-                label: 'Score Altman Z\' Solvabilité',
-                data: yrs.map(y => (y.altman_z_score !== null && y.altman_z_score !== undefined) ? y.altman_z_score : null),
-                borderColor: CITADEL_PALETTE.goldLight,
-                backgroundColor: CITADEL_PALETTE.goldLight,
-                borderWidth: 3,
-                pointRadius: 5,
-                pointHoverRadius: 7,
-                tension: 0.3,
-                yAxisID: 'yAltman'
-              }
-            ];
-
+            let datasets;
             if (benchmarkData.value) {
-              const benchTimeline = benchmarkData.value?.financials?.yearly_financial_timeline;
-              if (benchTimeline) {
-                const benchYrs = Object.values(benchTimeline).sort((a, b) => a.year - b.year);
-                datasets.push({
+              // MODE COMPARATIF : Confrontation directe Or Ambré vs Bleu Cyan avec alignement temporel parfait
+              datasets = [
+                {
                   type: 'bar',
-                  label: 'CA (' + benchmarkCompanyName.value + ')',
-                  data: benchYrs.map(y => y.revenue || 0),
-                  backgroundColor: CITADEL_PALETTE.steel,
-                  borderColor: CITADEL_PALETTE.steelLight,
-                  borderWidth: 1,
+                  label: 'CA (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => mainMap[y]?.revenue || 0),
+                  backgroundColor: CITADEL_PALETTE.primary,
+                  borderColor: CITADEL_PALETTE.primaryLight,
+                  borderWidth: 1.5,
                   borderRadius: 6,
                   yAxisID: 'y'
-                });
-                datasets.push({
+                },
+                {
+                  type: 'bar',
+                  label: 'CA (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => benchMap[y]?.revenue || 0),
+                  backgroundColor: CITADEL_PALETTE.competitor,
+                  borderColor: CITADEL_PALETTE.competitorLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6,
+                  yAxisID: 'y'
+                },
+                {
+                  type: 'bar',
+                  label: 'Résultat Net (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => mainMap[y]?.net_income || 0),
+                  backgroundColor: CITADEL_PALETTE.emerald,
+                  borderColor: CITADEL_PALETTE.emeraldLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6,
+                  yAxisID: 'y'
+                },
+                {
+                  type: 'bar',
+                  label: 'Résultat Net (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => benchMap[y]?.net_income || 0),
+                  backgroundColor: '#14B8A6',
+                  borderColor: '#2DD4BF',
+                  borderWidth: 1.5,
+                  borderRadius: 6,
+                  yAxisID: 'y'
+                },
+                {
+                  type: 'line',
+                  label: 'Altman Z\' (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => (mainMap[y]?.altman_z_score != null) ? mainMap[y].altman_z_score : null),
+                  borderColor: CITADEL_PALETTE.primaryLight,
+                  backgroundColor: CITADEL_PALETTE.primaryLight,
+                  borderWidth: 2.5,
+                  pointRadius: 5,
+                  tension: 0.3,
+                  yAxisID: 'yAltman'
+                },
+                {
                   type: 'line',
                   label: 'Altman Z\' (' + benchmarkCompanyName.value + ')',
-                  data: benchYrs.map(y => (y.altman_z_score !== null && y.altman_z_score !== undefined) ? y.altman_z_score : null),
-                  borderColor: CITADEL_PALETTE.silver,
-                  backgroundColor: CITADEL_PALETTE.silver,
+                  data: allYears.map(y => (benchMap[y]?.altman_z_score != null) ? benchMap[y].altman_z_score : null),
+                  borderColor: '#38BDF8',
+                  backgroundColor: '#38BDF8',
                   borderWidth: 2,
-                  borderDash: [4, 4],
+                  borderDash: [5, 5],
                   pointRadius: 4,
                   tension: 0.3,
                   yAxisID: 'yAltman'
-                });
-              }
+                }
+              ];
+            } else {
+              // MODE SOLO : Décomposition complète Chiffre d'Affaires, EBITDA, Résultat Net et Altman Z'
+              datasets = [
+                {
+                  type: 'bar',
+                  label: 'Chiffre d\'Affaires (CA)',
+                  data: allYears.map(y => mainMap[y]?.revenue || 0),
+                  backgroundColor: CITADEL_PALETTE.primary,
+                  borderColor: CITADEL_PALETTE.primaryLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6,
+                  yAxisID: 'y'
+                },
+                {
+                  type: 'bar',
+                  label: 'EBITDA (Exploitation)',
+                  data: allYears.map(y => mainMap[y]?.ebitda || 0),
+                  backgroundColor: CITADEL_PALETTE.cobalt,
+                  borderColor: CITADEL_PALETTE.cobaltLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6,
+                  yAxisID: 'y'
+                },
+                {
+                  type: 'bar',
+                  label: 'Résultat Net',
+                  data: allYears.map(y => mainMap[y]?.net_income || 0),
+                  backgroundColor: CITADEL_PALETTE.emerald,
+                  borderColor: CITADEL_PALETTE.emeraldLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6,
+                  yAxisID: 'y'
+                },
+                {
+                  type: 'line',
+                  label: 'Score Altman Z\' Solvabilité',
+                  data: allYears.map(y => (mainMap[y]?.altman_z_score != null) ? mainMap[y].altman_z_score : null),
+                  borderColor: CITADEL_PALETTE.primaryLight,
+                  backgroundColor: CITADEL_PALETTE.primaryLight,
+                  borderWidth: 3,
+                  pointRadius: 5,
+                  pointHoverRadius: 7,
+                  tension: 0.3,
+                  yAxisID: 'yAltman'
+                }
+              ];
             }
 
             financialsBarChart = new Chart(finCtx, {
@@ -899,13 +1075,13 @@ if (window.Chart) {
                   },
                   yAltman: {
                     position: 'right',
-                    title: { display: true, text: 'Score Altman Z\'', color: CITADEL_PALETTE.goldLight, font: { family: 'IBM Plex Mono', size: 10, weight: 'bold' } },
-                    ticks: { color: CITADEL_PALETTE.goldLight, font: { family: 'IBM Plex Mono', size: 10 } },
+                    title: { display: true, text: 'Score Altman Z\'', color: CITADEL_PALETTE.primaryLight, font: { family: 'IBM Plex Mono', size: 10, weight: 'bold' } },
+                    ticks: { color: CITADEL_PALETTE.primaryLight, font: { family: 'IBM Plex Mono', size: 10 } },
                     grid: { drawOnChartArea: false }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
                 }
               }
             });
@@ -920,49 +1096,92 @@ if (window.Chart) {
               if (existing) existing.destroy();
             }
 
-            const yrs = financialYearsWithData.value;
-            const labels = yrs.map(y => String(y.year));
-
-            const netMarginData = yrs.map(y => {
-              if (y.revenue && y.revenue > 0 && y.net_income !== undefined && y.net_income !== null) {
-                return parseFloat(((y.net_income / y.revenue) * 100).toFixed(2));
+            const calcNetMargin = (item) => {
+              if (item && item.revenue && item.revenue > 0 && item.net_income !== undefined && item.net_income !== null) {
+                return parseFloat(((item.net_income / item.revenue) * 100).toFixed(2));
               }
               return null;
-            });
+            };
 
-            const ebitdaMarginData = yrs.map(y => {
-              if (y.revenue && y.revenue > 0 && y.ebitda !== undefined && y.ebitda !== null) {
-                return parseFloat(((y.ebitda / y.revenue) * 100).toFixed(2));
+            const calcEbitdaMargin = (item) => {
+              if (item && item.revenue && item.revenue > 0 && item.ebitda !== undefined && item.ebitda !== null) {
+                return parseFloat(((item.ebitda / item.revenue) * 100).toFixed(2));
               }
               return null;
-            });
+            };
 
-            const datasets = [
-              {
-                type: 'line',
-                label: 'Marge Nette (%)',
-                data: netMarginData,
-                borderColor: CITADEL_PALETTE.emerald,
-                backgroundColor: CITADEL_PALETTE.emerald,
-                borderWidth: 2.5,
-                pointRadius: 4.5,
-                pointHoverRadius: 6.5,
-                tension: 0.3,
-                yAxisID: 'y'
-              },
-              {
-                type: 'line',
-                label: 'Marge EBITDA (%)',
-                data: ebitdaMarginData,
-                borderColor: CITADEL_PALETTE.cobalt,
-                backgroundColor: CITADEL_PALETTE.cobalt,
-                borderWidth: 2.5,
-                pointRadius: 4.5,
-                pointHoverRadius: 6.5,
-                tension: 0.3,
-                yAxisID: 'y'
-              }
-            ];
+            let datasets;
+            if (benchmarkData.value) {
+              datasets = [
+                {
+                  type: 'line',
+                  label: 'Marge Nette % (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => calcNetMargin(mainMap[y])),
+                  borderColor: CITADEL_PALETTE.emerald,
+                  backgroundColor: CITADEL_PALETTE.emerald,
+                  borderWidth: 2.5,
+                  pointRadius: 4.5,
+                  tension: 0.3
+                },
+                {
+                  type: 'line',
+                  label: 'Marge Nette % (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => calcNetMargin(benchMap[y])),
+                  borderColor: CITADEL_PALETTE.competitor,
+                  backgroundColor: CITADEL_PALETTE.competitor,
+                  borderWidth: 2,
+                  borderDash: [5, 5],
+                  pointRadius: 4,
+                  tension: 0.3
+                },
+                {
+                  type: 'line',
+                  label: 'Marge EBITDA % (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => calcEbitdaMargin(mainMap[y])),
+                  borderColor: CITADEL_PALETTE.cobalt,
+                  backgroundColor: CITADEL_PALETTE.cobalt,
+                  borderWidth: 2.5,
+                  pointRadius: 4.5,
+                  tension: 0.3
+                },
+                {
+                  type: 'line',
+                  label: 'Marge EBITDA % (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => calcEbitdaMargin(benchMap[y])),
+                  borderColor: '#818CF8',
+                  backgroundColor: '#818CF8',
+                  borderWidth: 2,
+                  borderDash: [5, 5],
+                  pointRadius: 4,
+                  tension: 0.3
+                }
+              ];
+            } else {
+              datasets = [
+                {
+                  type: 'line',
+                  label: 'Marge Nette (%)',
+                  data: allYears.map(y => calcNetMargin(mainMap[y])),
+                  borderColor: CITADEL_PALETTE.emerald,
+                  backgroundColor: CITADEL_PALETTE.emerald,
+                  borderWidth: 2.5,
+                  pointRadius: 4.5,
+                  pointHoverRadius: 6.5,
+                  tension: 0.3
+                },
+                {
+                  type: 'line',
+                  label: 'Marge EBITDA (%)',
+                  data: allYears.map(y => calcEbitdaMargin(mainMap[y])),
+                  borderColor: CITADEL_PALETTE.cobalt,
+                  backgroundColor: CITADEL_PALETTE.cobalt,
+                  borderWidth: 2.5,
+                  pointRadius: 4.5,
+                  pointHoverRadius: 6.5,
+                  tension: 0.3
+                }
+              ];
+            }
 
             financialMarginsChart = new Chart(marginsCtx, {
               type: 'line',
@@ -985,7 +1204,7 @@ if (window.Chart) {
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
                 }
               }
             });
@@ -1000,38 +1219,95 @@ if (window.Chart) {
               if (existing) existing.destroy();
             }
 
-            const yrs = financialYearsWithData.value;
-            const labels = yrs.map(y => String(y.year));
-
-            const datasets = [
-              {
-                type: 'bar',
-                label: 'Total Actif',
-                data: yrs.map(y => y.total_assets || 0),
-                backgroundColor: CITADEL_PALETTE.gold,
-                borderColor: CITADEL_PALETTE.goldLight,
-                borderWidth: 1,
-                borderRadius: 6
-              },
-              {
-                type: 'bar',
-                label: 'Capitaux Propres (Fonds Propres)',
-                data: yrs.map(y => y.equity || 0),
-                backgroundColor: CITADEL_PALETTE.emerald,
-                borderColor: CITADEL_PALETTE.emeraldLight,
-                borderWidth: 1,
-                borderRadius: 6
-              },
-              {
-                type: 'bar',
-                label: 'Dettes Financières / Passif',
-                data: yrs.map(y => y.debt || 0),
-                backgroundColor: CITADEL_PALETTE.vermillon,
-                borderColor: CITADEL_PALETTE.vermillonLight,
-                borderWidth: 1,
-                borderRadius: 6
-              }
-            ];
+            let datasets;
+            if (benchmarkData.value) {
+              datasets = [
+                {
+                  type: 'bar',
+                  label: 'Total Actif (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => mainMap[y]?.total_assets || 0),
+                  backgroundColor: CITADEL_PALETTE.primary,
+                  borderColor: CITADEL_PALETTE.primaryLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Total Actif (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => benchMap[y]?.total_assets || 0),
+                  backgroundColor: '#0284C7',
+                  borderColor: '#38BDF8',
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Capitaux Propres (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => mainMap[y]?.equity || 0),
+                  backgroundColor: CITADEL_PALETTE.emerald,
+                  borderColor: CITADEL_PALETTE.emeraldLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Capitaux Propres (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => benchMap[y]?.equity || 0),
+                  backgroundColor: '#0F766E',
+                  borderColor: '#2DD4BF',
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Dettes (' + displayCompanyName.value + ')',
+                  data: allYears.map(y => mainMap[y]?.debt || 0),
+                  backgroundColor: CITADEL_PALETTE.vermillon,
+                  borderColor: CITADEL_PALETTE.vermillonLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Dettes (' + benchmarkCompanyName.value + ')',
+                  data: allYears.map(y => benchMap[y]?.debt || 0),
+                  backgroundColor: '#BE123C',
+                  borderColor: '#FB7185',
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                }
+              ];
+            } else {
+              datasets = [
+                {
+                  type: 'bar',
+                  label: 'Total Actif',
+                  data: allYears.map(y => mainMap[y]?.total_assets || 0),
+                  backgroundColor: CITADEL_PALETTE.primary,
+                  borderColor: CITADEL_PALETTE.primaryLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Capitaux Propres (Fonds Propres)',
+                  data: allYears.map(y => mainMap[y]?.equity || 0),
+                  backgroundColor: CITADEL_PALETTE.emerald,
+                  borderColor: CITADEL_PALETTE.emeraldLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                },
+                {
+                  type: 'bar',
+                  label: 'Dettes Financières / Passif',
+                  data: allYears.map(y => mainMap[y]?.debt || 0),
+                  backgroundColor: CITADEL_PALETTE.vermillon,
+                  borderColor: CITADEL_PALETTE.vermillonLight,
+                  borderWidth: 1.5,
+                  borderRadius: 6
+                }
+              ];
+            }
 
             financialBalanceSheetChart = new Chart(bsCtx, {
               type: 'bar',
@@ -1057,11 +1333,14 @@ if (window.Chart) {
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
                 }
               }
             });
           }
+        } catch(err) {
+          console.error("Erreur renderFinancialCharts:", err);
+        }
         }
 
         // Benchmark Computed Properties
@@ -1077,28 +1356,246 @@ if (window.Chart) {
         });
         const benchmarkActiveEstablishments = computed(() => benchmarkData.value?.ownership_graph?.active_establishments_count ?? benchmarkNodes.value.filter(n => n.etat_administratif === 'A').length);
         const benchmarkTotalEstablishments = computed(() => benchmarkData.value?.ownership_graph?.total_nodes ?? benchmarkNodes.value.length);
+        const benchmarkHasConfidentialAccounts = computed(() => {
+          const fin = benchmarkData.value?.financials;
+          const legFin = benchmarkData.value?.legal_profile?.financials;
+          return !!(
+            fin?.is_confidential ||
+            fin?.latest_balance_sheet?.is_confidential ||
+            legFin?.is_confidential ||
+            legFin?.latest_balance_sheet?.is_confidential
+          );
+        });
+
+        function normalizeFinancialYearItem(raw, defaultYear) {
+          if (!raw) return null;
+          const yr = defaultYear || raw.year || (raw.date_cloture ? parseInt(String(raw.date_cloture).split('-')[0]) : 0);
+          const rev = raw.revenue ?? raw.ca ?? raw.chiffre_affaires ?? null;
+          const net = raw.net_income ?? raw.resultat_net ?? null;
+          const eb = raw.ebitda ?? raw.operating_income ?? null;
+          const assets = raw.total_assets ?? raw.totalActif ?? null;
+          const eq = raw.equity ?? raw.capitaux_propres ?? null;
+          const debts = raw.debt ?? raw.financial_debts ?? raw.total_debts ?? null;
+          const margin = raw.profit_margin_percent ?? ((rev && rev > 0 && net !== null && net !== undefined) ? Number(((net / rev) * 100).toFixed(1)) : null);
+          const altman = raw.altman_z_score ?? null;
+
+          return {
+            year: yr,
+            revenue: rev,
+            ebitda: eb,
+            net_income: net,
+            total_assets: assets,
+            equity: eq,
+            debt: debts,
+            financial_debts: debts,
+            total_debts: debts,
+            profit_margin_percent: margin,
+            altman_z_score: altman
+          };
+        }
+
+        function extractConsolidatedFinancialYears(sourceData) {
+          if (!sourceData) return [];
+          const fin = sourceData.financials;
+          const map = {};
+
+          // 1. Timeline (priorité 1 - INPI RNE multi-annuel)
+          const timeline = fin?.yearly_financial_timeline;
+          if (timeline && typeof timeline === 'object') {
+            for (const [yStr, val] of Object.entries(timeline)) {
+              const yInt = parseInt(yStr) || val?.year;
+              if (yInt && !isNaN(yInt)) {
+                map[yInt] = normalizeFinancialYearItem(val, yInt);
+              }
+            }
+          }
+
+          // 2. Dernier bilan certifié (complément si année manquante)
+          const latest = fin?.latest_balance_sheet;
+          if (latest && latest.year) {
+            const yInt = parseInt(latest.year);
+            if (yInt && !isNaN(yInt) && !map[yInt]) {
+              map[yInt] = normalizeFinancialYearItem(latest, yInt);
+            }
+          }
+
+          // 3. Complément SIRENE (si l'INPI n'a pas certaines années antérieures)
+          const sireneFin = sourceData.legal_profile?.finances;
+          if (sireneFin && typeof sireneFin === 'object') {
+            for (const [yStr, val] of Object.entries(sireneFin)) {
+              const yInt = parseInt(yStr);
+              if (yInt && !isNaN(yInt) && !map[yInt]) {
+                map[yInt] = normalizeFinancialYearItem({
+                  year: yInt,
+                  revenue: val?.ca || val?.revenue,
+                  net_income: val?.resultat_net || val?.net_income
+                }, yInt);
+              }
+            }
+          }
+
+          const arr = Object.values(map).filter(item => item && item.year);
+          return arr.sort((a, b) => a.year - b.year);
+        }
+
+        function getReversedYears(list) {
+          if (!list) return [];
+          const arr = Array.isArray(list) ? list : (list.value && Array.isArray(list.value) ? list.value : []);
+          return [...arr].reverse();
+        }
+
+        const benchmarkFinancialYears = computed(() => extractConsolidatedFinancialYears(benchmarkData.value));
+        const reversedBenchmarkFinancialYears = computed(() => getReversedYears(benchmarkFinancialYears.value));
+
         const benchmarkRevenue = computed(() => {
-          const r = benchmarkData.value?.financials?.latest_balance_sheet?.revenue;
-          return r ? formatEuros(r) : 'N/D (Confidentiel)';
+          const fin = benchmarkData.value?.financials;
+          const legFin = benchmarkData.value?.legal_profile?.financials;
+          
+          let rev = fin?.latest_balance_sheet?.revenue;
+          if (rev === undefined || rev === null) rev = fin?.revenue;
+          if (rev === undefined || rev === null) rev = fin?.chiffre_affaires;
+          if (rev === undefined || rev === null) rev = legFin?.latest_balance_sheet?.revenue;
+          if (rev === undefined || rev === null) rev = legFin?.revenue;
+
+          if ((rev === undefined || rev === null) && fin?.yearly_financial_timeline) {
+            const yrs = Object.values(fin.yearly_financial_timeline).sort((a, b) => b.year - a.year);
+            for (const yr of yrs) {
+              if (yr.revenue !== undefined && yr.revenue !== null && yr.revenue !== 0) {
+                rev = yr.revenue;
+                break;
+              }
+            }
+          }
+
+          if (rev === undefined || rev === null) {
+            const sireneFin = benchmarkData.value?.legal_profile?.finances;
+            if (sireneFin && typeof sireneFin === 'object') {
+              const yrs = Object.keys(sireneFin).sort().reverse();
+              for (const yr of yrs) {
+                const item = sireneFin[yr];
+                if (item?.ca || item?.revenue) {
+                  rev = item.ca || item.revenue;
+                  break;
+                }
+              }
+            }
+          }
+
+          if (rev !== undefined && rev !== null && rev !== 0) {
+            return formatEuros(rev);
+          }
+
+          if (benchmarkHasConfidentialAccounts.value) {
+            return 'Confidentiel (Décret L. 232-25)';
+          }
+
+          if (fin?.latest_balance_sheet || (fin?.yearly_financial_timeline && Object.keys(fin.yearly_financial_timeline).length > 0)) {
+            return 'N/A (Secteur Financier / Bilan Déposé)';
+          }
+
+          return 'Bilan non publié';
         });
+
         const benchmarkNetIncome = computed(() => {
-          const n = benchmarkData.value?.financials?.latest_balance_sheet?.net_income;
-          return n ? formatEuros(n) : 'N/D (Confidentiel)';
+          const fin = benchmarkData.value?.financials;
+          const legFin = benchmarkData.value?.legal_profile?.financials;
+          
+          let net = fin?.latest_balance_sheet?.net_income;
+          if (net === undefined || net === null) net = fin?.net_income;
+          if (net === undefined || net === null) net = fin?.resultat_net;
+          if (net === undefined || net === null) net = legFin?.latest_balance_sheet?.net_income;
+          if (net === undefined || net === null) net = legFin?.net_income;
+
+          if ((net === undefined || net === null) && fin?.yearly_financial_timeline) {
+            const yrs = Object.values(fin.yearly_financial_timeline).sort((a, b) => b.year - a.year);
+            for (const yr of yrs) {
+              if (yr.net_income !== undefined && yr.net_income !== null && yr.net_income !== 0) {
+                net = yr.net_income;
+                break;
+              }
+            }
+          }
+
+          if (net === undefined || net === null) {
+            const sireneFin = benchmarkData.value?.legal_profile?.finances;
+            if (sireneFin && typeof sireneFin === 'object') {
+              const yrs = Object.keys(sireneFin).sort().reverse();
+              for (const yr of yrs) {
+                const item = sireneFin[yr];
+                if (item?.resultat_net || item?.net_income) {
+                  net = item.resultat_net || item.net_income;
+                  break;
+                }
+              }
+            }
+          }
+
+          if (net !== undefined && net !== null && net !== 0) {
+            return formatEuros(net);
+          }
+
+          if (benchmarkHasConfidentialAccounts.value) {
+            return 'Confidentiel (Décret L. 232-25)';
+          }
+
+          return 'Bilan non publié';
         });
+
+        const benchmarkEbitda = computed(() => {
+          const fin = benchmarkData.value?.financials;
+          const legFin = benchmarkData.value?.legal_profile?.financials;
+          
+          let eb = fin?.latest_balance_sheet?.ebitda;
+          if (eb === undefined || eb === null) eb = fin?.ebitda;
+          if (eb === undefined || eb === null) eb = legFin?.latest_balance_sheet?.ebitda;
+          if (eb === undefined || eb === null) eb = legFin?.ebitda;
+
+          if ((eb === undefined || eb === null) && fin?.yearly_financial_timeline) {
+            const yrs = Object.values(fin.yearly_financial_timeline).sort((a, b) => b.year - a.year);
+            for (const yr of yrs) {
+              if (yr.ebitda !== undefined && yr.ebitda !== null && yr.ebitda !== 0) {
+                eb = yr.ebitda;
+                break;
+              }
+            }
+          }
+
+          if (eb !== undefined && eb !== null && eb !== 0) {
+            return formatEuros(eb);
+          }
+
+          if (benchmarkHasConfidentialAccounts.value) {
+            return 'Confidentiel (Décret L. 232-25)';
+          }
+
+          return 'N/D';
+        });
+
+        const benchmarkAltmanScore = computed(() => {
+          const score = benchmarkData.value?.financials?.ratios?.altman_z_score;
+          return (score !== null && score !== undefined) ? score : 'N/D';
+        });
+
+        const benchmarkAltmanStatus = computed(() => {
+          const status = benchmarkData.value?.financials?.ratios?.altman_status;
+          if (status && status !== 'Données insuffisantes (bilan incomplet)') return status;
+          return 'Bilan Synthétique RNE (Actif/Passif non détaillé)';
+        });
+
         const benchmarkEvents = computed(() => benchmarkData.value?.legal_monitor_events || []);
 
         // Advanced BI Metrics & Enriched KPIs
         const averageSiteLifespan = computed(() => {
-          const closed = displayNodes.value.filter(n => n.etat_administratif === 'F');
+          const closed = (displayNodes.value || []).filter(n => n && n.etat_administratif === 'F');
           if (closed.length === 0) return 'Aucun site clos';
           let totalYears = 0;
           let count = 0;
           closed.forEach(n => {
-            const cDate = n.details?.date_creation || n.details?.creation_date || n.creation_date || (n.creation_year ? String(n.creation_year) : null);
-            const fDate = n.details?.date_fermeture || n.details?.fermeture_date || n.date_fermeture;
+            const cDate = n?.details?.date_creation || n?.details?.creation_date || n?.creation_date || (n?.creation_year ? String(n.creation_year) : null);
+            const fDate = n?.details?.date_fermeture || n?.details?.fermeture_date || n?.date_fermeture;
             if (cDate && fDate) {
-              const cYear = parseInt(cDate.substring(0, 4));
-              const fYear = parseInt(fDate.substring(0, 4));
+              const cYear = parseInt(String(cDate).substring(0, 4));
+              const fYear = parseInt(String(fDate).substring(0, 4));
               if (!isNaN(cYear) && !isNaN(fYear) && fYear >= cYear) {
                 totalYears += (fYear - cYear);
                 count++;
@@ -1110,16 +1607,16 @@ if (window.Chart) {
         });
 
         const benchmarkAverageSiteLifespan = computed(() => {
-          const closed = benchmarkNodes.value.filter(n => n.etat_administratif === 'F');
+          const closed = (benchmarkNodes.value || []).filter(n => n && n.etat_administratif === 'F');
           if (closed.length === 0) return 'Aucun site clos';
           let totalYears = 0;
           let count = 0;
           closed.forEach(n => {
-            const cDate = n.details?.date_creation || n.details?.creation_date || n.creation_date || (n.creation_year ? String(n.creation_year) : null);
-            const fDate = n.details?.date_fermeture || n.details?.fermeture_date || n.date_fermeture;
+            const cDate = n?.details?.date_creation || n?.details?.creation_date || n?.creation_date || (n?.creation_year ? String(n.creation_year) : null);
+            const fDate = n?.details?.date_fermeture || n?.details?.fermeture_date || n?.date_fermeture;
             if (cDate && fDate) {
-              const cYear = parseInt(cDate.substring(0, 4));
-              const fYear = parseInt(fDate.substring(0, 4));
+              const cYear = parseInt(String(cDate).substring(0, 4));
+              const fYear = parseInt(String(fDate).substring(0, 4));
               if (!isNaN(cYear) && !isNaN(fYear) && fYear >= cYear) {
                 totalYears += (fYear - cYear);
                 count++;
@@ -1131,11 +1628,11 @@ if (window.Chart) {
         });
 
         const executiveTurnoverVelocity = computed(() => {
-          const geranceEvents = displayEvents.value.filter(ev => ev.category === 'NOMINATION_GERANCE').length;
+          const geranceEvents = (displayEvents.value || []).filter(ev => ev && ev.category === 'NOMINATION_GERANCE').length;
           const regDate = displayRegistrationDate.value;
           let yearsTracked = 5;
-          if (regDate && /^\d{4}/.test(regDate)) {
-            const startYr = parseInt(regDate.substring(0, 4));
+          if (regDate && /^\d{4}/.test(String(regDate))) {
+            const startYr = parseInt(String(regDate).substring(0, 4));
             const currYr = new Date().getFullYear();
             if (currYr > startYr) yearsTracked = Math.max(1, currYr - startYr);
           }
@@ -1144,7 +1641,7 @@ if (window.Chart) {
         });
 
         const benchmarkExecutiveTurnoverVelocity = computed(() => {
-          const geranceEvents = benchmarkEvents.value.filter(ev => ev.category === 'NOMINATION_GERANCE').length;
+          const geranceEvents = (benchmarkEvents.value || []).filter(ev => ev && ev.category === 'NOMINATION_GERANCE').length;
           const rate = (geranceEvents / 5).toFixed(1);
           return `${rate} Mouvements/An`;
         });
@@ -1209,9 +1706,10 @@ if (window.Chart) {
           return false;
         }
 
-        const regionalBIStats = computed(() => {
+        function computeRegionalStats(nodes) {
           const map = {};
-          displayNodes.value.forEach(node => {
+          (nodes || []).forEach(node => {
+            if (!node) return;
             const cp = node.details?.code_postal || '';
             const deptCode = getDeptCodeFromCp(cp);
             const regName = getRegionForDept(deptCode);
@@ -1233,7 +1731,7 @@ if (window.Chart) {
             const isClosed = node.etat_administratif === 'F';
             if (isClosed) {
               item.closed += 1;
-              const hasReloc = isRelocationEstablishment(node, displayNodes.value);
+              const hasReloc = isRelocationEstablishment(node, nodes);
               if (hasReloc) {
                 item.relocations += 1;
               } else {
@@ -1242,8 +1740,8 @@ if (window.Chart) {
               const cDate = node.details?.date_creation || node.creation_date;
               const fDate = node.details?.date_fermeture || node.date_fermeture;
               if (cDate && fDate) {
-                const cYr = parseInt(cDate.substring(0, 4));
-                const fYr = parseInt(fDate.substring(0, 4));
+                const cYr = parseInt(String(cDate).substring(0, 4));
+                const fYr = parseInt(String(fDate).substring(0, 4));
                 if (!isNaN(cYr) && !isNaN(fYr) && fYr >= cYr) {
                   item.lifespanSumYears += (fYr - cYr);
                   item.closedWithLifespanCount += 1;
@@ -1263,11 +1761,12 @@ if (window.Chart) {
               avg_lifespan
             };
           });
-        });
+        }
 
-        const departmentalBIStats = computed(() => {
+        function computeDepartmentalStats(nodes) {
           const map = {};
-          displayNodes.value.forEach(node => {
+          (nodes || []).forEach(node => {
+            if (!node) return;
             const cp = node.details?.code_postal || '';
             const deptCode = getDeptCodeFromCp(cp);
             const regName = getRegionForDept(deptCode);
@@ -1292,7 +1791,7 @@ if (window.Chart) {
             const isClosed = node.etat_administratif === 'F';
             if (isClosed) {
               item.closed += 1;
-              const hasReloc = isRelocationEstablishment(node, displayNodes.value);
+              const hasReloc = isRelocationEstablishment(node, nodes);
               if (hasReloc) {
                 item.relocations += 1;
               } else {
@@ -1301,8 +1800,8 @@ if (window.Chart) {
               const cDate = node.details?.date_creation || node.creation_date;
               const fDate = node.details?.date_fermeture || node.date_fermeture;
               if (cDate && fDate) {
-                const cYr = parseInt(cDate.substring(0, 4));
-                const fYr = parseInt(fDate.substring(0, 4));
+                const cYr = parseInt(String(cDate).substring(0, 4));
+                const fYr = parseInt(String(fDate).substring(0, 4));
                 if (!isNaN(cYr) && !isNaN(fYr) && fYr >= cYr) {
                   item.lifespanSumYears += (fYr - cYr);
                   item.closedWithLifespanCount += 1;
@@ -1322,10 +1821,117 @@ if (window.Chart) {
               avg_lifespan
             };
           });
+        }
+
+        const biGeoEntityFilter = ref('all'); // 'all', 'primary', 'benchmark'
+
+        const regionalBIStats = computed(() => {
+          return computeRegionalStats(displayNodes.value);
+        });
+
+        const departmentalBIStats = computed(() => {
+          return computeDepartmentalStats(displayNodes.value);
+        });
+
+        const benchmarkRegionalBIStats = computed(() => {
+          return computeRegionalStats(benchmarkNodes.value);
+        });
+
+        const benchmarkDepartmentalBIStats = computed(() => {
+          return computeDepartmentalStats(benchmarkNodes.value);
+        });
+
+        const comparisonBiGeoList = computed(() => {
+          const isRegion = biGeoGranularity.value === 'region';
+          const primaryList = isRegion ? regionalBIStats.value : departmentalBIStats.value;
+          const benchList = isRegion ? benchmarkRegionalBIStats.value : benchmarkDepartmentalBIStats.value;
+
+          const map = {};
+          primaryList.forEach(p => {
+            const key = isRegion ? p.name : p.code;
+            map[key] = {
+              key,
+              name: p.name,
+              regionName: p.regionName || '',
+              primaryTotal: p.total,
+              primaryActive: p.active,
+              primaryClosed: p.closed,
+              primaryRate: p.activity_rate,
+              primaryRelocations: p.relocations,
+              primaryFinalClosures: p.final_closures,
+              primaryAvgLifespan: p.avg_lifespan,
+              benchmarkTotal: 0,
+              benchmarkActive: 0,
+              benchmarkClosed: 0,
+              benchmarkRate: 0,
+              benchmarkRelocations: 0,
+              benchmarkFinalClosures: 0,
+              benchmarkAvgLifespan: 'N/A'
+            };
+          });
+
+          benchList.forEach(b => {
+            const key = isRegion ? b.name : b.code;
+            if (!map[key]) {
+              map[key] = {
+                key,
+                name: b.name,
+                regionName: b.regionName || '',
+                primaryTotal: 0,
+                primaryActive: 0,
+                primaryClosed: 0,
+                primaryRate: 0,
+                primaryRelocations: 0,
+                primaryFinalClosures: 0,
+                primaryAvgLifespan: 'N/A',
+                benchmarkTotal: b.total,
+                benchmarkActive: b.active,
+                benchmarkClosed: b.closed,
+                benchmarkRate: b.activity_rate,
+                benchmarkRelocations: b.relocations,
+                benchmarkFinalClosures: b.final_closures,
+                benchmarkAvgLifespan: b.avg_lifespan
+              };
+            } else {
+              map[key].benchmarkTotal = b.total;
+              map[key].benchmarkActive = b.active;
+              map[key].benchmarkClosed = b.closed;
+              map[key].benchmarkRate = b.activity_rate;
+              map[key].benchmarkRelocations = b.relocations;
+              map[key].benchmarkFinalClosures = b.final_closures;
+              map[key].benchmarkAvgLifespan = b.avg_lifespan;
+            }
+          });
+
+          return Object.values(map).map(item => {
+            const totalCombined = item.primaryTotal + item.benchmarkTotal;
+            const diff = item.primaryTotal - item.benchmarkTotal;
+            let leader = 'Égalité';
+            if (item.primaryTotal > item.benchmarkTotal) {
+              leader = displayCompanyName.value;
+            } else if (item.benchmarkTotal > item.primaryTotal) {
+              leader = benchmarkCompanyName.value;
+            }
+            return {
+              ...item,
+              total: totalCombined,
+              totalCombined,
+              diff,
+              leader
+            };
+          });
         });
 
         const sortedBiGeoList = computed(() => {
-          const baseList = biGeoGranularity.value === 'region' ? [...regionalBIStats.value] : [...departmentalBIStats.value];
+          let baseList = [];
+          if (benchmarkData.value && biGeoEntityFilter.value === 'all') {
+            baseList = [...comparisonBiGeoList.value];
+          } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
+            baseList = biGeoGranularity.value === 'region' ? [...benchmarkRegionalBIStats.value] : [...benchmarkDepartmentalBIStats.value];
+          } else {
+            baseList = biGeoGranularity.value === 'region' ? [...regionalBIStats.value] : [...departmentalBIStats.value];
+          }
+
           const k = biSortKey.value;
           const asc = biSortAsc.value;
 
@@ -1334,12 +1940,30 @@ if (window.Chart) {
             let valB = b[k];
 
             if (k === 'lifespan') {
-              valA = parseFloat(a.avg_lifespan) || 0;
-              valB = parseFloat(b.avg_lifespan) || 0;
+              valA = parseFloat(a.avg_lifespan || a.primaryAvgLifespan) || 0;
+              valB = parseFloat(b.avg_lifespan || b.primaryAvgLifespan) || 0;
             } else if (k === 'name') {
-              valA = a.name.toLowerCase();
-              valB = b.name.toLowerCase();
+              valA = (a.name || '').toLowerCase();
+              valB = (b.name || '').toLowerCase();
+            } else if (k === 'total') {
+              valA = (a.totalCombined !== undefined ? a.totalCombined : a.total) || 0;
+              valB = (b.totalCombined !== undefined ? b.totalCombined : b.total) || 0;
+            } else if (k === 'active') {
+              valA = (a.primaryActive !== undefined ? a.primaryActive : a.active) || 0;
+              valB = (b.primaryActive !== undefined ? b.primaryActive : b.active) || 0;
+            } else if (k === 'closed') {
+              valA = (a.primaryClosed !== undefined ? a.primaryClosed : a.closed) || 0;
+              valB = (b.primaryClosed !== undefined ? b.primaryClosed : b.closed) || 0;
+            } else if (k === 'benchmarkTotal') {
+              valA = a.benchmarkTotal || 0;
+              valB = b.benchmarkTotal || 0;
+            } else if (k === 'diff') {
+              valA = a.diff || 0;
+              valB = b.diff || 0;
             }
+
+            if (valA === undefined || valA === null) valA = 0;
+            if (valB === undefined || valB === null) valB = 0;
 
             if (valA < valB) return asc ? -1 : 1;
             if (valA > valB) return asc ? 1 : -1;
@@ -1373,6 +1997,26 @@ if (window.Chart) {
         const biAverageActivityRate = computed(() => {
           const tot = totalEstablishments.value;
           const act = activeEstablishments.value;
+          return tot > 0 ? ((act / tot) * 100).toFixed(1) : '0.0';
+        });
+
+        const benchmarkBiTotalRelocations = computed(() => {
+          return benchmarkRegionalBIStats.value.reduce((acc, curr) => acc + curr.relocations, 0);
+        });
+
+        const benchmarkBiTotalFinalClosures = computed(() => {
+          return benchmarkRegionalBIStats.value.reduce((acc, curr) => acc + curr.final_closures, 0);
+        });
+
+        const benchmarkBiTopRegionBySites = computed(() => {
+          if (benchmarkRegionalBIStats.value.length === 0) return 'Aucune';
+          const top = [...benchmarkRegionalBIStats.value].sort((a, b) => b.total - a.total)[0];
+          return `${top.name} (${top.total} sites)`;
+        });
+
+        const benchmarkBiAverageActivityRate = computed(() => {
+          const tot = benchmarkTotalEstablishments.value;
+          const act = benchmarkActiveEstablishments.value;
           return tot > 0 ? ((act / tot) * 100).toFixed(1) : '0.0';
         });
 
@@ -1498,7 +2142,7 @@ if (window.Chart) {
           };
         });
 
-        function renderBiStudioCharts() {
+        function renderBiTimelineAndGeoCharts() {
           if (analyticsSubTab.value !== 'network') return;
 
           // 1. MASTER TIMELINE COMBO CHART
@@ -1590,7 +2234,7 @@ if (window.Chart) {
             });
           }
 
-          // 2. STACKED BAR CHART (ACTIFS VS CLOS)
+          // 2. STACKED BAR CHART (ACTIFS VS CLOS OU COMPARATIF)
           const stackedCtx = document.getElementById('biGeoStackedCanvas');
           if (stackedCtx) {
             if (biGeoStackedChart) { biGeoStackedChart.destroy(); biGeoStackedChart = null; }
@@ -1598,26 +2242,85 @@ if (window.Chart) {
               const existing = Chart.getChart(stackedCtx);
               if (existing) existing.destroy();
             }
-            const items = sortedBiGeoList.value.slice(0, 12);
-            biGeoStackedChart = new Chart(stackedCtx, {
-              type: 'bar',
-              data: {
-                labels: items.map(i => i.name),
-                datasets: [
-                  { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.emerald, borderRadius: 4 },
-                  { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
-                ]
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                  x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+
+            if (benchmarkData.value && biGeoEntityFilter.value === 'all') {
+              const items = comparisonBiGeoList.value.slice(0, 12);
+              biGeoStackedChart = new Chart(stackedCtx, {
+                type: 'bar',
+                data: {
+                  labels: items.map(i => i.name),
+                  datasets: [
+                    {
+                      label: `🏢 ${displayCompanyName.value} (Sites)`,
+                      data: items.map(i => i.primaryTotal),
+                      backgroundColor: CITADEL_PALETTE.gold,
+                      borderColor: CITADEL_PALETTE.goldLight,
+                      borderWidth: 1.5,
+                      borderRadius: 4
+                    },
+                    {
+                      label: `⚔️ ${benchmarkCompanyName.value} (Sites)`,
+                      data: items.map(i => i.benchmarkTotal),
+                      backgroundColor: CITADEL_PALETTE.competitor,
+                      borderColor: CITADEL_PALETTE.competitorLight,
+                      borderWidth: 1.5,
+                      borderRadius: 4
+                    }
+                  ]
                 },
-                plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
-              }
-            });
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                  },
+                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                }
+              });
+            } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
+              const items = sortedBiGeoList.value.slice(0, 12);
+              biGeoStackedChart = new Chart(stackedCtx, {
+                type: 'bar',
+                data: {
+                  labels: items.map(i => i.name),
+                  datasets: [
+                    { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.competitor, borderRadius: 4 },
+                    { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
+                  ]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                  },
+                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                }
+              });
+            } else {
+              const items = sortedBiGeoList.value.slice(0, 12);
+              biGeoStackedChart = new Chart(stackedCtx, {
+                type: 'bar',
+                data: {
+                  labels: items.map(i => i.name),
+                  datasets: [
+                    { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.emerald, borderRadius: 4 },
+                    { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
+                  ]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                  },
+                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                }
+              });
+            }
           }
 
           // 3. DONUT CHART MOTIFS DE FERMETURE
@@ -1628,16 +2331,48 @@ if (window.Chart) {
               const existing = Chart.getChart(donutCtx);
               if (existing) existing.destroy();
             }
+
+            let datasets = [];
+            if (benchmarkData.value && biGeoEntityFilter.value === 'all') {
+              datasets = [
+                {
+                  label: displayCompanyName.value,
+                  data: [biTotalRelocations.value, biTotalFinalClosures.value],
+                  backgroundColor: [CITADEL_PALETTE.gold, CITADEL_PALETTE.vermillon],
+                  borderWidth: 2,
+                  borderColor: CITADEL_PALETTE.surface
+                },
+                {
+                  label: benchmarkCompanyName.value,
+                  data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
+                  backgroundColor: [CITADEL_PALETTE.competitor, CITADEL_PALETTE.rose],
+                  borderWidth: 2,
+                  borderColor: CITADEL_PALETTE.surface
+                }
+              ];
+            } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
+              datasets = [{
+                label: benchmarkCompanyName.value,
+                data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
+                backgroundColor: [CITADEL_PALETTE.competitor, CITADEL_PALETTE.vermillon],
+                borderWidth: 2,
+                borderColor: CITADEL_PALETTE.surface
+              }];
+            } else {
+              datasets = [{
+                label: displayCompanyName.value,
+                data: [biTotalRelocations.value, biTotalFinalClosures.value],
+                backgroundColor: [CITADEL_PALETTE.cobalt, CITADEL_PALETTE.vermillon],
+                borderWidth: 2,
+                borderColor: CITADEL_PALETTE.surface
+              }];
+            }
+
             biClosureReasonChart = new Chart(donutCtx, {
               type: 'doughnut',
               data: {
                 labels: ['Relocalisations 🔄', 'Fermetures Fermes ❌'],
-                datasets: [{
-                  data: [biTotalRelocations.value, biTotalFinalClosures.value],
-                  backgroundColor: [CITADEL_PALETTE.cobalt, CITADEL_PALETTE.vermillon],
-                  borderWidth: 2,
-                  borderColor: CITADEL_PALETTE.surface
-                }]
+                datasets: datasets
               },
               options: {
                 responsive: true,
@@ -1648,7 +2383,13 @@ if (window.Chart) {
           }
         }
 
-        watch([analyticsSubTab, biTimelineRegionFilter, biTimelineDeptFilter, biGeoGranularity, resultData], () => {
+        function renderBiStudioCharts() {
+          renderNetworkCharts();
+          renderExpansionDecadesChart();
+          renderBiTimelineAndGeoCharts();
+        }
+
+        watch([analyticsSubTab, biTimelineRegionFilter, biTimelineDeptFilter, biGeoGranularity, biGeoEntityFilter, resultData, benchmarkData], () => {
           nextTick(() => {
             renderBiStudioCharts();
           });
@@ -1755,9 +2496,16 @@ if (window.Chart) {
                   renderCurrentAnalyticsTab();
                 }, 200);
               }
+            } else {
+              const errData = await res.json().catch(() => ({}));
+              const msg = errData.detail || errData.message || "Impossible d'analyser cette entreprise pour le moment.";
+              errorMessage.value = msg;
+              showErrorModal.value = true;
             }
           } catch(e) {
             console.error(e);
+            errorMessage.value = "Une erreur de communication est survenue. Veuillez réessayer.";
+            showErrorModal.value = true;
           } finally {
             executionTime.value = ((performance.now() - startTime) / 1000).toFixed(2);
             isLoading.value = false;
@@ -2051,6 +2799,10 @@ if (window.Chart) {
             return 'Confidentiel (Décret L. 232-25)';
           }
 
+          if (fin?.latest_balance_sheet || (fin?.yearly_financial_timeline && Object.keys(fin.yearly_financial_timeline).length > 0)) {
+            return 'N/A (Secteur Financier / Bilan Déposé)';
+          }
+
           return 'Bilan non publié';
         });
 
@@ -2126,23 +2878,123 @@ if (window.Chart) {
           return 'Bilan Synthétique RNE (Actif/Passif non détaillé)';
         });
 
-        const financialYears = computed(() => {
-          const fin = resultData.value?.financials;
-          const timeline = fin?.yearly_financial_timeline;
-          if (timeline && Object.keys(timeline).length > 0) {
-            const list = Object.values(timeline);
-            return list.sort((a, b) => a.year - b.year);
+        const financialYears = computed(() => extractConsolidatedFinancialYears(resultData.value));
+        const reversedFinancialYears = computed(() => getReversedYears(financialYears.value));
+
+        // Direct Benchmark Indicators with explicit Exercise Year Annotation
+        const displayRevenueWithYear = computed(() => {
+          const yrs = reversedFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.revenue !== undefined && y.revenue !== null && y.revenue !== 0) {
+              return `${formatEuros(y.revenue)} (${y.year})`;
+            }
           }
-          if (fin?.latest_balance_sheet && fin.latest_balance_sheet.year) {
-            return [fin.latest_balance_sheet];
+          if (hasConfidentialAccounts.value) return 'Confidentiel';
+          if (yrs.length > 0) return 'N/A (Secteur Financier)';
+          return 'Bilan non publié';
+        });
+
+        const benchmarkRevenueWithYear = computed(() => {
+          const yrs = reversedBenchmarkFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.revenue !== undefined && y.revenue !== null && y.revenue !== 0) {
+              return `${formatEuros(y.revenue)} (${y.year})`;
+            }
           }
-          return [];
+          if (benchmarkHasConfidentialAccounts.value) return 'Confidentiel';
+          if (yrs.length > 0) return 'N/A (Secteur Financier)';
+          return 'Bilan non publié';
+        });
+
+        const displayNetIncomeWithYear = computed(() => {
+          const yrs = reversedFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.net_income !== undefined && y.net_income !== null && y.net_income !== 0) {
+              return `${formatEuros(y.net_income)} (${y.year})`;
+            }
+          }
+          if (hasConfidentialAccounts.value) return 'Confidentiel';
+          return 'Bilan non publié';
+        });
+
+        const benchmarkNetIncomeWithYear = computed(() => {
+          const yrs = reversedBenchmarkFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.net_income !== undefined && y.net_income !== null && y.net_income !== 0) {
+              return `${formatEuros(y.net_income)} (${y.year})`;
+            }
+          }
+          if (benchmarkHasConfidentialAccounts.value) return 'Confidentiel';
+          return 'Bilan non publié';
+        });
+
+        const displayMarginWithYear = computed(() => {
+          const yrs = reversedFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.profit_margin_percent !== undefined && y.profit_margin_percent !== null) {
+              const sign = y.profit_margin_percent >= 0 ? '+' : '';
+              return `${sign}${typeof y.profit_margin_percent === 'number' ? y.profit_margin_percent.toFixed(1) : y.profit_margin_percent}% (${y.year})`;
+            }
+            if (y.revenue && y.revenue > 0 && y.net_income !== undefined && y.net_income !== null) {
+              const sign = y.net_income >= 0 ? '+' : '';
+              return `${sign}${((y.net_income / y.revenue) * 100).toFixed(1)}% (${y.year})`;
+            }
+          }
+          return 'N/D';
+        });
+
+        const benchmarkMarginWithYear = computed(() => {
+          const yrs = reversedBenchmarkFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.profit_margin_percent !== undefined && y.profit_margin_percent !== null) {
+              const sign = y.profit_margin_percent >= 0 ? '+' : '';
+              return `${sign}${typeof y.profit_margin_percent === 'number' ? y.profit_margin_percent.toFixed(1) : y.profit_margin_percent}% (${y.year})`;
+            }
+            if (y.revenue && y.revenue > 0 && y.net_income !== undefined && y.net_income !== null) {
+              const sign = y.net_income >= 0 ? '+' : '';
+              return `${sign}${((y.net_income / y.revenue) * 100).toFixed(1)}% (${y.year})`;
+            }
+          }
+          return 'N/D';
+        });
+
+        const displayTotalAssetsWithYear = computed(() => {
+          const yrs = reversedFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.total_assets) return `${formatEuros(y.total_assets)} (${y.year})`;
+          }
+          return 'N/D';
+        });
+
+        const benchmarkTotalAssetsWithYear = computed(() => {
+          const yrs = reversedBenchmarkFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.total_assets) return `${formatEuros(y.total_assets)} (${y.year})`;
+          }
+          return 'N/D';
+        });
+
+        const displayEquityWithYear = computed(() => {
+          const yrs = reversedFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.equity) return `${formatEuros(y.equity)} (${y.year})`;
+          }
+          return 'N/D';
+        });
+
+        const benchmarkEquityWithYear = computed(() => {
+          const yrs = reversedBenchmarkFinancialYears.value || [];
+          for (const y of yrs) {
+            if (y.equity) return `${formatEuros(y.equity)} (${y.year})`;
+          }
+          return 'N/D';
         });
 
         const financialYearsWithData = computed(() => {
           const m = activeMetric.value || 'revenue';
-          const list = financialYears.value.filter(y => y[m] !== null && y[m] !== undefined && y[m] !== 0);
-          return list.length > 0 ? list : financialYears.value;
+          const base = Array.isArray(financialYears.value) ? financialYears.value : [];
+          const list = base.filter(y => y && y[m] !== null && y[m] !== undefined && y[m] !== 0);
+          return list.length > 0 ? list : base;
         });
 
         function formatEuros(val) {
@@ -2502,32 +3354,33 @@ if (window.Chart) {
 
             let markerRadius = 5;
             let markerWeight = 1;
-            let markerColor = 'rgba(255, 255, 255, 0.7)';
-            let markerFill = CITADEL_PALETTE.gold;
-            let markerOpacity = 0.85;
-            let markerFillOpacity = 0.85;
+            let markerColor = 'rgba(255, 255, 255, 0.5)';
+            let markerFill = isActive ? CITADEL_PALETTE.emerald : CITADEL_PALETTE.vermillon;
+            let markerOpacity = isActive ? 0.9 : 0.75;
+            let markerFillOpacity = isActive ? 0.85 : 0.65;
 
             if (isSelected) {
               markerRadius = 9;
+              markerWeight = 2.5;
+              markerColor = '#FFFFFF';
+              markerFill = isActive ? CITADEL_PALETTE.emeraldLight : CITADEL_PALETTE.vermillon;
+              markerOpacity = 1;
+              markerFillOpacity = 1;
+            } else if (isSiege) {
+              // Siege social : or = identite de l'entreprise, priorite visuelle maximale
+              markerRadius = 8;
               markerWeight = 2;
               markerColor = '#FFFFFF';
               markerFill = CITADEL_PALETTE.gold;
               markerOpacity = 1;
               markerFillOpacity = 1;
-            } else if (isSiege) {
-              markerRadius = 7;
-              markerWeight = 2;
-              markerColor = '#FFFFFF';
-              markerFill = CITADEL_PALETTE.goldLight;
-              markerOpacity = 1;
-              markerFillOpacity = 1;
             } else if (!isActive) {
-              markerRadius = 3.5;
+              markerRadius = 4;
               markerWeight = 1;
-              markerColor = '#1E293B';
-              markerFill = CITADEL_PALETTE.slate;
-              markerOpacity = 0.4;
-              markerFillOpacity = 0.4;
+              markerColor = 'rgba(239,68,68,0.4)';
+              markerFill = CITADEL_PALETTE.vermillon;
+              markerOpacity = 0.75;
+              markerFillOpacity = 0.6;
             }
 
             const circleMarker = L.circleMarker(coords, {
@@ -2547,7 +3400,7 @@ if (window.Chart) {
                 <div style="color: #94A3B8; font-size: 10px; margin-top: 3px;">${node.details?.adresse || 'Adresse disponible'}</div>
                 <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid #1E293B; display: flex; justify-content: space-between; align-items: center;">
                   <span style="font-size: 9px; color: #64748B;">STATUT RCS</span>
-                  <span style="font-size: 10px; font-weight: 700; color: ${isActive ? '#D99B43' : '#64748B'};">
+                  <span style="font-size: 10px; font-weight: 700; color: ${isActive ? '#22C55E' : '#EF4444'};">
                     ${isActive ? '● EN ACTIVITÉ' : '○ FERMÉ DÉFINITIF'}
                   </span>
                 </div>
@@ -2574,23 +3427,24 @@ if (window.Chart) {
 
         return {
           searchQuery, activeSiren, pendingQuery, isLoading, hasSearched, executionTime, performSearch: handleSearchSubmit, handleSearchSubmit, selectPreset, resetToLanding,
-          showCacheNotice, cacheNoticeMessage, clearServerAndSessionCache,
           showDisambiguationModal, candidateList, confirmCandidateAndAnalyze,
+          showErrorModal, errorMessage,
           resultData, displayCompanyName, displaySiren, displaySiretSiege, displayCodeLei, displayTvaIntracomm, displayCategorieEntreprise, displayAddressSiege, displayConventionsCollectives, displaySynchroDates, displayEtatAdmin, displayFormeJuridique, displayCodeNaf, displayRegistrationDate,
 
           // Main Tabs & Analytics Studio State
           activeTab, analyticsSubTab, switchTab, switchAnalyticsSubTab,
-          expansionStatusFilter, expansionTimeRange, renderNetworkCharts, renderBiStudioCharts, renderGovernanceCharts, renderBodaccCharts, renderFinancialCharts,
-          biGeoGranularity, biSortKey, biSortAsc, regionalBIStats, departmentalBIStats, sortedBiGeoList, toggleBiSort, biTotalRelocations, biTotalFinalClosures, biTopRegionBySites, biAverageActivityRate,
+          expansionStatusFilter, expansionTimeRange, renderNetworkCharts, renderExpansionDecadesChart, renderBiStudioCharts, renderGovernanceCharts, renderBodaccCharts, renderFinancialCharts,
+          biGeoGranularity, biSortKey, biSortAsc, biGeoEntityFilter, regionalBIStats, departmentalBIStats, benchmarkRegionalBIStats, benchmarkDepartmentalBIStats, comparisonBiGeoList, sortedBiGeoList, toggleBiSort, biTotalRelocations, biTotalFinalClosures, biTopRegionBySites, biAverageActivityRate, benchmarkBiTotalRelocations, benchmarkBiTotalFinalClosures, benchmarkBiTopRegionBySites, benchmarkBiAverageActivityRate,
           biTimelineRegionFilter, biTimelineDeptFilter, availableDepartmentsForTimelineRegionFilter, biTimelineData,
           benchmarkSearchQuery, benchmarkData, isBenchmarkLoading, showBenchmarkDisambiguationModal, benchmarkCandidateList, pendingBenchmarkQuery,
           handleBenchmarkSubmit, confirmBenchmarkCandidate, executeBenchmarkAnalysis, removeBenchmarkCompetitor,
-          calculateMarginRate, calculateRealignmentIndex,
-          benchmarkCompanyName, benchmarkSiren, benchmarkNodes, benchmarkExecutives, benchmarkPhysicalCount, benchmarkMoralCount, benchmarkDepartmentList, benchmarkActiveEstablishments, benchmarkTotalEstablishments, benchmarkRevenue, benchmarkNetIncome, benchmarkEvents,
+          calculateMarginRate, calculateRealignmentIndex, getReversedYears,
+          benchmarkCompanyName, benchmarkSiren, benchmarkNodes, benchmarkExecutives, benchmarkPhysicalCount, benchmarkMoralCount, benchmarkDepartmentList, benchmarkActiveEstablishments, benchmarkTotalEstablishments, benchmarkRevenue, benchmarkNetIncome, benchmarkEbitda, benchmarkAltmanScore, benchmarkAltmanStatus, benchmarkHasConfidentialAccounts, benchmarkFinancialYears, reversedBenchmarkFinancialYears, benchmarkEvents,
+          displayRevenueWithYear, benchmarkRevenueWithYear, displayNetIncomeWithYear, benchmarkNetIncomeWithYear, displayMarginWithYear, benchmarkMarginWithYear, displayTotalAssetsWithYear, benchmarkTotalAssetsWithYear, displayEquityWithYear, benchmarkEquityWithYear,
 
           // Modals & Inspections
           showLegalProfileModal, showGovernanceModal, selectedExecutive, execSearchQuery, execStatusFilter, filteredModalExecutives, openExecutiveInspector,
-          showFinancialsModal, activeMetric, activeMetricLabel, displayRevenue, displayNetIncome, displayEbitda, displayAltmanScore, displayAltmanStatus, financialYears, financialYearsWithData, formatEuros, formatMetricValue, getBarColorClass, getBarHeight,
+          showFinancialsModal, activeMetric, activeMetricLabel, displayRevenue, displayNetIncome, displayEbitda, displayAltmanScore, displayAltmanStatus, financialYears, reversedFinancialYears, financialYearsWithData, formatEuros, formatMetricValue, getBarColorClass, getBarHeight,
           hasConfidentialAccounts, confidentialityLabel, displayCapitalSocial, displayObjetSocial, displayRneCertitudeScore,
           showEstablishmentsModal, siteSearchQuery, filteredModalEstablishments, selectedSiteNode, openSiteInspector, centerMapOnSite,
           showInterconnectionModal, analyzeInterconnectedEntity, loadingHoldingSiren,

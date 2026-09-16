@@ -1,0 +1,261 @@
+{
+  "result": {
+    "siren": "329211534",
+    "name": "329211534",
+    "company_name": "329211534",
+    "date_creation_origine": null,
+    "age_in_years": null,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "329211534",
+      "siren": "329211534",
+      "found": false
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "329211534",
+      "root_name": "329211534",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 1,
+      "closed_establishments_count": 0,
+      "nodes": [
+        {
+          "id": "329211534",
+          "siren": "329211534",
+          "siret": "32921153400010",
+          "node_type": "siege",
+          "name": "329211534",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": null,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {}
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "Immatriculation": [
+          {
+            "id": "329211534",
+            "siren": "329211534",
+            "siret": "32921153400010",
+            "node_type": "siege",
+            "name": "329211534",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": null,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {}
+          }
+        ]
+      },
+      "department_breakdown": {
+        "Autre": {
+          "department_name": "Non spécifié",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "regional_breakdown": {
+        "France": {
+          "region_name": "France",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0.0
+      }
+    },
+    "executives": [],
+    "financials": {
+      "company_siren": "329211534",
+      "company_name": "329211534",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "Immatriculation": {
+        "year": "Immatriculation",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "329211534",
+            "siren": "329211534",
+            "siret": "32921153400010",
+            "node_type": "siege",
+            "name": "329211534",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": null,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {}
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "Immatriculation"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "329211534",
+        "siren": "329211534",
+        "found": false
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "329211534",
+        "root_name": "329211534",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 1,
+        "closed_establishments_count": 0,
+        "nodes": [
+          {
+            "id": "329211534",
+            "siren": "329211534",
+            "siret": "32921153400010",
+            "node_type": "siege",
+            "name": "329211534",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": null,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {}
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "Immatriculation": [
+            {
+              "id": "329211534",
+              "siren": "329211534",
+              "siret": "32921153400010",
+              "node_type": "siege",
+              "name": "329211534",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": null,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {}
+            }
+          ]
+        },
+        "department_breakdown": {
+          "Autre": {
+            "department_name": "Non spécifié",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "regional_breakdown": {
+          "France": {
+            "region_name": "France",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0.0
+        }
+      },
+      "chamber": {
+        "executives": []
+      },
+      "mercury": {
+        "company_siren": "329211534",
+        "company_name": "329211534",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "329211534",
+      "predicate": "recherche_dirigeants_sans_resultat",
+      "value": "Entité non répertoriée ou sans dirigeant public",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:49:32.301409+00:00",
+      "collection_method": "api",
+      "confidence": 0.0,
+      "status": "hypothesis"
+    },
+    {
+      "subject": "329211534",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:49:32.314832+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.5,
+  "observed_at": "2026-09-15T23:49:31.413982+00:00",
+  "processed_at": "2026-09-15T23:49:34.312585Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

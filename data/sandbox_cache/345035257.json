@@ -1,0 +1,640 @@
+{
+  "result": {
+    "siren": "345035257",
+    "name": "LE GUELLEC FLEURS",
+    "company_name": "LE GUELLEC FLEURS",
+    "date_creation_origine": "1988-04-01",
+    "age_in_years": 38,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "LE GUELLEC FLEURS",
+      "siren": "345035257",
+      "siret_siege": "34503525700012",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1988-04-01",
+      "address": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+      "status": "actif",
+      "code_naf": "52.4X",
+      "libelle_naf": null,
+      "section_activite": "H",
+      "forme_juridique": "5499",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": "2024-02-21T14:51:23",
+      "dirigeants": [],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 38,
+      "historical_summary": {
+        "date_immatriculation_origine": "1988-04-01",
+        "annee_immatriculation": 1988,
+        "anciennete_annees": 38,
+        "nombre_dirigeants_historiques_identifies": 0,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1988,
+          "date": "1988-04-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 345035257 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "345035257",
+          "name": "LE GUELLEC FLEURS",
+          "siret_siege": "34503525700012",
+          "code_postal": "75010",
+          "commune": "75110",
+          "code_naf": "52.4X",
+          "forme_juridique": "5499",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1988-04-01",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "345035257",
+      "root_name": "LE GUELLEC FLEURS",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 1,
+      "closed_establishments_count": 0,
+      "nodes": [
+        {
+          "id": "345035257",
+          "siren": "345035257",
+          "siret": "34503525700012",
+          "node_type": "siege",
+          "name": "LE GUELLEC FLEURS",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1988,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "34503525700012",
+            "adresse": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+            "code_postal": "75010",
+            "commune": "75110",
+            "departement": "75",
+            "region": "11",
+            "code_naf": "52.4X",
+            "date_creation": "1988-04-01",
+            "statut": "🟢 Actif (État A)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "1988": [
+          {
+            "id": "345035257",
+            "siren": "345035257",
+            "siret": "34503525700012",
+            "node_type": "siege",
+            "name": "LE GUELLEC FLEURS",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1988,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "34503525700012",
+              "adresse": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+              "code_postal": "75010",
+              "commune": "75110",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "52.4X",
+              "date_creation": "1988-04-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "75": {
+          "department_name": "75",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [],
+    "financials": {
+      "company_siren": "345035257",
+      "company_name": "345035257",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [
+      {
+        "id": "63e3188f5e3cba720414c2c3",
+        "year": "1993",
+        "date": "1993-04-08",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "x0z91AApfOuM_RACT9300215858 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-18T07:24:43+02:00",
+          "siren": "345035257",
+          "denomination": "NON RENSEIGNE",
+          "dateDepot": "1993-04-08",
+          "numChrono": "19916",
+          "nomDocument": "x0z91AApfOuM_RACT9300215858",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63e3188f5e3cba720414c2c3"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "x0z91AApfOuM_RACT9300215858",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/345035257/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "1988": {
+        "year": "1988",
+        "milestones": [
+          {
+            "date": "1988-04-01",
+            "event": "Immatriculation officielle SIREN 345035257"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "345035257",
+            "siren": "345035257",
+            "siret": "34503525700012",
+            "node_type": "siege",
+            "name": "LE GUELLEC FLEURS",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1988,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "34503525700012",
+              "adresse": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+              "code_postal": "75010",
+              "commune": "75110",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "52.4X",
+              "date_creation": "1988-04-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1993": {
+        "year": "1993",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63e3188f5e3cba720414c2c3",
+            "year": "1993",
+            "date": "1993-04-08",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "x0z91AApfOuM_RACT9300215858 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T07:24:43+02:00",
+              "siren": "345035257",
+              "denomination": "NON RENSEIGNE",
+              "dateDepot": "1993-04-08",
+              "numChrono": "19916",
+              "nomDocument": "x0z91AApfOuM_RACT9300215858",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e3188f5e3cba720414c2c3"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "x0z91AApfOuM_RACT9300215858",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345035257/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "1993",
+      "1988"
+    ],
+    "total_years_tracked": 2,
+    "profile": {
+      "argus": {
+        "name": "LE GUELLEC FLEURS",
+        "siren": "345035257",
+        "siret_siege": "34503525700012",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1988-04-01",
+        "address": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+        "status": "actif",
+        "code_naf": "52.4X",
+        "libelle_naf": null,
+        "section_activite": "H",
+        "forme_juridique": "5499",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": "2024-02-21T14:51:23",
+        "dirigeants": [],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 38,
+        "historical_summary": {
+          "date_immatriculation_origine": "1988-04-01",
+          "annee_immatriculation": 1988,
+          "anciennete_annees": 38,
+          "nombre_dirigeants_historiques_identifies": 0,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1988,
+            "date": "1988-04-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 345035257 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "345035257",
+            "name": "LE GUELLEC FLEURS",
+            "siret_siege": "34503525700012",
+            "code_postal": "75010",
+            "commune": "75110",
+            "code_naf": "52.4X",
+            "forme_juridique": "5499",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1988-04-01",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "345035257",
+        "root_name": "LE GUELLEC FLEURS",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 1,
+        "closed_establishments_count": 0,
+        "nodes": [
+          {
+            "id": "345035257",
+            "siren": "345035257",
+            "siret": "34503525700012",
+            "node_type": "siege",
+            "name": "LE GUELLEC FLEURS",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1988,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "34503525700012",
+              "adresse": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+              "code_postal": "75010",
+              "commune": "75110",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "52.4X",
+              "date_creation": "1988-04-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "1988": [
+            {
+              "id": "345035257",
+              "siren": "345035257",
+              "siret": "34503525700012",
+              "node_type": "siege",
+              "name": "LE GUELLEC FLEURS",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1988,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "34503525700012",
+                "adresse": "67 RUE DU FBG DU TEMPLE 75010 PARIS 10",
+                "code_postal": "75010",
+                "commune": "75110",
+                "departement": "75",
+                "region": "11",
+                "code_naf": "52.4X",
+                "date_creation": "1988-04-01",
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "75": {
+            "department_name": "75",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": []
+      },
+      "mercury": {
+        "company_siren": "345035257",
+        "company_name": "345035257",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "63e3188f5e3cba720414c2c3",
+            "year": "1993",
+            "date": "1993-04-08",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "x0z91AApfOuM_RACT9300215858 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-18T07:24:43+02:00",
+              "siren": "345035257",
+              "denomination": "NON RENSEIGNE",
+              "dateDepot": "1993-04-08",
+              "numChrono": "19916",
+              "nomDocument": "x0z91AApfOuM_RACT9300215858",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63e3188f5e3cba720414c2c3"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "x0z91AApfOuM_RACT9300215858",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/345035257/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "LE GUELLEC FLEURS",
+      "predicate": "siren",
+      "value": "345035257",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:45:55.207784+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "345035257",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (1 actifs, 0 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:45:59.414293+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "LE GUELLEC FLEURS",
+      "predicate": "absence_dirigeants_publics",
+      "value": "Aucun dirigeant ou mandataire social répertorié au RNE / SIRENE pour cette entité",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:45:59.427387+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "345035257",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:45:59.439116+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "345035257",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "1 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:45:59.452768+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "INPI_RNE_API_OAuth2",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.96,
+  "observed_at": "2026-09-15T23:45:55.207784+00:00",
+  "processed_at": "2026-09-15T23:46:01.884747Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

@@ -1,0 +1,2055 @@
+{
+  "result": {
+    "siren": "428755839",
+    "name": "LE PRINCE DE LA FETE",
+    "company_name": "LE PRINCE DE LA FETE",
+    "date_creation_origine": "2000-01-01",
+    "age_in_years": 26,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "LE PRINCE DE LA FETE",
+      "siren": "428755839",
+      "siret_siege": "42875583900027",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2000-01-01",
+      "address": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+      "status": "fermé/inactif",
+      "code_naf": "93.29Z",
+      "libelle_naf": null,
+      "section_activite": "R",
+      "forme_juridique": "5499",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": "2024-02-29T05:27:19",
+      "dirigeants": [],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 26,
+      "historical_summary": {
+        "date_immatriculation_origine": "2000-01-01",
+        "annee_immatriculation": 2000,
+        "anciennete_annees": 26,
+        "nombre_dirigeants_historiques_identifies": 0,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2000,
+          "date": "2000-01-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 428755839 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "428755839",
+          "name": "LE PRINCE DE LA FETE",
+          "siret_siege": "42875583900027",
+          "code_postal": "92260",
+          "commune": "92032",
+          "code_naf": "93.29Z",
+          "forme_juridique": "5499",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 2,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "2000-01-01",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "428755839",
+      "root_name": "LE PRINCE DE LA FETE",
+      "total_nodes": 2,
+      "total_edges": 1,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 2,
+      "nodes": [
+        {
+          "id": "428755839",
+          "siren": "428755839",
+          "siret": "42875583900027",
+          "node_type": "siege",
+          "name": "LE PRINCE DE LA FETE",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2000,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "42875583900027",
+            "adresse": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+            "code_postal": "92260",
+            "commune": "92032",
+            "departement": "92",
+            "region": "11",
+            "code_naf": "93.29Z",
+            "date_creation": "2000-01-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "42875583900019",
+          "siren": "428755839",
+          "siret": "42875583900019",
+          "node_type": "etablissement",
+          "name": "LE PRINCE DE LA FETE - PARIS 9 (75009)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2000,
+          "fermeture_year": 2002,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "42875583900019",
+            "enseigne": null,
+            "adresse": "17 Rue HENRY MONNIER",
+            "code_postal": "75009",
+            "commune": "PARIS 9",
+            "departement": "Paris",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.880077,
+              2.33727
+            ],
+            "date_creation": "2000-01-01",
+            "date_fermeture": "2002-12-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "428755839",
+          "target": "42875583900019",
+          "source_siren": "428755839",
+          "target_siren": "42875583900019",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "2000": [
+          {
+            "id": "428755839",
+            "siren": "428755839",
+            "siret": "42875583900027",
+            "node_type": "siege",
+            "name": "LE PRINCE DE LA FETE",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2000,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "42875583900027",
+              "adresse": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+              "code_postal": "92260",
+              "commune": "92032",
+              "departement": "92",
+              "region": "11",
+              "code_naf": "93.29Z",
+              "date_creation": "2000-01-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "42875583900019",
+            "siren": "428755839",
+            "siret": "42875583900019",
+            "node_type": "etablissement",
+            "name": "LE PRINCE DE LA FETE - PARIS 9 (75009)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2000,
+            "fermeture_year": 2002,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "42875583900019",
+              "enseigne": null,
+              "adresse": "17 Rue HENRY MONNIER",
+              "code_postal": "75009",
+              "commune": "PARIS 9",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.880077,
+                2.33727
+              ],
+              "date_creation": "2000-01-01",
+              "date_fermeture": "2002-12-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "92": {
+          "department_name": "92",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "75": {
+          "department_name": "Paris",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Île-de-France": {
+          "region_name": "Île-de-France",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 2,
+        "number_of_edges": 1,
+        "out_degree_root": 1,
+        "density": 0.5
+      }
+    },
+    "executives": [],
+    "financials": {
+      "company_siren": "428755839",
+      "company_name": "LE PRINCE DE LA FETE",
+      "company_naf_code": "93.29Z",
+      "date_creation_origine": "2000-01-01",
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "bodacc_account_filings": [
+        {
+          "notice_id": "B200901482029",
+          "year": "2009",
+          "date_publication": "2009-08-05",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029",
+          "detail": null
+        },
+        {
+          "notice_id": "B201101444084",
+          "year": "2011",
+          "date_publication": "2011-07-27",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084",
+          "detail": null
+        },
+        {
+          "notice_id": "B201102491780",
+          "year": "2011",
+          "date_publication": "2011-12-25",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780",
+          "detail": null
+        }
+      ],
+      "bodacc_filings_by_year": {
+        "2009": [
+          {
+            "notice_id": "B200901482029",
+            "year": "2009",
+            "date_publication": "2009-08-05",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029",
+            "detail": null
+          }
+        ],
+        "2011": [
+          {
+            "notice_id": "B201101444084",
+            "year": "2011",
+            "date_publication": "2011-07-27",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084",
+            "detail": null
+          },
+          {
+            "notice_id": "B201102491780",
+            "year": "2011",
+            "date_publication": "2011-12-25",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780",
+            "detail": null
+          }
+        ]
+      },
+      "financials_published": false,
+      "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+    },
+    "legal_monitor_events": [
+      {
+        "id": "B201102491780",
+        "year": "2011",
+        "date": "2011-12-25",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "B201102491780",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780"
+      },
+      {
+        "id": "63eddd43d3d9c78cf8126758",
+        "year": "2011",
+        "date": "2011-12-16",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE PRINCE DE LA FETE",
+          "dateDepot": "2011-12-16",
+          "numChrono": "40274",
+          "nomDocument": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd43d3d9c78cf8126758"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "63eddd43d3d9c78cf8126759",
+        "year": "2011",
+        "date": "2011-12-16",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE PRINCE DE LA FETE",
+          "dateDepot": "2011-12-16",
+          "numChrono": "40274",
+          "nomDocument": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd43d3d9c78cf8126759"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "63eddd43d3d9c78cf812675a",
+        "year": "2011",
+        "date": "2011-12-16",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE PRINCE DE LA FETE",
+          "dateDepot": "2011-12-16",
+          "numChrono": "40274",
+          "nomDocument": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd43d3d9c78cf812675a"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "B201101444084",
+        "year": "2011",
+        "date": "2011-07-27",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Dissolution de la société.",
+        "modificationsgenerales": {
+          "descriptif": "Dissolution de la société."
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "B201101444084",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084"
+      },
+      {
+        "id": "63eddd43d3d9c78cf8126757",
+        "year": "2011",
+        "date": "2011-07-21",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE PRINCE DE LA FETE",
+          "dateDepot": "2011-07-21",
+          "numChrono": "23106",
+          "nomDocument": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd43d3d9c78cf8126757"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "C2011003111304",
+        "year": "2011",
+        "date": "2011-06-10",
+        "type": "Avis initial",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Dépôts des comptes - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-C",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "C2011003111304",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C2011003111304"
+      },
+      {
+        "id": "C2010005011109",
+        "year": "2010",
+        "date": "2010-08-30",
+        "type": "Avis initial",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Dépôts des comptes - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-C",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "C2010005011109",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C2010005011109"
+      },
+      {
+        "id": "C200900529330",
+        "year": "2009",
+        "date": "2009-08-12",
+        "type": "Avis initial",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Dépôts des comptes - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-C",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "C200900529330",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C200900529330"
+      },
+      {
+        "id": "B200901482029",
+        "year": "2009",
+        "date": "2009-08-05",
+        "type": "Avis initial",
+        "category": "NOMINATION_GERANCE",
+        "category_label": "Nomination & Gérance",
+        "category_color": "sky",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Modification du nom, nom d'usage, prénom ou de la dénomination.",
+        "modificationsgenerales": {
+          "descriptif": "Modification du nom, nom d'usage, prénom ou de la dénomination."
+        },
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "B200901482029",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029"
+      },
+      {
+        "id": "63eddd42d3d9c78cf8126755",
+        "year": "2009",
+        "date": "2009-07-28",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE PRINCE DE LA FETE",
+          "dateDepot": "2009-07-28",
+          "numChrono": "21753",
+          "nomDocument": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd42d3d9c78cf8126755"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "63eddd42d3d9c78cf8126756",
+        "year": "2009",
+        "date": "2009-07-28",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE PRINCE DE LA FETE",
+          "dateDepot": "2009-07-28",
+          "numChrono": "21753",
+          "nomDocument": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd42d3d9c78cf8126756"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "63eddd43d3d9c78cf812675c",
+        "year": "2009",
+        "date": "2009-07-28",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "e6c367wAUeGn_RACT0901410799 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "NON RENSEIGNE",
+          "dateDepot": "2009-07-28",
+          "numChrono": "21753",
+          "nomDocument": "e6c367wAUeGn_RACT0901410799",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd43d3d9c78cf812675c"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "e6c367wAUeGn_RACT0901410799",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "C200800518506",
+        "year": "2008",
+        "date": "2008-08-05",
+        "type": "Avis initial",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Dépôts des comptes - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-C",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+        "reference": "C200800518506",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C200800518506"
+      },
+      {
+        "id": "63eddd42d3d9c78cf8126754",
+        "year": "2002",
+        "date": "2002-12-04",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "9l33fq1OyODV_RACT0201089855 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "LE P TIT PRINCE",
+          "dateDepot": "2002-12-04",
+          "numChrono": "36978",
+          "nomDocument": "9l33fq1OyODV_RACT0201089855",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd42d3d9c78cf8126754"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "9l33fq1OyODV_RACT0201089855",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      },
+      {
+        "id": "63eddd43d3d9c78cf812675b",
+        "year": "2000",
+        "date": "2000-01-10",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "xPsLTyNT9f8A_RACT0000006927 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T18:45:34+02:00",
+          "siren": "428755839",
+          "denomination": "SARL LE P TIT PRINCE",
+          "dateDepot": "2000-01-10",
+          "numChrono": "420",
+          "nomDocument": "xPsLTyNT9f8A_RACT0000006927",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63eddd43d3d9c78cf812675b"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "xPsLTyNT9f8A_RACT0000006927",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "2000": {
+        "year": "2000",
+        "milestones": [
+          {
+            "date": "2000-01-01",
+            "event": "Immatriculation officielle SIREN 428755839"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63eddd43d3d9c78cf812675b",
+            "year": "2000",
+            "date": "2000-01-10",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "xPsLTyNT9f8A_RACT0000006927 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "SARL LE P TIT PRINCE",
+              "dateDepot": "2000-01-10",
+              "numChrono": "420",
+              "nomDocument": "xPsLTyNT9f8A_RACT0000006927",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf812675b"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "xPsLTyNT9f8A_RACT0000006927",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "428755839",
+            "siren": "428755839",
+            "siret": "42875583900027",
+            "node_type": "siege",
+            "name": "LE PRINCE DE LA FETE",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2000,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "42875583900027",
+              "adresse": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+              "code_postal": "92260",
+              "commune": "92032",
+              "departement": "92",
+              "region": "11",
+              "code_naf": "93.29Z",
+              "date_creation": "2000-01-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "42875583900019",
+            "siren": "428755839",
+            "siret": "42875583900019",
+            "node_type": "etablissement",
+            "name": "LE PRINCE DE LA FETE - PARIS 9 (75009)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2000,
+            "fermeture_year": 2002,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "42875583900019",
+              "enseigne": null,
+              "adresse": "17 Rue HENRY MONNIER",
+              "code_postal": "75009",
+              "commune": "PARIS 9",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.880077,
+                2.33727
+              ],
+              "date_creation": "2000-01-01",
+              "date_fermeture": "2002-12-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2011": {
+        "year": "2011",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2011,
+            "date": "2011-12-25",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780"
+          },
+          {
+            "year": 2011,
+            "date": "2011-07-27",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "Liquidateur : ZERAH Johann David Henri modification le 21 Juillet 2011",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B201102491780",
+            "year": "2011",
+            "date": "2011-12-25",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "B201102491780",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780"
+          },
+          {
+            "id": "63eddd43d3d9c78cf8126758",
+            "year": "2011",
+            "date": "2011-12-16",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-12-16",
+              "numChrono": "40274",
+              "nomDocument": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf8126758"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf8126759",
+            "year": "2011",
+            "date": "2011-12-16",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-12-16",
+              "numChrono": "40274",
+              "nomDocument": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf8126759"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf812675a",
+            "year": "2011",
+            "date": "2011-12-16",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-12-16",
+              "numChrono": "40274",
+              "nomDocument": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf812675a"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "B201101444084",
+            "year": "2011",
+            "date": "2011-07-27",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dissolution de la société.",
+            "modificationsgenerales": {
+              "descriptif": "Dissolution de la société."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "B201101444084",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084"
+          },
+          {
+            "id": "63eddd43d3d9c78cf8126757",
+            "year": "2011",
+            "date": "2011-07-21",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-07-21",
+              "numChrono": "23106",
+              "nomDocument": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf8126757"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "C2011003111304",
+            "year": "2011",
+            "date": "2011-06-10",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C2011003111304",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C2011003111304"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2009": {
+        "year": "2009",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2009,
+            "date": "2009-08-05",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "C200900529330",
+            "year": "2009",
+            "date": "2009-08-12",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C200900529330",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C200900529330"
+          },
+          {
+            "id": "B200901482029",
+            "year": "2009",
+            "date": "2009-08-05",
+            "type": "Avis initial",
+            "category": "NOMINATION_GERANCE",
+            "category_label": "Nomination & Gérance",
+            "category_color": "sky",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Modification du nom, nom d'usage, prénom ou de la dénomination.",
+            "modificationsgenerales": {
+              "descriptif": "Modification du nom, nom d'usage, prénom ou de la dénomination."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "B200901482029",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029"
+          },
+          {
+            "id": "63eddd42d3d9c78cf8126755",
+            "year": "2009",
+            "date": "2009-07-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2009-07-28",
+              "numChrono": "21753",
+              "nomDocument": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd42d3d9c78cf8126755"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd42d3d9c78cf8126756",
+            "year": "2009",
+            "date": "2009-07-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2009-07-28",
+              "numChrono": "21753",
+              "nomDocument": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd42d3d9c78cf8126756"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf812675c",
+            "year": "2009",
+            "date": "2009-07-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "e6c367wAUeGn_RACT0901410799 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "NON RENSEIGNE",
+              "dateDepot": "2009-07-28",
+              "numChrono": "21753",
+              "nomDocument": "e6c367wAUeGn_RACT0901410799",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf812675c"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "e6c367wAUeGn_RACT0901410799",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2010": {
+        "year": "2010",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "C2010005011109",
+            "year": "2010",
+            "date": "2010-08-30",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C2010005011109",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C2010005011109"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2008": {
+        "year": "2008",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "C200800518506",
+            "year": "2008",
+            "date": "2008-08-05",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C200800518506",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C200800518506"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2002": {
+        "year": "2002",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63eddd42d3d9c78cf8126754",
+            "year": "2002",
+            "date": "2002-12-04",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "9l33fq1OyODV_RACT0201089855 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE P TIT PRINCE",
+              "dateDepot": "2002-12-04",
+              "numChrono": "36978",
+              "nomDocument": "9l33fq1OyODV_RACT0201089855",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd42d3d9c78cf8126754"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "9l33fq1OyODV_RACT0201089855",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2002",
+      "2000"
+    ],
+    "total_years_tracked": 6,
+    "profile": {
+      "argus": {
+        "name": "LE PRINCE DE LA FETE",
+        "siren": "428755839",
+        "siret_siege": "42875583900027",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2000-01-01",
+        "address": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+        "status": "fermé/inactif",
+        "code_naf": "93.29Z",
+        "libelle_naf": null,
+        "section_activite": "R",
+        "forme_juridique": "5499",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": "2024-02-29T05:27:19",
+        "dirigeants": [],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 26,
+        "historical_summary": {
+          "date_immatriculation_origine": "2000-01-01",
+          "annee_immatriculation": 2000,
+          "anciennete_annees": 26,
+          "nombre_dirigeants_historiques_identifies": 0,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2000,
+            "date": "2000-01-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 428755839 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "428755839",
+            "name": "LE PRINCE DE LA FETE",
+            "siret_siege": "42875583900027",
+            "code_postal": "92260",
+            "commune": "92032",
+            "code_naf": "93.29Z",
+            "forme_juridique": "5499",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 2,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "2000-01-01",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "428755839",
+        "root_name": "LE PRINCE DE LA FETE",
+        "total_nodes": 2,
+        "total_edges": 1,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 2,
+        "nodes": [
+          {
+            "id": "428755839",
+            "siren": "428755839",
+            "siret": "42875583900027",
+            "node_type": "siege",
+            "name": "LE PRINCE DE LA FETE",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2000,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "42875583900027",
+              "adresse": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+              "code_postal": "92260",
+              "commune": "92032",
+              "departement": "92",
+              "region": "11",
+              "code_naf": "93.29Z",
+              "date_creation": "2000-01-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "42875583900019",
+            "siren": "428755839",
+            "siret": "42875583900019",
+            "node_type": "etablissement",
+            "name": "LE PRINCE DE LA FETE - PARIS 9 (75009)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2000,
+            "fermeture_year": 2002,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "42875583900019",
+              "enseigne": null,
+              "adresse": "17 Rue HENRY MONNIER",
+              "code_postal": "75009",
+              "commune": "PARIS 9",
+              "departement": "Paris",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.880077,
+                2.33727
+              ],
+              "date_creation": "2000-01-01",
+              "date_fermeture": "2002-12-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "428755839",
+            "target": "42875583900019",
+            "source_siren": "428755839",
+            "target_siren": "42875583900019",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "2000": [
+            {
+              "id": "428755839",
+              "siren": "428755839",
+              "siret": "42875583900027",
+              "node_type": "siege",
+              "name": "LE PRINCE DE LA FETE",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2000,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "42875583900027",
+                "adresse": "7 RUE LA BOISSIERE 92260 FONTENAY-AUX-ROSES",
+                "code_postal": "92260",
+                "commune": "92032",
+                "departement": "92",
+                "region": "11",
+                "code_naf": "93.29Z",
+                "date_creation": "2000-01-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "42875583900019",
+              "siren": "428755839",
+              "siret": "42875583900019",
+              "node_type": "etablissement",
+              "name": "LE PRINCE DE LA FETE - PARIS 9 (75009)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2000,
+              "fermeture_year": 2002,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "42875583900019",
+                "enseigne": null,
+                "adresse": "17 Rue HENRY MONNIER",
+                "code_postal": "75009",
+                "commune": "PARIS 9",
+                "departement": "Paris",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.880077,
+                  2.33727
+                ],
+                "date_creation": "2000-01-01",
+                "date_fermeture": "2002-12-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "92": {
+            "department_name": "92",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "75": {
+            "department_name": "Paris",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Île-de-France": {
+            "region_name": "Île-de-France",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 2,
+          "number_of_edges": 1,
+          "out_degree_root": 1,
+          "density": 0.5
+        }
+      },
+      "chamber": {
+        "executives": []
+      },
+      "mercury": {
+        "company_siren": "428755839",
+        "company_name": "LE PRINCE DE LA FETE",
+        "company_naf_code": "93.29Z",
+        "date_creation_origine": "2000-01-01",
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "bodacc_account_filings": [
+          {
+            "notice_id": "B200901482029",
+            "year": "2009",
+            "date_publication": "2009-08-05",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029",
+            "detail": null
+          },
+          {
+            "notice_id": "B201101444084",
+            "year": "2011",
+            "date_publication": "2011-07-27",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084",
+            "detail": null
+          },
+          {
+            "notice_id": "B201102491780",
+            "year": "2011",
+            "date_publication": "2011-12-25",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780",
+            "detail": null
+          }
+        ],
+        "bodacc_filings_by_year": {
+          "2009": [
+            {
+              "notice_id": "B200901482029",
+              "year": "2009",
+              "date_publication": "2009-08-05",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029",
+              "detail": null
+            }
+          ],
+          "2011": [
+            {
+              "notice_id": "B201101444084",
+              "year": "2011",
+              "date_publication": "2011-07-27",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084",
+              "detail": null
+            },
+            {
+              "notice_id": "B201102491780",
+              "year": "2011",
+              "date_publication": "2011-12-25",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780",
+              "detail": null
+            }
+          ]
+        },
+        "financials_published": false,
+        "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "B201102491780",
+            "year": "2011",
+            "date": "2011-12-25",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "B201102491780",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201102491780"
+          },
+          {
+            "id": "63eddd43d3d9c78cf8126758",
+            "year": "2011",
+            "date": "2011-12-16",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-12-16",
+              "numChrono": "40274",
+              "nomDocument": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf8126758"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "CAYiZjIYpgYB_RACT2_428755839_9201_2002B05307_2011_402741",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf8126759",
+            "year": "2011",
+            "date": "2011-12-16",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-12-16",
+              "numChrono": "40274",
+              "nomDocument": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf8126759"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "GYKL35gfFOLu_RACT2_428755839_9201_2002B05307_2011_402742",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf812675a",
+            "year": "2011",
+            "date": "2011-12-16",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-12-16",
+              "numChrono": "40274",
+              "nomDocument": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf812675a"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "aynEhlhFSeFT_RACT2_428755839_9201_2002B05307_2011_402743",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "B201101444084",
+            "year": "2011",
+            "date": "2011-07-27",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dissolution de la société.",
+            "modificationsgenerales": {
+              "descriptif": "Dissolution de la société."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "B201101444084",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B201101444084"
+          },
+          {
+            "id": "63eddd43d3d9c78cf8126757",
+            "year": "2011",
+            "date": "2011-07-21",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2011-07-21",
+              "numChrono": "23106",
+              "nomDocument": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf8126757"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "LFbWQMoWiy1x_RACT2_428755839_9201_2002B05307_2011_231061",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "C2011003111304",
+            "year": "2011",
+            "date": "2011-06-10",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C2011003111304",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C2011003111304"
+          },
+          {
+            "id": "C2010005011109",
+            "year": "2010",
+            "date": "2010-08-30",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C2010005011109",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C2010005011109"
+          },
+          {
+            "id": "C200900529330",
+            "year": "2009",
+            "date": "2009-08-12",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C200900529330",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C200900529330"
+          },
+          {
+            "id": "B200901482029",
+            "year": "2009",
+            "date": "2009-08-05",
+            "type": "Avis initial",
+            "category": "NOMINATION_GERANCE",
+            "category_label": "Nomination & Gérance",
+            "category_color": "sky",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Modification du nom, nom d'usage, prénom ou de la dénomination.",
+            "modificationsgenerales": {
+              "descriptif": "Modification du nom, nom d'usage, prénom ou de la dénomination."
+            },
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "B200901482029",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B200901482029"
+          },
+          {
+            "id": "63eddd42d3d9c78cf8126755",
+            "year": "2009",
+            "date": "2009-07-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2009-07-28",
+              "numChrono": "21753",
+              "nomDocument": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd42d3d9c78cf8126755"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "jQolVWIlvyqG_RACT2_428755839_9201_2002B05307_2009_217531",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd42d3d9c78cf8126756",
+            "year": "2009",
+            "date": "2009-07-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE PRINCE DE LA FETE",
+              "dateDepot": "2009-07-28",
+              "numChrono": "21753",
+              "nomDocument": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd42d3d9c78cf8126756"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "cThLlQI0iKIP_RACT2_428755839_9201_2002B05307_2009_217532",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf812675c",
+            "year": "2009",
+            "date": "2009-07-28",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "e6c367wAUeGn_RACT0901410799 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "NON RENSEIGNE",
+              "dateDepot": "2009-07-28",
+              "numChrono": "21753",
+              "nomDocument": "e6c367wAUeGn_RACT0901410799",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf812675c"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "e6c367wAUeGn_RACT0901410799",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "C200800518506",
+            "year": "2008",
+            "date": "2008-08-05",
+            "type": "Avis initial",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Dépôts des comptes - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-C",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE NANTERRE",
+            "reference": "C200800518506",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:C200800518506"
+          },
+          {
+            "id": "63eddd42d3d9c78cf8126754",
+            "year": "2002",
+            "date": "2002-12-04",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "9l33fq1OyODV_RACT0201089855 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "LE P TIT PRINCE",
+              "dateDepot": "2002-12-04",
+              "numChrono": "36978",
+              "nomDocument": "9l33fq1OyODV_RACT0201089855",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd42d3d9c78cf8126754"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "9l33fq1OyODV_RACT0201089855",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          },
+          {
+            "id": "63eddd43d3d9c78cf812675b",
+            "year": "2000",
+            "date": "2000-01-10",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "xPsLTyNT9f8A_RACT0000006927 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T18:45:34+02:00",
+              "siren": "428755839",
+              "denomination": "SARL LE P TIT PRINCE",
+              "dateDepot": "2000-01-10",
+              "numChrono": "420",
+              "nomDocument": "xPsLTyNT9f8A_RACT0000006927",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63eddd43d3d9c78cf812675b"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "xPsLTyNT9f8A_RACT0000006927",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/428755839/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "LE PRINCE DE LA FETE",
+      "predicate": "siren",
+      "value": "428755839",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:44:50.541900+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "428755839",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "2 nœuds extraits (0 actifs, 2 fermés sur 2 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:44:54.940335+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "LE PRINCE DE LA FETE",
+      "predicate": "absence_dirigeants_publics",
+      "value": "Aucun dirigeant ou mandataire social répertorié au RNE / SIRENE pour cette entité",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:44:54.954322+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "428755839",
+      "predicate": "depots_comptes_bodacc",
+      "value": "3 dépôts de comptes enregistrés au BODACC",
+      "source": "bodacc-datadila.opendatasoft.com",
+      "observed_at": "2026-09-15T23:44:54.967376+00:00",
+      "collection_method": "api",
+      "confidence": 0.95,
+      "status": "fact"
+    },
+    {
+      "subject": "428755839",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "16 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:44:54.980081+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "bodacc-datadila.opendatasoft.com",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.95,
+  "observed_at": "2026-09-15T23:44:50.541900+00:00",
+  "processed_at": "2026-09-15T23:44:57.403471Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

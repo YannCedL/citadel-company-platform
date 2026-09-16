@@ -1,0 +1,631 @@
+{
+  "result": {
+    "siren": "390589331",
+    "name": "SARL ROS",
+    "company_name": "SARL ROS",
+    "date_creation_origine": "1993-04-01",
+    "age_in_years": 33,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "SARL ROS",
+      "siren": "390589331",
+      "siret_siege": "39058933100011",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1993-04-01",
+      "address": "36 AV GEORGES DUMAS 87000 LIMOGES",
+      "status": "fermé/inactif",
+      "code_naf": "55.3A",
+      "libelle_naf": null,
+      "section_activite": "I",
+      "forme_juridique": "5499",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": "2024-02-28T08:54:46",
+      "dirigeants": [],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 33,
+      "historical_summary": {
+        "date_immatriculation_origine": "1993-04-01",
+        "annee_immatriculation": 1993,
+        "anciennete_annees": 33,
+        "nombre_dirigeants_historiques_identifies": 0,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1993,
+          "date": "1993-04-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 390589331 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "390589331",
+          "name": "SARL ROS",
+          "siret_siege": "39058933100011",
+          "code_postal": "87000",
+          "commune": "87085",
+          "code_naf": "55.3A",
+          "forme_juridique": "5499",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1993-04-01",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "390589331",
+      "root_name": "SARL ROS",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "390589331",
+          "siren": "390589331",
+          "siret": "39058933100011",
+          "node_type": "siege",
+          "name": "SARL ROS",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1993,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "39058933100011",
+            "adresse": "36 AV GEORGES DUMAS 87000 LIMOGES",
+            "code_postal": "87000",
+            "commune": "87085",
+            "departement": "87",
+            "region": "75",
+            "code_naf": "55.3A",
+            "date_creation": "1993-04-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "1993": [
+          {
+            "id": "390589331",
+            "siren": "390589331",
+            "siret": "39058933100011",
+            "node_type": "siege",
+            "name": "SARL ROS",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1993,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "39058933100011",
+              "adresse": "36 AV GEORGES DUMAS 87000 LIMOGES",
+              "code_postal": "87000",
+              "commune": "87085",
+              "departement": "87",
+              "region": "75",
+              "code_naf": "55.3A",
+              "date_creation": "1993-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "87": {
+          "department_name": "87",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "75": {
+          "region_name": "75",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [],
+    "financials": {
+      "company_siren": "390589331",
+      "company_name": "390589331",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [
+      {
+        "id": "63ed8282af7dd9133a10ca61",
+        "year": "1993",
+        "date": "1993-04-01",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "eQCNKjhUl71m_RACT9300234324 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T09:06:53+02:00",
+          "siren": "390589331",
+          "denomination": "NON RENSEIGNE",
+          "dateDepot": "1993-04-01",
+          "numChrono": "646",
+          "nomDocument": "eQCNKjhUl71m_RACT9300234324",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ed8282af7dd9133a10ca61"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "eQCNKjhUl71m_RACT9300234324",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/390589331/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "1993": {
+        "year": "1993",
+        "milestones": [
+          {
+            "date": "1993-04-01",
+            "event": "Immatriculation officielle SIREN 390589331"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63ed8282af7dd9133a10ca61",
+            "year": "1993",
+            "date": "1993-04-01",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "eQCNKjhUl71m_RACT9300234324 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T09:06:53+02:00",
+              "siren": "390589331",
+              "denomination": "NON RENSEIGNE",
+              "dateDepot": "1993-04-01",
+              "numChrono": "646",
+              "nomDocument": "eQCNKjhUl71m_RACT9300234324",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed8282af7dd9133a10ca61"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "eQCNKjhUl71m_RACT9300234324",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/390589331/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "390589331",
+            "siren": "390589331",
+            "siret": "39058933100011",
+            "node_type": "siege",
+            "name": "SARL ROS",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1993,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "39058933100011",
+              "adresse": "36 AV GEORGES DUMAS 87000 LIMOGES",
+              "code_postal": "87000",
+              "commune": "87085",
+              "departement": "87",
+              "region": "75",
+              "code_naf": "55.3A",
+              "date_creation": "1993-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "1993"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "SARL ROS",
+        "siren": "390589331",
+        "siret_siege": "39058933100011",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1993-04-01",
+        "address": "36 AV GEORGES DUMAS 87000 LIMOGES",
+        "status": "fermé/inactif",
+        "code_naf": "55.3A",
+        "libelle_naf": null,
+        "section_activite": "I",
+        "forme_juridique": "5499",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": "2024-02-28T08:54:46",
+        "dirigeants": [],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 33,
+        "historical_summary": {
+          "date_immatriculation_origine": "1993-04-01",
+          "annee_immatriculation": 1993,
+          "anciennete_annees": 33,
+          "nombre_dirigeants_historiques_identifies": 0,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1993,
+            "date": "1993-04-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 390589331 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "390589331",
+            "name": "SARL ROS",
+            "siret_siege": "39058933100011",
+            "code_postal": "87000",
+            "commune": "87085",
+            "code_naf": "55.3A",
+            "forme_juridique": "5499",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1993-04-01",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "390589331",
+        "root_name": "SARL ROS",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "390589331",
+            "siren": "390589331",
+            "siret": "39058933100011",
+            "node_type": "siege",
+            "name": "SARL ROS",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1993,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "39058933100011",
+              "adresse": "36 AV GEORGES DUMAS 87000 LIMOGES",
+              "code_postal": "87000",
+              "commune": "87085",
+              "departement": "87",
+              "region": "75",
+              "code_naf": "55.3A",
+              "date_creation": "1993-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "1993": [
+            {
+              "id": "390589331",
+              "siren": "390589331",
+              "siret": "39058933100011",
+              "node_type": "siege",
+              "name": "SARL ROS",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1993,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "39058933100011",
+                "adresse": "36 AV GEORGES DUMAS 87000 LIMOGES",
+                "code_postal": "87000",
+                "commune": "87085",
+                "departement": "87",
+                "region": "75",
+                "code_naf": "55.3A",
+                "date_creation": "1993-04-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "87": {
+            "department_name": "87",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "75": {
+            "region_name": "75",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": []
+      },
+      "mercury": {
+        "company_siren": "390589331",
+        "company_name": "390589331",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "63ed8282af7dd9133a10ca61",
+            "year": "1993",
+            "date": "1993-04-01",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "eQCNKjhUl71m_RACT9300234324 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T09:06:53+02:00",
+              "siren": "390589331",
+              "denomination": "NON RENSEIGNE",
+              "dateDepot": "1993-04-01",
+              "numChrono": "646",
+              "nomDocument": "eQCNKjhUl71m_RACT9300234324",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ed8282af7dd9133a10ca61"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "eQCNKjhUl71m_RACT9300234324",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/390589331/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "SARL ROS",
+      "predicate": "siren",
+      "value": "390589331",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:45:22.659336+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "390589331",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (0 actifs, 1 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:45:27.776469+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "SARL ROS",
+      "predicate": "absence_dirigeants_publics",
+      "value": "Aucun dirigeant ou mandataire social répertorié au RNE / SIRENE pour cette entité",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:45:27.800098+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "390589331",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:45:27.828158+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "390589331",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "1 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:45:27.846203+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "INPI_RNE_API_OAuth2",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.96,
+  "observed_at": "2026-09-15T23:45:22.659336+00:00",
+  "processed_at": "2026-09-15T23:45:30.760409Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

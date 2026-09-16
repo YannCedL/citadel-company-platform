@@ -1,0 +1,594 @@
+{
+  "result": {
+    "siren": "418166021",
+    "name": "JOHANN TISON HATAT",
+    "company_name": "JOHANN TISON HATAT",
+    "date_creation_origine": "1997-01-01",
+    "age_in_years": 29,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "JOHANN TISON HATAT",
+      "siren": "418166021",
+      "siret_siege": "41816602100018",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1997-01-01",
+      "address": "51530 MOUSSY",
+      "status": "actif",
+      "code_naf": "01.21Z",
+      "libelle_naf": null,
+      "section_activite": "A",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-12-06T08:15:30",
+      "date_mise_a_jour_rne": "2024-07-05T22:01:58",
+      "dirigeants": [
+        {
+          "nom": "TISON HATAT",
+          "prenoms": "JOHANN DANIEL CHARLE",
+          "qualite": null,
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 29,
+      "historical_summary": {
+        "date_immatriculation_origine": "1997-01-01",
+        "annee_immatriculation": 1997,
+        "anciennete_annees": 29,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 1
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1997,
+          "date": "1997-01-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 418166021 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "418166021",
+          "name": "JOHANN TISON HATAT",
+          "siret_siege": "41816602100018",
+          "code_postal": "51530",
+          "commune": "51390",
+          "code_naf": "01.21Z",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 1,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1997-01-01",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "recent",
+        "days_stale": 283,
+        "reference_date": "2025-12-06",
+        "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+        "epistemic_confidence": 0.9
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "418166021",
+      "root_name": "JOHANN TISON HATAT",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 1,
+      "closed_establishments_count": 0,
+      "nodes": [
+        {
+          "id": "418166021",
+          "siren": "418166021",
+          "siret": "41816602100018",
+          "node_type": "siege",
+          "name": "JOHANN TISON HATAT",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1997,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "41816602100018",
+            "adresse": "51530 MOUSSY",
+            "code_postal": "51530",
+            "commune": "51390",
+            "departement": "51",
+            "region": "44",
+            "code_naf": "01.21Z",
+            "date_creation": "1997-01-01",
+            "statut": "🟢 Actif (État A)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "1997": [
+          {
+            "id": "418166021",
+            "siren": "418166021",
+            "siret": "41816602100018",
+            "node_type": "siege",
+            "name": "JOHANN TISON HATAT",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1997,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "41816602100018",
+              "adresse": "51530 MOUSSY",
+              "code_postal": "51530",
+              "commune": "51390",
+              "departement": "51",
+              "region": "44",
+              "code_naf": "01.21Z",
+              "date_creation": "1997-01-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "51": {
+          "department_name": "51",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "regional_breakdown": {
+        "44": {
+          "region_name": "44",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Johann Daniel Charle TISON HATAT",
+        "type_person": "personne physique",
+        "first_name": "Johann Daniel Charle",
+        "last_name": "TISON HATAT",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "418166021",
+            "company_name": "JOHANN TISON HATAT",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "418166021",
+      "company_name": "418166021",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "1997": {
+        "year": "1997",
+        "milestones": [
+          {
+            "date": "1997-01-01",
+            "event": "Immatriculation officielle SIREN 418166021"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "418166021",
+            "siren": "418166021",
+            "siret": "41816602100018",
+            "node_type": "siege",
+            "name": "JOHANN TISON HATAT",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1997,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "41816602100018",
+              "adresse": "51530 MOUSSY",
+              "code_postal": "51530",
+              "commune": "51390",
+              "departement": "51",
+              "region": "44",
+              "code_naf": "01.21Z",
+              "date_creation": "1997-01-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "1997"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "JOHANN TISON HATAT",
+        "siren": "418166021",
+        "siret_siege": "41816602100018",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1997-01-01",
+        "address": "51530 MOUSSY",
+        "status": "actif",
+        "code_naf": "01.21Z",
+        "libelle_naf": null,
+        "section_activite": "A",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-12-06T08:15:30",
+        "date_mise_a_jour_rne": "2024-07-05T22:01:58",
+        "dirigeants": [
+          {
+            "nom": "TISON HATAT",
+            "prenoms": "JOHANN DANIEL CHARLE",
+            "qualite": null,
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 29,
+        "historical_summary": {
+          "date_immatriculation_origine": "1997-01-01",
+          "annee_immatriculation": 1997,
+          "anciennete_annees": 29,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 1
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1997,
+            "date": "1997-01-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 418166021 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "418166021",
+            "name": "JOHANN TISON HATAT",
+            "siret_siege": "41816602100018",
+            "code_postal": "51530",
+            "commune": "51390",
+            "code_naf": "01.21Z",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 1,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1997-01-01",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "recent",
+          "days_stale": 283,
+          "reference_date": "2025-12-06",
+          "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+          "epistemic_confidence": 0.9
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "418166021",
+        "root_name": "JOHANN TISON HATAT",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 1,
+        "closed_establishments_count": 0,
+        "nodes": [
+          {
+            "id": "418166021",
+            "siren": "418166021",
+            "siret": "41816602100018",
+            "node_type": "siege",
+            "name": "JOHANN TISON HATAT",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1997,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "41816602100018",
+              "adresse": "51530 MOUSSY",
+              "code_postal": "51530",
+              "commune": "51390",
+              "departement": "51",
+              "region": "44",
+              "code_naf": "01.21Z",
+              "date_creation": "1997-01-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "1997": [
+            {
+              "id": "418166021",
+              "siren": "418166021",
+              "siret": "41816602100018",
+              "node_type": "siege",
+              "name": "JOHANN TISON HATAT",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1997,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "41816602100018",
+                "adresse": "51530 MOUSSY",
+                "code_postal": "51530",
+                "commune": "51390",
+                "departement": "51",
+                "region": "44",
+                "code_naf": "01.21Z",
+                "date_creation": "1997-01-01",
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "51": {
+            "department_name": "51",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "regional_breakdown": {
+          "44": {
+            "region_name": "44",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Johann Daniel Charle TISON HATAT",
+            "type_person": "personne physique",
+            "first_name": "Johann Daniel Charle",
+            "last_name": "TISON HATAT",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "418166021",
+                "company_name": "JOHANN TISON HATAT",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "418166021",
+        "company_name": "418166021",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "JOHANN TISON HATAT",
+      "predicate": "siren",
+      "value": "418166021",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:29:44.806152+00:00",
+      "collection_method": "api",
+      "confidence": 0.9,
+      "status": "fact"
+    },
+    {
+      "subject": "418166021",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (1 actifs, 0 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:29:48.585049+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "JOHANN TISON HATAT",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:29:48.600382+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "418166021",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:29:48.618096+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.97,
+  "observed_at": "2026-09-15T23:29:44.806152+00:00",
+  "processed_at": "2026-09-15T23:29:52.460228Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

@@ -1,0 +1,4078 @@
+{
+  "result": {
+    "siren": "775724818",
+    "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+    "company_name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+    "date_creation_origine": "1900-01-01",
+    "age_in_years": 126,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+      "siren": "775724818",
+      "siret_siege": "77572481800205",
+      "lei": null,
+      "tva_intracommunautaire": "FR33775724818",
+      "country": "FR",
+      "registration_date": "1900-01-01",
+      "address": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+      "status": "actif",
+      "code_naf": "84.13Z",
+      "libelle_naf": null,
+      "section_activite": "O",
+      "forme_juridique": "9230",
+      "categorie_entreprise": "ETI (Entreprise de Taille Intermédiaire)",
+      "tranche_effectifs": "32",
+      "conventions_collectives": [
+        "3248"
+      ],
+      "date_mise_a_jour_insee": "2025-12-06T05:19:10",
+      "date_mise_a_jour_rne": null,
+      "dirigeants": [],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": true,
+        "liste_idcc": [
+          "3248"
+        ],
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": true,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": true,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": true,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": true,
+        "identifiant_association": "W931006060",
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": true,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 126,
+      "historical_summary": {
+        "date_immatriculation_origine": "1900-01-01",
+        "annee_immatriculation": 1900,
+        "anciennete_annees": 126,
+        "nombre_dirigeants_historiques_identifies": 0,
+        "nombre_etablissements_historiques_ouverts": 8
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1900,
+          "date": "1900-01-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 775724818 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "775724818",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+          "siret_siege": "77572481800205",
+          "code_postal": "93210",
+          "commune": "93066",
+          "code_naf": "84.13Z",
+          "forme_juridique": "9230",
+          "tranche_effectifs": "32",
+          "effectifs_label": "250 à 499 salariés",
+          "total_etablissements": 21,
+          "etablissements_ouverts": 8,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1900-01-01",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "recent",
+        "days_stale": 283,
+        "reference_date": "2025-12-06",
+        "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+        "epistemic_confidence": 0.9
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "775724818",
+      "root_name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+      "total_nodes": 21,
+      "total_edges": 20,
+      "active_establishments_count": 8,
+      "closed_establishments_count": 13,
+      "nodes": [
+        {
+          "id": "775724818",
+          "siren": "775724818",
+          "siret": "77572481800205",
+          "node_type": "siege",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1900,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "77572481800205",
+            "adresse": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+            "code_postal": "93210",
+            "commune": "93066",
+            "departement": "93",
+            "region": "11",
+            "code_naf": "84.13Z",
+            "date_creation": "1900-01-01",
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800270",
+          "siren": "775724818",
+          "siret": "77572481800270",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69008)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": 2005,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800270",
+            "enseigne": null,
+            "adresse": "60 Avenue JEAN MERMOZ",
+            "code_postal": "69008",
+            "commune": "LYON",
+            "departement": "Rhône",
+            "region": "Auvergne-Rhône-Alpes",
+            "geoloc": [
+              45.733643,
+              4.877513
+            ],
+            "date_creation": "2005-01-01",
+            "date_fermeture": "2005-04-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800262",
+          "siren": "775724818",
+          "siret": "77572481800262",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BAGNEUX (92220)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800262",
+            "enseigne": null,
+            "adresse": "116 Avenue ARISTIDE BRIAND",
+            "code_postal": "92220",
+            "commune": "BAGNEUX",
+            "departement": "Hauts-de-Seine",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.798987,
+              2.322709
+            ],
+            "date_creation": "2005-01-01",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800122",
+          "siren": "775724818",
+          "siret": "77572481800122",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANTES (44100)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1988,
+          "fermeture_year": 1997,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800122",
+            "enseigne": null,
+            "adresse": "1 Boulevard SALVADOR ALLENDE",
+            "code_postal": "44100",
+            "commune": "NANTES",
+            "departement": "Loire-Atlantique",
+            "region": "Pays de la Loire",
+            "geoloc": [
+              47.206708,
+              -1.574388
+            ],
+            "date_creation": "1988-05-21",
+            "date_fermeture": "1997-04-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800197",
+          "siren": "775724818",
+          "siret": "77572481800197",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13008)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1999,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800197",
+            "enseigne": null,
+            "adresse": "145 Avenue DU PRADO",
+            "code_postal": "13008",
+            "commune": "MARSEILLE",
+            "departement": "Bouches-du-Rhône",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "geoloc": [
+              43.279064,
+              5.388022
+            ],
+            "date_creation": "1999-06-05",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800015",
+          "siren": "775724818",
+          "siret": "77572481800015",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - COURBEVOIE (92400)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1900,
+          "fermeture_year": 2001,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800015",
+            "enseigne": null,
+            "adresse": "33 Place DES COROLLES",
+            "code_postal": "92400",
+            "commune": "COURBEVOIE",
+            "departement": "Hauts-de-Seine",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.890997,
+              2.245695
+            ],
+            "date_creation": "1900-01-01",
+            "date_fermeture": "2001-05-28",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800221",
+          "siren": "775724818",
+          "siret": "77572481800221",
+          "node_type": "etablissement",
+          "name": "AFNOR - ROUEN (76000)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": 2024,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800221",
+            "enseigne": "AFNOR",
+            "adresse": "81 Rue JEAN LECANUET",
+            "code_postal": "76000",
+            "commune": "ROUEN",
+            "departement": "Seine-Maritime",
+            "region": "Normandie",
+            "geoloc": [
+              49.445365,
+              1.088045
+            ],
+            "date_creation": "2005-01-01",
+            "date_fermeture": "2024-03-29T22:35:05+00:00",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800189",
+          "siren": "775724818",
+          "siret": "77572481800189",
+          "node_type": "etablissement",
+          "name": "AFNOR - NANTES (44200)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1997,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800189",
+            "enseigne": "AFNOR",
+            "adresse": "1 Rue CELESTIN FREINET",
+            "code_postal": "44200",
+            "commune": "NANTES",
+            "departement": "Loire-Atlantique",
+            "region": "Pays de la Loire",
+            "geoloc": [
+              47.207211,
+              -1.534274
+            ],
+            "date_creation": "1997-04-01",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800163",
+          "siren": "775724818",
+          "siret": "77572481800163",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1991,
+          "fermeture_year": 2022,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800163",
+            "enseigne": null,
+            "adresse": "177 Rue GARIBALDI",
+            "code_postal": "69003",
+            "commune": "LYON",
+            "departement": "Rhône",
+            "region": "Auvergne-Rhône-Alpes",
+            "geoloc": [
+              45.758907,
+              4.852845
+            ],
+            "date_creation": "1991-04-01",
+            "date_fermeture": "2022-03-20",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800148",
+          "siren": "775724818",
+          "siret": "77572481800148",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARCQ-EN-BARŒUL (59700)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1991,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800148",
+            "enseigne": null,
+            "adresse": "282 Avenue DE LA MARNE",
+            "code_postal": "59700",
+            "commune": "MARCQ-EN-BARŒUL",
+            "departement": "Nord",
+            "region": "Hauts-de-France",
+            "geoloc": [
+              50.676023,
+              3.109035
+            ],
+            "date_creation": "1991-02-01",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800254",
+          "siren": "775724818",
+          "siret": "77572481800254",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LIMOGES (87000)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": 2024,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800254",
+            "enseigne": null,
+            "adresse": "PARC D'ESTER",
+            "code_postal": "87000",
+            "commune": "LIMOGES",
+            "departement": "Haute-Vienne",
+            "region": "Nouvelle-Aquitaine",
+            "geoloc": null,
+            "date_creation": "2005-02-01",
+            "date_fermeture": "2024-03-29T23:40:14+00:00",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800213",
+          "siren": "775724818",
+          "siret": "77572481800213",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BLAGNAC (31700)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": 2024,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800213",
+            "enseigne": null,
+            "adresse": "5 Rue DIEUDONNE COSTES",
+            "code_postal": "31700",
+            "commune": "BLAGNAC",
+            "departement": "Haute-Garonne",
+            "region": "Occitanie",
+            "geoloc": [
+              43.63179,
+              1.37906
+            ],
+            "date_creation": "2005-01-01",
+            "date_fermeture": "2024-03-29T22:35:05+00:00",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800304",
+          "siren": "775724818",
+          "siret": "77572481800304",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2022,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800304",
+            "enseigne": null,
+            "adresse": "264 Rue GARIBALDI",
+            "code_postal": "69003",
+            "commune": "LYON",
+            "departement": "Rhône",
+            "region": "Auvergne-Rhône-Alpes",
+            "geoloc": [
+              45.753906,
+              4.853102
+            ],
+            "date_creation": "2022-03-21",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800296",
+          "siren": "775724818",
+          "siret": "77572481800296",
+          "node_type": "etablissement",
+          "name": "AFNOR - NANTERRE (92000)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2014,
+          "fermeture_year": 2016,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800296",
+            "enseigne": "AFNOR",
+            "adresse": "41 Rue DES TROIS FONTANOT",
+            "code_postal": "92000",
+            "commune": "NANTERRE",
+            "departement": "Hauts-de-Seine",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.896148,
+              2.220895
+            ],
+            "date_creation": "2014-01-01",
+            "date_fermeture": "2016-06-15",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800171",
+          "siren": "775724818",
+          "siret": "77572481800171",
+          "node_type": "etablissement",
+          "name": "AFNOR - CLICHY (92110)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1995,
+          "fermeture_year": 2001,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800171",
+            "enseigne": "AFNOR",
+            "adresse": "34 Rue MOZART",
+            "code_postal": "92110",
+            "commune": "CLICHY",
+            "departement": "Hauts-de-Seine",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.90619,
+              2.316992
+            ],
+            "date_creation": "1995-01-01",
+            "date_fermeture": "2001-07-07",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800106",
+          "siren": "775724818",
+          "siret": "77572481800106",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13006)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1986,
+          "fermeture_year": 1999,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800106",
+            "enseigne": null,
+            "adresse": "35 Rue SAINTE VICTOIRE",
+            "code_postal": "13006",
+            "commune": "MARSEILLE",
+            "departement": "Bouches-du-Rhône",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "geoloc": [
+              43.285841,
+              5.380754
+            ],
+            "date_creation": "1986-10-15",
+            "date_fermeture": "1999-06-05",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800114",
+          "siren": "775724818",
+          "siret": "77572481800114",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1988,
+          "fermeture_year": 2005,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800114",
+            "enseigne": null,
+            "adresse": "69 Avenue PRESIDENT J.F. KENNEDY",
+            "code_postal": "33700",
+            "commune": "MERIGNAC",
+            "departement": "Gironde",
+            "region": "Nouvelle-Aquitaine",
+            "geoloc": [
+              44.83579,
+              -0.67893
+            ],
+            "date_creation": "1988-01-15",
+            "date_fermeture": "2005-01-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800155",
+          "siren": "775724818",
+          "siret": "77572481800155",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANCY (54000)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 1991,
+          "fermeture_year": 2010,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800155",
+            "enseigne": null,
+            "adresse": "44 Boulevard ALBERT 1ER",
+            "code_postal": "54000",
+            "commune": "NANCY",
+            "departement": "Meurthe-et-Moselle",
+            "region": "Grand Est",
+            "geoloc": [
+              48.697057,
+              6.167271
+            ],
+            "date_creation": "1991-04-01",
+            "date_fermeture": "2010-11-05",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800288",
+          "siren": "775724818",
+          "siret": "77572481800288",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LAXOU (54520)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2010,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800288",
+            "enseigne": null,
+            "adresse": "14 Rue DE SAULNOIS",
+            "code_postal": "54520",
+            "commune": "LAXOU",
+            "departement": "Meurthe-et-Moselle",
+            "region": "Grand Est",
+            "geoloc": [
+              48.691709,
+              6.132003
+            ],
+            "date_creation": "2010-11-05",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "77572481800247",
+          "siren": "775724818",
+          "siret": "77572481800247",
+          "node_type": "etablissement",
+          "name": "AFNOR - MONTPELLIER (34000)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": 2005,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "77572481800247",
+            "enseigne": "AFNOR",
+            "adresse": "329 Rue LEON BLUM",
+            "code_postal": "34000",
+            "commune": "MONTPELLIER",
+            "departement": "Hérault",
+            "region": "Occitanie",
+            "geoloc": [
+              43.607349,
+              3.890642
+            ],
+            "date_creation": "2005-01-01",
+            "date_fermeture": "2005-01-02",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "77572481800239",
+          "siren": "775724818",
+          "siret": "77572481800239",
+          "node_type": "etablissement",
+          "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2005,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "77572481800239",
+            "enseigne": null,
+            "adresse": "2 Impasse RUDOLF DIESEL",
+            "code_postal": "33700",
+            "commune": "MERIGNAC",
+            "departement": "Gironde",
+            "region": "Nouvelle-Aquitaine",
+            "geoloc": [
+              44.837398,
+              -0.686223
+            ],
+            "date_creation": "2005-01-01",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "775724818",
+          "target": "77572481800270",
+          "source_siren": "775724818",
+          "target_siren": "77572481800270",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800262",
+          "source_siren": "775724818",
+          "target_siren": "77572481800262",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800122",
+          "source_siren": "775724818",
+          "target_siren": "77572481800122",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800197",
+          "source_siren": "775724818",
+          "target_siren": "77572481800197",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800015",
+          "source_siren": "775724818",
+          "target_siren": "77572481800015",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800221",
+          "source_siren": "775724818",
+          "target_siren": "77572481800221",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800189",
+          "source_siren": "775724818",
+          "target_siren": "77572481800189",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800163",
+          "source_siren": "775724818",
+          "target_siren": "77572481800163",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800148",
+          "source_siren": "775724818",
+          "target_siren": "77572481800148",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800254",
+          "source_siren": "775724818",
+          "target_siren": "77572481800254",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800213",
+          "source_siren": "775724818",
+          "target_siren": "77572481800213",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800304",
+          "source_siren": "775724818",
+          "target_siren": "77572481800304",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800296",
+          "source_siren": "775724818",
+          "target_siren": "77572481800296",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800171",
+          "source_siren": "775724818",
+          "target_siren": "77572481800171",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800106",
+          "source_siren": "775724818",
+          "target_siren": "77572481800106",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800114",
+          "source_siren": "775724818",
+          "target_siren": "77572481800114",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800155",
+          "source_siren": "775724818",
+          "target_siren": "77572481800155",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800288",
+          "source_siren": "775724818",
+          "target_siren": "77572481800288",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800247",
+          "source_siren": "775724818",
+          "target_siren": "77572481800247",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "775724818",
+          "target": "77572481800239",
+          "source_siren": "775724818",
+          "target_siren": "77572481800239",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "1900": [
+          {
+            "id": "775724818",
+            "siren": "775724818",
+            "siret": "77572481800205",
+            "node_type": "siege",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1900,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "77572481800205",
+              "adresse": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+              "code_postal": "93210",
+              "commune": "93066",
+              "departement": "93",
+              "region": "11",
+              "code_naf": "84.13Z",
+              "date_creation": "1900-01-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800015",
+            "siren": "775724818",
+            "siret": "77572481800015",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - COURBEVOIE (92400)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1900,
+            "fermeture_year": 2001,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800015",
+              "enseigne": null,
+              "adresse": "33 Place DES COROLLES",
+              "code_postal": "92400",
+              "commune": "COURBEVOIE",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.890997,
+                2.245695
+              ],
+              "date_creation": "1900-01-01",
+              "date_fermeture": "2001-05-28",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "1986": [
+          {
+            "id": "77572481800106",
+            "siren": "775724818",
+            "siret": "77572481800106",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13006)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1986,
+            "fermeture_year": 1999,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800106",
+              "enseigne": null,
+              "adresse": "35 Rue SAINTE VICTOIRE",
+              "code_postal": "13006",
+              "commune": "MARSEILLE",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.285841,
+                5.380754
+              ],
+              "date_creation": "1986-10-15",
+              "date_fermeture": "1999-06-05",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "1988": [
+          {
+            "id": "77572481800122",
+            "siren": "775724818",
+            "siret": "77572481800122",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANTES (44100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 1997,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800122",
+              "enseigne": null,
+              "adresse": "1 Boulevard SALVADOR ALLENDE",
+              "code_postal": "44100",
+              "commune": "NANTES",
+              "departement": "Loire-Atlantique",
+              "region": "Pays de la Loire",
+              "geoloc": [
+                47.206708,
+                -1.574388
+              ],
+              "date_creation": "1988-05-21",
+              "date_fermeture": "1997-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800114",
+            "siren": "775724818",
+            "siret": "77572481800114",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800114",
+              "enseigne": null,
+              "adresse": "69 Avenue PRESIDENT J.F. KENNEDY",
+              "code_postal": "33700",
+              "commune": "MERIGNAC",
+              "departement": "Gironde",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": [
+                44.83579,
+                -0.67893
+              ],
+              "date_creation": "1988-01-15",
+              "date_fermeture": "2005-01-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "1991": [
+          {
+            "id": "77572481800163",
+            "siren": "775724818",
+            "siret": "77572481800163",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": 2022,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800163",
+              "enseigne": null,
+              "adresse": "177 Rue GARIBALDI",
+              "code_postal": "69003",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.758907,
+                4.852845
+              ],
+              "date_creation": "1991-04-01",
+              "date_fermeture": "2022-03-20",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800148",
+            "siren": "775724818",
+            "siret": "77572481800148",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARCQ-EN-BARŒUL (59700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800148",
+              "enseigne": null,
+              "adresse": "282 Avenue DE LA MARNE",
+              "code_postal": "59700",
+              "commune": "MARCQ-EN-BARŒUL",
+              "departement": "Nord",
+              "region": "Hauts-de-France",
+              "geoloc": [
+                50.676023,
+                3.109035
+              ],
+              "date_creation": "1991-02-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800155",
+            "siren": "775724818",
+            "siret": "77572481800155",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANCY (54000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": 2010,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800155",
+              "enseigne": null,
+              "adresse": "44 Boulevard ALBERT 1ER",
+              "code_postal": "54000",
+              "commune": "NANCY",
+              "departement": "Meurthe-et-Moselle",
+              "region": "Grand Est",
+              "geoloc": [
+                48.697057,
+                6.167271
+              ],
+              "date_creation": "1991-04-01",
+              "date_fermeture": "2010-11-05",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "1995": [
+          {
+            "id": "77572481800171",
+            "siren": "775724818",
+            "siret": "77572481800171",
+            "node_type": "etablissement",
+            "name": "AFNOR - CLICHY (92110)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1995,
+            "fermeture_year": 2001,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800171",
+              "enseigne": "AFNOR",
+              "adresse": "34 Rue MOZART",
+              "code_postal": "92110",
+              "commune": "CLICHY",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.90619,
+                2.316992
+              ],
+              "date_creation": "1995-01-01",
+              "date_fermeture": "2001-07-07",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "1997": [
+          {
+            "id": "77572481800189",
+            "siren": "775724818",
+            "siret": "77572481800189",
+            "node_type": "etablissement",
+            "name": "AFNOR - NANTES (44200)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1997,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800189",
+              "enseigne": "AFNOR",
+              "adresse": "1 Rue CELESTIN FREINET",
+              "code_postal": "44200",
+              "commune": "NANTES",
+              "departement": "Loire-Atlantique",
+              "region": "Pays de la Loire",
+              "geoloc": [
+                47.207211,
+                -1.534274
+              ],
+              "date_creation": "1997-04-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "1999": [
+          {
+            "id": "77572481800197",
+            "siren": "775724818",
+            "siret": "77572481800197",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13008)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1999,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800197",
+              "enseigne": null,
+              "adresse": "145 Avenue DU PRADO",
+              "code_postal": "13008",
+              "commune": "MARSEILLE",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.279064,
+                5.388022
+              ],
+              "date_creation": "1999-06-05",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "2005": [
+          {
+            "id": "77572481800270",
+            "siren": "775724818",
+            "siret": "77572481800270",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69008)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800270",
+              "enseigne": null,
+              "adresse": "60 Avenue JEAN MERMOZ",
+              "code_postal": "69008",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.733643,
+                4.877513
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2005-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800262",
+            "siren": "775724818",
+            "siret": "77572481800262",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BAGNEUX (92220)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800262",
+              "enseigne": null,
+              "adresse": "116 Avenue ARISTIDE BRIAND",
+              "code_postal": "92220",
+              "commune": "BAGNEUX",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.798987,
+                2.322709
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800221",
+            "siren": "775724818",
+            "siret": "77572481800221",
+            "node_type": "etablissement",
+            "name": "AFNOR - ROUEN (76000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800221",
+              "enseigne": "AFNOR",
+              "adresse": "81 Rue JEAN LECANUET",
+              "code_postal": "76000",
+              "commune": "ROUEN",
+              "departement": "Seine-Maritime",
+              "region": "Normandie",
+              "geoloc": [
+                49.445365,
+                1.088045
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2024-03-29T22:35:05+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800254",
+            "siren": "775724818",
+            "siret": "77572481800254",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LIMOGES (87000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800254",
+              "enseigne": null,
+              "adresse": "PARC D'ESTER",
+              "code_postal": "87000",
+              "commune": "LIMOGES",
+              "departement": "Haute-Vienne",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": null,
+              "date_creation": "2005-02-01",
+              "date_fermeture": "2024-03-29T23:40:14+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800213",
+            "siren": "775724818",
+            "siret": "77572481800213",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BLAGNAC (31700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800213",
+              "enseigne": null,
+              "adresse": "5 Rue DIEUDONNE COSTES",
+              "code_postal": "31700",
+              "commune": "BLAGNAC",
+              "departement": "Haute-Garonne",
+              "region": "Occitanie",
+              "geoloc": [
+                43.63179,
+                1.37906
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2024-03-29T22:35:05+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800247",
+            "siren": "775724818",
+            "siret": "77572481800247",
+            "node_type": "etablissement",
+            "name": "AFNOR - MONTPELLIER (34000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800247",
+              "enseigne": "AFNOR",
+              "adresse": "329 Rue LEON BLUM",
+              "code_postal": "34000",
+              "commune": "MONTPELLIER",
+              "departement": "Hérault",
+              "region": "Occitanie",
+              "geoloc": [
+                43.607349,
+                3.890642
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2005-01-02",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800239",
+            "siren": "775724818",
+            "siret": "77572481800239",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800239",
+              "enseigne": null,
+              "adresse": "2 Impasse RUDOLF DIESEL",
+              "code_postal": "33700",
+              "commune": "MERIGNAC",
+              "departement": "Gironde",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": [
+                44.837398,
+                -0.686223
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "2010": [
+          {
+            "id": "77572481800288",
+            "siren": "775724818",
+            "siret": "77572481800288",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LAXOU (54520)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2010,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800288",
+              "enseigne": null,
+              "adresse": "14 Rue DE SAULNOIS",
+              "code_postal": "54520",
+              "commune": "LAXOU",
+              "departement": "Meurthe-et-Moselle",
+              "region": "Grand Est",
+              "geoloc": [
+                48.691709,
+                6.132003
+              ],
+              "date_creation": "2010-11-05",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "2014": [
+          {
+            "id": "77572481800296",
+            "siren": "775724818",
+            "siret": "77572481800296",
+            "node_type": "etablissement",
+            "name": "AFNOR - NANTERRE (92000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2014,
+            "fermeture_year": 2016,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800296",
+              "enseigne": "AFNOR",
+              "adresse": "41 Rue DES TROIS FONTANOT",
+              "code_postal": "92000",
+              "commune": "NANTERRE",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.896148,
+                2.220895
+              ],
+              "date_creation": "2014-01-01",
+              "date_fermeture": "2016-06-15",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "2022": [
+          {
+            "id": "77572481800304",
+            "siren": "775724818",
+            "siret": "77572481800304",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2022,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800304",
+              "enseigne": null,
+              "adresse": "264 Rue GARIBALDI",
+              "code_postal": "69003",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.753906,
+                4.853102
+              ],
+              "date_creation": "2022-03-21",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "93": {
+          "department_name": "93",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "69": {
+          "department_name": "Rhône",
+          "total": 3,
+          "active": 1,
+          "closed": 2
+        },
+        "92": {
+          "department_name": "Hauts-de-Seine",
+          "total": 4,
+          "active": 1,
+          "closed": 3
+        },
+        "44": {
+          "department_name": "Loire-Atlantique",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        },
+        "13": {
+          "department_name": "Bouches-du-Rhône",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        },
+        "76": {
+          "department_name": "Seine-Maritime",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "59": {
+          "department_name": "Nord",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "87": {
+          "department_name": "Haute-Vienne",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "31": {
+          "department_name": "Haute-Garonne",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "33": {
+          "department_name": "Gironde",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        },
+        "54": {
+          "department_name": "Meurthe-et-Moselle",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        },
+        "34": {
+          "department_name": "Hérault",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "Auvergne-Rhône-Alpes": {
+          "region_name": "Auvergne-Rhône-Alpes",
+          "total": 3,
+          "active": 1,
+          "closed": 2
+        },
+        "Île-de-France": {
+          "region_name": "Île-de-France",
+          "total": 4,
+          "active": 1,
+          "closed": 3
+        },
+        "Pays de la Loire": {
+          "region_name": "Pays de la Loire",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        },
+        "Provence-Alpes-Côte d'Azur": {
+          "region_name": "Provence-Alpes-Côte d'Azur",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        },
+        "Normandie": {
+          "region_name": "Normandie",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Hauts-de-France": {
+          "region_name": "Hauts-de-France",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "Nouvelle-Aquitaine": {
+          "region_name": "Nouvelle-Aquitaine",
+          "total": 3,
+          "active": 1,
+          "closed": 2
+        },
+        "Occitanie": {
+          "region_name": "Occitanie",
+          "total": 2,
+          "active": 0,
+          "closed": 2
+        },
+        "Grand Est": {
+          "region_name": "Grand Est",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 21,
+        "number_of_edges": 20,
+        "out_degree_root": 20,
+        "density": 0.047619047619047616
+      }
+    },
+    "executives": [],
+    "financials": {
+      "company_siren": "775724818",
+      "company_name": "775724818",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "1900": {
+        "year": "1900",
+        "milestones": [
+          {
+            "date": "1900-01-01",
+            "event": "Immatriculation officielle SIREN 775724818"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "775724818",
+            "siren": "775724818",
+            "siret": "77572481800205",
+            "node_type": "siege",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1900,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "77572481800205",
+              "adresse": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+              "code_postal": "93210",
+              "commune": "93066",
+              "departement": "93",
+              "region": "11",
+              "code_naf": "84.13Z",
+              "date_creation": "1900-01-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800015",
+            "siren": "775724818",
+            "siret": "77572481800015",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - COURBEVOIE (92400)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1900,
+            "fermeture_year": 2001,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800015",
+              "enseigne": null,
+              "adresse": "33 Place DES COROLLES",
+              "code_postal": "92400",
+              "commune": "COURBEVOIE",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.890997,
+                2.245695
+              ],
+              "date_creation": "1900-01-01",
+              "date_fermeture": "2001-05-28",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1986": {
+        "year": "1986",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800106",
+            "siren": "775724818",
+            "siret": "77572481800106",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13006)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1986,
+            "fermeture_year": 1999,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800106",
+              "enseigne": null,
+              "adresse": "35 Rue SAINTE VICTOIRE",
+              "code_postal": "13006",
+              "commune": "MARSEILLE",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.285841,
+                5.380754
+              ],
+              "date_creation": "1986-10-15",
+              "date_fermeture": "1999-06-05",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1988": {
+        "year": "1988",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800122",
+            "siren": "775724818",
+            "siret": "77572481800122",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANTES (44100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 1997,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800122",
+              "enseigne": null,
+              "adresse": "1 Boulevard SALVADOR ALLENDE",
+              "code_postal": "44100",
+              "commune": "NANTES",
+              "departement": "Loire-Atlantique",
+              "region": "Pays de la Loire",
+              "geoloc": [
+                47.206708,
+                -1.574388
+              ],
+              "date_creation": "1988-05-21",
+              "date_fermeture": "1997-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800114",
+            "siren": "775724818",
+            "siret": "77572481800114",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800114",
+              "enseigne": null,
+              "adresse": "69 Avenue PRESIDENT J.F. KENNEDY",
+              "code_postal": "33700",
+              "commune": "MERIGNAC",
+              "departement": "Gironde",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": [
+                44.83579,
+                -0.67893
+              ],
+              "date_creation": "1988-01-15",
+              "date_fermeture": "2005-01-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1991": {
+        "year": "1991",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800163",
+            "siren": "775724818",
+            "siret": "77572481800163",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": 2022,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800163",
+              "enseigne": null,
+              "adresse": "177 Rue GARIBALDI",
+              "code_postal": "69003",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.758907,
+                4.852845
+              ],
+              "date_creation": "1991-04-01",
+              "date_fermeture": "2022-03-20",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800148",
+            "siren": "775724818",
+            "siret": "77572481800148",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARCQ-EN-BARŒUL (59700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800148",
+              "enseigne": null,
+              "adresse": "282 Avenue DE LA MARNE",
+              "code_postal": "59700",
+              "commune": "MARCQ-EN-BARŒUL",
+              "departement": "Nord",
+              "region": "Hauts-de-France",
+              "geoloc": [
+                50.676023,
+                3.109035
+              ],
+              "date_creation": "1991-02-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800155",
+            "siren": "775724818",
+            "siret": "77572481800155",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANCY (54000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": 2010,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800155",
+              "enseigne": null,
+              "adresse": "44 Boulevard ALBERT 1ER",
+              "code_postal": "54000",
+              "commune": "NANCY",
+              "departement": "Meurthe-et-Moselle",
+              "region": "Grand Est",
+              "geoloc": [
+                48.697057,
+                6.167271
+              ],
+              "date_creation": "1991-04-01",
+              "date_fermeture": "2010-11-05",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1995": {
+        "year": "1995",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800171",
+            "siren": "775724818",
+            "siret": "77572481800171",
+            "node_type": "etablissement",
+            "name": "AFNOR - CLICHY (92110)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1995,
+            "fermeture_year": 2001,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800171",
+              "enseigne": "AFNOR",
+              "adresse": "34 Rue MOZART",
+              "code_postal": "92110",
+              "commune": "CLICHY",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.90619,
+                2.316992
+              ],
+              "date_creation": "1995-01-01",
+              "date_fermeture": "2001-07-07",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1997": {
+        "year": "1997",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800189",
+            "siren": "775724818",
+            "siret": "77572481800189",
+            "node_type": "etablissement",
+            "name": "AFNOR - NANTES (44200)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1997,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800189",
+              "enseigne": "AFNOR",
+              "adresse": "1 Rue CELESTIN FREINET",
+              "code_postal": "44200",
+              "commune": "NANTES",
+              "departement": "Loire-Atlantique",
+              "region": "Pays de la Loire",
+              "geoloc": [
+                47.207211,
+                -1.534274
+              ],
+              "date_creation": "1997-04-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "1999": {
+        "year": "1999",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800197",
+            "siren": "775724818",
+            "siret": "77572481800197",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13008)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1999,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800197",
+              "enseigne": null,
+              "adresse": "145 Avenue DU PRADO",
+              "code_postal": "13008",
+              "commune": "MARSEILLE",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.279064,
+                5.388022
+              ],
+              "date_creation": "1999-06-05",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2005": {
+        "year": "2005",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800270",
+            "siren": "775724818",
+            "siret": "77572481800270",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69008)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800270",
+              "enseigne": null,
+              "adresse": "60 Avenue JEAN MERMOZ",
+              "code_postal": "69008",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.733643,
+                4.877513
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2005-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800262",
+            "siren": "775724818",
+            "siret": "77572481800262",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BAGNEUX (92220)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800262",
+              "enseigne": null,
+              "adresse": "116 Avenue ARISTIDE BRIAND",
+              "code_postal": "92220",
+              "commune": "BAGNEUX",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.798987,
+                2.322709
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800221",
+            "siren": "775724818",
+            "siret": "77572481800221",
+            "node_type": "etablissement",
+            "name": "AFNOR - ROUEN (76000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800221",
+              "enseigne": "AFNOR",
+              "adresse": "81 Rue JEAN LECANUET",
+              "code_postal": "76000",
+              "commune": "ROUEN",
+              "departement": "Seine-Maritime",
+              "region": "Normandie",
+              "geoloc": [
+                49.445365,
+                1.088045
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2024-03-29T22:35:05+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800254",
+            "siren": "775724818",
+            "siret": "77572481800254",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LIMOGES (87000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800254",
+              "enseigne": null,
+              "adresse": "PARC D'ESTER",
+              "code_postal": "87000",
+              "commune": "LIMOGES",
+              "departement": "Haute-Vienne",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": null,
+              "date_creation": "2005-02-01",
+              "date_fermeture": "2024-03-29T23:40:14+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800213",
+            "siren": "775724818",
+            "siret": "77572481800213",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BLAGNAC (31700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800213",
+              "enseigne": null,
+              "adresse": "5 Rue DIEUDONNE COSTES",
+              "code_postal": "31700",
+              "commune": "BLAGNAC",
+              "departement": "Haute-Garonne",
+              "region": "Occitanie",
+              "geoloc": [
+                43.63179,
+                1.37906
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2024-03-29T22:35:05+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800247",
+            "siren": "775724818",
+            "siret": "77572481800247",
+            "node_type": "etablissement",
+            "name": "AFNOR - MONTPELLIER (34000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800247",
+              "enseigne": "AFNOR",
+              "adresse": "329 Rue LEON BLUM",
+              "code_postal": "34000",
+              "commune": "MONTPELLIER",
+              "departement": "Hérault",
+              "region": "Occitanie",
+              "geoloc": [
+                43.607349,
+                3.890642
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2005-01-02",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800239",
+            "siren": "775724818",
+            "siret": "77572481800239",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800239",
+              "enseigne": null,
+              "adresse": "2 Impasse RUDOLF DIESEL",
+              "code_postal": "33700",
+              "commune": "MERIGNAC",
+              "departement": "Gironde",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": [
+                44.837398,
+                -0.686223
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2010": {
+        "year": "2010",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800288",
+            "siren": "775724818",
+            "siret": "77572481800288",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LAXOU (54520)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2010,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800288",
+              "enseigne": null,
+              "adresse": "14 Rue DE SAULNOIS",
+              "code_postal": "54520",
+              "commune": "LAXOU",
+              "departement": "Meurthe-et-Moselle",
+              "region": "Grand Est",
+              "geoloc": [
+                48.691709,
+                6.132003
+              ],
+              "date_creation": "2010-11-05",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2014": {
+        "year": "2014",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800296",
+            "siren": "775724818",
+            "siret": "77572481800296",
+            "node_type": "etablissement",
+            "name": "AFNOR - NANTERRE (92000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2014,
+            "fermeture_year": 2016,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800296",
+              "enseigne": "AFNOR",
+              "adresse": "41 Rue DES TROIS FONTANOT",
+              "code_postal": "92000",
+              "commune": "NANTERRE",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.896148,
+                2.220895
+              ],
+              "date_creation": "2014-01-01",
+              "date_fermeture": "2016-06-15",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2022": {
+        "year": "2022",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "77572481800304",
+            "siren": "775724818",
+            "siret": "77572481800304",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2022,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800304",
+              "enseigne": null,
+              "adresse": "264 Rue GARIBALDI",
+              "code_postal": "69003",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.753906,
+                4.853102
+              ],
+              "date_creation": "2022-03-21",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2022",
+      "2014",
+      "2010",
+      "2005",
+      "1999",
+      "1997",
+      "1995",
+      "1991",
+      "1988",
+      "1986",
+      "1900"
+    ],
+    "total_years_tracked": 11,
+    "profile": {
+      "argus": {
+        "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+        "siren": "775724818",
+        "siret_siege": "77572481800205",
+        "lei": null,
+        "tva_intracommunautaire": "FR33775724818",
+        "country": "FR",
+        "registration_date": "1900-01-01",
+        "address": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+        "status": "actif",
+        "code_naf": "84.13Z",
+        "libelle_naf": null,
+        "section_activite": "O",
+        "forme_juridique": "9230",
+        "categorie_entreprise": "ETI (Entreprise de Taille Intermédiaire)",
+        "tranche_effectifs": "32",
+        "conventions_collectives": [
+          "3248"
+        ],
+        "date_mise_a_jour_insee": "2025-12-06T05:19:10",
+        "date_mise_a_jour_rne": null,
+        "dirigeants": [],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3248"
+          ],
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": true,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": true,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": true,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": true,
+          "identifiant_association": "W931006060",
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": true,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 126,
+        "historical_summary": {
+          "date_immatriculation_origine": "1900-01-01",
+          "annee_immatriculation": 1900,
+          "anciennete_annees": 126,
+          "nombre_dirigeants_historiques_identifies": 0,
+          "nombre_etablissements_historiques_ouverts": 8
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1900,
+            "date": "1900-01-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 775724818 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "775724818",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+            "siret_siege": "77572481800205",
+            "code_postal": "93210",
+            "commune": "93066",
+            "code_naf": "84.13Z",
+            "forme_juridique": "9230",
+            "tranche_effectifs": "32",
+            "effectifs_label": "250 à 499 salariés",
+            "total_etablissements": 21,
+            "etablissements_ouverts": 8,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1900-01-01",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "recent",
+          "days_stale": 283,
+          "reference_date": "2025-12-06",
+          "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+          "epistemic_confidence": 0.9
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "775724818",
+        "root_name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+        "total_nodes": 21,
+        "total_edges": 20,
+        "active_establishments_count": 8,
+        "closed_establishments_count": 13,
+        "nodes": [
+          {
+            "id": "775724818",
+            "siren": "775724818",
+            "siret": "77572481800205",
+            "node_type": "siege",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1900,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "77572481800205",
+              "adresse": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+              "code_postal": "93210",
+              "commune": "93066",
+              "departement": "93",
+              "region": "11",
+              "code_naf": "84.13Z",
+              "date_creation": "1900-01-01",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800270",
+            "siren": "775724818",
+            "siret": "77572481800270",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69008)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800270",
+              "enseigne": null,
+              "adresse": "60 Avenue JEAN MERMOZ",
+              "code_postal": "69008",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.733643,
+                4.877513
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2005-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800262",
+            "siren": "775724818",
+            "siret": "77572481800262",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BAGNEUX (92220)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800262",
+              "enseigne": null,
+              "adresse": "116 Avenue ARISTIDE BRIAND",
+              "code_postal": "92220",
+              "commune": "BAGNEUX",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.798987,
+                2.322709
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800122",
+            "siren": "775724818",
+            "siret": "77572481800122",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANTES (44100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 1997,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800122",
+              "enseigne": null,
+              "adresse": "1 Boulevard SALVADOR ALLENDE",
+              "code_postal": "44100",
+              "commune": "NANTES",
+              "departement": "Loire-Atlantique",
+              "region": "Pays de la Loire",
+              "geoloc": [
+                47.206708,
+                -1.574388
+              ],
+              "date_creation": "1988-05-21",
+              "date_fermeture": "1997-04-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800197",
+            "siren": "775724818",
+            "siret": "77572481800197",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13008)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1999,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800197",
+              "enseigne": null,
+              "adresse": "145 Avenue DU PRADO",
+              "code_postal": "13008",
+              "commune": "MARSEILLE",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.279064,
+                5.388022
+              ],
+              "date_creation": "1999-06-05",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800015",
+            "siren": "775724818",
+            "siret": "77572481800015",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - COURBEVOIE (92400)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1900,
+            "fermeture_year": 2001,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800015",
+              "enseigne": null,
+              "adresse": "33 Place DES COROLLES",
+              "code_postal": "92400",
+              "commune": "COURBEVOIE",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.890997,
+                2.245695
+              ],
+              "date_creation": "1900-01-01",
+              "date_fermeture": "2001-05-28",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800221",
+            "siren": "775724818",
+            "siret": "77572481800221",
+            "node_type": "etablissement",
+            "name": "AFNOR - ROUEN (76000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800221",
+              "enseigne": "AFNOR",
+              "adresse": "81 Rue JEAN LECANUET",
+              "code_postal": "76000",
+              "commune": "ROUEN",
+              "departement": "Seine-Maritime",
+              "region": "Normandie",
+              "geoloc": [
+                49.445365,
+                1.088045
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2024-03-29T22:35:05+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800189",
+            "siren": "775724818",
+            "siret": "77572481800189",
+            "node_type": "etablissement",
+            "name": "AFNOR - NANTES (44200)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1997,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800189",
+              "enseigne": "AFNOR",
+              "adresse": "1 Rue CELESTIN FREINET",
+              "code_postal": "44200",
+              "commune": "NANTES",
+              "departement": "Loire-Atlantique",
+              "region": "Pays de la Loire",
+              "geoloc": [
+                47.207211,
+                -1.534274
+              ],
+              "date_creation": "1997-04-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800163",
+            "siren": "775724818",
+            "siret": "77572481800163",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": 2022,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800163",
+              "enseigne": null,
+              "adresse": "177 Rue GARIBALDI",
+              "code_postal": "69003",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.758907,
+                4.852845
+              ],
+              "date_creation": "1991-04-01",
+              "date_fermeture": "2022-03-20",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800148",
+            "siren": "775724818",
+            "siret": "77572481800148",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARCQ-EN-BARŒUL (59700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800148",
+              "enseigne": null,
+              "adresse": "282 Avenue DE LA MARNE",
+              "code_postal": "59700",
+              "commune": "MARCQ-EN-BARŒUL",
+              "departement": "Nord",
+              "region": "Hauts-de-France",
+              "geoloc": [
+                50.676023,
+                3.109035
+              ],
+              "date_creation": "1991-02-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800254",
+            "siren": "775724818",
+            "siret": "77572481800254",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LIMOGES (87000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800254",
+              "enseigne": null,
+              "adresse": "PARC D'ESTER",
+              "code_postal": "87000",
+              "commune": "LIMOGES",
+              "departement": "Haute-Vienne",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": null,
+              "date_creation": "2005-02-01",
+              "date_fermeture": "2024-03-29T23:40:14+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800213",
+            "siren": "775724818",
+            "siret": "77572481800213",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BLAGNAC (31700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2024,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800213",
+              "enseigne": null,
+              "adresse": "5 Rue DIEUDONNE COSTES",
+              "code_postal": "31700",
+              "commune": "BLAGNAC",
+              "departement": "Haute-Garonne",
+              "region": "Occitanie",
+              "geoloc": [
+                43.63179,
+                1.37906
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2024-03-29T22:35:05+00:00",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800304",
+            "siren": "775724818",
+            "siret": "77572481800304",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2022,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800304",
+              "enseigne": null,
+              "adresse": "264 Rue GARIBALDI",
+              "code_postal": "69003",
+              "commune": "LYON",
+              "departement": "Rhône",
+              "region": "Auvergne-Rhône-Alpes",
+              "geoloc": [
+                45.753906,
+                4.853102
+              ],
+              "date_creation": "2022-03-21",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800296",
+            "siren": "775724818",
+            "siret": "77572481800296",
+            "node_type": "etablissement",
+            "name": "AFNOR - NANTERRE (92000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2014,
+            "fermeture_year": 2016,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800296",
+              "enseigne": "AFNOR",
+              "adresse": "41 Rue DES TROIS FONTANOT",
+              "code_postal": "92000",
+              "commune": "NANTERRE",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.896148,
+                2.220895
+              ],
+              "date_creation": "2014-01-01",
+              "date_fermeture": "2016-06-15",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800171",
+            "siren": "775724818",
+            "siret": "77572481800171",
+            "node_type": "etablissement",
+            "name": "AFNOR - CLICHY (92110)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1995,
+            "fermeture_year": 2001,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800171",
+              "enseigne": "AFNOR",
+              "adresse": "34 Rue MOZART",
+              "code_postal": "92110",
+              "commune": "CLICHY",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.90619,
+                2.316992
+              ],
+              "date_creation": "1995-01-01",
+              "date_fermeture": "2001-07-07",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800106",
+            "siren": "775724818",
+            "siret": "77572481800106",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13006)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1986,
+            "fermeture_year": 1999,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800106",
+              "enseigne": null,
+              "adresse": "35 Rue SAINTE VICTOIRE",
+              "code_postal": "13006",
+              "commune": "MARSEILLE",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.285841,
+                5.380754
+              ],
+              "date_creation": "1986-10-15",
+              "date_fermeture": "1999-06-05",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800114",
+            "siren": "775724818",
+            "siret": "77572481800114",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1988,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800114",
+              "enseigne": null,
+              "adresse": "69 Avenue PRESIDENT J.F. KENNEDY",
+              "code_postal": "33700",
+              "commune": "MERIGNAC",
+              "departement": "Gironde",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": [
+                44.83579,
+                -0.67893
+              ],
+              "date_creation": "1988-01-15",
+              "date_fermeture": "2005-01-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800155",
+            "siren": "775724818",
+            "siret": "77572481800155",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANCY (54000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 1991,
+            "fermeture_year": 2010,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800155",
+              "enseigne": null,
+              "adresse": "44 Boulevard ALBERT 1ER",
+              "code_postal": "54000",
+              "commune": "NANCY",
+              "departement": "Meurthe-et-Moselle",
+              "region": "Grand Est",
+              "geoloc": [
+                48.697057,
+                6.167271
+              ],
+              "date_creation": "1991-04-01",
+              "date_fermeture": "2010-11-05",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800288",
+            "siren": "775724818",
+            "siret": "77572481800288",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LAXOU (54520)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2010,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800288",
+              "enseigne": null,
+              "adresse": "14 Rue DE SAULNOIS",
+              "code_postal": "54520",
+              "commune": "LAXOU",
+              "departement": "Meurthe-et-Moselle",
+              "region": "Grand Est",
+              "geoloc": [
+                48.691709,
+                6.132003
+              ],
+              "date_creation": "2010-11-05",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "77572481800247",
+            "siren": "775724818",
+            "siret": "77572481800247",
+            "node_type": "etablissement",
+            "name": "AFNOR - MONTPELLIER (34000)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "77572481800247",
+              "enseigne": "AFNOR",
+              "adresse": "329 Rue LEON BLUM",
+              "code_postal": "34000",
+              "commune": "MONTPELLIER",
+              "departement": "Hérault",
+              "region": "Occitanie",
+              "geoloc": [
+                43.607349,
+                3.890642
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": "2005-01-02",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "77572481800239",
+            "siren": "775724818",
+            "siret": "77572481800239",
+            "node_type": "etablissement",
+            "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2005,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "77572481800239",
+              "enseigne": null,
+              "adresse": "2 Impasse RUDOLF DIESEL",
+              "code_postal": "33700",
+              "commune": "MERIGNAC",
+              "departement": "Gironde",
+              "region": "Nouvelle-Aquitaine",
+              "geoloc": [
+                44.837398,
+                -0.686223
+              ],
+              "date_creation": "2005-01-01",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "775724818",
+            "target": "77572481800270",
+            "source_siren": "775724818",
+            "target_siren": "77572481800270",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800262",
+            "source_siren": "775724818",
+            "target_siren": "77572481800262",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800122",
+            "source_siren": "775724818",
+            "target_siren": "77572481800122",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800197",
+            "source_siren": "775724818",
+            "target_siren": "77572481800197",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800015",
+            "source_siren": "775724818",
+            "target_siren": "77572481800015",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800221",
+            "source_siren": "775724818",
+            "target_siren": "77572481800221",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800189",
+            "source_siren": "775724818",
+            "target_siren": "77572481800189",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800163",
+            "source_siren": "775724818",
+            "target_siren": "77572481800163",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800148",
+            "source_siren": "775724818",
+            "target_siren": "77572481800148",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800254",
+            "source_siren": "775724818",
+            "target_siren": "77572481800254",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800213",
+            "source_siren": "775724818",
+            "target_siren": "77572481800213",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800304",
+            "source_siren": "775724818",
+            "target_siren": "77572481800304",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800296",
+            "source_siren": "775724818",
+            "target_siren": "77572481800296",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800171",
+            "source_siren": "775724818",
+            "target_siren": "77572481800171",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800106",
+            "source_siren": "775724818",
+            "target_siren": "77572481800106",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800114",
+            "source_siren": "775724818",
+            "target_siren": "77572481800114",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800155",
+            "source_siren": "775724818",
+            "target_siren": "77572481800155",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800288",
+            "source_siren": "775724818",
+            "target_siren": "77572481800288",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800247",
+            "source_siren": "775724818",
+            "target_siren": "77572481800247",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "775724818",
+            "target": "77572481800239",
+            "source_siren": "775724818",
+            "target_siren": "77572481800239",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "1900": [
+            {
+              "id": "775724818",
+              "siren": "775724818",
+              "siret": "77572481800205",
+              "node_type": "siege",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1900,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "77572481800205",
+                "adresse": "11 RUE FRANCIS DE PRESSENSE 93210 SAINT-DENIS",
+                "code_postal": "93210",
+                "commune": "93066",
+                "departement": "93",
+                "region": "11",
+                "code_naf": "84.13Z",
+                "date_creation": "1900-01-01",
+                "statut": "🟢 Actif (État A)"
+              }
+            },
+            {
+              "id": "77572481800015",
+              "siren": "775724818",
+              "siret": "77572481800015",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - COURBEVOIE (92400)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1900,
+              "fermeture_year": 2001,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800015",
+                "enseigne": null,
+                "adresse": "33 Place DES COROLLES",
+                "code_postal": "92400",
+                "commune": "COURBEVOIE",
+                "departement": "Hauts-de-Seine",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.890997,
+                  2.245695
+                ],
+                "date_creation": "1900-01-01",
+                "date_fermeture": "2001-05-28",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "1986": [
+            {
+              "id": "77572481800106",
+              "siren": "775724818",
+              "siret": "77572481800106",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13006)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1986,
+              "fermeture_year": 1999,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800106",
+                "enseigne": null,
+                "adresse": "35 Rue SAINTE VICTOIRE",
+                "code_postal": "13006",
+                "commune": "MARSEILLE",
+                "departement": "Bouches-du-Rhône",
+                "region": "Provence-Alpes-Côte d'Azur",
+                "geoloc": [
+                  43.285841,
+                  5.380754
+                ],
+                "date_creation": "1986-10-15",
+                "date_fermeture": "1999-06-05",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "1988": [
+            {
+              "id": "77572481800122",
+              "siren": "775724818",
+              "siret": "77572481800122",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANTES (44100)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1988,
+              "fermeture_year": 1997,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800122",
+                "enseigne": null,
+                "adresse": "1 Boulevard SALVADOR ALLENDE",
+                "code_postal": "44100",
+                "commune": "NANTES",
+                "departement": "Loire-Atlantique",
+                "region": "Pays de la Loire",
+                "geoloc": [
+                  47.206708,
+                  -1.574388
+                ],
+                "date_creation": "1988-05-21",
+                "date_fermeture": "1997-04-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800114",
+              "siren": "775724818",
+              "siret": "77572481800114",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1988,
+              "fermeture_year": 2005,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800114",
+                "enseigne": null,
+                "adresse": "69 Avenue PRESIDENT J.F. KENNEDY",
+                "code_postal": "33700",
+                "commune": "MERIGNAC",
+                "departement": "Gironde",
+                "region": "Nouvelle-Aquitaine",
+                "geoloc": [
+                  44.83579,
+                  -0.67893
+                ],
+                "date_creation": "1988-01-15",
+                "date_fermeture": "2005-01-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "1991": [
+            {
+              "id": "77572481800163",
+              "siren": "775724818",
+              "siret": "77572481800163",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1991,
+              "fermeture_year": 2022,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800163",
+                "enseigne": null,
+                "adresse": "177 Rue GARIBALDI",
+                "code_postal": "69003",
+                "commune": "LYON",
+                "departement": "Rhône",
+                "region": "Auvergne-Rhône-Alpes",
+                "geoloc": [
+                  45.758907,
+                  4.852845
+                ],
+                "date_creation": "1991-04-01",
+                "date_fermeture": "2022-03-20",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800148",
+              "siren": "775724818",
+              "siret": "77572481800148",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARCQ-EN-BARŒUL (59700)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1991,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800148",
+                "enseigne": null,
+                "adresse": "282 Avenue DE LA MARNE",
+                "code_postal": "59700",
+                "commune": "MARCQ-EN-BARŒUL",
+                "departement": "Nord",
+                "region": "Hauts-de-France",
+                "geoloc": [
+                  50.676023,
+                  3.109035
+                ],
+                "date_creation": "1991-02-01",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            },
+            {
+              "id": "77572481800155",
+              "siren": "775724818",
+              "siret": "77572481800155",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - NANCY (54000)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1991,
+              "fermeture_year": 2010,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800155",
+                "enseigne": null,
+                "adresse": "44 Boulevard ALBERT 1ER",
+                "code_postal": "54000",
+                "commune": "NANCY",
+                "departement": "Meurthe-et-Moselle",
+                "region": "Grand Est",
+                "geoloc": [
+                  48.697057,
+                  6.167271
+                ],
+                "date_creation": "1991-04-01",
+                "date_fermeture": "2010-11-05",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "1995": [
+            {
+              "id": "77572481800171",
+              "siren": "775724818",
+              "siret": "77572481800171",
+              "node_type": "etablissement",
+              "name": "AFNOR - CLICHY (92110)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1995,
+              "fermeture_year": 2001,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800171",
+                "enseigne": "AFNOR",
+                "adresse": "34 Rue MOZART",
+                "code_postal": "92110",
+                "commune": "CLICHY",
+                "departement": "Hauts-de-Seine",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.90619,
+                  2.316992
+                ],
+                "date_creation": "1995-01-01",
+                "date_fermeture": "2001-07-07",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "1997": [
+            {
+              "id": "77572481800189",
+              "siren": "775724818",
+              "siret": "77572481800189",
+              "node_type": "etablissement",
+              "name": "AFNOR - NANTES (44200)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1997,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800189",
+                "enseigne": "AFNOR",
+                "adresse": "1 Rue CELESTIN FREINET",
+                "code_postal": "44200",
+                "commune": "NANTES",
+                "departement": "Loire-Atlantique",
+                "region": "Pays de la Loire",
+                "geoloc": [
+                  47.207211,
+                  -1.534274
+                ],
+                "date_creation": "1997-04-01",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ],
+          "1999": [
+            {
+              "id": "77572481800197",
+              "siren": "775724818",
+              "siret": "77572481800197",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MARSEILLE (13008)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 1999,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800197",
+                "enseigne": null,
+                "adresse": "145 Avenue DU PRADO",
+                "code_postal": "13008",
+                "commune": "MARSEILLE",
+                "departement": "Bouches-du-Rhône",
+                "region": "Provence-Alpes-Côte d'Azur",
+                "geoloc": [
+                  43.279064,
+                  5.388022
+                ],
+                "date_creation": "1999-06-05",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ],
+          "2005": [
+            {
+              "id": "77572481800270",
+              "siren": "775724818",
+              "siret": "77572481800270",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69008)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": 2005,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800270",
+                "enseigne": null,
+                "adresse": "60 Avenue JEAN MERMOZ",
+                "code_postal": "69008",
+                "commune": "LYON",
+                "departement": "Rhône",
+                "region": "Auvergne-Rhône-Alpes",
+                "geoloc": [
+                  45.733643,
+                  4.877513
+                ],
+                "date_creation": "2005-01-01",
+                "date_fermeture": "2005-04-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800262",
+              "siren": "775724818",
+              "siret": "77572481800262",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BAGNEUX (92220)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800262",
+                "enseigne": null,
+                "adresse": "116 Avenue ARISTIDE BRIAND",
+                "code_postal": "92220",
+                "commune": "BAGNEUX",
+                "departement": "Hauts-de-Seine",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.798987,
+                  2.322709
+                ],
+                "date_creation": "2005-01-01",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            },
+            {
+              "id": "77572481800221",
+              "siren": "775724818",
+              "siret": "77572481800221",
+              "node_type": "etablissement",
+              "name": "AFNOR - ROUEN (76000)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": 2024,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800221",
+                "enseigne": "AFNOR",
+                "adresse": "81 Rue JEAN LECANUET",
+                "code_postal": "76000",
+                "commune": "ROUEN",
+                "departement": "Seine-Maritime",
+                "region": "Normandie",
+                "geoloc": [
+                  49.445365,
+                  1.088045
+                ],
+                "date_creation": "2005-01-01",
+                "date_fermeture": "2024-03-29T22:35:05+00:00",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800254",
+              "siren": "775724818",
+              "siret": "77572481800254",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LIMOGES (87000)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": 2024,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800254",
+                "enseigne": null,
+                "adresse": "PARC D'ESTER",
+                "code_postal": "87000",
+                "commune": "LIMOGES",
+                "departement": "Haute-Vienne",
+                "region": "Nouvelle-Aquitaine",
+                "geoloc": null,
+                "date_creation": "2005-02-01",
+                "date_fermeture": "2024-03-29T23:40:14+00:00",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800213",
+              "siren": "775724818",
+              "siret": "77572481800213",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - BLAGNAC (31700)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": 2024,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800213",
+                "enseigne": null,
+                "adresse": "5 Rue DIEUDONNE COSTES",
+                "code_postal": "31700",
+                "commune": "BLAGNAC",
+                "departement": "Haute-Garonne",
+                "region": "Occitanie",
+                "geoloc": [
+                  43.63179,
+                  1.37906
+                ],
+                "date_creation": "2005-01-01",
+                "date_fermeture": "2024-03-29T22:35:05+00:00",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800247",
+              "siren": "775724818",
+              "siret": "77572481800247",
+              "node_type": "etablissement",
+              "name": "AFNOR - MONTPELLIER (34000)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": 2005,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800247",
+                "enseigne": "AFNOR",
+                "adresse": "329 Rue LEON BLUM",
+                "code_postal": "34000",
+                "commune": "MONTPELLIER",
+                "departement": "Hérault",
+                "region": "Occitanie",
+                "geoloc": [
+                  43.607349,
+                  3.890642
+                ],
+                "date_creation": "2005-01-01",
+                "date_fermeture": "2005-01-02",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "77572481800239",
+              "siren": "775724818",
+              "siret": "77572481800239",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - MERIGNAC (33700)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2005,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800239",
+                "enseigne": null,
+                "adresse": "2 Impasse RUDOLF DIESEL",
+                "code_postal": "33700",
+                "commune": "MERIGNAC",
+                "departement": "Gironde",
+                "region": "Nouvelle-Aquitaine",
+                "geoloc": [
+                  44.837398,
+                  -0.686223
+                ],
+                "date_creation": "2005-01-01",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ],
+          "2010": [
+            {
+              "id": "77572481800288",
+              "siren": "775724818",
+              "siret": "77572481800288",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LAXOU (54520)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2010,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800288",
+                "enseigne": null,
+                "adresse": "14 Rue DE SAULNOIS",
+                "code_postal": "54520",
+                "commune": "LAXOU",
+                "departement": "Meurthe-et-Moselle",
+                "region": "Grand Est",
+                "geoloc": [
+                  48.691709,
+                  6.132003
+                ],
+                "date_creation": "2010-11-05",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ],
+          "2014": [
+            {
+              "id": "77572481800296",
+              "siren": "775724818",
+              "siret": "77572481800296",
+              "node_type": "etablissement",
+              "name": "AFNOR - NANTERRE (92000)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2014,
+              "fermeture_year": 2016,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "77572481800296",
+                "enseigne": "AFNOR",
+                "adresse": "41 Rue DES TROIS FONTANOT",
+                "code_postal": "92000",
+                "commune": "NANTERRE",
+                "departement": "Hauts-de-Seine",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.896148,
+                  2.220895
+                ],
+                "date_creation": "2014-01-01",
+                "date_fermeture": "2016-06-15",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "2022": [
+            {
+              "id": "77572481800304",
+              "siren": "775724818",
+              "siret": "77572481800304",
+              "node_type": "etablissement",
+              "name": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR) - LYON (69003)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2022,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "77572481800304",
+                "enseigne": null,
+                "adresse": "264 Rue GARIBALDI",
+                "code_postal": "69003",
+                "commune": "LYON",
+                "departement": "Rhône",
+                "region": "Auvergne-Rhône-Alpes",
+                "geoloc": [
+                  45.753906,
+                  4.853102
+                ],
+                "date_creation": "2022-03-21",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "93": {
+            "department_name": "93",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "69": {
+            "department_name": "Rhône",
+            "total": 3,
+            "active": 1,
+            "closed": 2
+          },
+          "92": {
+            "department_name": "Hauts-de-Seine",
+            "total": 4,
+            "active": 1,
+            "closed": 3
+          },
+          "44": {
+            "department_name": "Loire-Atlantique",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          },
+          "13": {
+            "department_name": "Bouches-du-Rhône",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          },
+          "76": {
+            "department_name": "Seine-Maritime",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "59": {
+            "department_name": "Nord",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "87": {
+            "department_name": "Haute-Vienne",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "31": {
+            "department_name": "Haute-Garonne",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "33": {
+            "department_name": "Gironde",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          },
+          "54": {
+            "department_name": "Meurthe-et-Moselle",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          },
+          "34": {
+            "department_name": "Hérault",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "Auvergne-Rhône-Alpes": {
+            "region_name": "Auvergne-Rhône-Alpes",
+            "total": 3,
+            "active": 1,
+            "closed": 2
+          },
+          "Île-de-France": {
+            "region_name": "Île-de-France",
+            "total": 4,
+            "active": 1,
+            "closed": 3
+          },
+          "Pays de la Loire": {
+            "region_name": "Pays de la Loire",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          },
+          "Provence-Alpes-Côte d'Azur": {
+            "region_name": "Provence-Alpes-Côte d'Azur",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          },
+          "Normandie": {
+            "region_name": "Normandie",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Hauts-de-France": {
+            "region_name": "Hauts-de-France",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "Nouvelle-Aquitaine": {
+            "region_name": "Nouvelle-Aquitaine",
+            "total": 3,
+            "active": 1,
+            "closed": 2
+          },
+          "Occitanie": {
+            "region_name": "Occitanie",
+            "total": 2,
+            "active": 0,
+            "closed": 2
+          },
+          "Grand Est": {
+            "region_name": "Grand Est",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 21,
+          "number_of_edges": 20,
+          "out_degree_root": 20,
+          "density": 0.047619047619047616
+        }
+      },
+      "chamber": {
+        "executives": []
+      },
+      "mercury": {
+        "company_siren": "775724818",
+        "company_name": "775724818",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+      "predicate": "siren",
+      "value": "775724818",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:25:50.436029+00:00",
+      "collection_method": "api",
+      "confidence": 0.9,
+      "status": "fact"
+    },
+    {
+      "subject": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+      "predicate": "tva_intracommunautaire",
+      "value": "FR33775724818",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:25:50.436029+00:00",
+      "collection_method": "api",
+      "confidence": 0.9,
+      "status": "fact"
+    },
+    {
+      "subject": "775724818",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "21 nœuds extraits (8 actifs, 13 fermés sur 12 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:25:54.227152+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "ASSOCIATION FRANCAISE DE NORMALISATION (AFNOR)",
+      "predicate": "absence_dirigeants_publics",
+      "value": "Aucun dirigeant ou mandataire social répertorié au RNE / SIRENE pour cette entité",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:25:54.249053+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "775724818",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:25:54.271751+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.96,
+  "observed_at": "2026-09-15T23:25:50.436029+00:00",
+  "processed_at": "2026-09-15T23:25:57.225720Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

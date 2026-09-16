@@ -1,0 +1,594 @@
+{
+  "result": {
+    "siren": "388602187",
+    "name": "MARIE VADIVELOU",
+    "company_name": "MARIE VADIVELOU",
+    "date_creation_origine": "1992-09-14",
+    "age_in_years": 34,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "MARIE VADIVELOU",
+      "siren": "388602187",
+      "siret_siege": "38860218700014",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "1992-09-14",
+      "address": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+      "status": "fermé/inactif",
+      "code_naf": "60.2M",
+      "libelle_naf": null,
+      "section_activite": "J",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": "2024-05-20T01:00:21",
+      "dirigeants": [
+        {
+          "nom": "VADIVELOU",
+          "prenoms": "MARIE ALCINE",
+          "qualite": null,
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 34,
+      "historical_summary": {
+        "date_immatriculation_origine": "1992-09-14",
+        "annee_immatriculation": 1992,
+        "anciennete_annees": 34,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 1992,
+          "date": "1992-09-14",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 388602187 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "388602187",
+          "name": "MARIE VADIVELOU",
+          "siret_siege": "38860218700014",
+          "code_postal": "97450",
+          "commune": "97414",
+          "code_naf": "60.2M",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "1992-09-14",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "388602187",
+      "root_name": "MARIE VADIVELOU",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "388602187",
+          "siren": "388602187",
+          "siret": "38860218700014",
+          "node_type": "siege",
+          "name": "MARIE VADIVELOU",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 1992,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "38860218700014",
+            "adresse": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+            "code_postal": "97450",
+            "commune": "97414",
+            "departement": "974",
+            "region": "04",
+            "code_naf": "60.2M",
+            "date_creation": "1992-09-14",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "1992": [
+          {
+            "id": "388602187",
+            "siren": "388602187",
+            "siret": "38860218700014",
+            "node_type": "siege",
+            "name": "MARIE VADIVELOU",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1992,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "38860218700014",
+              "adresse": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+              "code_postal": "97450",
+              "commune": "97414",
+              "departement": "974",
+              "region": "04",
+              "code_naf": "60.2M",
+              "date_creation": "1992-09-14",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "974": {
+          "department_name": "974",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "04": {
+          "region_name": "04",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Marie Alcine VADIVELOU",
+        "type_person": "personne physique",
+        "first_name": "Marie Alcine",
+        "last_name": "VADIVELOU",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "388602187",
+            "company_name": "MARIE VADIVELOU",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "388602187",
+      "company_name": "388602187",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "1992": {
+        "year": "1992",
+        "milestones": [
+          {
+            "date": "1992-09-14",
+            "event": "Immatriculation officielle SIREN 388602187"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "388602187",
+            "siren": "388602187",
+            "siret": "38860218700014",
+            "node_type": "siege",
+            "name": "MARIE VADIVELOU",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1992,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "38860218700014",
+              "adresse": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+              "code_postal": "97450",
+              "commune": "97414",
+              "departement": "974",
+              "region": "04",
+              "code_naf": "60.2M",
+              "date_creation": "1992-09-14",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "1992"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "MARIE VADIVELOU",
+        "siren": "388602187",
+        "siret_siege": "38860218700014",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "1992-09-14",
+        "address": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+        "status": "fermé/inactif",
+        "code_naf": "60.2M",
+        "libelle_naf": null,
+        "section_activite": "J",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": "2024-05-20T01:00:21",
+        "dirigeants": [
+          {
+            "nom": "VADIVELOU",
+            "prenoms": "MARIE ALCINE",
+            "qualite": null,
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 34,
+        "historical_summary": {
+          "date_immatriculation_origine": "1992-09-14",
+          "annee_immatriculation": 1992,
+          "anciennete_annees": 34,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 1992,
+            "date": "1992-09-14",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 388602187 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "388602187",
+            "name": "MARIE VADIVELOU",
+            "siret_siege": "38860218700014",
+            "code_postal": "97450",
+            "commune": "97414",
+            "code_naf": "60.2M",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "1992-09-14",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "388602187",
+        "root_name": "MARIE VADIVELOU",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "388602187",
+            "siren": "388602187",
+            "siret": "38860218700014",
+            "node_type": "siege",
+            "name": "MARIE VADIVELOU",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 1992,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "38860218700014",
+              "adresse": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+              "code_postal": "97450",
+              "commune": "97414",
+              "departement": "974",
+              "region": "04",
+              "code_naf": "60.2M",
+              "date_creation": "1992-09-14",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "1992": [
+            {
+              "id": "388602187",
+              "siren": "388602187",
+              "siret": "38860218700014",
+              "node_type": "siege",
+              "name": "MARIE VADIVELOU",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 1992,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "38860218700014",
+                "adresse": "CHEMIN DE L'ENCLOS 97450 SAINT-LOUIS",
+                "code_postal": "97450",
+                "commune": "97414",
+                "departement": "974",
+                "region": "04",
+                "code_naf": "60.2M",
+                "date_creation": "1992-09-14",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "974": {
+            "department_name": "974",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "04": {
+            "region_name": "04",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Marie Alcine VADIVELOU",
+            "type_person": "personne physique",
+            "first_name": "Marie Alcine",
+            "last_name": "VADIVELOU",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "388602187",
+                "company_name": "MARIE VADIVELOU",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "388602187",
+        "company_name": "388602187",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "MARIE VADIVELOU",
+      "predicate": "siren",
+      "value": "388602187",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:34:04.899033+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "388602187",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (0 actifs, 1 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:34:10.753110+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "MARIE VADIVELOU",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:34:10.769049+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "388602187",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:34:10.789839+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.95,
+  "observed_at": "2026-09-15T23:34:04.899033+00:00",
+  "processed_at": "2026-09-15T23:34:15.973002Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

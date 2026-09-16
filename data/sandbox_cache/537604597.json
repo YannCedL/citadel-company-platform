@@ -1,0 +1,594 @@
+{
+  "result": {
+    "siren": "537604597",
+    "name": "DELPHINE DELAMARE (LEGROS)",
+    "company_name": "DELPHINE DELAMARE (LEGROS)",
+    "date_creation_origine": "2011-10-29",
+    "age_in_years": 14,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "DELPHINE DELAMARE (LEGROS)",
+      "siren": "537604597",
+      "siret_siege": "53760459700014",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2011-10-29",
+      "address": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+      "status": "actif",
+      "code_naf": "90.03B",
+      "libelle_naf": null,
+      "section_activite": "R",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-12-06T06:02:39",
+      "date_mise_a_jour_rne": "2026-09-01T00:56:30",
+      "dirigeants": [
+        {
+          "nom": "DELAMARE (LEGROS)",
+          "prenoms": "DELPHINE VIRGINIE",
+          "qualite": null,
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 14,
+      "historical_summary": {
+        "date_immatriculation_origine": "2011-10-29",
+        "annee_immatriculation": 2011,
+        "anciennete_annees": 14,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 1
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2011,
+          "date": "2011-10-29",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 537604597 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "537604597",
+          "name": "DELPHINE DELAMARE (LEGROS)",
+          "siret_siege": "53760459700014",
+          "code_postal": "95240",
+          "commune": "95176",
+          "code_naf": "90.03B",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 1,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "2011-10-29",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "recent",
+        "days_stale": 283,
+        "reference_date": "2025-12-06",
+        "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+        "epistemic_confidence": 0.9
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "537604597",
+      "root_name": "DELPHINE DELAMARE (LEGROS)",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 1,
+      "closed_establishments_count": 0,
+      "nodes": [
+        {
+          "id": "537604597",
+          "siren": "537604597",
+          "siret": "53760459700014",
+          "node_type": "siege",
+          "name": "DELPHINE DELAMARE (LEGROS)",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2011,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "53760459700014",
+            "adresse": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+            "code_postal": "95240",
+            "commune": "95176",
+            "departement": "95",
+            "region": "11",
+            "code_naf": "90.03B",
+            "date_creation": "2011-10-29",
+            "statut": "🟢 Actif (État A)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "2011": [
+          {
+            "id": "537604597",
+            "siren": "537604597",
+            "siret": "53760459700014",
+            "node_type": "siege",
+            "name": "DELPHINE DELAMARE (LEGROS)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2011,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "53760459700014",
+              "adresse": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+              "code_postal": "95240",
+              "commune": "95176",
+              "departement": "95",
+              "region": "11",
+              "code_naf": "90.03B",
+              "date_creation": "2011-10-29",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "95": {
+          "department_name": "95",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Delphine Virginie DELAMARE (LEGROS)",
+        "type_person": "personne physique",
+        "first_name": "Delphine Virginie",
+        "last_name": "DELAMARE (LEGROS)",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "537604597",
+            "company_name": "DELPHINE DELAMARE (LEGROS)",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "537604597",
+      "company_name": "537604597",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "2011": {
+        "year": "2011",
+        "milestones": [
+          {
+            "date": "2011-10-29",
+            "event": "Immatriculation officielle SIREN 537604597"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "537604597",
+            "siren": "537604597",
+            "siret": "53760459700014",
+            "node_type": "siege",
+            "name": "DELPHINE DELAMARE (LEGROS)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2011,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "53760459700014",
+              "adresse": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+              "code_postal": "95240",
+              "commune": "95176",
+              "departement": "95",
+              "region": "11",
+              "code_naf": "90.03B",
+              "date_creation": "2011-10-29",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2011"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "DELPHINE DELAMARE (LEGROS)",
+        "siren": "537604597",
+        "siret_siege": "53760459700014",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2011-10-29",
+        "address": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+        "status": "actif",
+        "code_naf": "90.03B",
+        "libelle_naf": null,
+        "section_activite": "R",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-12-06T06:02:39",
+        "date_mise_a_jour_rne": "2026-09-01T00:56:30",
+        "dirigeants": [
+          {
+            "nom": "DELAMARE (LEGROS)",
+            "prenoms": "DELPHINE VIRGINIE",
+            "qualite": null,
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 14,
+        "historical_summary": {
+          "date_immatriculation_origine": "2011-10-29",
+          "annee_immatriculation": 2011,
+          "anciennete_annees": 14,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 1
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2011,
+            "date": "2011-10-29",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 537604597 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "537604597",
+            "name": "DELPHINE DELAMARE (LEGROS)",
+            "siret_siege": "53760459700014",
+            "code_postal": "95240",
+            "commune": "95176",
+            "code_naf": "90.03B",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 1,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "2011-10-29",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "recent",
+          "days_stale": 283,
+          "reference_date": "2025-12-06",
+          "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+          "epistemic_confidence": 0.9
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "537604597",
+        "root_name": "DELPHINE DELAMARE (LEGROS)",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 1,
+        "closed_establishments_count": 0,
+        "nodes": [
+          {
+            "id": "537604597",
+            "siren": "537604597",
+            "siret": "53760459700014",
+            "node_type": "siege",
+            "name": "DELPHINE DELAMARE (LEGROS)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2011,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "53760459700014",
+              "adresse": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+              "code_postal": "95240",
+              "commune": "95176",
+              "departement": "95",
+              "region": "11",
+              "code_naf": "90.03B",
+              "date_creation": "2011-10-29",
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "2011": [
+            {
+              "id": "537604597",
+              "siren": "537604597",
+              "siret": "53760459700014",
+              "node_type": "siege",
+              "name": "DELPHINE DELAMARE (LEGROS)",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2011,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "53760459700014",
+                "adresse": "93 RUE GABRIEL PERI 95240 CORMEILLES-EN-PARISIS",
+                "code_postal": "95240",
+                "commune": "95176",
+                "departement": "95",
+                "region": "11",
+                "code_naf": "90.03B",
+                "date_creation": "2011-10-29",
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "95": {
+            "department_name": "95",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Delphine Virginie DELAMARE (LEGROS)",
+            "type_person": "personne physique",
+            "first_name": "Delphine Virginie",
+            "last_name": "DELAMARE (LEGROS)",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "537604597",
+                "company_name": "DELPHINE DELAMARE (LEGROS)",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "537604597",
+        "company_name": "537604597",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "DELPHINE DELAMARE (LEGROS)",
+      "predicate": "siren",
+      "value": "537604597",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:26:48.054208+00:00",
+      "collection_method": "api",
+      "confidence": 0.9,
+      "status": "fact"
+    },
+    {
+      "subject": "537604597",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (1 actifs, 0 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:26:51.770620+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "DELPHINE DELAMARE (LEGROS)",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:26:51.785975+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "537604597",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:26:51.800087+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.97,
+  "observed_at": "2026-09-15T23:26:48.054208+00:00",
+  "processed_at": "2026-09-15T23:26:54.831763Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

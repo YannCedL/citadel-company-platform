@@ -1,0 +1,514 @@
+{
+  "result": {
+    "siren": "775666399",
+    "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+    "company_name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+    "date_creation_origine": null,
+    "age_in_years": null,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+      "siren": "775666399",
+      "siret_siege": "77566639900073",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": null,
+      "address": "16 COUR SAINT-ELOI 75012 PARIS 12",
+      "status": "fermé/inactif",
+      "code_naf": "85.3K",
+      "libelle_naf": null,
+      "section_activite": "P",
+      "forme_juridique": "9220",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+      "date_mise_a_jour_rne": null,
+      "dirigeants": [],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": true,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": null,
+      "historical_summary": {
+        "date_immatriculation_origine": null,
+        "annee_immatriculation": null,
+        "anciennete_annees": null,
+        "nombre_dirigeants_historiques_identifies": 0,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [],
+      "matching_candidates": [
+        {
+          "siren": "775666399",
+          "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+          "siret_siege": "77566639900073",
+          "code_postal": "75012",
+          "commune": "75112",
+          "code_naf": "85.3K",
+          "forme_juridique": "9220",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 1,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": null,
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "ancien",
+        "days_stale": 907,
+        "reference_date": "2024-03-22",
+        "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+        "epistemic_confidence": 0.8
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "775666399",
+      "root_name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+      "total_nodes": 1,
+      "total_edges": 0,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "775666399",
+          "siren": "775666399",
+          "siret": "77566639900073",
+          "node_type": "siege",
+          "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": null,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "77566639900073",
+            "adresse": "16 COUR SAINT-ELOI 75012 PARIS 12",
+            "code_postal": "75012",
+            "commune": "75112",
+            "departement": "75",
+            "region": "11",
+            "code_naf": "85.3K",
+            "date_creation": null,
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [],
+      "yearly_network_expansion": {
+        "Immatriculation": [
+          {
+            "id": "775666399",
+            "siren": "775666399",
+            "siret": "77566639900073",
+            "node_type": "siege",
+            "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": null,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "77566639900073",
+              "adresse": "16 COUR SAINT-ELOI 75012 PARIS 12",
+              "code_postal": "75012",
+              "commune": "75112",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "85.3K",
+              "date_creation": null,
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "75": {
+          "department_name": "75",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 1,
+        "number_of_edges": 0,
+        "out_degree_root": 0,
+        "density": 0
+      }
+    },
+    "executives": [],
+    "financials": {
+      "company_siren": "775666399",
+      "company_name": "775666399",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "Immatriculation": {
+        "year": "Immatriculation",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "775666399",
+            "siren": "775666399",
+            "siret": "77566639900073",
+            "node_type": "siege",
+            "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": null,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "77566639900073",
+              "adresse": "16 COUR SAINT-ELOI 75012 PARIS 12",
+              "code_postal": "75012",
+              "commune": "75112",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "85.3K",
+              "date_creation": null,
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "Immatriculation"
+    ],
+    "total_years_tracked": 1,
+    "profile": {
+      "argus": {
+        "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+        "siren": "775666399",
+        "siret_siege": "77566639900073",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": null,
+        "address": "16 COUR SAINT-ELOI 75012 PARIS 12",
+        "status": "fermé/inactif",
+        "code_naf": "85.3K",
+        "libelle_naf": null,
+        "section_activite": "P",
+        "forme_juridique": "9220",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2024-03-22T14:26:06",
+        "date_mise_a_jour_rne": null,
+        "dirigeants": [],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": true,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": null,
+        "historical_summary": {
+          "date_immatriculation_origine": null,
+          "annee_immatriculation": null,
+          "anciennete_annees": null,
+          "nombre_dirigeants_historiques_identifies": 0,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [],
+        "matching_candidates": [
+          {
+            "siren": "775666399",
+            "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+            "siret_siege": "77566639900073",
+            "code_postal": "75012",
+            "commune": "75112",
+            "code_naf": "85.3K",
+            "forme_juridique": "9220",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 1,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": null,
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "ancien",
+          "days_stale": 907,
+          "reference_date": "2024-03-22",
+          "advice": "Donnée de plus d'un an, ré-indexation conseillée",
+          "epistemic_confidence": 0.8
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "775666399",
+        "root_name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+        "total_nodes": 1,
+        "total_edges": 0,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "775666399",
+            "siren": "775666399",
+            "siret": "77566639900073",
+            "node_type": "siege",
+            "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": null,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "77566639900073",
+              "adresse": "16 COUR SAINT-ELOI 75012 PARIS 12",
+              "code_postal": "75012",
+              "commune": "75112",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "85.3K",
+              "date_creation": null,
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [],
+        "yearly_network_expansion": {
+          "Immatriculation": [
+            {
+              "id": "775666399",
+              "siren": "775666399",
+              "siret": "77566639900073",
+              "node_type": "siege",
+              "name": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": null,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "77566639900073",
+                "adresse": "16 COUR SAINT-ELOI 75012 PARIS 12",
+                "code_postal": "75012",
+                "commune": "75112",
+                "departement": "75",
+                "region": "11",
+                "code_naf": "85.3K",
+                "date_creation": null,
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "75": {
+            "department_name": "75",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 1,
+          "number_of_edges": 0,
+          "out_degree_root": 0,
+          "density": 0
+        }
+      },
+      "chamber": {
+        "executives": []
+      },
+      "mercury": {
+        "company_siren": "775666399",
+        "company_name": "775666399",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+      "predicate": "siren",
+      "value": "775666399",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:22:53.294804+00:00",
+      "collection_method": "api",
+      "confidence": 0.8,
+      "status": "fact"
+    },
+    {
+      "subject": "775666399",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "1 nœuds extraits (0 actifs, 1 fermés sur 1 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:22:57.077102+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "ASS POUR LOGEMENT DES PERSONNES ISOLEES",
+      "predicate": "absence_dirigeants_publics",
+      "value": "Aucun dirigeant ou mandataire social répertorié au RNE / SIRENE pour cette entité",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:22:57.101166+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "775666399",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:22:57.120787+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.95,
+  "observed_at": "2026-09-15T23:22:53.294804+00:00",
+  "processed_at": "2026-09-15T23:23:00.174047Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

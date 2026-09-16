@@ -14,7 +14,7 @@
   --border-gold: rgba(217, 155, 67, 0.35);
 
   /* Gold & Metallic Accents */
-  --accent-gold: #D99B43;
+  --accent-gold: #f89100;
   --accent-gold-hover: #B88032;
   --accent-gold-light: #F3BA63;
   --accent-gold-glow: rgba(217, 155, 67, 0.2);
@@ -58,13 +58,16 @@ body {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-app);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-card);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
@@ -125,7 +128,7 @@ th,
 
 .leaflet-popup-tip {
   background: #090D14 !important;
-  border: 1px solid var(--accent-gold) !important;
+  border: 1px solid var(--accent-green) !important;
 }
 
 /* 6. MODALES & DIALOGUES */

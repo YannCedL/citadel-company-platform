@@ -1,0 +1,1733 @@
+{
+  "result": {
+    "siren": "450527635",
+    "name": "DESIGN HABITAT (DH)",
+    "company_name": "DESIGN HABITAT (DH)",
+    "date_creation_origine": "2003-11-19",
+    "age_in_years": 22,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "DESIGN HABITAT (DH)",
+      "siren": "450527635",
+      "siret_siege": "45052763500038",
+      "lei": null,
+      "tva_intracommunautaire": "FR49450527635",
+      "country": "FR",
+      "registration_date": "2003-11-19",
+      "address": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+      "status": "fermé/inactif",
+      "code_naf": "45.2A",
+      "libelle_naf": null,
+      "section_activite": "G",
+      "forme_juridique": "5499",
+      "categorie_entreprise": "Non renseignée",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2026-06-24T14:23:41",
+      "date_mise_a_jour_rne": "2026-06-18T10:25:13",
+      "dirigeants": [
+        {
+          "nom": "DIAZ",
+          "prenoms": "OLIVIER",
+          "qualite": "Gérant",
+          "annee_de_naissance": "1970",
+          "type_dirigeant": "personne physique"
+        },
+        {
+          "nom": "MLAIHA",
+          "prenoms": "RAOUF",
+          "qualite": "Gérant",
+          "annee_de_naissance": "1974",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": false,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 22,
+      "historical_summary": {
+        "date_immatriculation_origine": "2003-11-19",
+        "annee_immatriculation": 2003,
+        "anciennete_annees": 22,
+        "nombre_dirigeants_historiques_identifies": 2,
+        "nombre_etablissements_historiques_ouverts": 0
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2003,
+          "date": "2003-11-01",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 450527635 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "450527635",
+          "name": "DESIGN HABITAT (DH)",
+          "siret_siege": "45052763500038",
+          "code_postal": "13009",
+          "commune": "13209",
+          "code_naf": "45.2A",
+          "forme_juridique": "5499",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 3,
+          "etablissements_ouverts": 0,
+          "etat_administratif": "C",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": "7 600,00 EUR",
+      "objet_social": null,
+      "date_immatriculation_origine": "2003-11-19",
+      "rne_certitude_score": 1.0,
+      "epistemic_freshness": {
+        "status": "certifie_recent",
+        "days_stale": 83,
+        "reference_date": "2026-06-24",
+        "advice": "Donnée administrative ultra-récente certifiée",
+        "epistemic_confidence": 1.0
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "450527635",
+      "root_name": "DESIGN HABITAT (DH)",
+      "total_nodes": 3,
+      "total_edges": 2,
+      "active_establishments_count": 0,
+      "closed_establishments_count": 3,
+      "nodes": [
+        {
+          "id": "450527635",
+          "siren": "450527635",
+          "siret": "45052763500038",
+          "node_type": "siege",
+          "name": "DESIGN HABITAT (DH)",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2003,
+          "fermeture_year": null,
+          "etat_administratif": "C",
+          "details": {
+            "siret_siege": "45052763500038",
+            "adresse": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+            "code_postal": "13009",
+            "commune": "13209",
+            "departement": "13",
+            "region": "93",
+            "code_naf": "45.2A",
+            "date_creation": "2003-11-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "45052763500020",
+          "siren": "450527635",
+          "siret": "45052763500020",
+          "node_type": "etablissement",
+          "name": "DESIGN HABITAT (DH) - LES MEES (04190)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2004,
+          "fermeture_year": 2005,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "45052763500020",
+            "enseigne": null,
+            "adresse": "Rue DU PORCHE",
+            "code_postal": "04190",
+            "commune": "LES MEES",
+            "departement": "Alpes-de-Haute-Provence",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "geoloc": [
+              43.954242,
+              5.931979
+            ],
+            "date_creation": "2004-01-26",
+            "date_fermeture": "2005-09-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        },
+        {
+          "id": "45052763500012",
+          "siren": "450527635",
+          "siret": "45052763500012",
+          "node_type": "etablissement",
+          "name": "DESIGN HABITAT (DH) - MARSEILLE 3 (13003)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2003,
+          "fermeture_year": 2004,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "45052763500012",
+            "enseigne": null,
+            "adresse": "6 Boulevard BOUES",
+            "code_postal": "13003",
+            "commune": "MARSEILLE 3",
+            "departement": "Bouches-du-Rhône",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "geoloc": [
+              43.311124,
+              5.38354
+            ],
+            "date_creation": "2003-11-01",
+            "date_fermeture": "2004-01-26",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "450527635",
+          "target": "45052763500020",
+          "source_siren": "450527635",
+          "target_siren": "45052763500020",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "450527635",
+          "target": "45052763500012",
+          "source_siren": "450527635",
+          "target_siren": "45052763500012",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "2003": [
+          {
+            "id": "450527635",
+            "siren": "450527635",
+            "siret": "45052763500038",
+            "node_type": "siege",
+            "name": "DESIGN HABITAT (DH)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2003,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "45052763500038",
+              "adresse": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+              "code_postal": "13009",
+              "commune": "13209",
+              "departement": "13",
+              "region": "93",
+              "code_naf": "45.2A",
+              "date_creation": "2003-11-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "45052763500012",
+            "siren": "450527635",
+            "siret": "45052763500012",
+            "node_type": "etablissement",
+            "name": "DESIGN HABITAT (DH) - MARSEILLE 3 (13003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2003,
+            "fermeture_year": 2004,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "45052763500012",
+              "enseigne": null,
+              "adresse": "6 Boulevard BOUES",
+              "code_postal": "13003",
+              "commune": "MARSEILLE 3",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.311124,
+                5.38354
+              ],
+              "date_creation": "2003-11-01",
+              "date_fermeture": "2004-01-26",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "2004": [
+          {
+            "id": "45052763500020",
+            "siren": "450527635",
+            "siret": "45052763500020",
+            "node_type": "etablissement",
+            "name": "DESIGN HABITAT (DH) - LES MEES (04190)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2004,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "45052763500020",
+              "enseigne": null,
+              "adresse": "Rue DU PORCHE",
+              "code_postal": "04190",
+              "commune": "LES MEES",
+              "departement": "Alpes-de-Haute-Provence",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.954242,
+                5.931979
+              ],
+              "date_creation": "2004-01-26",
+              "date_fermeture": "2005-09-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "13": {
+          "department_name": "13",
+          "total": 2,
+          "active": 0,
+          "closed": 2
+        },
+        "04": {
+          "department_name": "Alpes-de-Haute-Provence",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "93": {
+          "region_name": "93",
+          "total": 1,
+          "active": 0,
+          "closed": 1
+        },
+        "Provence-Alpes-Côte d'Azur": {
+          "region_name": "Provence-Alpes-Côte d'Azur",
+          "total": 2,
+          "active": 0,
+          "closed": 2
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 3,
+        "number_of_edges": 2,
+        "out_degree_root": 2,
+        "density": 0.3333333333333333
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Olivier DIAZ",
+        "type_person": "personne physique",
+        "first_name": "Olivier",
+        "last_name": "DIAZ",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1970",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Gérant",
+            "company_siren": "450527635",
+            "company_name": "DESIGN HABITAT (DH)",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "450527635",
+            "company_name": "DESIGN HABITAT (DH)",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      },
+      {
+        "full_name": "Raouf MLAIHA",
+        "type_person": "personne physique",
+        "first_name": "Raouf",
+        "last_name": "MLAIHA",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": "1974",
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Gérant",
+            "company_siren": "450527635",
+            "company_name": "DESIGN HABITAT (DH)",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          },
+          {
+            "title": "Mandataire Social RNE",
+            "company_siren": "450527635",
+            "company_name": "DESIGN HABITAT (DH)",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "450527635",
+      "company_name": "DESIGN HABITAT (DH)",
+      "company_naf_code": "45.2A",
+      "date_creation_origine": "2003-11-01",
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "bodacc_account_filings": [
+        {
+          "notice_id": "B2012017372",
+          "year": "2012",
+          "date_publication": "2012-09-07",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372",
+          "detail": null
+        },
+        {
+          "notice_id": "B20180091367",
+          "year": "2018",
+          "date_publication": "2018-05-15",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367",
+          "detail": null
+        },
+        {
+          "notice_id": "B20180079116",
+          "year": "2018",
+          "date_publication": "2018-04-24",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116",
+          "detail": null
+        },
+        {
+          "notice_id": "B202601711533",
+          "year": "2026",
+          "date_publication": "2026-09-08",
+          "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533",
+          "detail": null
+        }
+      ],
+      "bodacc_filings_by_year": {
+        "2012": [
+          {
+            "notice_id": "B2012017372",
+            "year": "2012",
+            "date_publication": "2012-09-07",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372",
+            "detail": null
+          }
+        ],
+        "2018": [
+          {
+            "notice_id": "B20180091367",
+            "year": "2018",
+            "date_publication": "2018-05-15",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367",
+            "detail": null
+          },
+          {
+            "notice_id": "B20180079116",
+            "year": "2018",
+            "date_publication": "2018-04-24",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116",
+            "detail": null
+          }
+        ],
+        "2026": [
+          {
+            "notice_id": "B202601711533",
+            "year": "2026",
+            "date_publication": "2026-09-08",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533",
+            "detail": null
+          }
+        ]
+      },
+      "financials_published": false,
+      "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+    },
+    "legal_monitor_events": [
+      {
+        "id": "B202601711533",
+        "year": "2026",
+        "date": "2026-09-08",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "Greffe du Tribunal des Activités Economiques de Marseille",
+        "reference": "B202601711533",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533"
+      },
+      {
+        "id": "B20180091367",
+        "year": "2018",
+        "date": "2018-05-15",
+        "type": "Avis d’annulation",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis d’annulation",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MARSEILLE",
+        "reference": "B20180091367",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367"
+      },
+      {
+        "id": "B20180079116",
+        "year": "2018",
+        "date": "2018-04-24",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MARSEILLE",
+        "reference": "B20180079116",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116"
+      },
+      {
+        "id": "B2012017372",
+        "year": "2012",
+        "date": "2012-09-07",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Radiations - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-B",
+        "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MANOSQUE",
+        "reference": "B2012017372",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372"
+      },
+      {
+        "id": "A201201701065",
+        "year": "2012",
+        "date": "2012-04-09",
+        "type": "Avis initial",
+        "category": "MODIFICATION_DIVERS",
+        "category_label": "Modifications Diverses",
+        "category_color": "amber",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "Procédures collectives - Avis initial",
+        "modificationsgenerales": null,
+        "acte": null,
+        "source": "BODACC-A",
+        "tribunal": "TRIBUNAL DE COMMERCE DE MANOSQUE",
+        "reference": "A201201701065",
+        "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A201201701065"
+      },
+      {
+        "id": "63ee222caf7dd9133a16458c",
+        "year": "2004",
+        "date": "2004-03-29",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "tMo8es2i4GmO_RACT0400714146 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T23:34:28+02:00",
+          "siren": "450527635",
+          "denomination": "DESIGN HABITAT OU EN ABREGE DH",
+          "dateDepot": "2004-03-29",
+          "numChrono": "273",
+          "nomDocument": "tMo8es2i4GmO_RACT0400714146",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ee222caf7dd9133a16458c"
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "tMo8es2i4GmO_RACT0400714146",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/450527635/attachments"
+      },
+      {
+        "id": "63ee222caf7dd9133a16458b",
+        "year": "2003",
+        "date": "2003-11-19",
+        "type": "Dépôt d'Acte RNE",
+        "category": "DEPOT_COMPTES",
+        "category_label": "Dépôt des Comptes",
+        "category_color": "emerald",
+        "is_risk_alert": false,
+        "risk_level": "normal",
+        "detail_texte_brut": "LSDnLXuOFiOT_RACT0301012752 (N° National: N/A)",
+        "modificationsgenerales": null,
+        "acte": {
+          "updatedAt": "2023-10-24T23:34:28+02:00",
+          "siren": "450527635",
+          "denomination": "DESIGN HABITAT",
+          "dateDepot": "2003-11-19",
+          "numChrono": "13544",
+          "nomDocument": "LSDnLXuOFiOT_RACT0301012752",
+          "confidentiality": "Public",
+          "deleted": false,
+          "id": "63ee222caf7dd9133a16458b",
+          "typeRdd": [
+            {
+              "typeActe": "Statuts constitutifs",
+              "decision": "Divers "
+            }
+          ]
+        },
+        "source": "INPI_RNE_API_OAuth2",
+        "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+        "reference": "LSDnLXuOFiOT_RACT0301012752",
+        "url": "https://registre-national-entreprises.inpi.fr/api/companies/450527635/attachments"
+      }
+    ],
+    "master_360_chronological_timeline": {
+      "2003": {
+        "year": "2003",
+        "milestones": [
+          {
+            "date": "2003-11-19",
+            "event": "Immatriculation officielle SIREN 450527635"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63ee222caf7dd9133a16458b",
+            "year": "2003",
+            "date": "2003-11-19",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "LSDnLXuOFiOT_RACT0301012752 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T23:34:28+02:00",
+              "siren": "450527635",
+              "denomination": "DESIGN HABITAT",
+              "dateDepot": "2003-11-19",
+              "numChrono": "13544",
+              "nomDocument": "LSDnLXuOFiOT_RACT0301012752",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ee222caf7dd9133a16458b",
+              "typeRdd": [
+                {
+                  "typeActe": "Statuts constitutifs",
+                  "decision": "Divers "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "LSDnLXuOFiOT_RACT0301012752",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/450527635/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "450527635",
+            "siren": "450527635",
+            "siret": "45052763500038",
+            "node_type": "siege",
+            "name": "DESIGN HABITAT (DH)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2003,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "45052763500038",
+              "adresse": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+              "code_postal": "13009",
+              "commune": "13209",
+              "departement": "13",
+              "region": "93",
+              "code_naf": "45.2A",
+              "date_creation": "2003-11-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "45052763500012",
+            "siren": "450527635",
+            "siret": "45052763500012",
+            "node_type": "etablissement",
+            "name": "DESIGN HABITAT (DH) - MARSEILLE 3 (13003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2003,
+            "fermeture_year": 2004,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "45052763500012",
+              "enseigne": null,
+              "adresse": "6 Boulevard BOUES",
+              "code_postal": "13003",
+              "commune": "MARSEILLE 3",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.311124,
+                5.38354
+              ],
+              "date_creation": "2003-11-01",
+              "date_fermeture": "2004-01-26",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2004": {
+        "year": "2004",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [
+          {
+            "id": "63ee222caf7dd9133a16458c",
+            "year": "2004",
+            "date": "2004-03-29",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "tMo8es2i4GmO_RACT0400714146 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T23:34:28+02:00",
+              "siren": "450527635",
+              "denomination": "DESIGN HABITAT OU EN ABREGE DH",
+              "dateDepot": "2004-03-29",
+              "numChrono": "273",
+              "nomDocument": "tMo8es2i4GmO_RACT0400714146",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ee222caf7dd9133a16458c"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "tMo8es2i4GmO_RACT0400714146",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/450527635/attachments"
+          }
+        ],
+        "network_establishments": [
+          {
+            "id": "45052763500020",
+            "siren": "450527635",
+            "siret": "45052763500020",
+            "node_type": "etablissement",
+            "name": "DESIGN HABITAT (DH) - LES MEES (04190)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2004,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "45052763500020",
+              "enseigne": null,
+              "adresse": "Rue DU PORCHE",
+              "code_postal": "04190",
+              "commune": "LES MEES",
+              "departement": "Alpes-de-Haute-Provence",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.954242,
+                5.931979
+              ],
+              "date_creation": "2004-01-26",
+              "date_fermeture": "2005-09-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2026": {
+        "year": "2026",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2026,
+            "date": "2026-09-08",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B202601711533",
+            "year": "2026",
+            "date": "2026-09-08",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Marseille",
+            "reference": "B202601711533",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2018": {
+        "year": "2018",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2018,
+            "date": "2018-05-15",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annulation",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367"
+          },
+          {
+            "year": 2018,
+            "date": "2018-04-24",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B20180091367",
+            "year": "2018",
+            "date": "2018-05-15",
+            "type": "Avis d’annulation",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis d’annulation",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MARSEILLE",
+            "reference": "B20180091367",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367"
+          },
+          {
+            "id": "B20180079116",
+            "year": "2018",
+            "date": "2018-04-24",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MARSEILLE",
+            "reference": "B20180079116",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      },
+      "2012": {
+        "year": "2012",
+        "milestones": [],
+        "governance_events": [
+          {
+            "year": 2012,
+            "date": "2012-09-07",
+            "event_type": "Modification de Gouvernance / Acte Légal",
+            "description": "annonce",
+            "source": "BODACC-B",
+            "bodacc_notice_url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372"
+          }
+        ],
+        "legal_notices": [
+          {
+            "id": "B2012017372",
+            "year": "2012",
+            "date": "2012-09-07",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MANOSQUE",
+            "reference": "B2012017372",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372"
+          },
+          {
+            "id": "A201201701065",
+            "year": "2012",
+            "date": "2012-04-09",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procédures collectives - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-A",
+            "tribunal": "TRIBUNAL DE COMMERCE DE MANOSQUE",
+            "reference": "A201201701065",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A201201701065"
+          }
+        ],
+        "network_establishments": [],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2026",
+      "2018",
+      "2012",
+      "2004",
+      "2003"
+    ],
+    "total_years_tracked": 5,
+    "profile": {
+      "argus": {
+        "name": "DESIGN HABITAT (DH)",
+        "siren": "450527635",
+        "siret_siege": "45052763500038",
+        "lei": null,
+        "tva_intracommunautaire": "FR49450527635",
+        "country": "FR",
+        "registration_date": "2003-11-19",
+        "address": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+        "status": "fermé/inactif",
+        "code_naf": "45.2A",
+        "libelle_naf": null,
+        "section_activite": "G",
+        "forme_juridique": "5499",
+        "categorie_entreprise": "Non renseignée",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2026-06-24T14:23:41",
+        "date_mise_a_jour_rne": "2026-06-18T10:25:13",
+        "dirigeants": [
+          {
+            "nom": "DIAZ",
+            "prenoms": "OLIVIER",
+            "qualite": "Gérant",
+            "annee_de_naissance": "1970",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "nom": "MLAIHA",
+            "prenoms": "RAOUF",
+            "qualite": "Gérant",
+            "annee_de_naissance": "1974",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": false,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 22,
+        "historical_summary": {
+          "date_immatriculation_origine": "2003-11-19",
+          "annee_immatriculation": 2003,
+          "anciennete_annees": 22,
+          "nombre_dirigeants_historiques_identifies": 2,
+          "nombre_etablissements_historiques_ouverts": 0
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2003,
+            "date": "2003-11-01",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 450527635 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "450527635",
+            "name": "DESIGN HABITAT (DH)",
+            "siret_siege": "45052763500038",
+            "code_postal": "13009",
+            "commune": "13209",
+            "code_naf": "45.2A",
+            "forme_juridique": "5499",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 3,
+            "etablissements_ouverts": 0,
+            "etat_administratif": "C",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": "7 600,00 EUR",
+        "objet_social": null,
+        "date_immatriculation_origine": "2003-11-19",
+        "rne_certitude_score": 1.0,
+        "epistemic_freshness": {
+          "status": "certifie_recent",
+          "days_stale": 83,
+          "reference_date": "2026-06-24",
+          "advice": "Donnée administrative ultra-récente certifiée",
+          "epistemic_confidence": 1.0
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "450527635",
+        "root_name": "DESIGN HABITAT (DH)",
+        "total_nodes": 3,
+        "total_edges": 2,
+        "active_establishments_count": 0,
+        "closed_establishments_count": 3,
+        "nodes": [
+          {
+            "id": "450527635",
+            "siren": "450527635",
+            "siret": "45052763500038",
+            "node_type": "siege",
+            "name": "DESIGN HABITAT (DH)",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2003,
+            "fermeture_year": null,
+            "etat_administratif": "C",
+            "details": {
+              "siret_siege": "45052763500038",
+              "adresse": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+              "code_postal": "13009",
+              "commune": "13209",
+              "departement": "13",
+              "region": "93",
+              "code_naf": "45.2A",
+              "date_creation": "2003-11-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "45052763500020",
+            "siren": "450527635",
+            "siret": "45052763500020",
+            "node_type": "etablissement",
+            "name": "DESIGN HABITAT (DH) - LES MEES (04190)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2004,
+            "fermeture_year": 2005,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "45052763500020",
+              "enseigne": null,
+              "adresse": "Rue DU PORCHE",
+              "code_postal": "04190",
+              "commune": "LES MEES",
+              "departement": "Alpes-de-Haute-Provence",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.954242,
+                5.931979
+              ],
+              "date_creation": "2004-01-26",
+              "date_fermeture": "2005-09-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          },
+          {
+            "id": "45052763500012",
+            "siren": "450527635",
+            "siret": "45052763500012",
+            "node_type": "etablissement",
+            "name": "DESIGN HABITAT (DH) - MARSEILLE 3 (13003)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2003,
+            "fermeture_year": 2004,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "45052763500012",
+              "enseigne": null,
+              "adresse": "6 Boulevard BOUES",
+              "code_postal": "13003",
+              "commune": "MARSEILLE 3",
+              "departement": "Bouches-du-Rhône",
+              "region": "Provence-Alpes-Côte d'Azur",
+              "geoloc": [
+                43.311124,
+                5.38354
+              ],
+              "date_creation": "2003-11-01",
+              "date_fermeture": "2004-01-26",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "450527635",
+            "target": "45052763500020",
+            "source_siren": "450527635",
+            "target_siren": "45052763500020",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "450527635",
+            "target": "45052763500012",
+            "source_siren": "450527635",
+            "target_siren": "45052763500012",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "2003": [
+            {
+              "id": "450527635",
+              "siren": "450527635",
+              "siret": "45052763500038",
+              "node_type": "siege",
+              "name": "DESIGN HABITAT (DH)",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2003,
+              "fermeture_year": null,
+              "etat_administratif": "C",
+              "details": {
+                "siret_siege": "45052763500038",
+                "adresse": "RESIDENCE LES OCEANS 2 RUE JACQUES REATTU 13009 MARSEILLE 9",
+                "code_postal": "13009",
+                "commune": "13209",
+                "departement": "13",
+                "region": "93",
+                "code_naf": "45.2A",
+                "date_creation": "2003-11-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            },
+            {
+              "id": "45052763500012",
+              "siren": "450527635",
+              "siret": "45052763500012",
+              "node_type": "etablissement",
+              "name": "DESIGN HABITAT (DH) - MARSEILLE 3 (13003)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2003,
+              "fermeture_year": 2004,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "45052763500012",
+                "enseigne": null,
+                "adresse": "6 Boulevard BOUES",
+                "code_postal": "13003",
+                "commune": "MARSEILLE 3",
+                "departement": "Bouches-du-Rhône",
+                "region": "Provence-Alpes-Côte d'Azur",
+                "geoloc": [
+                  43.311124,
+                  5.38354
+                ],
+                "date_creation": "2003-11-01",
+                "date_fermeture": "2004-01-26",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "2004": [
+            {
+              "id": "45052763500020",
+              "siren": "450527635",
+              "siret": "45052763500020",
+              "node_type": "etablissement",
+              "name": "DESIGN HABITAT (DH) - LES MEES (04190)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2004,
+              "fermeture_year": 2005,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "45052763500020",
+                "enseigne": null,
+                "adresse": "Rue DU PORCHE",
+                "code_postal": "04190",
+                "commune": "LES MEES",
+                "departement": "Alpes-de-Haute-Provence",
+                "region": "Provence-Alpes-Côte d'Azur",
+                "geoloc": [
+                  43.954242,
+                  5.931979
+                ],
+                "date_creation": "2004-01-26",
+                "date_fermeture": "2005-09-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "13": {
+            "department_name": "13",
+            "total": 2,
+            "active": 0,
+            "closed": 2
+          },
+          "04": {
+            "department_name": "Alpes-de-Haute-Provence",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "93": {
+            "region_name": "93",
+            "total": 1,
+            "active": 0,
+            "closed": 1
+          },
+          "Provence-Alpes-Côte d'Azur": {
+            "region_name": "Provence-Alpes-Côte d'Azur",
+            "total": 2,
+            "active": 0,
+            "closed": 2
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 3,
+          "number_of_edges": 2,
+          "out_degree_root": 2,
+          "density": 0.3333333333333333
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Olivier DIAZ",
+            "type_person": "personne physique",
+            "first_name": "Olivier",
+            "last_name": "DIAZ",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1970",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Gérant",
+                "company_siren": "450527635",
+                "company_name": "DESIGN HABITAT (DH)",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "450527635",
+                "company_name": "DESIGN HABITAT (DH)",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          },
+          {
+            "full_name": "Raouf MLAIHA",
+            "type_person": "personne physique",
+            "first_name": "Raouf",
+            "last_name": "MLAIHA",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": "1974",
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Gérant",
+                "company_siren": "450527635",
+                "company_name": "DESIGN HABITAT (DH)",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              },
+              {
+                "title": "Mandataire Social RNE",
+                "company_siren": "450527635",
+                "company_name": "DESIGN HABITAT (DH)",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "450527635",
+        "company_name": "DESIGN HABITAT (DH)",
+        "company_naf_code": "45.2A",
+        "date_creation_origine": "2003-11-01",
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "bodacc_account_filings": [
+          {
+            "notice_id": "B2012017372",
+            "year": "2012",
+            "date_publication": "2012-09-07",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372",
+            "detail": null
+          },
+          {
+            "notice_id": "B20180091367",
+            "year": "2018",
+            "date_publication": "2018-05-15",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367",
+            "detail": null
+          },
+          {
+            "notice_id": "B20180079116",
+            "year": "2018",
+            "date_publication": "2018-04-24",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116",
+            "detail": null
+          },
+          {
+            "notice_id": "B202601711533",
+            "year": "2026",
+            "date_publication": "2026-09-08",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533",
+            "detail": null
+          }
+        ],
+        "bodacc_filings_by_year": {
+          "2012": [
+            {
+              "notice_id": "B2012017372",
+              "year": "2012",
+              "date_publication": "2012-09-07",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372",
+              "detail": null
+            }
+          ],
+          "2018": [
+            {
+              "notice_id": "B20180091367",
+              "year": "2018",
+              "date_publication": "2018-05-15",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367",
+              "detail": null
+            },
+            {
+              "notice_id": "B20180079116",
+              "year": "2018",
+              "date_publication": "2018-04-24",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116",
+              "detail": null
+            }
+          ],
+          "2026": [
+            {
+              "notice_id": "B202601711533",
+              "year": "2026",
+              "date_publication": "2026-09-08",
+              "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533",
+              "detail": null
+            }
+          ]
+        },
+        "financials_published": false,
+        "confidentiality_notice": "Dépôts de comptes enregistrés au BODACC mais montants sous option de confidentialité"
+      },
+      "raven": {
+        "events": [
+          {
+            "id": "B202601711533",
+            "year": "2026",
+            "date": "2026-09-08",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "Greffe du Tribunal des Activités Economiques de Marseille",
+            "reference": "B202601711533",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B202601711533"
+          },
+          {
+            "id": "B20180091367",
+            "year": "2018",
+            "date": "2018-05-15",
+            "type": "Avis d’annulation",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis d’annulation",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MARSEILLE",
+            "reference": "B20180091367",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180091367"
+          },
+          {
+            "id": "B20180079116",
+            "year": "2018",
+            "date": "2018-04-24",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MARSEILLE",
+            "reference": "B20180079116",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B20180079116"
+          },
+          {
+            "id": "B2012017372",
+            "year": "2012",
+            "date": "2012-09-07",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Radiations - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-B",
+            "tribunal": "GREFFE DU TRIBUNAL DE COMMERCE DE MANOSQUE",
+            "reference": "B2012017372",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:B2012017372"
+          },
+          {
+            "id": "A201201701065",
+            "year": "2012",
+            "date": "2012-04-09",
+            "type": "Avis initial",
+            "category": "MODIFICATION_DIVERS",
+            "category_label": "Modifications Diverses",
+            "category_color": "amber",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "Procédures collectives - Avis initial",
+            "modificationsgenerales": null,
+            "acte": null,
+            "source": "BODACC-A",
+            "tribunal": "TRIBUNAL DE COMMERCE DE MANOSQUE",
+            "reference": "A201201701065",
+            "url": "https://www.bodacc.fr/pages/annonces-commerciales-detail/?q.id=id:A201201701065"
+          },
+          {
+            "id": "63ee222caf7dd9133a16458c",
+            "year": "2004",
+            "date": "2004-03-29",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "tMo8es2i4GmO_RACT0400714146 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T23:34:28+02:00",
+              "siren": "450527635",
+              "denomination": "DESIGN HABITAT OU EN ABREGE DH",
+              "dateDepot": "2004-03-29",
+              "numChrono": "273",
+              "nomDocument": "tMo8es2i4GmO_RACT0400714146",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ee222caf7dd9133a16458c"
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "tMo8es2i4GmO_RACT0400714146",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/450527635/attachments"
+          },
+          {
+            "id": "63ee222caf7dd9133a16458b",
+            "year": "2003",
+            "date": "2003-11-19",
+            "type": "Dépôt d'Acte RNE",
+            "category": "DEPOT_COMPTES",
+            "category_label": "Dépôt des Comptes",
+            "category_color": "emerald",
+            "is_risk_alert": false,
+            "risk_level": "normal",
+            "detail_texte_brut": "LSDnLXuOFiOT_RACT0301012752 (N° National: N/A)",
+            "modificationsgenerales": null,
+            "acte": {
+              "updatedAt": "2023-10-24T23:34:28+02:00",
+              "siren": "450527635",
+              "denomination": "DESIGN HABITAT",
+              "dateDepot": "2003-11-19",
+              "numChrono": "13544",
+              "nomDocument": "LSDnLXuOFiOT_RACT0301012752",
+              "confidentiality": "Public",
+              "deleted": false,
+              "id": "63ee222caf7dd9133a16458b",
+              "typeRdd": [
+                {
+                  "typeActe": "Statuts constitutifs",
+                  "decision": "Divers "
+                }
+              ]
+            },
+            "source": "INPI_RNE_API_OAuth2",
+            "tribunal": "Greffe du Tribunal de Commerce (RNE)",
+            "reference": "LSDnLXuOFiOT_RACT0301012752",
+            "url": "https://registre-national-entreprises.inpi.fr/api/companies/450527635/attachments"
+          }
+        ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "DESIGN HABITAT (DH)",
+      "predicate": "siren",
+      "value": "450527635",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:38:54.260375+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "DESIGN HABITAT (DH)",
+      "predicate": "tva_intracommunautaire",
+      "value": "FR49450527635",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:38:54.260375+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "DESIGN HABITAT (DH)",
+      "predicate": "capital_social",
+      "value": "7 600,00 EUR",
+      "source": "data.inpi.fr (RNE)",
+      "observed_at": "2026-09-15T23:38:54.260375+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "450527635",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "3 nœuds extraits (0 actifs, 3 fermés sur 2 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:38:58.110225+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "DESIGN HABITAT (DH)",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "2 dirigeants actifs, 0 anciens dirigeants (2 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:38:58.126618+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "450527635",
+      "predicate": "depots_comptes_bodacc",
+      "value": "4 dépôts de comptes enregistrés au BODACC",
+      "source": "bodacc-datadila.opendatasoft.com",
+      "observed_at": "2026-09-15T23:38:58.139221+00:00",
+      "collection_method": "api",
+      "confidence": 0.95,
+      "status": "fact"
+    },
+    {
+      "subject": "450527635",
+      "predicate": "surveillance_annonces_legales_bodacc_decodes",
+      "value": "7 publications officielles classifiées par moteur sémantique déterministe (0 alertes de risque)",
+      "source": "bodacc-datadila.opendatasoft.com + INPI_RNE",
+      "observed_at": "2026-09-15T23:38:58.151803+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "data.inpi.fr (RNE)",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "bodacc-datadila.opendatasoft.com",
+    "bodacc-datadila.opendatasoft.com + INPI_RNE"
+  ],
+  "confidence": 0.99,
+  "observed_at": "2026-09-15T23:38:54.260375+00:00",
+  "processed_at": "2026-09-15T23:39:01.907143Z",
+  "engine_version": "2.0.0_enterprise_async"
+}

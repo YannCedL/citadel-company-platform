@@ -1,0 +1,950 @@
+{
+  "result": {
+    "siren": "534747043",
+    "name": "DEBORAH NABET",
+    "company_name": "DEBORAH NABET",
+    "date_creation_origine": "2011-09-20",
+    "age_in_years": 14,
+    "engines_used": [
+      "argus",
+      "ariadne",
+      "chamber",
+      "mercury",
+      "raven"
+    ],
+    "engines_status": {
+      "argus": "OK",
+      "ariadne": "OK",
+      "chamber": "OK",
+      "mercury": "OK",
+      "raven": "OK"
+    },
+    "legal_profile": {
+      "name": "DEBORAH NABET",
+      "siren": "534747043",
+      "siret_siege": "53474704300030",
+      "lei": null,
+      "tva_intracommunautaire": null,
+      "country": "FR",
+      "registration_date": "2011-09-20",
+      "address": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+      "status": "actif",
+      "code_naf": "66.19B",
+      "libelle_naf": null,
+      "section_activite": "K",
+      "forme_juridique": "1000",
+      "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+      "tranche_effectifs": "NN",
+      "conventions_collectives": [],
+      "date_mise_a_jour_insee": "2025-12-06T05:15:11",
+      "date_mise_a_jour_rne": "2026-08-25T16:59:25",
+      "dirigeants": [
+        {
+          "nom": "NABET",
+          "prenoms": "DEBORAH HELENE",
+          "qualite": null,
+          "annee_de_naissance": null,
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "etablissements": [],
+      "finances": null,
+      "complements": {
+        "collectivite_territoriale": null,
+        "convention_collective_renseignee": false,
+        "liste_idcc": null,
+        "liste_finess_juridique": null,
+        "numero_rnf": null,
+        "egapro_renseignee": false,
+        "est_achats_responsables": false,
+        "est_alim_confiance": false,
+        "est_association": false,
+        "est_avocat": false,
+        "est_bio": false,
+        "est_entrepreneur_individuel": true,
+        "est_entrepreneur_spectacle": false,
+        "est_ess": false,
+        "est_finess": false,
+        "est_organisme_formation": false,
+        "est_qualiopi": false,
+        "liste_id_organisme_formation": null,
+        "est_rge": false,
+        "est_siae": false,
+        "est_societe_mission": false,
+        "est_uai": false,
+        "est_patrimoine_vivant": false,
+        "bilan_ges_renseigne": false,
+        "identifiant_association": null,
+        "statut_entrepreneur_spectacle": null,
+        "type_siae": null,
+        "a_aide_minimis": false,
+        "a_aide_ademe": false,
+        "est_administration": false,
+        "est_service_public": null,
+        "est_l100_3": null
+      },
+      "age_in_years": 14,
+      "historical_summary": {
+        "date_immatriculation_origine": "2011-09-20",
+        "annee_immatriculation": 2011,
+        "anciennete_annees": 14,
+        "nombre_dirigeants_historiques_identifies": 1,
+        "nombre_etablissements_historiques_ouverts": 2
+      },
+      "yearly_establishment_timeline": {},
+      "chronological_milestones": [
+        {
+          "year": 2011,
+          "date": "2011-09-20",
+          "event": "Immatriculation d'origine et création officielle de l'entreprise",
+          "details": "SIREN 534747043 enregistré auprès du Greffe"
+        }
+      ],
+      "matching_candidates": [
+        {
+          "siren": "534747043",
+          "name": "DEBORAH NABET",
+          "siret_siege": "53474704300030",
+          "code_postal": "75016",
+          "commune": "75116",
+          "code_naf": "66.19B",
+          "forme_juridique": "1000",
+          "tranche_effectifs": "NN",
+          "effectifs_label": "0 salarié (Unité non employeuse)",
+          "total_etablissements": 3,
+          "etablissements_ouverts": 2,
+          "etat_administratif": "A",
+          "is_major_entity": true
+        }
+      ],
+      "capital_social": null,
+      "objet_social": null,
+      "date_immatriculation_origine": "2011-09-20",
+      "rne_certitude_score": 0.8,
+      "epistemic_freshness": {
+        "status": "recent",
+        "days_stale": 283,
+        "reference_date": "2025-12-06",
+        "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+        "epistemic_confidence": 0.9
+      },
+      "is_major_entity": true
+    },
+    "ownership_graph": {
+      "graph_type": "establishment_topology_and_footprint",
+      "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+      "root_siren": "534747043",
+      "root_name": "DEBORAH NABET",
+      "total_nodes": 3,
+      "total_edges": 2,
+      "active_establishments_count": 2,
+      "closed_establishments_count": 1,
+      "nodes": [
+        {
+          "id": "534747043",
+          "siren": "534747043",
+          "siret": "53474704300030",
+          "node_type": "siege",
+          "name": "DEBORAH NABET",
+          "country": "FR",
+          "role": "Siège Principal / Maison Mère",
+          "creation_year": 2011,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret_siege": "53474704300030",
+            "adresse": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+            "code_postal": "75016",
+            "commune": "75116",
+            "departement": "75",
+            "region": "11",
+            "code_naf": "66.19B",
+            "date_creation": "2011-09-20",
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "53474704300022",
+          "siren": "534747043",
+          "siret": "53474704300022",
+          "node_type": "etablissement",
+          "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2015,
+          "fermeture_year": null,
+          "etat_administratif": "A",
+          "details": {
+            "siret": "53474704300022",
+            "enseigne": null,
+            "adresse": "42 Rue DE SEVRES",
+            "code_postal": "92100",
+            "commune": "BOULOGNE-BILLANCOURT",
+            "departement": "Hauts-de-Seine",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.834833,
+              2.22804
+            ],
+            "date_creation": "2015-11-13",
+            "date_fermeture": null,
+            "statut": "🟢 Actif (État A)"
+          }
+        },
+        {
+          "id": "53474704300014",
+          "siren": "534747043",
+          "siret": "53474704300014",
+          "node_type": "etablissement",
+          "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+          "country": "FR",
+          "role": "Établissement Secondaire",
+          "creation_year": 2011,
+          "fermeture_year": 2019,
+          "etat_administratif": "F",
+          "details": {
+            "siret": "53474704300014",
+            "enseigne": null,
+            "adresse": "29 Rue DE SOLFERINO",
+            "code_postal": "92100",
+            "commune": "BOULOGNE-BILLANCOURT",
+            "departement": "Hauts-de-Seine",
+            "region": "Île-de-France",
+            "geoloc": [
+              48.829641,
+              2.244193
+            ],
+            "date_creation": "2011-09-20",
+            "date_fermeture": "2019-06-01",
+            "statut": "🔴 Fermé (État F)"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "534747043",
+          "target": "53474704300022",
+          "source_siren": "534747043",
+          "target_siren": "53474704300022",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        },
+        {
+          "source": "534747043",
+          "target": "53474704300014",
+          "source_siren": "534747043",
+          "target_siren": "53474704300014",
+          "relationship_type": "rattachement_etablissement",
+          "legal_nature": "etablissement_secondaire",
+          "ownership_percentage": 100.0
+        }
+      ],
+      "yearly_network_expansion": {
+        "2011": [
+          {
+            "id": "534747043",
+            "siren": "534747043",
+            "siret": "53474704300030",
+            "node_type": "siege",
+            "name": "DEBORAH NABET",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2011,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "53474704300030",
+              "adresse": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+              "code_postal": "75016",
+              "commune": "75116",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "66.19B",
+              "date_creation": "2011-09-20",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "53474704300014",
+            "siren": "534747043",
+            "siret": "53474704300014",
+            "node_type": "etablissement",
+            "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2011,
+            "fermeture_year": 2019,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "53474704300014",
+              "enseigne": null,
+              "adresse": "29 Rue DE SOLFERINO",
+              "code_postal": "92100",
+              "commune": "BOULOGNE-BILLANCOURT",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.829641,
+                2.244193
+              ],
+              "date_creation": "2011-09-20",
+              "date_fermeture": "2019-06-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "2015": [
+          {
+            "id": "53474704300022",
+            "siren": "534747043",
+            "siret": "53474704300022",
+            "node_type": "etablissement",
+            "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2015,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "53474704300022",
+              "enseigne": null,
+              "adresse": "42 Rue DE SEVRES",
+              "code_postal": "92100",
+              "commune": "BOULOGNE-BILLANCOURT",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.834833,
+                2.22804
+              ],
+              "date_creation": "2015-11-13",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ]
+      },
+      "department_breakdown": {
+        "75": {
+          "department_name": "75",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "92": {
+          "department_name": "Hauts-de-Seine",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        }
+      },
+      "regional_breakdown": {
+        "11": {
+          "region_name": "11",
+          "total": 1,
+          "active": 1,
+          "closed": 0
+        },
+        "Île-de-France": {
+          "region_name": "Île-de-France",
+          "total": 2,
+          "active": 1,
+          "closed": 1
+        }
+      },
+      "networkx_graph_summary": {
+        "is_tree": true,
+        "number_of_nodes": 3,
+        "number_of_edges": 2,
+        "out_degree_root": 2,
+        "density": 0.3333333333333333
+      }
+    },
+    "executives": [
+      {
+        "full_name": "Deborah Helene NABET",
+        "type_person": "personne physique",
+        "first_name": "Deborah Helene",
+        "last_name": "NABET",
+        "denomination": null,
+        "siren_entity": null,
+        "birth_year": null,
+        "nationality": "Française",
+        "roles": [
+          {
+            "title": "Mandataire Social",
+            "company_siren": "534747043",
+            "company_name": "DEBORAH NABET",
+            "start_date": null,
+            "end_date": null,
+            "status": "en cours",
+            "bodacc_notice_url": null
+          }
+        ]
+      }
+    ],
+    "financials": {
+      "company_siren": "534747043",
+      "company_name": "534747043",
+      "company_naf_code": null,
+      "balance_sheet": null,
+      "latest_balance_sheet": null,
+      "historical_balance_sheets": [],
+      "yearly_financial_timeline": {},
+      "historical_ratios_by_year": {},
+      "financial_years_covered": [],
+      "ratios": {},
+      "financials_published": false,
+      "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+    },
+    "legal_monitor_events": [],
+    "master_360_chronological_timeline": {
+      "2011": {
+        "year": "2011",
+        "milestones": [
+          {
+            "date": "2011-09-20",
+            "event": "Immatriculation officielle SIREN 534747043"
+          }
+        ],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "534747043",
+            "siren": "534747043",
+            "siret": "53474704300030",
+            "node_type": "siege",
+            "name": "DEBORAH NABET",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2011,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "53474704300030",
+              "adresse": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+              "code_postal": "75016",
+              "commune": "75116",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "66.19B",
+              "date_creation": "2011-09-20",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "53474704300014",
+            "siren": "534747043",
+            "siret": "53474704300014",
+            "node_type": "etablissement",
+            "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2011,
+            "fermeture_year": 2019,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "53474704300014",
+              "enseigne": null,
+              "adresse": "29 Rue DE SOLFERINO",
+              "code_postal": "92100",
+              "commune": "BOULOGNE-BILLANCOURT",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.829641,
+                2.244193
+              ],
+              "date_creation": "2011-09-20",
+              "date_fermeture": "2019-06-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "financial_statements": []
+      },
+      "2015": {
+        "year": "2015",
+        "milestones": [],
+        "governance_events": [],
+        "legal_notices": [],
+        "network_establishments": [
+          {
+            "id": "53474704300022",
+            "siren": "534747043",
+            "siret": "53474704300022",
+            "node_type": "etablissement",
+            "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2015,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "53474704300022",
+              "enseigne": null,
+              "adresse": "42 Rue DE SEVRES",
+              "code_postal": "92100",
+              "commune": "BOULOGNE-BILLANCOURT",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.834833,
+                2.22804
+              ],
+              "date_creation": "2015-11-13",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          }
+        ],
+        "financial_statements": []
+      }
+    },
+    "chronological_years_covered": [
+      "2015",
+      "2011"
+    ],
+    "total_years_tracked": 2,
+    "profile": {
+      "argus": {
+        "name": "DEBORAH NABET",
+        "siren": "534747043",
+        "siret_siege": "53474704300030",
+        "lei": null,
+        "tva_intracommunautaire": null,
+        "country": "FR",
+        "registration_date": "2011-09-20",
+        "address": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+        "status": "actif",
+        "code_naf": "66.19B",
+        "libelle_naf": null,
+        "section_activite": "K",
+        "forme_juridique": "1000",
+        "categorie_entreprise": "PME (Petite et Moyenne Entreprise)",
+        "tranche_effectifs": "NN",
+        "conventions_collectives": [],
+        "date_mise_a_jour_insee": "2025-12-06T05:15:11",
+        "date_mise_a_jour_rne": "2026-08-25T16:59:25",
+        "dirigeants": [
+          {
+            "nom": "NABET",
+            "prenoms": "DEBORAH HELENE",
+            "qualite": null,
+            "annee_de_naissance": null,
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "etablissements": [],
+        "finances": null,
+        "complements": {
+          "collectivite_territoriale": null,
+          "convention_collective_renseignee": false,
+          "liste_idcc": null,
+          "liste_finess_juridique": null,
+          "numero_rnf": null,
+          "egapro_renseignee": false,
+          "est_achats_responsables": false,
+          "est_alim_confiance": false,
+          "est_association": false,
+          "est_avocat": false,
+          "est_bio": false,
+          "est_entrepreneur_individuel": true,
+          "est_entrepreneur_spectacle": false,
+          "est_ess": false,
+          "est_finess": false,
+          "est_organisme_formation": false,
+          "est_qualiopi": false,
+          "liste_id_organisme_formation": null,
+          "est_rge": false,
+          "est_siae": false,
+          "est_societe_mission": false,
+          "est_uai": false,
+          "est_patrimoine_vivant": false,
+          "bilan_ges_renseigne": false,
+          "identifiant_association": null,
+          "statut_entrepreneur_spectacle": null,
+          "type_siae": null,
+          "a_aide_minimis": false,
+          "a_aide_ademe": false,
+          "est_administration": false,
+          "est_service_public": null,
+          "est_l100_3": null
+        },
+        "age_in_years": 14,
+        "historical_summary": {
+          "date_immatriculation_origine": "2011-09-20",
+          "annee_immatriculation": 2011,
+          "anciennete_annees": 14,
+          "nombre_dirigeants_historiques_identifies": 1,
+          "nombre_etablissements_historiques_ouverts": 2
+        },
+        "yearly_establishment_timeline": {},
+        "chronological_milestones": [
+          {
+            "year": 2011,
+            "date": "2011-09-20",
+            "event": "Immatriculation d'origine et création officielle de l'entreprise",
+            "details": "SIREN 534747043 enregistré auprès du Greffe"
+          }
+        ],
+        "matching_candidates": [
+          {
+            "siren": "534747043",
+            "name": "DEBORAH NABET",
+            "siret_siege": "53474704300030",
+            "code_postal": "75016",
+            "commune": "75116",
+            "code_naf": "66.19B",
+            "forme_juridique": "1000",
+            "tranche_effectifs": "NN",
+            "effectifs_label": "0 salarié (Unité non employeuse)",
+            "total_etablissements": 3,
+            "etablissements_ouverts": 2,
+            "etat_administratif": "A",
+            "is_major_entity": true
+          }
+        ],
+        "capital_social": null,
+        "objet_social": null,
+        "date_immatriculation_origine": "2011-09-20",
+        "rne_certitude_score": 0.8,
+        "epistemic_freshness": {
+          "status": "recent",
+          "days_stale": 283,
+          "reference_date": "2025-12-06",
+          "advice": "Donnée âgée de plus de 6 mois, actualisation périodique",
+          "epistemic_confidence": 0.9
+        },
+        "is_major_entity": true
+      },
+      "ariadne": {
+        "graph_type": "establishment_topology_and_footprint",
+        "methodology_note": "Graphe topologique d'empreinte territoriale et de rattachement d'établissements (SIRET). Ce graphe modélise les implantations géographiques, techniques et commerciales rattachées à la personne juridique (SIREN). Les participations capitalistiques (filiales autonomes) nécessitent les déclarations financières d'actionnariat de l'annexe légale.",
+        "root_siren": "534747043",
+        "root_name": "DEBORAH NABET",
+        "total_nodes": 3,
+        "total_edges": 2,
+        "active_establishments_count": 2,
+        "closed_establishments_count": 1,
+        "nodes": [
+          {
+            "id": "534747043",
+            "siren": "534747043",
+            "siret": "53474704300030",
+            "node_type": "siege",
+            "name": "DEBORAH NABET",
+            "country": "FR",
+            "role": "Siège Principal / Maison Mère",
+            "creation_year": 2011,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret_siege": "53474704300030",
+              "adresse": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+              "code_postal": "75016",
+              "commune": "75116",
+              "departement": "75",
+              "region": "11",
+              "code_naf": "66.19B",
+              "date_creation": "2011-09-20",
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "53474704300022",
+            "siren": "534747043",
+            "siret": "53474704300022",
+            "node_type": "etablissement",
+            "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2015,
+            "fermeture_year": null,
+            "etat_administratif": "A",
+            "details": {
+              "siret": "53474704300022",
+              "enseigne": null,
+              "adresse": "42 Rue DE SEVRES",
+              "code_postal": "92100",
+              "commune": "BOULOGNE-BILLANCOURT",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.834833,
+                2.22804
+              ],
+              "date_creation": "2015-11-13",
+              "date_fermeture": null,
+              "statut": "🟢 Actif (État A)"
+            }
+          },
+          {
+            "id": "53474704300014",
+            "siren": "534747043",
+            "siret": "53474704300014",
+            "node_type": "etablissement",
+            "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+            "country": "FR",
+            "role": "Établissement Secondaire",
+            "creation_year": 2011,
+            "fermeture_year": 2019,
+            "etat_administratif": "F",
+            "details": {
+              "siret": "53474704300014",
+              "enseigne": null,
+              "adresse": "29 Rue DE SOLFERINO",
+              "code_postal": "92100",
+              "commune": "BOULOGNE-BILLANCOURT",
+              "departement": "Hauts-de-Seine",
+              "region": "Île-de-France",
+              "geoloc": [
+                48.829641,
+                2.244193
+              ],
+              "date_creation": "2011-09-20",
+              "date_fermeture": "2019-06-01",
+              "statut": "🔴 Fermé (État F)"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "534747043",
+            "target": "53474704300022",
+            "source_siren": "534747043",
+            "target_siren": "53474704300022",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          },
+          {
+            "source": "534747043",
+            "target": "53474704300014",
+            "source_siren": "534747043",
+            "target_siren": "53474704300014",
+            "relationship_type": "rattachement_etablissement",
+            "legal_nature": "etablissement_secondaire",
+            "ownership_percentage": 100.0
+          }
+        ],
+        "yearly_network_expansion": {
+          "2011": [
+            {
+              "id": "534747043",
+              "siren": "534747043",
+              "siret": "53474704300030",
+              "node_type": "siege",
+              "name": "DEBORAH NABET",
+              "country": "FR",
+              "role": "Siège Principal / Maison Mère",
+              "creation_year": 2011,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret_siege": "53474704300030",
+                "adresse": "17 RUE DU GENERAL DELESTRAINT 75016 PARIS",
+                "code_postal": "75016",
+                "commune": "75116",
+                "departement": "75",
+                "region": "11",
+                "code_naf": "66.19B",
+                "date_creation": "2011-09-20",
+                "statut": "🟢 Actif (État A)"
+              }
+            },
+            {
+              "id": "53474704300014",
+              "siren": "534747043",
+              "siret": "53474704300014",
+              "node_type": "etablissement",
+              "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2011,
+              "fermeture_year": 2019,
+              "etat_administratif": "F",
+              "details": {
+                "siret": "53474704300014",
+                "enseigne": null,
+                "adresse": "29 Rue DE SOLFERINO",
+                "code_postal": "92100",
+                "commune": "BOULOGNE-BILLANCOURT",
+                "departement": "Hauts-de-Seine",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.829641,
+                  2.244193
+                ],
+                "date_creation": "2011-09-20",
+                "date_fermeture": "2019-06-01",
+                "statut": "🔴 Fermé (État F)"
+              }
+            }
+          ],
+          "2015": [
+            {
+              "id": "53474704300022",
+              "siren": "534747043",
+              "siret": "53474704300022",
+              "node_type": "etablissement",
+              "name": "DEBORAH NABET - BOULOGNE-BILLANCOURT (92100)",
+              "country": "FR",
+              "role": "Établissement Secondaire",
+              "creation_year": 2015,
+              "fermeture_year": null,
+              "etat_administratif": "A",
+              "details": {
+                "siret": "53474704300022",
+                "enseigne": null,
+                "adresse": "42 Rue DE SEVRES",
+                "code_postal": "92100",
+                "commune": "BOULOGNE-BILLANCOURT",
+                "departement": "Hauts-de-Seine",
+                "region": "Île-de-France",
+                "geoloc": [
+                  48.834833,
+                  2.22804
+                ],
+                "date_creation": "2015-11-13",
+                "date_fermeture": null,
+                "statut": "🟢 Actif (État A)"
+              }
+            }
+          ]
+        },
+        "department_breakdown": {
+          "75": {
+            "department_name": "75",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "92": {
+            "department_name": "Hauts-de-Seine",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          }
+        },
+        "regional_breakdown": {
+          "11": {
+            "region_name": "11",
+            "total": 1,
+            "active": 1,
+            "closed": 0
+          },
+          "Île-de-France": {
+            "region_name": "Île-de-France",
+            "total": 2,
+            "active": 1,
+            "closed": 1
+          }
+        },
+        "networkx_graph_summary": {
+          "is_tree": true,
+          "number_of_nodes": 3,
+          "number_of_edges": 2,
+          "out_degree_root": 2,
+          "density": 0.3333333333333333
+        }
+      },
+      "chamber": {
+        "executives": [
+          {
+            "full_name": "Deborah Helene NABET",
+            "type_person": "personne physique",
+            "first_name": "Deborah Helene",
+            "last_name": "NABET",
+            "denomination": null,
+            "siren_entity": null,
+            "birth_year": null,
+            "nationality": "Française",
+            "roles": [
+              {
+                "title": "Mandataire Social",
+                "company_siren": "534747043",
+                "company_name": "DEBORAH NABET",
+                "start_date": null,
+                "end_date": null,
+                "status": "en cours",
+                "bodacc_notice_url": null
+              }
+            ]
+          }
+        ]
+      },
+      "mercury": {
+        "company_siren": "534747043",
+        "company_name": "534747043",
+        "company_naf_code": null,
+        "balance_sheet": null,
+        "latest_balance_sheet": null,
+        "historical_balance_sheets": [],
+        "yearly_financial_timeline": {},
+        "historical_ratios_by_year": {},
+        "financial_years_covered": [],
+        "ratios": {},
+        "financials_published": false,
+        "message": "Aucun bilan financier publié ni disponible au Greffe / INPI RNE pour cette entité."
+      },
+      "raven": {
+        "events": []
+      }
+    }
+  },
+  "evidence": [
+    {
+      "subject": "DEBORAH NABET",
+      "predicate": "siren",
+      "value": "534747043",
+      "source": "recherche-entreprises.api.gouv.fr",
+      "observed_at": "2026-09-15T23:49:03.050222+00:00",
+      "collection_method": "api",
+      "confidence": 0.9,
+      "status": "fact"
+    },
+    {
+      "subject": "534747043",
+      "predicate": "cartographie_etablissements_ariadne",
+      "value": "3 nœuds extraits (2 actifs, 1 fermés sur 2 départements)",
+      "source": "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+      "observed_at": "2026-09-15T23:49:07.157431+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "DEBORAH NABET",
+      "predicate": "dirigeants_et_personnes_morales",
+      "value": "1 dirigeants actifs, 0 anciens dirigeants (1 personnes physiques et 0 personnes morales identifiées)",
+      "source": "recherche-entreprises.api.gouv.fr + BODACC",
+      "observed_at": "2026-09-15T23:49:07.178984+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    },
+    {
+      "subject": "534747043",
+      "predicate": "absence_donnees_financieres_publiees",
+      "value": "Comptes non déposés ou entité sans obligation de publication",
+      "source": "INPI_RNE_API_OAuth2",
+      "observed_at": "2026-09-15T23:49:07.206218+00:00",
+      "collection_method": "api",
+      "confidence": 1.0,
+      "status": "fact"
+    }
+  ],
+  "sources": [
+    "recherche-entreprises.api.gouv.fr",
+    "recherche-entreprises.api.gouv.fr + public.opendatasoft.com",
+    "recherche-entreprises.api.gouv.fr + BODACC",
+    "INPI_RNE_API_OAuth2"
+  ],
+  "confidence": 0.97,
+  "observed_at": "2026-09-15T23:49:03.049785+00:00",
+  "processed_at": "2026-09-15T23:49:10.238841Z",
+  "engine_version": "2.0.0_enterprise_async"
+}
