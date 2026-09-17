@@ -15,11 +15,13 @@ dependencies = [
     "ariadne-corporate-graph @ git+https://github.com/YannCedL/ariadne-corporate-graph.git",
     "mercury-financial-intel @ git+https://github.com/YannCedL/mercury-financial-intel.git",
     "chamber-executive-network @ git+https://github.com/YannCedL/chamber-executive-network.git",
+    "raven-corporate-monitor @ git+https://github.com/YannCedL/raven-corporate-monitor.git",
     "pydantic>=2.0.0",
     "fastapi>=0.100.0",
     "uvicorn>=0.22.0",
     "httpx>=0.24.0",
-    "python-dotenv>=1.0.0"
+    "python-dotenv>=1.0.0",
+    "jinja2>=3.1.0"
 ]
 
 [project.optional-dependencies]
