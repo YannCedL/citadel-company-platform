@@ -1,4 +1,4 @@
-# Security Headers Middleware — CITADEL 360°
+﻿# Security Headers Middleware — CITADEL 360°
 # Micro-Action 1.2 : Headers A+ OWASP / ANSSI & Suppression du header Server
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
@@ -16,11 +16,11 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["Permissions-Policy"] = "geolocation=(), camera=(), microphone=()"
         response.headers["Content-Security-Policy"] = (
             "default-src 'self'; "
-            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; "
-            "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; "
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdn.tailwindcss.com https://unpkg.com; "
+            "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com; "
             "img-src 'self' data: https:; "
             "connect-src 'self' https:; "
-            "font-src 'self' https:;"
+            "font-src 'self' https://fonts.gstatic.com data: https:;"
         )
         
         # Masquage du serveur
