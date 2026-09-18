@@ -2,13 +2,13 @@
 <!-- TAB 2: ANALYTICS & BI STUDIO VIEW -->
         <div v-show="activeTab === 'analytics'" :hidden="activeTab !== 'analytics'" class="space-y-8">
           <!-- BENCHMARK TOP BAR (SOLO VS COMPARATIF) -->
-          <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-5">
+          <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-5">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
               <div class="flex items-center space-x-3">
-                <div class="px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-200 border border-amber-500/30 text-xs font-mono-cyber font-bold">
-                  🏢 Entité Principale : <span class="text-white">{{ displayCompanyName }}</span> ({{ displaySiren }})
+                <div class="px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-200 border border-amber-500/30 text-xs font-sans font-bold">
+                  🏢 Entité Principale : <span class="text-slate-900">{{ displayCompanyName }}</span> ({{ displaySiren }})
                 </div>
-                <span class="text-xs font-mono-cyber font-bold" :class="benchmarkData ? 'text-amber-400 animate-pulse' : 'text-slate-500'">
+                <span class="text-xs font-sans font-bold" :class="benchmarkData ? 'text-amber-400 animate-pulse' : 'text-slate-500'">
                   {{ benchmarkData ? '⚔️ MODE COMPARATIF ACTIF (VS)' : '👤 MODE SOLO (ENTITÉ UNIQUE)' }}
                 </span>
               </div>
@@ -21,7 +21,7 @@
                     @keyup.enter="handleBenchmarkSubmit"
                     type="text" 
                     placeholder="⚔️ Ajouter un concurrent (SIREN ou Nom)..."
-                    class="w-full pl-9 pr-4 py-2 bg-slate-900 border border-slate-700/80 rounded-xl text-xs text-white placeholder-slate-500 font-mono-cyber focus:outline-none focus:border-amber-500"
+                    class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-500 font-sans focus:outline-none focus:border-amber-500"
                   />
                   <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -31,7 +31,7 @@
                 <button 
                   @click="handleBenchmarkSubmit"
                   :disabled="isBenchmarkLoading"
-                  class="px-4 py-2 rounded-xl text-xs font-bold font-mono-cyber bg-amber-600 hover:bg-amber-500 text-white shadow-lg shadow-amber-500/20 border border-amber-400/30 shrink-0"
+                  class="px-4 py-2 rounded-xl text-xs font-bold font-sans bg-amber-600 hover:bg-amber-500 text-slate-900   border border-amber-400/30 shrink-0"
                 >
                   <span>{{ isBenchmarkLoading ? 'Chargement...' : 'COMPARER' }}</span>
                 </button>
@@ -39,7 +39,7 @@
                 <button 
                   v-if="benchmarkData"
                   @click="removeBenchmarkCompetitor"
-                  class="px-3 py-2 rounded-xl text-xs font-mono-cyber bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 shrink-0"
+                  class="px-3 py-2 rounded-xl text-xs font-sans bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 border border-rose-500/30 shrink-0"
                   title="Retirer le concurrent"
                 >
                   ✕ Retirer
@@ -48,23 +48,23 @@
             </div>
 
             <!-- Benchmark Selected Banner if Active -->
-            <div v-if="benchmarkData" class="p-4 bg-gradient-to-r from-amber-500/10 via-slate-900 to-cyan-500/10 border border-slate-700/60 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-mono-cyber">
+            <div v-if="benchmarkData" class="p-4 bg-gradient-to-r from-amber-500/10 via-slate-900 to-cyan-500/10 border border-slate-300/60 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-sans">
               <div class="flex items-center space-x-2 flex-wrap">
-                <span class="font-bold text-slate-300">⚔️ BENCHMARK COMPARATIF :</span>
+                <span class="font-bold text-slate-700">⚔️ BENCHMARK COMPARATIF :</span>
                 <span class="text-amber-400 font-bold px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30">{{ displayCompanyName }}</span>
-                <span class="text-slate-400 font-bold">VS</span>
+                <span class="text-slate-500 font-bold">VS</span>
                 <span class="text-cyan-400 font-bold px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30">{{ benchmarkCompanyName }}</span>
-                <span class="text-slate-400 font-mono text-[11px]">(SIREN {{ benchmarkSiren }})</span>
+                <span class="text-slate-500 font-mono text-[11px]">(SIREN {{ benchmarkSiren }})</span>
               </div>
               <span class="text-[10px] text-cyan-400/80 font-mono">⚡ Alignement Multi-Sources INPI & Sirene certifié</span>
             </div>
 
             <!-- SUB-DASHBOARDS TABS SWITCHER -->
-            <div class="flex flex-wrap gap-2 text-xs font-mono-cyber pt-2 border-t border-slate-800">
+            <div class="flex flex-wrap gap-2 text-xs font-sans pt-2 border-t border-slate-200">
               <button 
                 @click="switchAnalyticsSubTab('network')"
                 class="px-4 py-2 rounded-xl border transition flex items-center space-x-2"
-                :class="analyticsSubTab === 'network' ? 'bg-sky-500 text-white font-bold border-amber-400 shadow-lg shadow-amber-500/20' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                :class="analyticsSubTab === 'network' ? 'bg-sky-500 text-slate-900 font-bold border-amber-400  ' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
               >
                 <span>🗺️ 1. Réseau & Implantation</span>
               </button>
@@ -72,7 +72,7 @@
               <button 
                 @click="switchAnalyticsSubTab('governance')"
                 class="px-4 py-2 rounded-xl border transition flex items-center space-x-2"
-                :class="analyticsSubTab === 'governance' ? 'bg-purple-500 text-white font-bold border-purple-400 shadow-lg shadow-amber-500/20' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                :class="analyticsSubTab === 'governance' ? 'bg-purple-500 text-slate-900 font-bold border-purple-400  ' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
               >
                 <span>👥 2. Gouvernance & Structure</span>
               </button>
@@ -80,7 +80,7 @@
               <button 
                 @click="switchAnalyticsSubTab('regulatory')"
                 class="px-4 py-2 rounded-xl border transition flex items-center space-x-2"
-                :class="analyticsSubTab === 'regulatory' ? 'bg-amber-500 text-white font-bold border-amber-400 shadow-lg shadow-amber-500/25' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                :class="analyticsSubTab === 'regulatory' ? 'bg-amber-500 text-slate-900 font-bold border-amber-400  ' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
               >
                 <span>⚖️ 3. BODACC & Conformité</span>
               </button>
@@ -88,7 +88,7 @@
               <button 
                 @click="switchAnalyticsSubTab('financials')"
                 class="px-4 py-2 rounded-xl border transition flex items-center space-x-2"
-                :class="analyticsSubTab === 'financials' ? 'bg-emerald-500 text-white font-bold border-emerald-400 shadow-lg shadow-emerald-500/25' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                :class="analyticsSubTab === 'financials' ? 'bg-emerald-500 text-slate-900 font-bold border-emerald-400  ' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
               >
                 <span>💶 4. Finances & Rentabilité</span>
               </button>
@@ -97,79 +97,79 @@
 
           <!-- SUB-DASHBOARD 1: RÉSEAU & IMPLANTATION BI -->
           <div v-show="analyticsSubTab === 'network'" class="space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 font-mono-cyber">
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">KPI 1 : Department Footprint Reach</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 font-sans">
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">KPI 1 : Department Footprint Reach</div>
                 <div class="text-2xl font-black text-amber-400 mt-1">
                   {{ departmentList.length }} Départements
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkDepartmentList.length }} Départements</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Couverture géographique nationale mesurée sur les cartes d'État
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">KPI 2 : Active vs Historical Ratio</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">KPI 2 : Active vs Historical Ratio</div>
                 <div class="text-2xl font-black text-emerald-400 mt-1">
                   {{ activeEstablishments }} / {{ totalEstablishments }} Sites Actifs
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkActiveEstablishments }} / {{ benchmarkTotalEstablishments }} Sites</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Empreinte physique active vs historique d'immatriculations SIRENE
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">KPI 3 : Taux de Restructuration (% Sites Clos)</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">KPI 3 : Taux de Restructuration (% Sites Clos)</div>
                 <div class="text-2xl font-black text-indigo-400 mt-1">
                   {{ calculateRealignmentIndex(displayNodes) }}% Sites Clos
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ calculateRealignmentIndex(benchmarkNodes) }}% Sites Clos</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Proportion d'établissements clos dans l'histoire du groupe ({{ closedEstablishments }} fermés / {{ totalEstablishments }} total)
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Durée de Vie Moyenne (Sites Clos)</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Durée de Vie Moyenne (Sites Clos)</div>
                 <div class="text-2xl font-black text-amber-300 mt-1">
                   {{ averageSiteLifespan }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkAverageSiteLifespan }}</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Longévité calendaire moyenne avant fermeture définitive
                 </div>
               </div>
             </div>
 
             <!-- MASTER BI STUDIO TIMELINE COMBO CHART -->
-            <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-slate-200">
                 <div>
                   <div class="flex items-center space-x-2">
-                    <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">MASTER BI TIMELINE</span>
-                    <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">ÉVOLUTION ANNUELLE : STOCK ACTIF, NOUVEAUX SITES, FERMETURES & RELOCALISATIONS</h4>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">MASTER BI TIMELINE</span>
+                    <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">ÉVOLUTION ANNUELLE : STOCK ACTIF, NOUVEAUX SITES, FERMETURES & RELOCALISATIONS</h4>
                   </div>
-                  <p class="text-xs text-slate-400 mt-0.5 font-mono-cyber">Histogramme des nouveaux sites & stock d'actifs avec courbes des fermetures et relocalisations par année.</p>
+                  <p class="text-xs text-slate-500 mt-0.5 font-sans">Histogramme des nouveaux sites & stock d'actifs avec courbes des fermetures et relocalisations par année.</p>
                 </div>
 
                 <!-- DYNAMIC FILTERS: REGION & DEPARTMENT DROPDOWNS -->
-                <div class="flex flex-wrap items-center gap-2 text-xs font-mono-cyber">
-                  <div class="flex items-center space-x-1.5 bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-800">
-                    <span class="text-slate-400 font-bold">🌍 Région :</span>
+                <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
+                  <div class="flex items-center space-x-1.5 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200">
+                    <span class="text-slate-500 font-bold">🌍 Région :</span>
                     <select 
                       v-model="biTimelineRegionFilter" 
                       @change="biTimelineDeptFilter = 'all'"
@@ -180,7 +180,7 @@
                     </select>
                   </div>
 
-                  <div v-if="biTimelineRegionFilter !== 'all' && availableDepartmentsForTimelineRegionFilter.length > 0" class="flex items-center space-x-1.5 bg-slate-900 px-3 py-1.5 rounded-xl border border-indigo-500/40 animate-in fade-in">
+                  <div v-if="biTimelineRegionFilter !== 'all' && availableDepartmentsForTimelineRegionFilter.length > 0" class="flex items-center space-x-1.5 bg-slate-50 px-3 py-1.5 rounded-xl border border-indigo-500/40 animate-in fade-in">
                     <span class="text-indigo-300 font-bold">🏢 Département :</span>
                     <select 
                       v-model="biTimelineDeptFilter"
@@ -200,21 +200,21 @@
 
             <!-- CHARTS ROW NETWORK -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">REPARTITION ÉTABLISSEMENTS (ACTIFS VS HISTORIQUES CLOS)</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">REPARTITION ÉTABLISSEMENTS (ACTIFS VS HISTORIQUES CLOS)</h4>
                 <div class="h-64 relative">
                   <canvas id="networkDonutCanvas"></canvas>
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-slate-800/80">
-                  <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">VÉLOCITÉ D'EXPANSION PHYSIQUE (IMPLANTATIONS PAR ANNÉE)</h4>
-                  <div class="flex flex-wrap items-center gap-2 text-xs font-mono-cyber">
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-slate-200">
+                  <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">VÉLOCITÉ D'EXPANSION PHYSIQUE (IMPLANTATIONS PAR ANNÉE)</h4>
+                  <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
                     <select 
                       v-model="expansionStatusFilter" 
                       @change="renderExpansionDecadesChart"
-                      class="px-2.5 py-1 bg-slate-900 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-amber-500 text-[11px]"
+                      class="px-2.5 py-1 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 focus:outline-none focus:border-amber-500 text-[11px]"
                     >
                       <option value="all">Tous les sites</option>
                       <option value="active">🟢 Actifs uniquement</option>
@@ -224,7 +224,7 @@
                     <select 
                       v-model="expansionTimeRange" 
                       @change="renderExpansionDecadesChart"
-                      class="px-2.5 py-1 bg-slate-900 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-amber-500 text-[11px]"
+                      class="px-2.5 py-1 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 focus:outline-none focus:border-amber-500 text-[11px]"
                     >
                       <option value="all">📅 Tout l'historique</option>
                       <option value="last10">⏳ 10 Dernières Années</option>
@@ -240,23 +240,23 @@
             </div>
 
             <!-- BI GEOGRAPHICAL ANALYSIS & RELOCATIONS TABLE (RÉGIONS & DÉPARTEMENTS) -->
-            <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-6">
-              <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-6">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200">
                 <div>
                   <div class="flex items-center space-x-2">
-                    <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber bg-amber-500/20 text-amber-400 border border-amber-500/40">INTELLIGENCE DÉCISIONNELLE GÉOGRAPHIQUE</span>
-                    <h3 class="text-base font-bold text-white font-mono-cyber uppercase">ANALYSE PAR RÉGIONS & DÉPARTEMENTS</h3>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-amber-500/20 text-amber-400 border border-amber-500/40">INTELLIGENCE DÉCISIONNELLE GÉOGRAPHIQUE</span>
+                    <h3 class="text-base font-bold text-slate-900 font-sans uppercase">ANALYSE PAR RÉGIONS & DÉPARTEMENTS</h3>
                   </div>
-                  <p class="text-xs text-slate-400 mt-1 font-mono-cyber">Répartition fine des sites actifs (🟢), clos (🔴), relocalisations/transferts (🔄) et comparaison territoriale multi-entreprises.</p>
+                  <p class="text-xs text-slate-500 mt-1 font-sans">Répartition fine des sites actifs (🟢), clos (🔴), relocalisations/transferts (🔄) et comparaison territoriale multi-entreprises.</p>
                 </div>
 
                 <div class="flex flex-wrap items-center gap-2">
                   <!-- SÉLECTEUR MULTI-ENTREPRISES SI BENCHMARK ACTIF -->
-                  <div v-if="benchmarkData" class="flex items-center space-x-1 font-mono-cyber text-xs bg-slate-900/90 p-1 rounded-xl border border-slate-800 shrink-0">
+                  <div v-if="benchmarkData" class="flex items-center space-x-1 font-sans text-xs bg-slate-50 p-1 rounded-xl border border-slate-200 shrink-0">
                     <button 
                       @click="biGeoEntityFilter = 'all'" 
                       class="px-3 py-1.5 rounded-lg transition font-bold flex items-center space-x-1.5 text-[11px]"
-                      :class="biGeoEntityFilter === 'all' ? 'bg-indigo-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                      :class="biGeoEntityFilter === 'all' ? 'bg-indigo-600 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
                     >
                       <span>⚔️</span>
                       <span>Face-à-Face Comparatif</span>
@@ -264,7 +264,7 @@
                     <button 
                       @click="biGeoEntityFilter = 'primary'" 
                       class="px-3 py-1.5 rounded-lg transition font-bold flex items-center space-x-1.5 text-[11px]"
-                      :class="biGeoEntityFilter === 'primary' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/50 shadow' : 'text-slate-400 hover:text-white'"
+                      :class="biGeoEntityFilter === 'primary' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/50 shadow' : 'text-slate-500 hover:text-slate-900'"
                     >
                       <span>🏢</span>
                       <span class="truncate max-w-[120px]">{{ displayCompanyName }}</span>
@@ -272,7 +272,7 @@
                     <button 
                       @click="biGeoEntityFilter = 'benchmark'" 
                       class="px-3 py-1.5 rounded-lg transition font-bold flex items-center space-x-1.5 text-[11px]"
-                      :class="biGeoEntityFilter === 'benchmark' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/50 shadow' : 'text-slate-400 hover:text-white'"
+                      :class="biGeoEntityFilter === 'benchmark' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/50 shadow' : 'text-slate-500 hover:text-slate-900'"
                     >
                       <span>⚔️</span>
                       <span class="truncate max-w-[120px]">{{ benchmarkCompanyName }}</span>
@@ -280,11 +280,11 @@
                   </div>
 
                   <!-- GRANULARITÉ RÉGIONS VS DÉPARTEMENTS -->
-                  <div class="flex items-center space-x-2 font-mono-cyber text-xs bg-slate-900/90 p-1 rounded-xl border border-slate-800 shrink-0">
+                  <div class="flex items-center space-x-2 font-sans text-xs bg-slate-50 p-1 rounded-xl border border-slate-200 shrink-0">
                     <button 
                       @click="biGeoGranularity = 'region'" 
                       class="px-4 py-1.5 rounded-lg transition font-bold flex items-center space-x-1.5"
-                      :class="biGeoGranularity === 'region' ? 'bg-sky-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                      :class="biGeoGranularity === 'region' ? 'bg-sky-600 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
                     >
                       <span>🌍</span>
                       <span>Par Régions ({{ regionalBIStats.length }})</span>
@@ -292,7 +292,7 @@
                     <button 
                       @click="biGeoGranularity = 'department'" 
                       class="px-4 py-1.5 rounded-lg transition font-bold flex items-center space-x-1.5"
-                      :class="biGeoGranularity === 'department' ? 'bg-indigo-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                      :class="biGeoGranularity === 'department' ? 'bg-indigo-600 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
                     >
                       <span>🏢</span>
                       <span>Par Départements ({{ departmentalBIStats.length }})</span>
@@ -302,9 +302,9 @@
               </div>
 
               <!-- SUMMARY BI CARDS -->
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono-cyber text-xs">
-                <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
-                  <div class="text-slate-400">Total Transferts / Relocalisations</div>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 font-sans text-xs">
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+                  <div class="text-slate-500">Total Transferts / Relocalisations</div>
                   <div v-if="!benchmarkData || biGeoEntityFilter === 'primary'" class="text-lg font-black text-indigo-400">
                     🔄 {{ biTotalRelocations }} Sites
                   </div>
@@ -318,8 +318,8 @@
                   </div>
                 </div>
 
-                <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
-                  <div class="text-slate-400">Fermetures Totales (Sèches)</div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+                  <div class="text-slate-500">Fermetures Totales (Sèches)</div>
                   <div v-if="!benchmarkData || biGeoEntityFilter === 'primary'" class="text-lg font-black text-rose-400">
                     ❌ {{ biTotalFinalClosures }} Sites
                   </div>
@@ -333,8 +333,8 @@
                   </div>
                 </div>
 
-                <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
-                  <div class="text-slate-400">Territoire Principal</div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+                  <div class="text-slate-500">Territoire Principal</div>
                   <div v-if="!benchmarkData || biGeoEntityFilter === 'primary'" class="text-lg font-black text-amber-400 truncate" :title="biTopRegionBySites">
                     📍 {{ biTopRegionBySites }}
                   </div>
@@ -347,8 +347,8 @@
                   </div>
                 </div>
 
-                <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 space-y-1">
-                  <div class="text-slate-400">Taux d'Activité Global</div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+                  <div class="text-slate-500">Taux d'Activité Global</div>
                   <div v-if="!benchmarkData || biGeoEntityFilter === 'primary'" class="text-lg font-black text-emerald-400">
                     📊 {{ biAverageActivityRate }}% Actifs
                   </div>
@@ -365,10 +365,10 @@
 
               <!-- SECONDARY BI CHARTS GRID: STACKED BAR & CLOSURE REASONS DONUT -->
               <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div class="lg:col-span-2 bg-slate-900/60 rounded-xl p-5 border border-slate-800 space-y-3">
-                  <h4 class="text-xs font-bold font-mono-cyber text-white uppercase flex items-center space-x-2">
+                <div class="lg:col-span-2 bg-slate-50/60 rounded-xl p-5 border border-slate-200 space-y-3">
+                  <h4 class="text-xs font-bold font-sans text-slate-900 uppercase flex items-center space-x-2">
                     <span>📊 ÉTABLISSEMENTS PAR TERRITOIRE (TOP 12)</span>
-                    <span class="text-slate-400 font-normal">({{ biGeoGranularity === 'region' ? 'Régions' : 'Départements' }})</span>
+                    <span class="text-slate-500 font-normal">({{ biGeoGranularity === 'region' ? 'Régions' : 'Départements' }})</span>
                     <span v-if="benchmarkData && biGeoEntityFilter === 'all'" class="px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">Comparatif 2 Entreprises</span>
                     <span v-else-if="benchmarkData && biGeoEntityFilter === 'benchmark'" class="px-2 py-0.5 rounded text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">{{ benchmarkCompanyName }}</span>
                     <span v-else-if="benchmarkData" class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">{{ displayCompanyName }}</span>
@@ -378,8 +378,8 @@
                   </div>
                 </div>
 
-                <div class="bg-slate-900/60 rounded-xl p-5 border border-slate-800 space-y-3 flex flex-col justify-between">
-                  <h4 class="text-xs font-bold font-mono-cyber text-white uppercase">🍩 REPARTITION DES MOTIFS DE FERMETURE</h4>
+                <div class="bg-slate-50/60 rounded-xl p-5 border border-slate-200 space-y-3 flex flex-col justify-between">
+                  <h4 class="text-xs font-bold font-sans text-slate-900 uppercase">🍩 REPARTITION DES MOTIFS DE FERMETURE</h4>
                   <div class="h-56 flex items-center justify-center">
                     <canvas id="biClosureReasonCanvas"></canvas>
                   </div>
@@ -387,12 +387,12 @@
               </div>
 
               <!-- BI INTERACTIVE TABLE -->
-              <div class="overflow-x-auto rounded-xl border border-slate-800">
-                <table class="w-full text-left font-mono-cyber text-xs">
+              <div class="overflow-x-auto rounded-xl border border-slate-200">
+                <table class="w-full text-left font-sans text-xs">
                   <!-- EN-TÊTE TABLEAU MODE COMPARATIF DIRECT -->
-                  <thead v-if="benchmarkData && biGeoEntityFilter === 'all'" class="bg-slate-900 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+                  <thead v-if="benchmarkData && biGeoEntityFilter === 'all'" class="bg-slate-50 text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
                     <tr>
-                      <th @click="toggleBiSort('name')" class="p-3 cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('name')" class="p-3 cursor-pointer hover:text-slate-900 select-none">
                         Territoire {{ biSortKey === 'name' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
                       <th v-if="biGeoGranularity === 'department'" class="p-3">Région</th>
@@ -408,7 +408,7 @@
                       <th class="p-3 text-center text-cyan-400 bg-cyan-500/5">
                         ⚔️ Actifs / Clos (% Actifs)
                       </th>
-                      <th @click="toggleBiSort('diff')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('diff')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         Écart Implantation {{ biSortKey === 'diff' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
                       <th class="p-3 text-center">
@@ -418,46 +418,46 @@
                   </thead>
 
                   <!-- EN-TÊTE TABLEAU STANDARD (INDIVIDUEL OU SANS BENCHMARK) -->
-                  <thead v-else class="bg-slate-900 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+                  <thead v-else class="bg-slate-50 text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
                     <tr>
-                      <th @click="toggleBiSort('name')" class="p-3 cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('name')" class="p-3 cursor-pointer hover:text-slate-900 select-none">
                         Territoire {{ biSortKey === 'name' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
                       <th v-if="biGeoGranularity === 'department'" class="p-3">Région</th>
-                      <th @click="toggleBiSort('total')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('total')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         Total Sites {{ biSortKey === 'total' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
-                      <th @click="toggleBiSort('active')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('active')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         🟢 Actifs {{ biSortKey === 'active' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
-                      <th @click="toggleBiSort('closed')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('closed')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         🔴 Clos {{ biSortKey === 'closed' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
-                      <th @click="toggleBiSort('activity_rate')" class="p-3 text-center cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('activity_rate')" class="p-3 text-center cursor-pointer hover:text-slate-900 select-none">
                         % Actifs {{ biSortKey === 'activity_rate' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
-                      <th @click="toggleBiSort('relocations')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('relocations')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         🔄 Relocalisations {{ biSortKey === 'relocations' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
-                      <th @click="toggleBiSort('final_closures')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('final_closures')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         ❌ Fermetures Totales {{ biSortKey === 'final_closures' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
-                      <th @click="toggleBiSort('lifespan')" class="p-3 text-right cursor-pointer hover:text-white select-none">
+                      <th @click="toggleBiSort('lifespan')" class="p-3 text-right cursor-pointer hover:text-slate-900 select-none">
                         ⏳ Longévité Moy. {{ biSortKey === 'lifespan' ? (biSortAsc ? '▲' : '▼') : '' }}
                       </th>
                     </tr>
                   </thead>
 
                   <!-- CORPS DU TABLEAU : MODE COMPARATIF DIRECT -->
-                  <tbody v-if="benchmarkData && biGeoEntityFilter === 'all'" class="divide-y divide-slate-800/60 bg-slate-950/60">
+                  <tbody v-if="benchmarkData && biGeoEntityFilter === 'all'" class="divide-y divide-slate-800/60 bg-slate-100/60">
                     <tr v-if="sortedBiGeoList.length === 0">
                       <td colSpan="8" class="p-6 text-center text-slate-500">Aucune donnée géographique comparée disponible.</td>
                     </tr>
-                    <tr v-for="item in sortedBiGeoList" :key="item.name" class="hover:bg-slate-900/60 transition">
-                      <td class="p-3 font-bold text-white">
+                    <tr v-for="item in sortedBiGeoList" :key="item.name" class="hover:bg-slate-50/60 transition">
+                      <td class="p-3 font-bold text-slate-900">
                         {{ item.name }}
                       </td>
-                      <td v-if="biGeoGranularity === 'department'" class="p-3 text-slate-400 text-[11px]">
+                      <td v-if="biGeoGranularity === 'department'" class="p-3 text-slate-500 text-[11px]">
                         {{ item.regionName }}
                       </td>
                       <td class="p-3 text-right font-bold text-amber-400 bg-amber-500/5">
@@ -465,7 +465,7 @@
                       </td>
                       <td class="p-3 text-center bg-amber-500/5">
                         <span class="text-emerald-400 font-bold">{{ item.primaryActive }}🟢</span> / 
-                        <span class="text-slate-400">{{ item.primaryClosed }}🔴</span>
+                        <span class="text-slate-500">{{ item.primaryClosed }}🔴</span>
                         <span class="ml-1 text-[10px] text-amber-300 font-mono">({{ item.primaryRate }}%)</span>
                       </td>
                       <td class="p-3 text-right font-bold text-cyan-400 bg-cyan-500/5">
@@ -473,7 +473,7 @@
                       </td>
                       <td class="p-3 text-center bg-cyan-500/5">
                         <span class="text-teal-400 font-bold">{{ item.benchmarkActive }}🟢</span> / 
-                        <span class="text-slate-400">{{ item.benchmarkClosed }}🔴</span>
+                        <span class="text-slate-500">{{ item.benchmarkClosed }}🔴</span>
                         <span class="ml-1 text-[10px] text-cyan-300 font-mono">({{ item.benchmarkRate }}%)</span>
                       </td>
                       <td class="p-3 text-right font-mono font-bold">
@@ -488,7 +488,7 @@
                         <span v-else-if="item.benchmarkTotal > item.primaryTotal" class="px-2 py-0.5 rounded text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
                           ⚔️ {{ benchmarkCompanyName }}
                         </span>
-                        <span v-else class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400">
+                        <span v-else class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-500">
                           ⚖️ Égalité ({{ item.primaryTotal }})
                         </span>
                       </td>
@@ -496,15 +496,15 @@
                   </tbody>
 
                   <!-- CORPS DU TABLEAU : MODE STANDARD (INDIVIDUEL OU SANS BENCHMARK) -->
-                  <tbody v-else class="divide-y divide-slate-800/60 bg-slate-950/60">
+                  <tbody v-else class="divide-y divide-slate-800/60 bg-slate-100/60">
                     <tr v-if="sortedBiGeoList.length === 0">
                       <td colSpan="9" class="p-6 text-center text-slate-500">Aucune donnée géographique disponible.</td>
                     </tr>
-                    <tr v-for="item in sortedBiGeoList" :key="item.name" class="hover:bg-slate-900/60 transition">
-                      <td class="p-3 font-bold text-white">
+                    <tr v-for="item in sortedBiGeoList" :key="item.name" class="hover:bg-slate-50/60 transition">
+                      <td class="p-3 font-bold text-slate-900">
                         {{ item.name }}
                       </td>
-                      <td v-if="biGeoGranularity === 'department'" class="p-3 text-slate-400 text-[11px]">
+                      <td v-if="biGeoGranularity === 'department'" class="p-3 text-slate-500 text-[11px]">
                         {{ item.regionName }}
                       </td>
                       <td class="p-3 text-right font-bold" :class="biGeoEntityFilter === 'benchmark' ? 'text-cyan-400' : 'text-amber-400'">
@@ -513,7 +513,7 @@
                       <td class="p-3 text-right font-bold text-emerald-400">
                         {{ item.active }}
                       </td>
-                      <td class="p-3 text-right font-bold text-slate-400">
+                      <td class="p-3 text-right font-bold text-slate-500">
                         {{ item.closed }}
                       </td>
                       <td class="p-3 text-center">
@@ -547,77 +547,77 @@
 
           <!-- SUB-DASHBOARD 2: GOUVERNANCE & STRUCTURE BI -->
           <div v-show="analyticsSubTab === 'governance'" class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono-cyber">
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">KPI 4 : Executive Matrix Ratio</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-sans">
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">KPI 4 : Executive Matrix Ratio</div>
                 <div class="text-2xl font-black text-amber-300 mt-1">
                   {{ physicalCount }} Physiques / {{ moralCount }} Morales
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkPhysicalCount }} Phys / {{ benchmarkMoralCount }} Mor</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Structure des dirigeants (Personnes Physiques vs Holdings/Morales)
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Indice de Complexité Actionnariale</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Indice de Complexité Actionnariale</div>
                 <div class="text-2xl font-black text-indigo-400 mt-1">
                   {{ moralCount > 3 ? 'Élevé (Multi-Holdings)' : (moralCount > 0 ? 'Modéré' : 'Direct (Physiques)') }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkMoralCount > 3 ? 'Élevé' : (benchmarkMoralCount > 0 ? 'Modéré' : 'Direct') }}</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Présence de cabinets d'audit, commissaires aux comptes et holdings mères
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Executive Turnover Velocity</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Executive Turnover Velocity</div>
                 <div class="text-2xl font-black text-amber-400 mt-1">
                   {{ executiveTurnoverVelocity }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkExecutiveTurnoverVelocity }}</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Fréquence moyenne des mouvements et nominations au RCS
                 </div>
               </div>
             </div>
 
             <!-- Interconnections Network Trigger Banner -->
-            <div class="p-4 rounded-2xl bg-gradient-to-r from-purple-950/40 via-indigo-950/40 to-slate-900 border border-amber-500/40 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono-cyber">
+            <div class="p-4 rounded-2xl bg-gradient-to-r from-purple-950/40 via-indigo-950/40 to-slate-900 border border-amber-500/40 flex flex-col sm:flex-row items-center justify-between gap-4 font-sans">
               <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-200 border border-amber-500/40 flex items-center justify-center font-bold text-lg">🌐</div>
                 <div>
-                  <h4 class="font-bold text-white text-xs uppercase">MATRICE D'INTERCONNEXIONS EXTERNE & HOLDINGS ACTIONNAIRES</h4>
-                  <p class="text-[11px] text-slate-400 mt-0.5">Explorez le réseau de mandats physiques, personnes morales mères et récursion 1-clic</p>
+                  <h4 class="font-bold text-slate-900 text-xs uppercase">MATRICE D'INTERCONNEXIONS EXTERNE & HOLDINGS ACTIONNAIRES</h4>
+                  <p class="text-[11px] text-slate-500 mt-0.5">Explorez le réseau de mandats physiques, personnes morales mères et récursion 1-clic</p>
                 </div>
               </div>
               <button 
                 @click="showInterconnectionModal = true"
-                class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-slate-950 font-black font-bold text-xs shadow-lg shadow-amber-500/20 border border-amber-400/30 shrink-0 transition"
+                class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-slate-950 font-black font-bold text-xs   border border-amber-400/30 shrink-0 transition"
               >
                 🌐 Inspecter le Graphe d'Interconnexions Externe →
               </button>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">TYPOLOGIE ET RÉPARTITION DES MANDATAIRES SOCIAUX</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">TYPOLOGIE ET RÉPARTITION DES MANDATAIRES SOCIAUX</h4>
                 <div class="h-64 flex items-center justify-center">
                   <canvas id="executivesDonutCanvas"></canvas>
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">RÉPARTITION DES MANDATS PAR RÔLE & FONCTION</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">RÉPARTITION DES MANDATS PAR RÔLE & FONCTION</h4>
                 <div class="h-64">
                   <canvas id="executivesRoleCanvas"></canvas>
                 </div>
@@ -627,74 +627,74 @@
 
           <!-- SUB-DASHBOARD 3: BODACC & CONFORMITÉ BI -->
           <div v-show="analyticsSubTab === 'regulatory'" class="space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 font-mono-cyber">
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">KPI 5 : BODACC Activity Velocity</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 font-sans">
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">KPI 5 : BODACC Activity Velocity</div>
                 <div class="text-2xl font-black text-amber-400 mt-1">
                   {{ displayEvents.length }} Publications Légales
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkEvents.length }} Actes</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Volume total des annonces et modifications au Registre d'État
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">KPI 6 : Financial Disclosure Status</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">KPI 6 : Financial Disclosure Status</div>
                 <div class="text-base font-black text-emerald-400 mt-1 truncate">
                   {{ (resultData?.financials?.latest_balance_sheet || resultData?.legal_profile?.financials?.latest_balance_sheet) ? 'Public Certifié' : 'Confidentiel (Décret PME/ETI)' }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
-                  <span class="font-bold" :class="(benchmarkData?.financials?.latest_balance_sheet || benchmarkData?.legal_profile?.financials?.latest_balance_sheet) ? 'text-teal-400' : 'text-slate-400'">{{ (benchmarkData?.financials?.latest_balance_sheet || benchmarkData?.legal_profile?.financials?.latest_balance_sheet) ? 'Public Certifié' : 'Confidentiel' }}</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
+                  <span class="font-bold" :class="(benchmarkData?.financials?.latest_balance_sheet || benchmarkData?.legal_profile?.financials?.latest_balance_sheet) ? 'text-teal-400' : 'text-slate-500'">{{ (benchmarkData?.financials?.latest_balance_sheet || benchmarkData?.legal_profile?.financials?.latest_balance_sheet) ? 'Public Certifié' : 'Confidentiel' }}</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Régime juridique d'exercice de la liasse fiscale au Greffe
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Conformité RSE & EGAPRO F/H</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Conformité RSE & EGAPRO F/H</div>
                 <div class="text-2xl font-black text-amber-400 mt-1">
                   {{ resultData?.legal_profile?.complements?.egapro_renseignee ? 'Index Certifié' : 'Déclaré' }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkData?.legal_profile?.complements?.egapro_renseignee ? 'Certifié' : 'Déclaré' }}</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Index Égalité Professionnelle et agréments d'État
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Legal Friction Index</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Legal Friction Index</div>
                 <div class="text-xl font-black mt-1" :class="legalFrictionIndex.score > 50 ? 'text-rose-400' : (legalFrictionIndex.score > 20 ? 'text-amber-400' : 'text-emerald-400')">
-                  {{ legalFrictionIndex.score }} / 100 <span class="text-xs font-normal text-slate-300">({{ legalFrictionIndex.status }})</span>
+                  {{ legalFrictionIndex.score }} / 100 <span class="text-xs font-normal text-slate-700">({{ legalFrictionIndex.status }})</span>
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold" :class="benchmarkLegalFrictionIndex.score > 50 ? 'text-rose-400' : (benchmarkLegalFrictionIndex.score > 20 ? 'text-cyan-400' : 'text-teal-400')">{{ benchmarkLegalFrictionIndex.score }} / 100</span>
                 </div>
-                <div v-else class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                <div v-else class="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
                   Matrice pondérée des avis à risque et alertes BODACC
                 </div>
               </div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">RÉPARTITION DES ANNONCES (CLASSIFICATION NLP)</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">RÉPARTITION DES ANNONCES (CLASSIFICATION NLP)</h4>
                 <div class="h-64">
                   <canvas id="bodaccCategoryCanvas"></canvas>
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">VÉLOCITÉ HISTORIQUE DES ANNONCES BODACC (PAR ANNÉE)</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">VÉLOCITÉ HISTORIQUE DES ANNONCES BODACC (PAR ANNÉE)</h4>
                 <div class="h-64">
                   <canvas id="bodaccTimelineCanvas"></canvas>
                 </div>
@@ -704,44 +704,44 @@
 
           <!-- SUB-DASHBOARD 4: FINANCES & RENTABILITÉ BI -->
           <div v-show="analyticsSubTab === 'financials'" class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono-cyber">
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Dernier Chiffre d'Affaires (CA)</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-sans">
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Dernier Chiffre d'Affaires (CA)</div>
                 <div class="text-2xl font-black text-emerald-400 mt-1">
                   {{ displayRevenue }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkRevenue }}</span>
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Résultat Net de l'Exercice</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Résultat Net de l'Exercice</div>
                 <div class="text-2xl font-black text-amber-400 mt-1">
                   {{ displayNetIncome }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ benchmarkNetIncome }}</span>
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-5 border border-slate-800 space-y-2">
-                <div class="text-xs text-slate-400 uppercase font-bold">Taux de Marge Nette (%)</div>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200 space-y-2">
+                <div class="text-xs text-slate-500 uppercase font-bold">Taux de Marge Nette (%)</div>
                 <div class="text-2xl font-black text-indigo-400 mt-1">
                   {{ calculateMarginRate(resultData) }}
                 </div>
-                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-800 flex justify-between items-center">
-                  <span class="text-slate-400">VS {{ benchmarkCompanyName }} :</span>
+                <div v-if="benchmarkData" class="text-xs pt-2 border-t border-slate-200 flex justify-between items-center">
+                  <span class="text-slate-500">VS {{ benchmarkCompanyName }} :</span>
                   <span class="font-bold text-cyan-400">{{ calculateMarginRate(benchmarkData) }}</span>
                 </div>
               </div>
             </div>
 
             <!-- FINANCIAL HISTORICAL EVOLUTION CHART -->
-            <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-              <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">ÉVOLUTION PLURIANNUELLE DES COMPTES ANNUELS & PERFORMANCES FINANCIÈRES</h4>
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+              <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">ÉVOLUTION PLURIANNUELLE DES COMPTES ANNUELS & PERFORMANCES FINANCIÈRES</h4>
               <div class="h-64">
                 <canvas id="financialsBarCanvas"></canvas>
               </div>
@@ -749,15 +749,15 @@
 
             <!-- SECONDARY FINANCIAL BI CHARTS: MARGINS & BALANCE SHEET STRUCTURE -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">📈 RENTABILITÉ & TAUX DE MARGES (% CA)</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">📈 RENTABILITÉ & TAUX DE MARGES (% CA)</h4>
                 <div class="h-64">
                   <canvas id="financialMarginsCanvas"></canvas>
                 </div>
               </div>
 
-              <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4">
-                <h4 class="text-sm font-bold font-mono-cyber text-white uppercase">🏛️ STRUCTURE DU BILAN & CAPITAUX PROPRES</h4>
+              <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+                <h4 class="text-sm font-bold font-sans text-slate-900 uppercase">🏛️ STRUCTURE DU BILAN & CAPITAUX PROPRES</h4>
                 <div class="h-64">
                   <canvas id="financialBalanceSheetCanvas"></canvas>
                 </div>
@@ -765,20 +765,20 @@
             </div>
 
             <!-- EMBEDDED MULTI-YEAR FINANCIAL DATA TABLE (PRIMARY COMPANY) -->
-            <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4 font-mono-cyber text-xs">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4 font-sans text-xs">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200">
                 <div>
                   <h4 class="text-sm font-bold text-amber-400 uppercase">TABLEAU DÉTAILLÉ MULTI-ANNUEL DES COMPTES PUBLIÉS — {{ displayCompanyName }}</h4>
-                  <p class="text-xs text-slate-400 mt-0.5">Extraction multi-exercices certifiée par l'API INPI RNE & Annexes PDF officielles</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Extraction multi-exercices certifiée par l'API INPI RNE & Annexes PDF officielles</p>
                 </div>
                 <span class="px-2.5 py-1 rounded text-xs bg-amber-500/10 text-amber-400 border border-amber-500/30">
                   {{ (financialYears || []).length }} Exercice(s) Enregistré(s)
                 </span>
               </div>
 
-              <div class="overflow-x-auto rounded-xl border border-slate-800">
-                <table class="w-full text-left font-mono-cyber text-xs">
-                  <thead class="bg-slate-900 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+              <div class="overflow-x-auto rounded-xl border border-slate-200">
+                <table class="w-full text-left font-sans text-xs">
+                  <thead class="bg-slate-50 text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
                     <tr>
                       <th class="p-3">EXERCICE</th>
                       <th class="p-3 text-right">CHIFFRE D'AFFAIRES</th>
@@ -791,24 +791,24 @@
                       <th class="p-3 text-center">ALTMAN Z'</th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-slate-800/60 bg-slate-950/60">
+                  <tbody class="divide-y divide-slate-800/60 bg-slate-100/60">
                     <tr v-if="!financialYears || financialYears.length === 0">
                       <td colSpan="9" class="p-6 text-center text-slate-500">Aucune liasse financière publique disponible pour {{ displayCompanyName }}.</td>
                     </tr>
-                    <tr v-for="yr in (reversedFinancialYears && reversedFinancialYears.length ? reversedFinancialYears : getReversedYears(financialYears))" :key="yr.year" class="hover:bg-slate-900/60 transition">
+                    <tr v-for="yr in (reversedFinancialYears && reversedFinancialYears.length ? reversedFinancialYears : getReversedYears(financialYears))" :key="yr.year" class="hover:bg-slate-50/60 transition">
                       <td class="p-3 font-bold text-amber-400">
                         {{ yr.year }}
                       </td>
-                      <td class="p-3 text-right font-bold text-white">
+                      <td class="p-3 text-right font-bold text-slate-900">
                         {{ (yr.revenue !== undefined && yr.revenue !== null) ? formatEuros(yr.revenue) : 'N/D' }}
                       </td>
                       <td class="p-3 text-right font-bold text-indigo-300">
                         {{ (yr.ebitda !== undefined && yr.ebitda !== null) ? formatEuros(yr.ebitda) : 'N/D' }}
                       </td>
-                      <td class="p-3 text-right font-bold" :class="(yr.net_income !== undefined && yr.net_income !== null && yr.net_income >= 0) ? 'text-emerald-400' : (yr.net_income < 0 ? 'text-rose-400' : 'text-slate-400')">
+                      <td class="p-3 text-right font-bold" :class="(yr.net_income !== undefined && yr.net_income !== null && yr.net_income >= 0) ? 'text-emerald-400' : (yr.net_income < 0 ? 'text-rose-400' : 'text-slate-500')">
                         {{ (yr.net_income !== undefined && yr.net_income !== null) ? formatEuros(yr.net_income) : 'N/D' }}
                       </td>
-                      <td class="p-3 text-right text-slate-300">
+                      <td class="p-3 text-right text-slate-700">
                         {{ (yr.total_assets !== undefined && yr.total_assets !== null) ? formatEuros(yr.total_assets) : 'N/D' }}
                       </td>
                       <td class="p-3 text-right text-emerald-300">
@@ -839,20 +839,20 @@
             </div>
 
             <!-- EMBEDDED MULTI-YEAR FINANCIAL DATA TABLE (BENCHMARK COMPETITOR) -->
-            <div v-if="benchmarkData" class="cyber-glass rounded-2xl p-6 border border-cyan-500/30 space-y-4 font-mono-cyber text-xs">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+            <div v-if="benchmarkData" class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-cyan-500/30 space-y-4 font-sans text-xs">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200">
                 <div>
                   <h4 class="text-sm font-bold text-cyan-400 uppercase">TABLEAU DÉTAILLÉ MULTI-ANNUEL — CONCURRENT ({{ benchmarkCompanyName }})</h4>
-                  <p class="text-xs text-slate-400 mt-0.5">Extraction multi-exercices certifiée par l'API INPI RNE & Annexes PDF officielles</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Extraction multi-exercices certifiée par l'API INPI RNE & Annexes PDF officielles</p>
                 </div>
                 <span class="px-2.5 py-1 rounded text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
                   {{ (benchmarkFinancialYears || []).length }} Exercice(s) Enregistré(s)
                 </span>
               </div>
 
-              <div class="overflow-x-auto rounded-xl border border-slate-800">
-                <table class="w-full text-left font-mono-cyber text-xs">
-                  <thead class="bg-slate-900 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+              <div class="overflow-x-auto rounded-xl border border-slate-200">
+                <table class="w-full text-left font-sans text-xs">
+                  <thead class="bg-slate-50 text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
                     <tr>
                       <th class="p-3">EXERCICE</th>
                       <th class="p-3 text-right">CHIFFRE D'AFFAIRES</th>
@@ -865,24 +865,24 @@
                       <th class="p-3 text-center">ALTMAN Z'</th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-slate-800/60 bg-slate-950/60">
+                  <tbody class="divide-y divide-slate-800/60 bg-slate-100/60">
                     <tr v-if="!benchmarkFinancialYears || benchmarkFinancialYears.length === 0">
                       <td colSpan="9" class="p-6 text-center text-slate-500">Aucune liasse financière publique disponible pour {{ benchmarkCompanyName }} (comptes confidentiels ou non déposés au Greffe).</td>
                     </tr>
-                    <tr v-for="yr in (reversedBenchmarkFinancialYears && reversedBenchmarkFinancialYears.length ? reversedBenchmarkFinancialYears : getReversedYears(benchmarkFinancialYears))" :key="yr.year" class="hover:bg-slate-900/60 transition">
+                    <tr v-for="yr in (reversedBenchmarkFinancialYears && reversedBenchmarkFinancialYears.length ? reversedBenchmarkFinancialYears : getReversedYears(benchmarkFinancialYears))" :key="yr.year" class="hover:bg-slate-50/60 transition">
                       <td class="p-3 font-bold text-cyan-400">
                         {{ yr.year }}
                       </td>
-                      <td class="p-3 text-right font-bold text-white">
+                      <td class="p-3 text-right font-bold text-slate-900">
                         {{ (yr.revenue !== undefined && yr.revenue !== null) ? formatEuros(yr.revenue) : 'N/D' }}
                       </td>
                       <td class="p-3 text-right font-bold text-indigo-300">
                         {{ (yr.ebitda !== undefined && yr.ebitda !== null) ? formatEuros(yr.ebitda) : 'N/D' }}
                       </td>
-                      <td class="p-3 text-right font-bold" :class="(yr.net_income !== undefined && yr.net_income !== null && yr.net_income >= 0) ? 'text-teal-400' : (yr.net_income < 0 ? 'text-rose-400' : 'text-slate-400')">
+                      <td class="p-3 text-right font-bold" :class="(yr.net_income !== undefined && yr.net_income !== null && yr.net_income >= 0) ? 'text-teal-400' : (yr.net_income < 0 ? 'text-rose-400' : 'text-slate-500')">
                         {{ (yr.net_income !== undefined && yr.net_income !== null) ? formatEuros(yr.net_income) : 'N/D' }}
                       </td>
-                      <td class="p-3 text-right text-slate-300">
+                      <td class="p-3 text-right text-slate-700">
                         {{ (yr.total_assets !== undefined && yr.total_assets !== null) ? formatEuros(yr.total_assets) : 'N/D' }}
                       </td>
                       <td class="p-3 text-right text-teal-300">
@@ -913,60 +913,60 @@
             </div>
 
             <!-- COMPARISON BENCHMARK TABLE IF ACTIVE -->
-            <div v-if="benchmarkData" class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-4 font-mono-cyber text-xs">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+            <div v-if="benchmarkData" class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4 font-sans text-xs">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200">
                 <div>
-                  <h4 class="text-sm font-bold text-white uppercase">SYNTHÈSE DU BENCHMARK COMPARATIF DIRECT (EXERCICES PRÉCISÉS)</h4>
-                  <p class="text-xs text-slate-400 mt-0.5">Mise en regard directe des derniers exercices certifiés pour chaque indicateur clé</p>
+                  <h4 class="text-sm font-bold text-slate-900 uppercase">SYNTHÈSE DU BENCHMARK COMPARATIF DIRECT (EXERCICES PRÉCISÉS)</h4>
+                  <p class="text-xs text-slate-500 mt-0.5">Mise en regard directe des derniers exercices certifiés pour chaque indicateur clé</p>
                 </div>
               </div>
-              <div class="overflow-x-auto rounded-xl border border-slate-800">
+              <div class="overflow-x-auto rounded-xl border border-slate-200">
                 <table class="w-full text-left">
-                  <thead class="bg-slate-900 border-b border-slate-800">
+                  <thead class="bg-slate-50 border-b border-slate-200">
                     <tr>
-                      <th class="py-3 px-4 text-slate-400">INDICATEUR BI</th>
+                      <th class="py-3 px-4 text-slate-500">INDICATEUR BI</th>
                       <th class="py-3 px-4 text-amber-400 font-bold bg-amber-500/10 border-b border-amber-500/30">🏢 {{ displayCompanyName }} (Réf.)</th>
                       <th class="py-3 px-4 text-cyan-400 font-bold bg-cyan-500/10 border-b border-cyan-500/30">⚔️ {{ benchmarkCompanyName }} (Concurrent)</th>
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-slate-800/60">
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Chiffre d'Affaires</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Chiffre d'Affaires</td>
                       <td class="py-3 px-4 text-amber-400 font-bold">{{ displayRevenueWithYear }}</td>
                       <td class="py-3 px-4 text-cyan-400 font-bold">{{ benchmarkRevenueWithYear }}</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Résultat Net</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Résultat Net</td>
                       <td class="py-3 px-4 text-emerald-400 font-bold">{{ displayNetIncomeWithYear }}</td>
                       <td class="py-3 px-4 text-teal-400 font-bold">{{ benchmarkNetIncomeWithYear }}</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Taux de Marge Nette</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Taux de Marge Nette</td>
                       <td class="py-3 px-4 text-amber-300 font-bold">{{ displayMarginWithYear }}</td>
                       <td class="py-3 px-4 text-cyan-300 font-bold">{{ benchmarkMarginWithYear }}</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Total Actif</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Total Actif</td>
                       <td class="py-3 px-4 text-slate-200 font-bold">{{ displayTotalAssetsWithYear }}</td>
                       <td class="py-3 px-4 text-cyan-200 font-bold">{{ benchmarkTotalAssetsWithYear }}</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Capitaux Propres</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Capitaux Propres</td>
                       <td class="py-3 px-4 text-emerald-300 font-bold">{{ displayEquityWithYear }}</td>
                       <td class="py-3 px-4 text-teal-300 font-bold">{{ benchmarkEquityWithYear }}</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Départements Couverts</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Départements Couverts</td>
                       <td class="py-3 px-4 text-amber-400 font-bold">{{ departmentList.length }} Dépts</td>
                       <td class="py-3 px-4 text-cyan-400 font-bold">{{ benchmarkDepartmentList.length }} Dépts</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Sites Actifs sur Total</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Sites Actifs sur Total</td>
                       <td class="py-3 px-4 text-emerald-400 font-bold">{{ activeEstablishments }} / {{ totalEstablishments }}</td>
                       <td class="py-3 px-4 text-teal-400 font-bold">{{ benchmarkActiveEstablishments }} / {{ benchmarkTotalEstablishments }}</td>
                     </tr>
-                    <tr class="hover:bg-slate-900/40">
-                      <td class="py-3 px-4 text-slate-300 font-bold">Actes Officiels BODACC</td>
+                    <tr class="hover:bg-slate-50/40">
+                      <td class="py-3 px-4 text-slate-700 font-bold">Actes Officiels BODACC</td>
                       <td class="py-3 px-4 text-amber-400 font-bold">{{ displayEvents.length }} Actes</td>
                       <td class="py-3 px-4 text-cyan-400 font-bold">{{ benchmarkEvents.length }} Actes</td>
                     </tr>

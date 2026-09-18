@@ -1,16 +1,16 @@
 {% raw %}
 <!-- CYBER DISAMBIGUATION MODAL (ARGUS v2) -->
-      <div v-if="showDisambiguationModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
-        <div class="cyber-glass rounded-2xl max-w-3xl w-full p-6 border border-slate-700 shadow-2xl space-y-6 transform animate-in fade-in zoom-in duration-200">
-          <div class="flex justify-between items-start pb-4 border-b border-slate-800">
+      <div v-if="showDisambiguationModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white backdrop-blur-md">
+        <div class="bg-white rounded-xl border border-slate-200 rounded-2xl max-w-3xl w-full p-6 border border-slate-300  space-y-6 transform animate-in fade-in zoom-in duration-200">
+          <div class="flex justify-between items-start pb-4 border-b border-slate-200">
             <div>
               <div class="flex items-center space-x-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber bg-amber-500/20 text-amber-400 border border-amber-500/40">ARGUS v2 SIREN UNIQUE</span>
-                <h3 class="text-lg font-black text-white font-mono-cyber">Sélectionnez la Société du Groupe à Analyser</h3>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-amber-500/20 text-amber-400 border border-amber-500/40">ARGUS v2 SIREN UNIQUE</span>
+                <h3 class="text-lg font-black text-slate-900 font-sans">Sélectionnez la Société du Groupe à Analyser</h3>
               </div>
-              <p class="text-xs text-slate-400 mt-1">Sociétés légales distinctes identifiées pour la recherche "<span class="text-white font-bold">{{ pendingQuery }}</span>".</p>
+              <p class="text-xs text-slate-500 mt-1">Sociétés légales distinctes identifiées pour la recherche "<span class="text-slate-900 font-bold">{{ pendingQuery }}</span>".</p>
             </div>
-            <button @click="showDisambiguationModal = false" class="text-slate-400 hover:text-white font-mono-cyber text-sm">✕</button>
+            <button @click="showDisambiguationModal = false" class="text-slate-500 hover:text-slate-900 font-sans text-sm">✕</button>
           </div>
 
           <div class="space-y-3 max-h-[400px] overflow-y-auto pr-1">
@@ -18,25 +18,25 @@
               v-for="(cand, idx) in candidateList" 
               :key="idx"
               @click="confirmCandidateAndAnalyze(cand.siren)"
-              class="p-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-amber-500 cursor-pointer transition space-y-3 group"
+              class="p-4 rounded-xl bg-slate-50 hover:bg-slate-800 border border-slate-200 hover:border-amber-500 cursor-pointer transition space-y-3 group"
             >
               <div class="flex justify-between items-start gap-4">
                 <div>
                   <div class="flex items-center space-x-2">
-                    <h4 class="font-bold text-sm text-white group-hover:text-amber-400 font-mono-cyber transition">{{ cand.name }}</h4>
+                    <h4 class="font-bold text-sm text-slate-900 group-hover:text-amber-400 font-sans transition">{{ cand.name }}</h4>
                     <span v-if="cand.is_major_entity" class="px-2 py-0.5 rounded text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">⭐ ENTITÉ MAJEURE (GROUPE)</span>
                   </div>
-                  <p class="text-xs text-slate-400 font-mono-cyber mt-0.5">SIREN : <span class="text-amber-400 font-bold">{{ cand.siren }}</span> • SIRET Siège : {{ cand.siret_siege || 'Non renseigné' }}</p>
+                  <p class="text-xs text-slate-500 font-sans mt-0.5">SIREN : <span class="text-amber-400 font-bold">{{ cand.siren }}</span> • SIRET Siège : {{ cand.siret_siege || 'Non renseigné' }}</p>
                 </div>
                 <span 
-                  class="px-2.5 py-1 rounded text-[10px] font-mono-cyber font-bold uppercase shrink-0"
+                  class="px-2.5 py-1 rounded text-[10px] font-sans font-bold uppercase shrink-0"
                   :class="cand.etat_administratif === 'A' ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30' : 'bg-rose-500/10 text-rose-400 border border-rose-500/30'"
                 >
                   {{ cand.etat_administratif === 'A' ? '🟢 En Activité' : '🔴 Fermé' }}
                 </span>
               </div>
 
-              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[11px] font-mono-cyber pt-2 border-t border-slate-800/60">
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[11px] font-sans pt-2 border-t border-slate-200/60">
                 <div class="flex items-center space-x-1.5 text-indigo-300">
                   <span>📍</span>
                   <span class="truncate">{{ cand.commune ? cand.commune + ' (' + (cand.code_postal || 'FR') + ')' : 'Siège en France' }}</span>
@@ -52,7 +52,7 @@
               </div>
 
               <div class="flex justify-end pt-1">
-                <span class="px-3 py-1 rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-[11px] group-hover:shadow-lg group-hover:shadow-amber-500/20 transition">
+                <span class="px-3 py-1 rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 text-slate-900 font-bold text-[11px] group-hover: group-hover: transition">
                   ANALYSER CETTE ENTITÉ (360°) →
                 </span>
               </div>

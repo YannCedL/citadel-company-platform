@@ -1,21 +1,19 @@
 {% raw %}
 <!-- Sticky Command Header -->
-      <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 shadow-2xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <header class="sticky top-0 z-50 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
           <div class="flex items-center space-x-3 cursor-pointer" @click="resetToLanding">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 p-0.5 shadow-lg shadow-amber-500/20">
-              <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
+            <div class="w-9 h-9 rounded-lg bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
             </div>
             <div>
               <div class="flex items-center space-x-2">
-                <h1 class="font-extrabold text-lg tracking-tight text-white">CITADEL <span class="text-amber-400 font-mono-cyber">360°</span></h1>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-mono-cyber bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">FASTAPI ASYNC</span>
+                <h1 class="font-bold text-base tracking-tight text-slate-900 font-sans">CITADEL <span class="text-teal-700 font-semibold">360°</span></h1>
+                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-600 border border-slate-200">OFFICIEL RNE</span>
               </div>
-              <p class="text-xs text-slate-400">Master OSINT Company Intelligence</p>
+              <p class="text-[11px] text-slate-500 font-sans">Intelligence Économique & Due Diligence</p>
             </div>
           </div>
 
@@ -26,27 +24,25 @@
                 v-model="searchQuery"
                 @keyup.enter="handleSearchSubmit"
                 type="text" 
-                placeholder="SIREN (ex: 306138900) ou Nom (DECATHLON, MICHELIN)..."
-                class="w-full pl-9 pr-20 py-2 bg-slate-900 border border-slate-700/80 rounded-xl text-xs text-white placeholder-slate-500 font-mono-cyber focus:outline-none focus:border-amber-500"
+                placeholder="SIREN (ex: 306138900) ou Nom (AIRBUS, LVMH)..."
+                class="w-full pl-9 pr-20 py-2 bg-slate-50 border border-slate-300 rounded-lg text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-teal-700 focus:bg-white transition"
               />
               <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
+              <button 
+                @click="handleSearchSubmit"
+                class="absolute right-1 top-1 bottom-1 px-3 bg-teal-700 hover:bg-teal-800 text-slate-900 rounded font-medium text-xs transition"
+              >
+                Rechercher
+              </button>
             </div>
 
-            <button 
-              @click="handleSearchSubmit"
-              :disabled="isLoading"
-              class="px-4 py-2 rounded-xl text-xs font-bold font-mono-cyber bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-slate-950 font-black shadow-lg shadow-amber-500/20 border border-amber-400/40 flex items-center space-x-2 shrink-0"
-            >
-              <span>{{ isLoading ? 'Analyse...' : 'ANALYSER 360°' }}</span>
-            </button>
+            <!-- Mode Sandbox Badge -->
+            <span class="px-2 py-1 rounded text-xs font-medium bg-teal-50 text-teal-800 border border-teal-200">
+              Sandbox 200 Actifs
+            </span>
           </div>
         </div>
       </header>
-      <!-- GLOBAL CYBER FLOATING LOADING BADGE -->
-      <div v-if="isLoading" class="fixed top-4 right-4 z-50 px-4 py-2.5 rounded-xl bg-slate-900/90 border border-amber-500/50 backdrop-blur-md shadow-2xl flex items-center space-x-3 text-xs font-mono-cyber text-amber-300 animate-in fade-in slide-in-from-top-2 duration-200">
-        <div class="w-4 h-4 rounded-full border-2 border-amber-400 border-t-transparent animate-spin"></div>
-        <span>⚡ Analyse Citadel 360° en cours pour SIREN <strong class="text-white">{{ activeSiren }}</strong>...</span>
-      </div>
 {% endraw %}

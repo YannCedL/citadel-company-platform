@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <!-- === LA CITADELLE SOUVERAINE (5 BASTIONS : ARGUS, ARIADNE, CHAMBER, MERCURY, RAVEN) === -->
+  
+  <!-- Lignes structurelles centrales reliant les 5 bastions au hub -->
+  <g stroke="#CBD5E1" stroke-width="1.2">
+    <line x1="60" y1="60" x2="60" y2="18" />
+    <line x1="60" y1="60" x2="100" y2="47" />
+    <line x1="60" y1="60" x2="85" y2="94" />
+    <line x1="60" y1="60" x2="35" y2="94" />
+    <line x1="60" y1="60" x2="20" y2="47" />
+  </g>
+
+  <!-- Enceinte extérieure pentagonale (Citadelle) -->
+  <polygon points="60,18 100,47 85,94 35,94 20,47" fill="#F8FAFC" stroke="#0F766E" stroke-width="2"/>
+
+  <!-- Hub Central (Décision / Synthèse) -->
+  <rect x="52" y="52" width="16" height="16" rx="3" fill="#0F766E" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Les 5 Bastions Périphériques -->
+  <g fill="#FFFFFF" stroke="#0F766E" stroke-width="2">
+    <!-- Bastion Nord (Argus - Registre Légal) -->
+    <circle cx="60" cy="18" r="5" />
+    <!-- Bastion Est (Ariadne - Actionnariat) -->
+    <circle cx="100" cy="47" r="5" />
+    <!-- Bastion Sud-Est (Chamber - Gouvernance) -->
+    <circle cx="85" cy="94" r="5" />
+    <!-- Bastion Sud-Ouest (Mercury - Finances) -->
+    <circle cx="35" cy="94" r="5" />
+    <!-- Bastion Ouest (Raven - Vigilance BODACC) -->
+    <circle cx="20" cy="47" r="5" />
+  </g>
+
+  <!-- Cœurs des Bastions (Points de contrôle) -->
+  <g fill="#0F766E">
+    <circle cx="60" cy="18" r="2" />
+    <circle cx="100" cy="47" r="2" />
+    <circle cx="85" cy="94" r="2" />
+    <circle cx="35" cy="94" r="2" />
+    <circle cx="20" cy="47" r="2" />
+  </g>
+</svg>
