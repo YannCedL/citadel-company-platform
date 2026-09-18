@@ -1,19 +1,15 @@
 {% raw %}
-<!-- STATE 1: GOOGLE OSINT LANDING PAGE -->
-      <main v-if="!hasSearched" class="flex-1 flex flex-col items-center justify-center max-w-5xl w-full mx-auto px-4 py-16 space-y-10 relative z-10">
-        <div class="text-center space-y-4">
-          <div class="w-20 h-20 rounded-3xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-800 p-1 shadow-2xl shadow-amber-500/20 mx-auto transform hover:scale-105 transition duration-300">
-            <div class="w-full h-full bg-slate-950 rounded-[22px] flex items-center justify-center">
-              <svg class="w-10 h-10 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-            </div>
+<!-- STATE 1: RECHERCHE CLEAN LANDING PAGE -->
+      <main v-if="!hasSearched" class="flex-1 flex flex-col items-center justify-center max-w-4xl w-full mx-auto px-4 py-16 space-y-8 relative z-10">
+        <div class="text-center space-y-3">
+          <div class="w-20 h-20 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto p-2">
+            <img src="/static/img/citadel_logo.svg" alt="Citadel 360°" class="w-16 h-16 object-contain" />
           </div>
-          <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-white font-mono-cyber">
-            CITADEL <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">360°</span>
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-sans">
+            CITADEL <span class="text-teal-700">360°</span>
           </h1>
-          <p class="text-sm sm:text-base text-slate-400 max-w-xl mx-auto font-sans">
-            Moteur de Recherche Corporate & Intelligence Économique d'Entreprise. Interrogation simultanée des 5 sous-moteurs asynchrones.
+          <p class="text-sm text-slate-500 max-w-lg mx-auto font-sans">
+            Analyse financière, gouvernance et cartographie des entreprises françaises.
           </p>
         </div>
 
@@ -23,63 +19,39 @@
               v-model="searchQuery"
               @keyup.enter="handleSearchSubmit"
               type="text" 
-              placeholder="Entrez un numéro SIREN (ex: 306138900) ou un nom d'entreprise..."
-              class="w-full pl-12 pr-32 py-4 bg-slate-900/90 border border-slate-700/80 rounded-2xl text-sm text-white placeholder-slate-500 font-mono-cyber focus:outline-none focus:border-amber-500 shadow-2xl shadow-amber-500/10 transition"
+              placeholder="Numéro SIREN (ex: 383474814) ou raison sociale (Airbus, Decathlon)..."
+              class="w-full pl-12 pr-32 py-3.5 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-teal-700 transition"
               autofocus
             />
-            <svg class="w-6 h-6 text-amber-400 absolute left-4 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 text-slate-500 absolute left-4 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <button 
               @click="handleSearchSubmit"
               :disabled="isLoading"
-              class="absolute right-2 top-2 bottom-2 px-6 rounded-xl font-bold font-mono-cyber text-xs bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-slate-950 font-black shadow-lg shadow-amber-500/20 border border-amber-400/30 flex items-center space-x-2 transition"
+              class="absolute right-2 top-2 bottom-2 px-5 rounded-lg font-semibold text-xs bg-teal-700 hover:bg-teal-800 text-white flex items-center space-x-2 transition"
             >
-              <span>{{ isLoading ? 'Recherche...' : 'ANALYSER' }}</span>
+              <span>{{ isLoading ? 'Recherche en cours...' : 'Consulter' }}</span>
             </button>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-center gap-2 text-xs font-mono-cyber pt-2">
-            <span class="text-slate-500">Exemples certifiés :</span>
-            <button @click="selectPreset('552032534')" class="px-3 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-slate-800 transition">DANONE (552032534)</button>
-            <button @click="selectPreset('306138900')" class="px-3 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-slate-800 transition">DECATHLON (306138900)</button>
-            <button @click="selectPreset('855200507')" class="px-3 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-slate-800 transition">MICHELIN (855200507)</button>
-            <button @click="selectPreset('542051180')" class="px-3 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-slate-800 transition">TOTALENERGIES</button>
-          </div>
-
-          <!-- SANDBOX / COMPLIANCE NOTICE BADGE -->
-          <div class="p-3 bg-slate-900/60 border border-amber-500/20 rounded-xl text-center font-mono-cyber text-[11px] text-slate-400 space-y-1">
-            <div class="flex items-center justify-center space-x-2 text-amber-400 font-bold">
-              <span>🛡️</span>
-              <span>ENVIRONNEMENT DÉMONSTRATION INSTITUTIONNELLE</span>
-            </div>
-            <p class="text-[10px] text-slate-500">
-              Données légales publiques officielles (INPI, RNE, BODACC, INSEE) sous Licence Ouverte Etalab 2.0.
-              Catalogue haute-vitesse et quota de découverte d'entreprises sécurisé.
-            </p>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 w-full pt-8 font-mono-cyber text-xs">
-          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/80 text-center space-y-1">
-            <div class="text-amber-400 font-bold">ARGUS v2</div>
-            <div class="text-[10px] text-amber-300 font-bold">Modal SIREN Unique</div>
+        <!-- 3 Piliers Institutionnels -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pt-4">
+          <div class="bg-white p-4 rounded-xl border border-slate-200 text-left">
+            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Identité Juridique</div>
+            <div class="text-sm font-semibold text-slate-800">RNE & Registre du Commerce</div>
+            <div class="text-xs text-slate-500 mt-1">Immatriculation, forme, siège et mandataires officiels.</div>
           </div>
-          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/80 text-center space-y-1">
-            <div class="text-amber-300 font-bold">CHAMBER</div>
-            <div class="text-[10px] text-slate-500">Dirigeants & Holdings</div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200 text-left">
+            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Santé Financière</div>
+            <div class="text-sm font-semibold text-slate-800">Bilans & Indicateurs de Solvabilité</div>
+            <div class="text-xs text-slate-500 mt-1">Comptes annuels, rentabilité, marges et risque de défaillance.</div>
           </div>
-          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/80 text-center space-y-1">
-            <div class="text-emerald-400 font-bold">MERCURY</div>
-            <div class="text-[10px] text-slate-500">Finances & Altman</div>
-          </div>
-          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/80 text-center space-y-1">
-            <div class="text-amber-400 font-bold">ARIADNE v2</div>
-            <div class="text-[10px] text-slate-500">Carte Leaflet Sombre</div>
-          </div>
-          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/80 text-center space-y-1">
-            <div class="text-amber-400 font-bold">RAVEN v2</div>
-            <div class="text-[10px] text-amber-300 font-bold">Frise & Risk Radar</div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200 text-left">
+            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Liens Capitalistiques</div>
+            <div class="text-sm font-semibold text-slate-800">Gouvernance & Filiales</div>
+            <div class="text-xs text-slate-500 mt-1">Holdings mères, mandats croisés et réseau d'implantations.</div>
           </div>
         </div>
       </main>

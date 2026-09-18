@@ -1,62 +1,88 @@
 /* ==========================================================================
-   CITADEL 360° — INSTITUTIONAL DESIGN SYSTEM
-   Theme: Or Ambré & Carbone Minéral (High Finance & Sovereign OSINT)
+   CITADEL 360° — INSTITUTIONAL DESIGN SYSTEM (LIGHT EDITION)
+   Theme: Blanc Albâtre, Ardoise Minérale & Vert Sceau d'État
+   Zero Shadow • Zero Neon • Zero Glow • Pure Precision Lines
    ========================================================================== */
 
 :root {
   /* Surfaces & Canvas */
-  --bg-app: #090D14;
-  --bg-surface: #111726;
-  --bg-card: #0F172A;
-  --bg-card-hover: #162032;
-  --border-card: #1E293B;
-  --border-subtle: rgba(30, 41, 59, 0.6);
-  --border-gold: rgba(217, 155, 67, 0.35);
+  --bg-app: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --bg-subtle: #F1F5F9;
 
-  /* Gold & Metallic Accents */
-  --accent-gold: #f89100;
-  --accent-gold-hover: #B88032;
-  --accent-gold-light: #F3BA63;
-  --accent-gold-glow: rgba(217, 155, 67, 0.2);
-  --accent-bronze: #8C6239;
-  --accent-steel: #4A6FA5;
-  --accent-silver: #94A3B8;
+  /* Borders & Dividers (1px Flat Precision) */
+  --border-card: #E2E8F0;
+  --border-subtle: #F1F5F9;
+  --border-strong: #CBD5E1;
+  --border-primary: #0F766E;
 
-  /* Semantic Data Colors */
-  --status-success: #10B981;
-  --status-success-bg: rgba(16, 185, 129, 0.12);
-  --status-danger: #E11D48;
-  --status-danger-bg: rgba(225, 29, 72, 0.12);
-  --status-warning: #D99B43;
-  --status-warning-bg: rgba(217, 155, 67, 0.12);
-  --status-info: #3B82F6;
+  /* Primary Identity (State Seal Teal - Flat & Noble) */
+  --accent-primary: #0F766E;
+  --accent-primary-hover: #115E59;
+  --accent-primary-active: #134E4A;
+  --accent-primary-subtle: #ECFDF5;
+
+  /* Secondary Accents */
+  --accent-blue: #1D4ED8;
+  --accent-amber: #B45309;
+  --accent-purple: #6D28D9;
+  --accent-gray: #475569;
+
+  /* Semantic Status (Flat Pastels + Solid Text) */
+  --status-success: #065F46;
+  --status-success-bg: #ECFDF5;
+  --status-success-border: #A7F3D0;
+
+  --status-danger: #991B1B;
+  --status-danger-bg: #FEF2F2;
+  --status-danger-border: #FECACA;
+
+  --status-warning: #92400E;
+  --status-warning-bg: #FFFBEB;
+  --status-warning-border: #FDE68A;
+
+  --status-info: #1E40AF;
+  --status-info-bg: #EFF6FF;
+  --status-info-border: #BFDBFE;
 
   /* Typography */
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
   --text-muted: #64748B;
+  --text-disabled: #94A3B8;
+  --font-sans: 'Space Grotesk', 'Plus Jakarta Sans', 'Inter', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
-  --font-sans: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Base Body Setup */
 body {
   background-color: var(--bg-app) !important;
-  color: var(--text-primary);
-  font-family: var(--font-sans);
+  color: var(--text-secondary) !important;
+  font-family: var(--font-sans) !important;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 1. SELECTION OR SOUVERAINE */
+/* Strict Zero Shadow & Zero Glow Rule */
+*, *::before, *::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Neutral Clean Selection */
 ::selection {
-  background-color: var(--accent-gold) !important;
-  color: #090D14 !important;
+  background-color: #CCFBF1 !important;
+  color: #0F766E !important;
 }
 
-/* 2. SCROLLBARS FURTIVES */
+/* Clean Flat Scrollbars */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -64,126 +90,123 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-card);
-  border-radius: 4px;
+  background: var(--border-strong);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
 
-/* 3. ALIGNEMENT COMPTABLE ABSOLU (TABULAR NUMS) */
-.citadel-data-value,
-.font-mono-cyber,
-td,
-th,
-.tabular-nums {
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.015em;
+/* Structural Card Classes */
+.citadel-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--border-card) !important;
+  border-radius: 12px;
 }
 
-/* 4. OPTIMISATION DES CARTES (ANTI-BLUR HEAVY GPU) */
-.cyber-glass {
-  background: var(--bg-surface) !important;
-  border: 1px solid var(--border-card) !important;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4) !important;
-  border-radius: 8px !important;
+.citadel-card-header {
+  border-bottom: 1px solid var(--border-subtle) !important;
+  padding: 1rem 1.25rem;
+}
+
+/* Buttons Flat Design */
+.btn-primary {
+  background-color: var(--accent-primary) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--accent-primary) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-primary-hover) !important;
+  border-color: var(--accent-primary-hover) !important;
+}
+
+.btn-secondary {
+  background-color: var(--bg-subtle) !important;
+  color: var(--text-secondary) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #E2E8F0 !important;
+}
+
+/* Badges Flat */
+.badge-success {
+  background-color: var(--status-success-bg) !important;
+  color: var(--status-success) !important;
+  border: 1px solid var(--status-success-border) !important;
+}
+
+.badge-warning {
+  background-color: var(--status-warning-bg) !important;
+  color: var(--status-warning) !important;
+  border: 1px solid var(--status-warning-border) !important;
+}
+
+.badge-danger {
+  background-color: var(--status-danger-bg) !important;
+  color: var(--status-danger) !important;
+  border: 1px solid var(--status-danger-border) !important;
+}
+
+.badge-info {
+  background-color: var(--status-info-bg) !important;
+  color: var(--status-info) !important;
+  border: 1px solid var(--status-info-border) !important;
+}
+
+/* Data Tables */
+.citadel-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.citadel-table th {
+  background-color: var(--bg-subtle);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-card);
+  text-align: left;
+}
+
+.citadel-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.citadel-table tr:hover td {
+  background-color: var(--bg-app);
+}
+
+/* Override Cyber Grids & Holograms */
+.cyber-glass, .glass-panel, .glass-header {
+  background: #FFFFFF !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-}
-
-.cyber-glass:hover {
-  border-color: rgba(217, 155, 67, 0.25) !important;
-}
-
-/* 5. CARTOGRAPHIE LEAFLET (RADAR CARTOUCHIÈRE SOUVERAINE) */
-#mapContainer {
-  min-height: 420px;
-  height: 420px;
-  width: 100%;
-  border-radius: 8px !important;
   border: 1px solid var(--border-card) !important;
 }
 
-.leaflet-container {
-  background: #090D14 !important;
-  font-family: var(--font-mono) !important;
+.font-mono-cyber {
+  font-family: var(--font-sans) !important;
 }
 
-.dark-map-tiles {
-  filter: brightness(0.55) invert(1) contrast(3) hue-rotate(210deg) saturate(0.2) !important;
-}
-
-.leaflet-popup-content-wrapper {
-  background: transparent !important;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.8) !important;
-  padding: 0 !important;
-  border-radius: 6px !important;
-}
-
-.leaflet-popup-content {
-  margin: 0 !important;
-}
-
-.leaflet-popup-tip {
-  background: #090D14 !important;
-  border: 1px solid var(--accent-green) !important;
-}
-
-/* 6. MODALES & DIALOGUES */
-.fixed.inset-0.z-50 {
-  background: rgba(9, 13, 20, 0.85) !important;
-  backdrop-filter: blur(4px) !important;
-}
-
-/* 7. BADGES & PILLS INSTITUTIONNELS */
-.badge-gold {
-  background: var(--status-warning-bg);
-  color: var(--accent-gold);
-  border: 1px solid var(--border-gold);
-  border-radius: 4px;
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
   font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  padding: 2px 8px;
-}
-
-.badge-sauge {
-  background: var(--status-success-bg);
-  color: var(--status-success);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  border-radius: 4px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  padding: 2px 8px;
-}
-
-.badge-vermillon {
-  background: var(--status-danger-bg);
-  color: var(--status-danger);
-  border: 1px solid rgba(225, 29, 72, 0.3);
-  border-radius: 4px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  padding: 2px 8px;
-}
-
-/* 8. BOUTONS D'ACTION OR AMBRÉ */
-.btn-gold {
-  background-color: var(--accent-gold);
-  color: #090D14;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-  transition: all 0.15s ease-in-out;
-  box-shadow: 0 4px 12px var(--accent-gold-glow);
-}
-
-.btn-gold:hover {
-  background-color: var(--accent-gold-hover);
-  color: #090D14;
 }

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <!-- CITADEL 360 INSTITUTIONAL LOGO (5 BASTIONS & CENTRAL HUB) -->
+  
+  <!-- Outer surveillance radar boundary -->
+  <polygon points="60,7 111,44 92,103 28,103 9,44" fill="none" stroke="#99F6E4" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Main pentagonal fortress wall (Citadel) -->
+  <polygon points="60,16 102,46 86,95 34,95 18,46" fill="#F0FDFA" stroke="#0F766E" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Interconnection arteries (Hub to 5 bastions) -->
+  <g stroke="#0F766E" stroke-width="1.5" opacity="0.3">
+    <line x1="60" y1="60" x2="60" y2="16" />
+    <line x1="60" y1="60" x2="102" y2="46" />
+    <line x1="60" y1="60" x2="86" y2="95" />
+    <line x1="60" y1="60" x2="34" y2="95" />
+    <line x1="60" y1="60" x2="18" y2="46" />
+  </g>
+
+  <!-- Concentric radar ring -->
+  <circle cx="60" cy="60" r="16" fill="none" stroke="#0F766E" stroke-width="1" stroke-dasharray="2 2" opacity="0.35" />
+
+  <!-- Internal architectural data blocks -->
+  <g fill="#CCFBF1" stroke="#0F766E" stroke-width="1" opacity="0.85">
+    <!-- North: Argus -->
+    <rect x="52" y="28" width="16" height="8" rx="2" />
+    <!-- East: Ariadne -->
+    <rect x="74" y="52" width="8" height="16" rx="2" />
+    <!-- South: Mercury -->
+    <rect x="52" y="80" width="16" height="8" rx="2" />
+    <!-- West: Raven -->
+    <rect x="38" y="52" width="8" height="16" rx="2" />
+  </g>
+
+  <!-- Central Command Hub (Citadel Core) -->
+  <rect x="51" y="51" width="18" height="18" rx="4" fill="#0F766E" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="3.5" fill="#FFFFFF"/>
+  <circle cx="60" cy="60" r="1.5" fill="#0F766E"/>
+
+  <!-- 5 Peripheral Bastions (Watchtowers) -->
+  <g fill="#FFFFFF" stroke="#0F766E" stroke-width="2">
+    <!-- Bastion North: Argus -->
+    <circle cx="60" cy="16" r="5.5" />
+    <!-- Bastion East: Ariadne -->
+    <circle cx="102" cy="46" r="5.5" />
+    <!-- Bastion South-East: Chamber -->
+    <circle cx="86" cy="95" r="5.5" />
+    <!-- Bastion South-West: Mercury -->
+    <circle cx="34" cy="95" r="5.5" />
+    <!-- Bastion West: Raven -->
+    <circle cx="18" cy="46" r="5.5" />
+  </g>
+
+  <!-- Bastion active cores -->
+  <g fill="#0F766E">
+    <circle cx="60" cy="16" r="2" />
+    <circle cx="102" cy="46" r="2" />
+    <circle cx="86" cy="95" r="2" />
+    <circle cx="34" cy="95" r="2" />
+    <circle cx="18" cy="46" r="2" />
+  </g>
+</svg>

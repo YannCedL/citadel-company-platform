@@ -3,59 +3,59 @@
         <div v-show="activeTab === 'osint'" :hidden="activeTab !== 'osint'" class="space-y-8">
           <!-- PROMPT 1: 4-Card KPIGrid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div class="cyber-glass rounded-2xl p-5 border border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200">
               <div class="flex justify-between items-start">
                 <div>
-                  <p class="text-xs font-medium text-slate-400 font-mono-cyber uppercase">État Administratif d'État</p>
-                  <h3 class="text-xl font-bold text-white font-mono-cyber mt-1">{{ displayEtatAdmin }}</h3>
+                  <p class="text-xs font-medium text-slate-500 font-sans uppercase">Statut Juridique</p>
+                  <h3 class="text-xl font-bold text-slate-900 font-sans mt-1">{{ displayEtatAdmin }}</h3>
                 </div>
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center">✓</div>
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center font-bold text-xs">OK</div>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 flex justify-between">
+              <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 flex justify-between">
                 <span>SIREN {{ displaySiren }}</span>
-                <span class="text-emerald-400 font-bold font-mono-cyber">RCS Actif</span>
+                <span class="text-emerald-400 font-bold font-sans">Inscrit au RCS</span>
               </div>
             </div>
 
-            <div class="cyber-glass rounded-2xl p-5 border border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200">
               <div class="flex justify-between items-start">
                 <div>
-                  <p class="text-xs font-medium text-slate-400 font-mono-cyber uppercase">Chiffre d'Affaires & Résultats</p>
-                  <h3 class="text-xl font-bold text-white font-mono-cyber mt-1">{{ displayRevenue }}</h3>
+                  <p class="text-xs font-medium text-slate-500 font-sans uppercase">Dernier Chiffre d'Affaires</p>
+                  <h3 class="text-xl font-bold text-slate-900 font-sans mt-1">{{ displayRevenue }}</h3>
                 </div>
-                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center">€</div>
+                <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-800 border border-teal-200 flex items-center justify-center font-bold text-xs">EUR</div>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-800 text-xs font-mono-cyber flex items-center justify-between gap-1">
+              <div class="mt-4 pt-3 border-t border-slate-200 text-xs font-sans flex items-center justify-between gap-1">
                 <span>Net: <strong class="text-emerald-400 font-bold">{{ displayNetIncome }}</strong></span>
                 <span>EBITDA: <strong class="text-indigo-400 font-bold">{{ displayEbitda }}</strong></span>
               </div>
             </div>
 
-            <div class="cyber-glass rounded-2xl p-5 border border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200">
               <div class="flex justify-between items-start">
                 <div>
-                  <p class="text-xs font-medium text-slate-400 font-mono-cyber uppercase">Altman Z'-Score Solvabilité</p>
-                  <h3 class="text-xl font-bold text-white font-mono-cyber mt-1">{{ displayAltmanScore }}</h3>
+                  <p class="text-xs font-medium text-slate-500 font-sans uppercase">Risque de Défaillance (Altman Z')</p>
+                  <h3 class="text-xl font-bold text-slate-900 font-sans mt-1">{{ displayAltmanScore }}</h3>
                 </div>
-                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center">⚠️</div>
+                <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-800 border border-amber-200 flex items-center justify-center font-bold text-xs">Z'</div>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 flex justify-between">
+              <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 flex justify-between">
                 <span class="truncate max-w-[140px]">{{ displayAltmanStatus }}</span>
-                <span class="text-amber-400 font-bold font-mono-cyber">Strict Rules</span>
+                <span class="text-amber-400 font-bold font-sans">Modèle Altman</span>
               </div>
             </div>
 
-            <div class="cyber-glass rounded-2xl p-5 border border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-5 border border-slate-200">
               <div class="flex justify-between items-start">
                 <div>
-                  <p class="text-xs font-medium text-slate-400 font-mono-cyber uppercase">Réseau d'Établissements</p>
-                  <h3 class="text-xl font-bold text-white font-mono-cyber mt-1">{{ totalEstablishments }} Sites</h3>
+                  <p class="text-xs font-medium text-slate-500 font-sans uppercase">Réseau d'Établissements</p>
+                  <h3 class="text-xl font-bold text-slate-900 font-sans mt-1">{{ totalEstablishments }} Sites</h3>
                 </div>
-                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center">📍</div>
+                <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-800 border border-teal-200 flex items-center justify-center font-bold text-xs">GEO</div>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 flex justify-between">
+              <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 flex justify-between">
                 <span>{{ activeEstablishments }} Actifs • {{ closedEstablishments }} Fermés</span>
-                <span class="text-indigo-400 font-bold font-mono-cyber">NetworkX v2</span>
+                <span class="text-indigo-400 font-bold font-sans">Réseau National</span>
               </div>
             </div>
           </div>
@@ -63,101 +63,98 @@
           <!-- PROMPT 2: Dual Column Layout (Argus Identity Card & Chamber Governance Section) -->
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- ArgusCard (1 Col) -->
-            <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-6">
-              <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+            <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-6">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-200">
                 <div class="flex items-center space-x-2">
-                  <h3 class="text-base font-bold text-white font-mono-cyber">FICHE LÉGALE & ÉTAT CIVIL 360°</h3>
-                  <button @click="showLegalProfileModal = true" class="px-2 py-0.5 rounded text-[10px] bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 font-mono-cyber transition">🔍 Inspecter 100%</button>
+                  <h3 class="text-base font-bold text-slate-900 font-sans">IDENTITÉ JURIDIQUE & LÉGALE</h3>
+                  <button @click="showLegalProfileModal = true" class="px-2 py-0.5 rounded text-[10px] bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 font-sans transition">Voir le dossier complet</button>
                 </div>
-                <span class="px-2 py-1 rounded text-xs font-mono-cyber bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">{{ displayRneCertitudeScore }}</span>
+                <span class="px-2 py-1 rounded text-xs font-sans bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">{{ displayRneCertitudeScore }}</span>
               </div>
-              <div class="space-y-2.5 text-xs font-mono-cyber">
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">SIREN / SIRET Siège</div>
+              <div class="space-y-2.5 text-xs font-sans">
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">SIREN / SIRET Siège</div>
                   <div class="text-amber-400 font-bold text-sm mt-0.5">{{ displaySiren }} • {{ displaySiretSiege }}</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">Capital Social RNE Certifié</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">Capital Social</div>
                   <div class="text-amber-300 font-bold text-sm mt-0.5">{{ displayCapitalSocial }}</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">N° TVA Intracommunautaire Officiel</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">N° TVA Intracommunautaire</div>
                   <div class="text-amber-300 font-bold text-sm mt-0.5 font-mono">{{ displayTvaIntracomm }}</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">Catégorie d'Entreprise (INSEE) & LEI</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">Catégorie INSEE & LEI</div>
                   <div class="text-emerald-400 font-bold mt-0.5">{{ displayCategorieEntreprise }} • LEI: {{ displayCodeLei }}</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">Forme Juridique & NAF / APE</div>
-                  <div class="text-white mt-0.5">{{ displayFormeJuridique }} ({{ displayCodeNaf }})</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">Forme Juridique & NAF / APE</div>
+                  <div class="text-slate-900 mt-0.5">{{ displayFormeJuridique }} ({{ displayCodeNaf }})</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">Adresse du Siège Social</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">Adresse du Siège Social</div>
                   <div class="text-indigo-300 font-bold mt-0.5">{{ displayAddressSiege }}</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">Date Immatriculation & Synchronisations d'État</div>
-                  <div class="text-slate-300 mt-0.5">{{ displayRegistrationDate }} • {{ displaySynchroDates }}</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">Date d'Immatriculation</div>
+                  <div class="text-slate-700 mt-0.5">{{ displayRegistrationDate }} • {{ displaySynchroDates }}</div>
                 </div>
-                <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-                  <div class="text-slate-400">Objet Social Certifié RNE</div>
+                <div class="p-3 bg-slate-50/60 rounded-xl border border-slate-200">
+                  <div class="text-slate-500">Objet Social RNE</div>
                   <div class="text-slate-200 text-xs mt-0.5 line-clamp-2" :title="displayObjetSocial">{{ displayObjetSocial }}</div>
                 </div>
               </div>
-              <div class="pt-3 border-t border-slate-800 space-y-2">
-                <div class="text-[11px] font-bold text-slate-400 font-mono-cyber uppercase">CONVENTIONS COLLECTIVES & MARQUES D'ÉTAT</div>
+              <div class="pt-3 border-t border-slate-200 space-y-2">
+                <div class="text-[11px] font-bold text-slate-500 font-sans uppercase">CONVENTIONS COLLECTIVES & LABELS</div>
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="px-2 py-1 rounded text-[10px] font-mono-cyber bg-amber-500/10 text-amber-300 border border-amber-500/30">{{ displayConventionsCollectives }}</span>
-                  <span class="px-2 py-1 rounded text-[10px] font-mono-cyber bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">EGAPRO Index F/H</span>
-                  <span class="px-2 py-1 rounded text-[10px] font-mono-cyber bg-amber-500/10 text-amber-400 border border-amber-500/30">Accords RNE / Greffe</span>
+                  <span class="px-2 py-1 rounded text-[10px] font-sans bg-amber-500/10 text-amber-300 border border-amber-500/30">{{ displayConventionsCollectives }}</span>
+                  <span class="px-2 py-1 rounded text-[10px] font-sans bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">EGAPRO Index F/H</span>
+                  <span class="px-2 py-1 rounded text-[10px] font-sans bg-amber-500/10 text-amber-400 border border-amber-500/30">Accords RNE / Greffe</span>
                 </div>
               </div>
             </div>
 
             <!-- ChamberSection (2 Cols) -->
-            <div class="lg:col-span-2 cyber-glass rounded-2xl p-6 border border-slate-800 space-y-5 flex flex-col justify-between">
+            <div class="lg:col-span-2 bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-5 flex flex-col justify-between">
               <div class="space-y-4">
                 <!-- Header & Action Shortcuts -->
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200">
                   <div>
-                    <div class="flex items-center space-x-2">
-                      <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber bg-amber-500/20 text-amber-200 border border-amber-500/40">CHAMBER OSINT HUB</span>
-                      <h3 class="text-base font-bold text-white font-mono-cyber uppercase">GOUVERNANCE & MANDATAIRES SOCIAUX</h3>
-                    </div>
-                    <p class="text-xs text-slate-400 font-mono-cyber mt-0.5">Registre officiel des dirigeants physiques, conseils d'administration et holdings actionnaires mères</p>
+                    <h3 class="text-base font-bold text-slate-900 font-sans uppercase">GOUVERNANCE & DIRIGEANTS</h3>
+                    <p class="text-xs text-slate-500 font-sans mt-0.5">Dirigeants, conseils d'administration et holdings rattachées</p>
                   </div>
                   <div class="flex items-center space-x-2 shrink-0">
-                    <button @click="showInterconnectionModal = true" class="px-3 py-1.5 rounded-xl bg-slate-900/60 hover:bg-purple-900/60 text-amber-200 border border-amber-500/40 text-xs font-mono-cyber transition flex items-center space-x-1.5">
-                      <span>🌐 Holdings & Graphe</span>
+                    <button @click="showInterconnectionModal = true" class="px-3 py-1.5 rounded-xl bg-slate-50 hover:bg-slate-100 text-teal-800 border border-teal-200 text-xs font-sans transition flex items-center space-x-1.5">
+                      <span>Liens capitalistiques</span>
                     </button>
-                    <button @click="showGovernanceModal = true" class="px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-mono-cyber transition flex items-center space-x-1">
-                      <span>🔍 Inspecter 100%</span>
+                    <button @click="showGovernanceModal = true" class="px-3 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 text-xs font-sans transition flex items-center space-x-1">
+                      <span>Tous les mandats</span>
                     </button>
                   </div>
                 </div>
 
                 <!-- Executive Summary Badges Strip (5 Columns) -->
-                <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 font-mono-cyber text-xs">
-                  <div class="p-2.5 bg-slate-900/80 rounded-xl border border-slate-800 space-y-0.5">
-                    <div class="text-[10px] text-slate-400 uppercase">Total Mandats</div>
-                    <div class="text-sm sm:text-base font-black text-white truncate">{{ displayExecutives.length }} Mandats</div>
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 font-sans text-xs">
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200 space-y-0.5">
+                    <div class="text-[10px] text-slate-500 uppercase">Total Mandats</div>
+                    <div class="text-sm sm:text-base font-black text-slate-900 truncate">{{ displayExecutives.length }} Mandats</div>
                   </div>
-                  <div class="p-2.5 bg-slate-900/80 rounded-xl border border-slate-800 space-y-0.5">
-                    <div class="text-[10px] text-slate-400 uppercase">Direction & Conseils</div>
-                    <div class="text-sm sm:text-base font-black text-emerald-400 truncate">🟢 {{ directionActiveCount }} En Poste</div>
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200 space-y-0.5">
+                    <div class="text-[10px] text-slate-500 uppercase">Direction active</div>
+                    <div class="text-sm sm:text-base font-black text-emerald-600 truncate">{{ directionActiveCount }} En Poste</div>
                   </div>
-                  <div class="p-2.5 bg-slate-900/80 rounded-xl border border-slate-800 space-y-0.5">
-                    <div class="text-[10px] text-slate-400 uppercase">Anciens Dirigeants</div>
-                    <div class="text-sm sm:text-base font-black text-amber-300 truncate">⚪ {{ directionFormerCount }} Anciens</div>
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200 space-y-0.5">
+                    <div class="text-[10px] text-slate-500 uppercase">Anciens Dirigeants</div>
+                    <div class="text-sm sm:text-base font-black text-slate-700 truncate">{{ directionFormerCount }} Anciens</div>
                   </div>
-                  <div class="p-2.5 bg-slate-900/80 rounded-xl border border-slate-800 space-y-0.5">
-                    <div class="text-[10px] text-slate-400 uppercase">Audit & CAC</div>
-                    <div class="text-sm sm:text-base font-black text-amber-400 truncate">⚖️ {{ auditExecutives.length }} CAC</div>
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200 space-y-0.5">
+                    <div class="text-[10px] text-slate-500 uppercase">Audit & CAC</div>
+                    <div class="text-sm sm:text-base font-black text-teal-700 truncate">{{ auditExecutives.length }} CAC</div>
                   </div>
-                  <div class="p-2.5 bg-slate-900/80 rounded-xl border border-slate-800 space-y-0.5">
-                    <div class="text-[10px] text-slate-400 uppercase">Holdings / Morales</div>
-                    <div class="text-sm sm:text-base font-black text-amber-300 truncate">🏢 {{ moralCount }} Mor.</div>
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200 space-y-0.5">
+                    <div class="text-[10px] text-slate-500 uppercase">Personnes morales</div>
+                    <div class="text-sm sm:text-base font-black text-slate-700 truncate">{{ moralCount }} Mor.</div>
                   </div>
                 </div>
 
@@ -172,100 +169,100 @@
                           <input 
                             v-model="execSearchQueryHub"
                             type="text" 
-                            placeholder="🔍 Filtrer dirigeant (nom, rôle, SIREN)..."
-                            class="w-full pl-8 pr-3 py-1.5 bg-slate-900 border border-slate-800 rounded-xl text-xs text-white placeholder-slate-500 font-mono-cyber focus:outline-none focus:border-amber-500"
+                            placeholder="Filtrer un dirigeant (nom, rôle, SIREN)..."
+                            class="w-full pl-8 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-500 font-sans focus:outline-none focus:border-teal-500"
                           />
                           <svg class="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                           </svg>
                         </div>
 
-                        <div class="flex items-center space-x-1 font-mono-cyber text-[10px] bg-slate-900 p-1 rounded-xl border border-slate-800 shrink-0 w-full sm:w-auto overflow-x-auto">
+                        <div class="flex items-center space-x-1 font-sans text-[10px] bg-slate-50 p-1 rounded-xl border border-slate-200 shrink-0 w-full sm:w-auto overflow-x-auto">
                           <button 
                             @click="execFilterCategoryHub = 'all'" 
                             class="px-2 py-1 rounded-lg transition font-bold"
-                            :class="execFilterCategoryHub === 'all' ? 'bg-amber-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                            :class="execFilterCategoryHub === 'all' ? 'bg-teal-700 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                           >
                             Tous ({{ directionExecutives.length }})
                           </button>
                           <button 
                             @click="execFilterCategoryHub = 'active'" 
                             class="px-2 py-1 rounded-lg transition font-bold"
-                            :class="execFilterCategoryHub === 'active' ? 'bg-emerald-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                            :class="execFilterCategoryHub === 'active' ? 'bg-emerald-600 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                           >
-                            🟢 En poste ({{ directionActiveCount }})
+                            En poste ({{ directionActiveCount }})
                           </button>
                           <button 
                             @click="execFilterCategoryHub = 'former'" 
                             class="px-2 py-1 rounded-lg transition font-bold"
-                            :class="execFilterCategoryHub === 'former' ? 'bg-amber-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                            :class="execFilterCategoryHub === 'former' ? 'bg-slate-600 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                           >
-                            ⚪ Anciens ({{ directionFormerCount }})
+                            Anciens ({{ directionFormerCount }})
                           </button>
                           <button 
                             @click="execFilterCategoryHub = 'physical'" 
                             class="px-2 py-1 rounded-lg transition font-bold"
-                            :class="execFilterCategoryHub === 'physical' ? 'bg-sky-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                            :class="execFilterCategoryHub === 'physical' ? 'bg-sky-600 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                           >
-                            👤 Phys. ({{ directionPhysicalCount }})
+                            Phys. ({{ directionPhysicalCount }})
                           </button>
                           <button 
                             @click="execFilterCategoryHub = 'moral'" 
                             class="px-2 py-1 rounded-lg transition font-bold"
-                            :class="execFilterCategoryHub === 'moral' ? 'bg-purple-800 text-purple-200 shadow' : 'text-slate-400 hover:text-white'"
+                            :class="execFilterCategoryHub === 'moral' ? 'bg-indigo-700 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                           >
-                            🏢 Mor. ({{ directionMoralCount }})
+                            Mor. ({{ directionMoralCount }})
                           </button>
                         </div>
                       </div>
 
                       <!-- Direction Cards Grid -->
                       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[460px] overflow-y-auto pr-1">
-                        <div v-if="filteredDirectionExecutives.length === 0" class="sm:col-span-2 p-8 text-center text-xs font-mono-cyber text-slate-500 bg-slate-900/40 rounded-xl border border-slate-800">
-                          Aucun dirigeant exécutif ne correspond aux filtres de recherche.
+                        <div v-if="filteredDirectionExecutives.length === 0" class="sm:col-span-2 p-8 text-center text-xs font-sans text-slate-500 bg-slate-50/40 rounded-xl border border-slate-200">
+                          Aucun dirigeant exécutif ne correspond aux critères de recherche.
                         </div>
 
                         <div 
                           v-for="(exec, idx) in filteredDirectionExecutives" 
                           :key="'dir-' + idx"
                           @click="openExecutiveInspector(exec)"
-                          class="p-3.5 rounded-xl border space-y-2.5 transition cursor-pointer hover:border-purple-400 flex flex-col justify-between group"
-                          :class="exec.type_person === 'personne morale' ? 'bg-slate-900/20 border-amber-500/30' : 'bg-slate-900/70 border-slate-800'"
+                          class="p-3.5 rounded-xl border space-y-2.5 transition cursor-pointer hover:border-teal-400 flex flex-col justify-between group"
+                          :class="exec.type_person === 'personne morale' ? 'bg-slate-50/40 border-slate-200' : 'bg-slate-50/70 border-slate-200'"
                         >
                           <div class="space-y-1.5">
                             <div class="flex justify-between items-start gap-2">
                               <div>
-                                <h4 class="font-bold text-xs sm:text-sm text-white group-hover:text-amber-200 font-mono-cyber transition line-clamp-1" :title="exec.full_name || exec.denomination">
+                                <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-teal-700 font-sans transition line-clamp-1" :title="exec.full_name || exec.denomination">
                                   {{ exec.full_name || exec.denomination }}
                                 </h4>
-                                <p class="text-[11px] text-amber-400 font-mono-cyber font-bold mt-0.5">{{ getRoleTitle(exec) }}</p>
+                                <p class="text-[11px] text-teal-700 font-sans font-semibold mt-0.5">{{ getRoleTitle(exec) }}</p>
                               </div>
-                              <div class="flex flex-col items-end space-y-1 shrink-0 font-mono-cyber">
+                              <div class="flex flex-col items-end space-y-1 shrink-0 font-sans">
                                 <span 
                                   class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase"
-                                  :class="isExecutiveActive(exec) ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'bg-slate-800 text-slate-400 border border-slate-700'"
+                                  :class="isExecutiveActive(exec) ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600 border border-slate-200'"
                                 >
-                                  {{ isExecutiveActive(exec) ? '🟢 EN POSTE' : '⚪ ANCIEN' }}
+                                  {{ isExecutiveActive(exec) ? 'EN POSTE' : 'ANCIEN' }}
                                 </span>
                                 <span 
                                   class="px-1.5 py-0.5 rounded text-[8px] uppercase"
-                                  :class="exec.type_person === 'personne morale' ? 'bg-amber-500/20 text-amber-200 border border-amber-500/40' : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'"
+                                  :class="exec.type_person === 'personne morale' ? 'bg-indigo-50 text-indigo-700 border border-indigo-200' : 'bg-slate-100 text-slate-700 border border-slate-200'"
                                 >
                                   {{ exec.type_person === 'personne morale' ? 'MORALE' : 'PHYSIQUE' }}
                                 </span>
                               </div>
                             </div>
 
-                            <div class="text-[10px] font-mono-cyber text-slate-300">
-                              <span>📅 {{ getMandatePeriodLabel(exec) }}</span>
+                            <div class="text-[10px] font-sans text-slate-600">
+                              <span>{{ getMandatePeriodLabel(exec) }}</span>
                             </div>
                           </div>
 
-                          <div class="pt-2 border-t border-slate-800/80 space-y-1.5 font-mono-cyber text-[11px]">
-                            <div class="flex justify-between items-center text-slate-400">
-                              <span v-if="exec.type_person === 'personne physique'">{{ exec.birth_year ? '👤 Né(e) en ' + exec.birth_year : 'Mandataire physique' }}</span>
-                              <span v-else class="text-amber-200 font-bold">🏢 SIREN: {{ exec.siren_entity || 'Moral' }}</span>
-                              <a :href="getBodaccUrl(exec)" target="_blank" class="text-amber-400 hover:text-white underline text-[10px]" @click.stop>Notice BODACC ↗</a>
+                          <div class="pt-2 border-t border-slate-200 space-y-1.5 font-sans text-[11px]">
+                            <div class="flex justify-between items-center text-slate-500">
+                              <span v-if="exec.type_person === 'personne physique'">{{ exec.birth_year ? 'Né(e) en ' + exec.birth_year : 'Mandataire physique' }}</span>
+                              <span v-else class="text-slate-900 font-mono font-medium">SIREN: {{ exec.siren_entity || 'Moral' }}</span>
+                              <a :href="getBodaccUrl(exec)" target="_blank" class="text-teal-700 hover:text-teal-900 underline text-[10px]" @click.stop>Notice BODACC ↗</a>
                             </div>
 
                             <!-- 1-Click Holding Analysis Button for Corporate Entities -->
@@ -273,11 +270,11 @@
                               v-if="exec.type_person === 'personne morale' && exec.siren_entity"
                               @click.stop="analyzeInterconnectedEntity(exec.siren_entity)"
                               :disabled="loadingHoldingSiren === exec.siren_entity"
-                              class="w-full py-1 rounded-lg text-white font-bold text-[9px] transition shadow-md shadow-purple-500/20 flex items-center justify-center space-x-1 mt-1"
-                              :class="loadingHoldingSiren === exec.siren_entity ? 'bg-purple-800 opacity-80 cursor-wait' : 'bg-amber-600 hover:bg-amber-500'"
+                              class="w-full py-1 rounded-lg text-white font-medium text-[10px] transition flex items-center justify-center space-x-1 mt-1"
+                              :class="loadingHoldingSiren === exec.siren_entity ? 'bg-teal-800 opacity-80 cursor-wait' : 'bg-teal-700 hover:bg-teal-800'"
                             >
                               <span v-if="loadingHoldingSiren === exec.siren_entity" class="w-2.5 h-2.5 rounded-full border-2 border-white border-t-transparent animate-spin"></span>
-                              <span>{{ loadingHoldingSiren === exec.siren_entity ? 'ANALYSE EN COURS...' : '🔍 ANALYSER CETTE HOLDING (360°) →' }}</span>
+                              <span>{{ loadingHoldingSiren === exec.siren_entity ? 'Analyse en cours...' : 'Analyser cette société →' }}</span>
                             </button>
                           </div>
                         </div>
@@ -286,51 +283,49 @@
                   </div>
 
                   <!-- BLOC A COTE : COMMISSAIRES AUX COMPTES & AUDIT LEGAL (xl:col-span-1) -->
-                  <div class="xl:col-span-1 bg-slate-900/60 rounded-xl p-4 border border-slate-800 space-y-3 flex flex-col justify-between">
+                  <div class="xl:col-span-1 bg-slate-50/60 rounded-xl p-4 border border-slate-200 space-y-3 flex flex-col justify-between">
                     <div class="space-y-3">
                       <!-- Header Bloc CAC -->
-                      <div class="flex items-center justify-between pb-2.5 border-b border-slate-800">
+                      <div class="flex items-center justify-between pb-2.5 border-b border-slate-200">
                         <div class="flex items-center space-x-2">
-                          <span class="p-1.5 rounded-lg bg-amber-500/20 text-amber-300 text-xs">⚖️</span>
                           <div>
-                            <h4 class="text-xs font-bold font-mono-cyber text-white uppercase tracking-wider">COMMISSAIRES AUX COMPTES</h4>
-                            <p class="text-[10px] text-slate-400 font-mono-cyber">Organes de contrôle & certification légale</p>
+                            <h4 class="text-xs font-bold font-sans text-slate-900 uppercase tracking-wider">COMMISSAIRES AUX COMPTES</h4>
+                            <p class="text-[10px] text-slate-500 font-sans">Organes de contrôle & certification légale</p>
                           </div>
                         </div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono-cyber bg-amber-500/10 text-amber-300 border border-amber-500/30 shrink-0">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-teal-50 text-teal-800 border border-teal-200 shrink-0">
                           {{ auditExecutives.length }} CAC
                         </span>
                       </div>
 
                       <!-- Filtres rapides CAC : Tous, En poste, Anciens -->
-                      <div class="flex items-center space-x-1 font-mono-cyber text-[10px] bg-slate-900 p-1 rounded-xl border border-slate-800">
+                      <div class="flex items-center space-x-1 font-sans text-[10px] bg-slate-50 p-1 rounded-xl border border-slate-200">
                         <button 
-                          @click="auditFilterStatus = 'all'"
+                          @click="auditFilterStatus = 'all'" 
                           class="flex-1 py-1 rounded-lg transition font-bold text-center"
-                          :class="auditFilterStatus === 'all' ? 'bg-amber-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                          :class="auditFilterStatus === 'all' ? 'bg-teal-700 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                         >
                           Tous ({{ auditExecutives.length }})
                         </button>
                         <button 
-                          @click="auditFilterStatus = 'active'"
+                          @click="auditFilterStatus = 'active'" 
                           class="flex-1 py-1 rounded-lg transition font-bold text-center"
-                          :class="auditFilterStatus === 'active' ? 'bg-emerald-600 text-white shadow' : 'text-slate-400 hover:text-white'"
+                          :class="auditFilterStatus === 'active' ? 'bg-emerald-600 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                         >
-                          🟢 En poste ({{ auditActiveCount }})
+                          En poste ({{ auditActiveCount }})
                         </button>
                         <button 
-                          @click="auditFilterStatus = 'former'"
+                          @click="auditFilterStatus = 'former'" 
                           class="flex-1 py-1 rounded-lg transition font-bold text-center"
-                          :class="auditFilterStatus === 'former' ? 'bg-slate-700 text-white shadow' : 'text-slate-400 hover:text-white'"
+                          :class="auditFilterStatus === 'former' ? 'bg-slate-600 text-white shadow' : 'text-slate-500 hover:text-slate-900'"
                         >
-                          ⚪ Anciens ({{ auditFormerCount }})
+                          Anciens ({{ auditFormerCount }})
                         </button>
                       </div>
 
                       <!-- Liste défilante des Commissaires aux Comptes -->
                       <div class="space-y-2.5 max-h-[380px] overflow-y-auto pr-1">
-                        <div v-if="filteredAuditExecutives.length === 0" class="p-6 text-center text-xs font-mono-cyber text-slate-500 bg-slate-900/40 rounded-xl border border-slate-800/80">
-                          <div class="text-base mb-1">⚖️</div>
+                        <div v-if="filteredAuditExecutives.length === 0" class="p-6 text-center text-xs font-sans text-slate-500 bg-slate-50/40 rounded-xl border border-slate-200">
                           <div>Aucun commissaire aux comptes répertorié au registre officiel pour cette entité.</div>
                           <div class="text-[10px] text-slate-600 mt-1">Structure non assujettie aux seuils légaux ou non publiée.</div>
                         </div>
@@ -339,41 +334,40 @@
                           v-for="(exec, idx) in filteredAuditExecutives" 
                           :key="'cac-' + idx"
                           @click="openExecutiveInspector(exec)"
-                          class="p-3 rounded-xl border space-y-2 bg-slate-900/80 border-slate-800 hover:border-amber-500/40 transition cursor-pointer group"
+                          class="p-3 rounded-xl border space-y-2 bg-slate-50 border-slate-200 hover:border-teal-500/40 transition cursor-pointer group"
                         >
                           <div class="flex justify-between items-start gap-2">
                             <div class="space-y-0.5">
-                              <h5 class="font-bold text-xs text-white group-hover:text-amber-300 font-mono-cyber transition line-clamp-1" :title="exec.full_name || exec.denomination">
+                              <h5 class="font-bold text-xs text-slate-900 group-hover:text-teal-700 font-sans transition line-clamp-1" :title="exec.full_name || exec.denomination">
                                 {{ exec.full_name || exec.denomination }}
                               </h5>
-                              <p class="text-[10px] text-amber-400 font-mono-cyber font-bold">
+                              <p class="text-[10px] text-teal-700 font-sans font-semibold">
                                 {{ getRoleTitle(exec) }}
                               </p>
                             </div>
                             <span 
-                              class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase shrink-0 font-mono-cyber"
-                              :class="isExecutiveActive(exec) ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'bg-slate-800 text-slate-400 border border-slate-700'"
+                              class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase shrink-0 font-sans"
+                              :class="isExecutiveActive(exec) ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600 border border-slate-200'"
                             >
-                              {{ isExecutiveActive(exec) ? '🟢 EN POSTE' : '⚪ ANCIEN' }}
+                              {{ isExecutiveActive(exec) ? 'EN POSTE' : 'ANCIEN' }}
                             </span>
                           </div>
 
-                          <div class="text-[10px] font-mono-cyber text-slate-300">
-                            <span>📅 {{ getMandatePeriodLabel(exec) }}</span>
+                          <div class="text-[10px] font-sans text-slate-600">
+                            <span>{{ getMandatePeriodLabel(exec) }}</span>
                           </div>
 
-                          <div class="pt-1.5 border-t border-slate-800 flex justify-between items-center text-[10px] font-mono-cyber text-slate-400">
-                            <span v-if="exec.siren_entity" class="text-amber-200 font-mono">SIREN: {{ exec.siren_entity }}</span>
+                          <div class="pt-1.5 border-t border-slate-200 flex justify-between items-center text-[10px] font-sans text-slate-500">
+                            <span v-if="exec.siren_entity" class="text-slate-900 font-mono">SIREN: {{ exec.siren_entity }}</span>
                             <span v-else class="text-slate-500">Cabinet d'audit</span>
-                            <a :href="getBodaccUrl(exec)" target="_blank" class="text-amber-400 hover:text-white underline text-[10px]" @click.stop>BODACC ↗</a>
+                            <a :href="getBodaccUrl(exec)" target="_blank" class="text-teal-700 hover:text-teal-900 underline text-[10px]" @click.stop>BODACC ↗</a>
                           </div>
                         </div>
                       </div>
                     </div>
 
                     <!-- Note légale en bas de bloc CAC -->
-                    <div class="pt-2 border-t border-slate-800 text-[10px] font-mono-cyber text-slate-500 flex items-center space-x-1.5">
-                      <span>💡</span>
+                    <div class="pt-2 border-t border-slate-200 text-[10px] font-sans text-slate-500 flex items-center space-x-1.5">
                       <span>Contrôle & certification des comptes annuels (L. 823-9 C. com.)</span>
                     </div>
                   </div>
@@ -381,76 +375,74 @@
               </div>
 
               <!-- Footer Interconnection Hint -->
-              <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono-cyber text-slate-400">
-                <span class="text-[11px]">💡 Cliquez sur un mandataire pour ouvrir sa fiche détaillée d'inspection.</span>
-                <button @click="showInterconnectionModal = true" class="text-amber-300 hover:text-amber-200 font-bold underline">
-                  Arbre des Holdings & Mandats Croisés →
+              <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs font-sans text-slate-500">
+                <span class="text-[11px]">Sélectionnez un dirigeant pour afficher son historique officiel.</span>
+                <button @click="showInterconnectionModal = true" class="text-teal-700 hover:text-teal-900 font-bold underline">
+                  Arbre des participations & mandats croisés →
                 </button>
               </div>
             </div>
           </div>
 
           <!-- PROMPT 4: MercurySection (Financial Dashboard & Altman Z'-Score Gauge) -->
-          <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-6">
-            <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+          <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-6">
+            <div class="flex justify-between items-center pb-4 border-b border-slate-200">
               <div class="flex items-center space-x-2">
-                <h3 class="text-base font-bold text-white font-mono-cyber">FINANCES & SOLVABILITÉ PLURIANNUELLE (MERCURY)</h3>
-                <button @click="showFinancialsModal = true" class="px-2 py-0.5 rounded text-[10px] bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-mono-cyber transition">🔍 Inspecter 100%</button>
+                <h3 class="text-base font-bold text-slate-900 font-sans">SITUATION FINANCIÈRE & SOLVABILITÉ</h3>
+                <button @click="showFinancialsModal = true" class="px-2 py-0.5 rounded text-[10px] bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 font-sans transition">Voir le détail</button>
               </div>
               <div class="flex flex-wrap items-center gap-2">
                 <span 
                   v-if="resultData?.financials?.accounting_scope === 'consolidated'"
-                  class="px-2.5 py-1 rounded text-xs font-mono-cyber font-bold bg-amber-500/20 text-amber-200 border border-amber-500/40 flex items-center space-x-1.5 shadow-sm"
+                  class="px-2.5 py-1 rounded text-xs font-sans font-bold bg-teal-50 text-teal-800 border border-teal-200 flex items-center space-x-1.5"
                 >
-                  <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span>
-                  <span>COMPTES CONSOLIDÉS (GROUPE IFRS)</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+                  <span>COMPTES CONSOLIDÉS</span>
                 </span>
                 <span 
                   v-else
-                  class="px-2.5 py-1 rounded text-xs font-mono-cyber font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center space-x-1.5 shadow-sm"
+                  class="px-2.5 py-1 rounded text-xs font-sans font-bold bg-slate-100 text-slate-700 border border-slate-200 flex items-center space-x-1.5"
                 >
-                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                  <span>COMPTES SOCIAUX (MAISON MÈRE)</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
+                  <span>COMPTES SOCIAUX</span>
                 </span>
                 <span 
                   v-if="resultData?.financials?.balance_sheet_status === 'REJECTED_UNBALANCED'"
-                  class="px-2.5 py-1 rounded text-xs font-mono-cyber font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40"
+                  class="px-2.5 py-1 rounded text-xs font-sans font-bold bg-rose-50 text-rose-800 border border-rose-200"
                 >
-                  BILAN REJETÉ (DÉSÉQUILIBRE)
+                  BILAN DÉSÉQUILIBRÉ
                 </span>
                 <span 
                   v-else-if="resultData?.financials?.asset_turnover_suspicious"
-                  class="px-2.5 py-1 rounded text-xs font-mono-cyber font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40"
+                  class="px-2.5 py-1 rounded text-xs font-sans font-bold bg-amber-50 text-amber-800 border border-amber-200"
                 >
-                  ROTATION SUSPECTE
+                  ROTATION ATYPIQUE
                 </span>
-                <span class="px-2.5 py-1 rounded text-xs font-mono-cyber bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">INPI RNE OAUTH2</span>
               </div>
             </div>
 
             <!-- Confidentiality Alert Banner (Décret L. 232-25) -->
-            <div v-if="hasConfidentialAccounts" class="p-4 rounded-xl bg-amber-950/40 border border-amber-500/50 flex items-start space-x-3 text-xs font-mono-cyber text-amber-200">
-              <div class="text-lg">🔒</div>
+            <div v-if="hasConfidentialAccounts" class="p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-start space-x-3 text-xs font-sans text-amber-900">
               <div>
-                <div class="font-bold text-amber-400 uppercase">RÉGIME DE CONFIDENTIALITÉ LÉGAL (DÉCRET L. 232-25)</div>
+                <div class="font-bold text-amber-800 uppercase">COMPTES ANNUELS SOUS RÉGIME DE CONFIDENTIALITÉ</div>
                 <div class="mt-0.5">{{ confidentialityLabel }}</div>
-                <div class="text-[10px] text-amber-300/80 mt-1">Conformément aux dispositions du Décret L. 232-25 (Confidentialité des comptes annuels), les données financières sont strictement sous régime confidentiel. Aucune donnée fictive n'est générée.</div>
+                <div class="text-[10px] text-amber-700 mt-1">Conformément à l'article L. 232-25 du Code de commerce, les comptes annuels de cette société font l'objet d'une déclaration de confidentialité enregistrée au Greffe.</div>
               </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <div class="lg:col-span-2 bg-slate-900/60 rounded-xl p-5 border border-slate-800 space-y-4">
+              <div class="lg:col-span-2 bg-slate-50/60 rounded-xl p-5 border border-slate-200 space-y-4">
                 <div class="flex justify-between items-center">
-                  <span class="text-xs font-bold font-mono-cyber text-white uppercase">ÉVOLUTION {{ activeMetricLabel }} (HISTORIQUE)</span>
-                  <div class="flex space-x-1 font-mono-cyber text-xs">
-                    <button @click="activeMetric = 'revenue'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'revenue' ? 'bg-sky-500 text-white font-bold' : 'bg-slate-800 text-slate-400'">CA</button>
-                    <button @click="activeMetric = 'ebitda'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'ebitda' ? 'bg-indigo-500 text-white font-bold' : 'bg-slate-800 text-slate-400'">EBITDA</button>
-                    <button @click="activeMetric = 'net_income'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'net_income' ? 'bg-emerald-500 text-white font-bold' : 'bg-slate-800 text-slate-400'">{{ resultData?.financials?.accounting_scope === 'consolidated' ? 'RN (Part du Groupe)' : 'Résultat Net' }}</button>
-                    <button @click="activeMetric = 'altman_z_score'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'altman_z_score' ? 'bg-amber-500 text-white font-bold' : 'bg-slate-800 text-slate-400'">Score Altman Z'</button>
+                  <span class="text-xs font-bold font-sans text-slate-900 uppercase">ÉVOLUTION {{ activeMetricLabel }} (HISTORIQUE)</span>
+                  <div class="flex space-x-1 font-sans text-xs">
+                    <button @click="activeMetric = 'revenue'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'revenue' ? 'bg-teal-700 text-white font-bold' : 'bg-slate-100 text-slate-600'">CA</button>
+                    <button @click="activeMetric = 'ebitda'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'ebitda' ? 'bg-teal-700 text-white font-bold' : 'bg-slate-100 text-slate-600'">EBITDA</button>
+                    <button @click="activeMetric = 'net_income'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'net_income' ? 'bg-teal-700 text-white font-bold' : 'bg-slate-100 text-slate-600'">{{ resultData?.financials?.accounting_scope === 'consolidated' ? 'RN (Part du Groupe)' : 'Résultat Net' }}</button>
+                    <button @click="activeMetric = 'altman_z_score'" class="px-2.5 py-1 rounded transition" :class="activeMetric === 'altman_z_score' ? 'bg-teal-700 text-white font-bold' : 'bg-slate-100 text-slate-600'">Score Altman Z'</button>
                   </div>
                 </div>
-                <div class="h-44 flex items-end justify-between gap-2 pt-6 pb-1 border-b border-slate-800 relative overflow-hidden">
+                <div class="h-44 flex items-end justify-between gap-2 pt-6 pb-1 border-b border-slate-200 relative overflow-hidden">
                   <div v-for="yr in financialYearsWithData" :key="yr.year" class="flex-1 h-full flex flex-col justify-end items-center gap-1.5 group relative min-w-0">
-                    <div class="absolute -top-6 text-[10px] font-mono-cyber text-amber-300 font-bold opacity-0 group-hover:opacity-100 transition whitespace-nowrap bg-slate-950/95 px-2 py-0.5 rounded border border-slate-700 shadow-xl z-20 pointer-events-none">
+                    <div class="absolute -top-6 text-[10px] font-sans text-teal-800 font-bold opacity-0 group-hover:opacity-100 transition whitespace-nowrap bg-white px-2 py-0.5 rounded border border-slate-300 z-20 pointer-events-none">
                       {{ formatMetricValue(yr[activeMetric], activeMetric) }}
                     </div>
                     <div class="w-full flex-1 flex items-end justify-center px-0.5 overflow-hidden">
@@ -460,110 +452,109 @@
                         :style="{ height: getBarHeight(yr[activeMetric]) + '%' }"
                       ></div>
                     </div>
-                    <span class="text-[10px] font-mono-cyber font-bold shrink-0 whitespace-nowrap" :class="yr[activeMetric] !== null && yr[activeMetric] !== undefined ? 'text-amber-400' : 'text-slate-500'">{{ yr.year }}</span>
+                    <span class="text-[10px] font-sans font-bold shrink-0 whitespace-nowrap" :class="yr[activeMetric] !== null && yr[activeMetric] !== undefined ? 'text-teal-800' : 'text-slate-500'">{{ yr.year }}</span>
                   </div>
                 </div>
               </div>
-              <div class="bg-slate-900/60 rounded-xl p-5 border border-slate-800 flex flex-col justify-between space-y-4">
+              <div class="bg-slate-50/60 rounded-xl p-5 border border-slate-200 flex flex-col justify-between space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold text-slate-400 font-mono-cyber">ALTMAN Z'-SCORE SOLVABILITÉ</span>
-                  <span class="px-1.5 py-0.5 rounded text-[9px] font-mono-cyber bg-slate-800 text-slate-400 border border-slate-700">INPI RNE</span>
+                  <span class="text-xs font-bold text-slate-500 font-sans">ALTMAN Z'-SCORE SOLVABILITÉ</span>
+                  <span class="px-1.5 py-0.5 rounded text-[9px] font-sans bg-slate-100 text-slate-600 border border-slate-200">INPI RNE</span>
                 </div>
-                <div class="p-4 rounded-xl border text-center space-y-1" :class="displayAltmanScore !== 'N/D' ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' : 'bg-slate-800/40 border-slate-700/60 text-slate-300'">
-                  <div class="text-2xl font-black font-mono-cyber">{{ displayAltmanScore }}</div>
-                  <div class="text-xs font-bold font-mono-cyber opacity-90">{{ displayAltmanStatus }}</div>
+                <div class="p-4 rounded-xl border text-center space-y-1" :class="displayAltmanScore !== 'N/D' ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : 'bg-slate-50 border-slate-200 text-slate-600'">
+                  <div class="text-2xl font-black font-sans">{{ displayAltmanScore }}</div>
+                  <div class="text-xs font-bold font-sans opacity-90">{{ displayAltmanStatus }}</div>
                 </div>
-                <div class="text-[11px] font-mono-cyber text-slate-400 space-y-1 border-t border-slate-800/80 pt-3">
-                  <div class="flex justify-between text-emerald-400"><span>🟢 Zone Sûre</span><span>> 2.90</span></div>
-                  <div class="flex justify-between text-amber-400"><span>🟡 Zone Grise</span><span>1.23 – 2.90</span></div>
-                  <div class="flex justify-between text-rose-400"><span>🔴 Zone Danger</span><span>< 1.23</span></div>
+                <div class="text-[11px] font-sans text-slate-500 space-y-1 border-t border-slate-200 pt-3">
+                  <div class="flex justify-between text-emerald-700"><span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-500 mr-1.5"></span>Zone Sûre</span><span>> 2.90</span></div>
+                  <div class="flex justify-between text-amber-700"><span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5"></span>Zone Grise</span><span>1.23 – 2.90</span></div>
+                  <div class="flex justify-between text-rose-700"><span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-rose-500 mr-1.5"></span>Zone Risque</span><span>< 1.23</span></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- RAVEN V2 MASTER INTERACTIVE TIMELINE & CYBER RISK RADAR -->
-          <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-6">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+          <!-- SECTION HISTORIQUE DES ANNONCES LEGALES (BODACC) -->
+          <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200">
               <div>
                 <div class="flex items-center space-x-3">
-                  <div class="w-9 h-9 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-bold">🦅</div>
-                  <h3 class="text-base font-bold text-white font-mono-cyber">FRISE CHRONOLOGIQUE MASTER 360° & BODACC MONITOR (RAVEN v2)</h3>
+                  <div class="w-9 h-9 rounded-xl bg-teal-50 text-teal-800 border border-teal-200 flex items-center justify-center font-bold text-xs">ACTES</div>
+                  <h3 class="text-base font-bold text-slate-900 font-sans">HISTORIQUE DES ANNONCES LÉGALES (BODACC)</h3>
                 </div>
-                <p class="text-xs text-slate-400 mt-1">Classification NLP à 4 catégories, radar d'alertes juridiques et recherche d'actes</p>
+                <p class="text-xs text-slate-500 mt-1">Historique chronologique des publications légales, nominations, modifications statutaires et procédures.</p>
               </div>
-              <div class="flex flex-wrap items-center gap-2 font-mono-cyber text-xs">
-                <span class="px-2.5 py-1 rounded bg-slate-900 text-slate-300 border border-slate-800">{{ displayEvents.length }} Actes Légaux</span>
-                <span v-if="totalRiskAlerts > 0" class="px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40 animate-pulse font-bold">
-                  🚨 {{ totalRiskAlerts }} ALERTE(S) RISQUE
+              <div class="flex flex-wrap items-center gap-2 font-sans text-xs">
+                <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-700 border border-slate-200">{{ displayEvents.length }} Actes Légaux</span>
+                <span v-if="totalRiskAlerts > 0" class="px-2.5 py-1 rounded bg-rose-50 text-rose-700 border border-rose-200 font-bold">
+                  {{ totalRiskAlerts }} ALERTE(S) RISQUE
                 </span>
-                <span v-else class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-                  🟢 Entreprise Saine (0 Risque)
+                <span v-else class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  Entreprise Saine (0 Risque)
                 </span>
               </div>
             </div>
 
-            <!-- CYBER RISK RADAR BANNER (Si des procédures collectives sont détectées) -->
-            <div v-if="totalRiskAlerts > 0" class="p-4 rounded-xl bg-rose-950/40 border border-rose-500/50 flex items-start space-x-3 text-xs font-mono-cyber text-rose-200">
-              <div class="text-lg">🚨</div>
+            <!-- VIGILANCE BANNER (Si des procédures collectives sont détectées) -->
+            <div v-if="totalRiskAlerts > 0" class="p-4 rounded-xl bg-rose-50 border border-rose-200 flex items-start space-x-3 text-xs font-sans text-rose-900">
               <div>
-                <div class="font-bold text-rose-400 uppercase">CYBER RISK RADAR : ALERTE JURIDIQUE DÉTECTÉE</div>
-                <div class="mt-0.5">Une ou plusieurs annonces légales critiques (Procédure collective, Redressement, Liquidation) ont été identifiées au Registre.</div>
+                <div class="font-bold text-rose-800 uppercase">POINT DE VIGILANCE : PROCÉDURE COLLECTIVE IDENTIFIÉE</div>
+                <div class="mt-0.5">Une ou plusieurs annonces légales critiques (procédure collective, redressement, liquidation) ont été publiées au Registre officiel.</div>
               </div>
             </div>
 
             <!-- INTERACTIVE CATEGORY BADGES FILTER BAR -->
             <div class="space-y-2">
-              <div class="flex items-center justify-between text-xs font-mono-cyber text-slate-400">
-                <span class="font-bold uppercase">FILTRER PAR TYPE D'ACTES (CLIC POUR FILTRER)</span>
-                <span v-if="selectedRavenCategory" @click="selectedRavenCategory = null" class="text-amber-400 hover:underline cursor-pointer">
+              <div class="flex items-center justify-between text-xs font-sans text-slate-500">
+                <span class="font-bold uppercase">FILTRER PAR CATÉGORIE D'ANNONCES</span>
+                <span v-if="selectedRavenCategory" @click="selectedRavenCategory = null" class="text-teal-700 hover:underline cursor-pointer">
                   Réinitialiser les filtres
                 </span>
               </div>
-              <div class="flex flex-wrap gap-2 text-xs font-mono-cyber">
+              <div class="flex flex-wrap gap-2 text-xs font-sans">
                 <button 
                   @click="selectedRavenCategory = null"
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1.5"
-                  :class="!selectedRavenCategory ? 'bg-sky-500 text-white font-bold border-amber-400 shadow-lg shadow-amber-500/20' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                  :class="!selectedRavenCategory ? 'bg-teal-700 text-white font-bold border-teal-700' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>TOUS LES ACTES</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-white">{{ displayEvents.length }}</span>
+                  <span>TOUTES LES ANNONCES</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-slate-900">{{ displayEvents.length }}</span>
                 </button>
 
                 <button 
                   @click="selectedRavenCategory = 'DEPOT_COMPTES'"
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1.5"
-                  :class="selectedRavenCategory === 'DEPOT_COMPTES' ? 'bg-emerald-500 text-white font-bold border-emerald-400 shadow-lg shadow-emerald-500/30' : 'bg-slate-900 text-emerald-400 border-slate-800 hover:border-slate-700'"
+                  :class="selectedRavenCategory === 'DEPOT_COMPTES' ? 'bg-emerald-600 text-white font-bold border-emerald-600' : 'bg-slate-50 text-emerald-700 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>🟢 Dépôts de Comptes</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-emerald-300">{{ categoryCounts.DEPOT_COMPTES || 0 }}</span>
+                  <span>Dépôts de Comptes</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-emerald-800">{{ categoryCounts.DEPOT_COMPTES || 0 }}</span>
                 </button>
 
                 <button 
                   @click="selectedRavenCategory = 'NOMINATION_GERANCE'"
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1.5"
-                  :class="selectedRavenCategory === 'NOMINATION_GERANCE' ? 'bg-sky-500 text-white font-bold border-amber-400 shadow-lg shadow-amber-500/20' : 'bg-slate-900 text-amber-400 border-slate-800 hover:border-slate-700'"
+                  :class="selectedRavenCategory === 'NOMINATION_GERANCE' ? 'bg-teal-700 text-white font-bold border-teal-700' : 'bg-slate-50 text-teal-800 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>🔵 Nomination & Gérance</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-amber-300">{{ categoryCounts.NOMINATION_GERANCE || 0 }}</span>
+                  <span>Nominations & Dirigeants</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-teal-800">{{ categoryCounts.NOMINATION_GERANCE || 0 }}</span>
                 </button>
 
                 <button 
                   @click="selectedRavenCategory = 'FUSION_APPORT'"
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1.5"
-                  :class="selectedRavenCategory === 'FUSION_APPORT' ? 'bg-indigo-500 text-white font-bold border-indigo-400 shadow-lg shadow-indigo-500/30' : 'bg-slate-900 text-indigo-400 border-slate-800 hover:border-slate-700'"
+                  :class="selectedRavenCategory === 'FUSION_APPORT' ? 'bg-indigo-600 text-white font-bold border-indigo-600' : 'bg-slate-50 text-indigo-700 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>🟣 Fusions & Apports</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-indigo-300">{{ categoryCounts.FUSION_APPORT || 0 }}</span>
+                  <span>Fusions & Apports</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-indigo-800">{{ categoryCounts.FUSION_APPORT || 0 }}</span>
                 </button>
 
                 <button 
                   @click="selectedRavenCategory = 'PROCEDURE_COLLECTIVE'"
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1.5"
-                  :class="selectedRavenCategory === 'PROCEDURE_COLLECTIVE' ? 'bg-rose-500 text-white font-bold border-rose-400 shadow-lg shadow-rose-500/30' : 'bg-slate-900 text-rose-400 border-slate-800 hover:border-slate-700'"
+                  :class="selectedRavenCategory === 'PROCEDURE_COLLECTIVE' ? 'bg-rose-600 text-white font-bold border-rose-600' : 'bg-slate-50 text-rose-700 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>🔴 Procédures & Risques</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-rose-300">{{ categoryCounts.PROCEDURE_COLLECTIVE || 0 }}</span>
+                  <span>Procédures collectives</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-rose-800">{{ categoryCounts.PROCEDURE_COLLECTIVE || 0 }}</span>
                 </button>
               </div>
             </div>
@@ -574,98 +565,98 @@
                 <input 
                   v-model="ravenSearchText"
                   type="text" 
-                  placeholder="🔍 Rechercher dans les actes (ex: gérant, bilan, fusion)..."
-                  class="w-full pl-9 pr-4 py-2 bg-slate-900 border border-slate-800 rounded-xl text-xs text-white placeholder-slate-500 font-mono-cyber focus:outline-none focus:border-amber-500"
+                  placeholder="Rechercher une annonce (nomination, bilan, fusion)..."
+                  class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-500 font-sans focus:outline-none focus:border-teal-500"
                 />
                 <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
 
-              <select v-model="selectedRavenYear" class="px-3 py-2 bg-slate-900 border border-slate-800 rounded-xl text-xs text-white font-mono-cyber focus:outline-none focus:border-amber-500 w-full sm:w-48">
+              <select v-model="selectedRavenYear" class="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 font-sans focus:outline-none focus:border-teal-500 w-full sm:w-48">
                 <option :value="null">Toutes les Années</option>
                 <option v-for="yr in ravenYears" :key="yr" :value="yr">Année {{ yr }}</option>
               </select>
             </div>
 
             <!-- RAVEN CHRONOLOGICAL EVENTS TIMELINE -->
-            <div class="relative pl-6 space-y-6 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-800 max-h-[420px] overflow-y-auto pr-1">
-              <div v-if="filteredRavenEvents.length === 0" class="p-8 text-center text-xs font-mono-cyber text-slate-500">
+            <div class="relative pl-6 space-y-6 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200 max-h-[420px] overflow-y-auto pr-1">
+              <div v-if="filteredRavenEvents.length === 0" class="p-8 text-center text-xs font-sans text-slate-500">
                 Aucun acte juridique ne correspond à vos filtres actuels.
               </div>
 
               <div v-for="(ev, idx) in filteredRavenEvents" :key="idx" class="relative space-y-2 group">
                 <div class="flex items-center space-x-3 -ml-[31px]">
                   <div 
-                    class="w-6 h-6 rounded-full bg-slate-950 border-2 flex items-center justify-center transition"
+                    class="w-6 h-6 rounded-full bg-white border-2 flex items-center justify-center transition"
                     :class="getCategoryBorderClass(ev.category)"
                   >
                     <div class="w-2 h-2 rounded-full" :class="getCategoryBgClass(ev.category)"></div>
                   </div>
-                  <span class="text-xs font-black font-mono-cyber px-2.5 py-1 rounded border bg-slate-900" :class="getCategoryTextClass(ev.category)">
+                  <span class="text-xs font-black font-sans px-2.5 py-1 rounded border bg-slate-50" :class="getCategoryTextClass(ev.category)">
                     {{ ev.year || ev.date }}
                   </span>
-                  <span class="px-2 py-0.5 rounded text-[10px] font-mono-cyber font-bold uppercase border" :class="getCategoryBadgeClass(ev.category)">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-sans font-bold uppercase border" :class="getCategoryBadgeClass(ev.category)">
                     {{ ev.category_label || ev.type }}
                   </span>
                 </div>
 
                 <div 
                   @click="openNoticeInspector(ev)"
-                  class="p-4 rounded-xl bg-slate-900/70 hover:bg-slate-900 border border-slate-800 hover:border-amber-500/50 cursor-pointer transition space-y-2"
+                  class="p-4 rounded-xl bg-slate-50/70 hover:bg-slate-50 border border-slate-200 hover:border-teal-500/50 cursor-pointer transition space-y-2"
                 >
-                  <div class="flex justify-between text-xs font-mono-cyber">
-                    <span class="font-bold text-amber-400">{{ ev.source || 'BODACC' }} • {{ ev.date }}</span>
-                    <span class="text-slate-400">{{ ev.tribunal || 'Greffe du Tribunal de Commerce' }}</span>
+                  <div class="flex justify-between text-xs font-sans">
+                    <span class="font-bold text-teal-800">{{ ev.source || 'BODACC' }} • {{ ev.date }}</span>
+                    <span class="text-slate-500">{{ ev.tribunal || 'Greffe du Tribunal de Commerce' }}</span>
                   </div>
-                  <div class="text-xs text-slate-200 font-mono-cyber bg-slate-950/60 p-3 rounded border border-slate-800/80">
+                  <div class="text-xs text-slate-700 font-sans bg-white p-3 rounded border border-slate-200">
                     {{ ev.detail_texte_brut || ev.description || 'Publication légale au Registre du Commerce' }}
                   </div>
-                  <div class="flex justify-between items-center text-[11px] font-mono-cyber pt-1">
-                    <span class="text-amber-400 hover:underline">🔍 Cliquer pour inspecter l'acte complet →</span>
-                    <a :href="ev.url || 'https://www.bodacc.fr'" target="_blank" @click.stop class="text-slate-400 hover:text-white underline">Notice bodacc.fr</a>
+                  <div class="flex justify-between items-center text-[11px] font-sans pt-1">
+                    <span class="text-teal-700 hover:underline">Consulter l'annonce officielle →</span>
+                    <a :href="ev.url || 'https://www.bodacc.fr'" target="_blank" @click.stop class="text-slate-500 hover:text-slate-900 underline">Notice bodacc.fr</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- MASTER SECTION CARTOGRAPHIQUE GÉOGRAPHIQUE EN BAS DE PAGE (ARIADNE v2 + LEAFLET MAP) -->
-          <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-6">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+          <!-- SECTION CARTOGRAPHIQUE GÉOGRAPHIQUE & ÉTABLISSEMENTS -->
+          <div class="bg-white rounded-xl border border-slate-200 rounded-2xl p-6 border border-slate-200 space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
               <div>
                 <div class="flex items-center space-x-3">
-                  <div class="w-9 h-9 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center font-bold">🗺️</div>
-                  <h3 class="text-base font-bold text-white font-mono-cyber">STATION DE CARTOGRAPHIE GÉOSPATIALE & ÉTABLISSEMENTS (ARIADNE v2)</h3>
-                  <button @click="showEstablishmentsModal = true" class="px-2 py-0.5 rounded text-[10px] bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 font-mono-cyber transition">🔍 Inspecter Tous ({{ totalEstablishments }})</button>
+                  <div class="w-9 h-9 rounded-xl bg-teal-50 text-teal-800 border border-teal-200 flex items-center justify-center font-bold text-xs">CARTE</div>
+                  <h3 class="text-base font-bold text-slate-900 font-sans">IMPLANTATIONS GÉOGRAPHIQUES & ÉTABLISSEMENTS</h3>
+                  <button @click="showEstablishmentsModal = true" class="px-2 py-0.5 rounded text-[10px] bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 font-sans transition">Liste détaillée ({{ totalEstablishments }})</button>
                 </div>
-                <p class="text-xs text-slate-400 mt-1">Graphe NetworkX, Carte Leaflet.js interactive et filtrage régional/départemental</p>
+                <p class="text-xs text-slate-500 mt-1">Répartition territoriale des sièges et établissements secondaires.</p>
               </div>
 
               <!-- STATUS FILTER TOGGLE BUTTONS (TOUS, ACTIFS, CLOS) -->
-              <div class="flex items-center space-x-1.5 font-mono-cyber text-xs">
+              <div class="flex items-center space-x-1.5 font-sans text-xs">
                 <button 
                   @click="setSiteStatusFilter('all')" 
                   class="px-3 py-1.5 rounded-xl border transition"
-                  :class="siteStatusFilter === 'all' ? 'bg-indigo-500 text-white font-bold border-indigo-400 shadow-lg shadow-indigo-500/30' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                  :class="siteStatusFilter === 'all' ? 'bg-teal-700 text-white font-bold border-teal-700' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
                 >
                   Tous ({{ totalEstablishments }})
                 </button>
                 <button 
                   @click="setSiteStatusFilter('active')" 
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1"
-                  :class="siteStatusFilter === 'active' ? 'bg-emerald-500 text-white font-bold border-emerald-400 shadow-lg shadow-emerald-500/30' : 'bg-slate-900 text-emerald-400 border-slate-800 hover:border-slate-700'"
+                  :class="siteStatusFilter === 'active' ? 'bg-emerald-600 text-white font-bold border-emerald-600' : 'bg-slate-50 text-emerald-700 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>🟢 Actifs</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-emerald-300">{{ activeEstablishments }}</span>
+                  <span>Actifs</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-emerald-800">{{ activeEstablishments }}</span>
                 </button>
                 <button 
                   @click="setSiteStatusFilter('closed')" 
                   class="px-3 py-1.5 rounded-xl border transition flex items-center space-x-1"
-                  :class="siteStatusFilter === 'closed' ? 'bg-rose-500 text-white font-bold border-rose-400 shadow-lg shadow-rose-500/30' : 'bg-slate-900 text-rose-400 border-slate-800 hover:border-slate-700'"
+                  :class="siteStatusFilter === 'closed' ? 'bg-rose-600 text-white font-bold border-rose-600' : 'bg-slate-50 text-rose-700 border-slate-200 hover:border-slate-300'"
                 >
-                  <span>🔴 Clos</span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-950 text-rose-300">{{ closedEstablishments }}</span>
+                  <span>Clos</span>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-rose-800">{{ closedEstablishments }}</span>
                 </button>
               </div>
             </div>
@@ -675,11 +666,11 @@
               <!-- LEVEL 1: REGIONS -->
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold text-slate-400 font-mono-cyber uppercase flex items-center space-x-2">
-                    <span>🇫🇷 1. SÉLECTIONNER UNE RÉGION D'IMPLANTATION</span>
-                    <span v-if="selectedRegion" class="text-indigo-400 font-normal">({{ selectedRegion }})</span>
+                  <span class="text-xs font-bold text-slate-500 font-sans uppercase flex items-center space-x-2">
+                    <span>1. SÉLECTIONNER UNE RÉGION D'IMPLANTATION</span>
+                    <span v-if="selectedRegion" class="text-teal-700 font-normal">({{ selectedRegion }})</span>
                   </span>
-                  <button v-if="selectedRegion || selectedDepartment" @click="toggleRegionFilter(null)" class="text-xs text-amber-400 hover:text-amber-300 underline font-mono-cyber">
+                  <button v-if="selectedRegion || selectedDepartment" @click="toggleRegionFilter(null)" class="text-xs text-teal-700 hover:text-teal-900 underline font-sans">
                     Réinitialiser les filtres géographiques
                   </button>
                 </div>
@@ -688,11 +679,11 @@
                     v-for="reg in regionList" 
                     :key="reg.name"
                     @click="toggleRegionFilter(reg.name)"
-                    class="px-3 py-1.5 rounded-xl text-xs font-mono-cyber border transition flex items-center space-x-2"
-                    :class="selectedRegion === reg.name ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold border-indigo-400 shadow-lg shadow-indigo-500/30' : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'"
+                    class="px-3 py-1.5 rounded-xl text-xs font-sans border transition flex items-center space-x-2"
+                    :class="selectedRegion === reg.name ? 'bg-teal-700 text-white font-bold border-teal-700' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300'"
                   >
-                    <span>📍 {{ reg.name }}</span>
-                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold" :class="selectedRegion === reg.name ? 'bg-slate-950 text-indigo-300' : 'bg-slate-800 text-amber-300'">
+                    <span>{{ reg.name }}</span>
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold" :class="selectedRegion === reg.name ? 'bg-white text-teal-800' : 'bg-slate-100 text-slate-700'">
                       {{ reg.total }} site(s)
                     </span>
                   </button>
@@ -700,10 +691,10 @@
               </div>
 
               <!-- LEVEL 2: DEPARTMENTS (Shown when a Region is selected) -->
-              <div v-if="selectedRegion && availableDepartmentsInSelectedRegion.length > 0" class="p-4 bg-slate-900/60 rounded-xl border border-indigo-500/30 space-y-2 animate-in fade-in duration-200">
-                <div class="flex items-center justify-between text-xs font-mono-cyber">
-                  <span class="font-bold text-indigo-300 uppercase">🏢 2. DÉPARTEMENTS DANS LA RÉGION "{{ selectedRegion }}" :</span>
-                  <button v-if="selectedDepartment" @click="selectedDepartment = null; updateMapMarkers()" class="text-amber-400 hover:underline">
+              <div v-if="selectedRegion && availableDepartmentsInSelectedRegion.length > 0" class="p-4 bg-slate-50/60 rounded-xl border border-slate-200 space-y-2 animate-in fade-in duration-200">
+                <div class="flex items-center justify-between text-xs font-sans">
+                  <span class="font-bold text-slate-800 uppercase">2. DÉPARTEMENTS DANS LA RÉGION "{{ selectedRegion }}" :</span>
+                  <button v-if="selectedDepartment" @click="selectedDepartment = null; updateMapMarkers()" class="text-teal-700 hover:underline">
                     Voir toute la région {{ selectedRegion }}
                   </button>
                 </div>
@@ -712,11 +703,11 @@
                     v-for="dept in availableDepartmentsInSelectedRegion" 
                     :key="dept.code"
                     @click="toggleDepartmentFilter(dept.code)"
-                    class="px-2.5 py-1 rounded-lg text-xs font-mono-cyber border transition flex items-center space-x-1.5"
-                    :class="selectedDepartment === dept.code ? 'bg-sky-500 text-white font-bold border-amber-400 shadow-lg shadow-amber-500/20' : 'bg-slate-950 text-slate-300 border-slate-800 hover:border-indigo-500/50'"
+                    class="px-2.5 py-1 rounded-lg text-xs font-sans border transition flex items-center space-x-1.5"
+                    :class="selectedDepartment === dept.code ? 'bg-teal-700 text-white font-bold border-teal-700' : 'bg-white text-slate-700 border-slate-200 hover:border-teal-500'"
                   >
                     <span>{{ dept.code }} - {{ dept.name }}</span>
-                    <span class="px-1.5 py-0.5 rounded text-[10px] font-bold" :class="selectedDepartment === dept.code ? 'bg-slate-950 text-white' : 'bg-slate-800 text-amber-300'">
+                    <span class="px-1.5 py-0.5 rounded text-[10px] font-bold" :class="selectedDepartment === dept.code ? 'bg-white text-teal-800' : 'bg-slate-100 text-slate-700'">
                       {{ dept.total }}
                     </span>
                   </button>
@@ -724,17 +715,22 @@
               </div>
             </div>
 
-            <!-- Dual View: Interactive Table & Leaflet Dark Map -->
+            <!-- Dual View: Interactive Table & Leaflet Map -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-2">
               <!-- Left: Filtered Establishments Table -->
               <div class="space-y-3">
-                <div class="flex items-center justify-between text-xs font-mono-cyber text-slate-400">
-                  <span>LISTE DES SITES ({{ filteredNodes.length }} AFFICHIÉS)</span>
-                  <span v-if="selectedNode" class="text-amber-400 font-bold">1 Site Isolé</span>
+                <div class="flex items-center justify-between text-xs font-sans text-slate-500">
+                  <span>LISTE DES SITES ({{ filteredNodes.length }} AFFICHÉS)</span>
+                  <div v-if="selectedNode" class="flex items-center space-x-2">
+                    <span class="text-teal-700 font-bold">1 Site Ciblé</span>
+                    <button @click.stop="resetMapSelection()" class="text-[11px] text-teal-700 hover:text-teal-900 underline font-semibold">
+                      Réinitialiser la vue
+                    </button>
+                  </div>
                 </div>
-                <div class="overflow-x-auto max-h-[420px] overflow-y-auto rounded-xl border border-slate-800">
-                  <table class="w-full text-left text-xs font-mono-cyber">
-                    <thead class="sticky top-0 bg-slate-900/90 backdrop-blur z-10 border-b border-slate-800 text-slate-400">
+                <div class="overflow-x-auto max-h-[420px] overflow-y-auto rounded-xl border border-slate-200">
+                  <table class="w-full text-left text-xs font-sans">
+                    <thead class="sticky top-0 bg-slate-50 backdrop-blur z-10 border-b border-slate-200 text-slate-500">
                       <tr>
                         <th class="py-2.5 px-3">ÉTABLISSEMENT</th>
                         <th class="py-2.5 px-3">SIRET</th>
@@ -742,39 +738,39 @@
                         <th class="py-2.5 px-3 text-right">ÉTAT</th>
                       </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-800/60">
+                    <tbody class="divide-y divide-slate-100">
                       <tr 
                         v-for="(node, idx) in filteredNodes" 
                         :key="idx"
                         @click="toggleNodeSelection(node)"
-                        class="cursor-pointer transition hover:bg-slate-900/80"
-                        :class="selectedNode && selectedNode.siren === node.siren ? 'bg-sky-950/60 border-l-4 border-amber-400 text-white font-bold' : (node.role && node.role.includes('Siège') ? 'bg-indigo-950/20' : '')"
+                        class="cursor-pointer transition hover:bg-slate-50"
+                        :class="selectedNode && getNodeKey(selectedNode) === getNodeKey(node) ? 'bg-teal-50 border-l-4 border-teal-600 text-slate-900 font-bold' : (node.role && node.role.includes('Siège') ? 'bg-slate-50/50' : '')"
                       >
                         <td class="py-3 px-3">
-                          <div class="font-bold text-white flex items-center space-x-1.5">
-                            <span class="w-2 h-2 rounded-full shrink-0" :class="node.etat_administratif === 'A' ? 'bg-emerald-400' : 'bg-rose-500'"></span>
+                          <div class="font-bold text-slate-900 flex items-center space-x-1.5">
+                            <span class="w-2 h-2 rounded-full shrink-0" :class="node.etat_administratif === 'A' ? 'bg-emerald-500' : 'bg-rose-500'"></span>
                             <span class="truncate max-w-[180px]">{{ node.name }}</span>
                           </div>
-                          <div class="text-[10px] text-slate-400 font-normal">{{ node.role }}</div>
+                          <div class="text-[10px] text-slate-500 font-normal">{{ node.role }}</div>
                         </td>
-                        <td class="py-3 px-3 text-amber-400 font-bold font-mono-cyber">{{ node.siren || node.siret }}</td>
-                        <td class="py-3 px-3 text-slate-300">
+                        <td class="py-3 px-3 text-teal-800 font-bold font-sans">{{ node.siren || node.siret }}</td>
+                        <td class="py-3 px-3 text-slate-700">
                           {{ node.details ? (node.details.commune || node.details.code_postal || 'FR') : 'FR' }}
                         </td>
                         <td class="py-3 px-3 text-right">
                           <div class="flex items-center justify-end space-x-2">
                             <span 
                               class="px-2 py-0.5 rounded text-[10px] font-bold border uppercase"
-                              :class="node.etat_administratif === 'A' ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30' : 'bg-rose-500/10 text-rose-400 border-rose-500/30'"
+                              :class="node.etat_administratif === 'A' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200'"
                             >
                               {{ node.etat_administratif === 'A' ? 'Actif' : 'Fermé' }}
                             </span>
                             <button 
                               @click.stop="openSiteInspector(node)"
-                              class="px-2 py-1 rounded bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 transition text-[10px] flex items-center space-x-1 shrink-0"
-                              title="Inspecter le dossier complet du site (0% Oubli)"
+                              class="px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 transition text-[10px] flex items-center space-x-1 shrink-0"
+                              title="Inspecter le dossier complet de l'établissement"
                             >
-                              <span>👁️</span>
+                              <span>Détails</span>
                             </button>
                           </div>
                         </td>
@@ -784,17 +780,27 @@
                 </div>
               </div>
 
-              <!-- Right: Interactive Leaflet Dark Map -->
+              <!-- Right: Interactive Leaflet Map -->
               <div class="space-y-3">
-                <div class="flex items-center justify-between text-xs font-mono-cyber text-slate-400">
-                  <span>CARTE GÉOSPATIALE SOMBRE (LEAFLET DARK MATTER)</span>
+                <div class="flex items-center justify-between text-xs font-sans text-slate-500">
+                  <div class="flex items-center space-x-2">
+                    <span>CARTE DES ÉTABLISSEMENTS</span>
+                    <button 
+                      v-if="selectedNode" 
+                      @click="resetMapSelection()" 
+                      class="text-[10px] px-2 py-0.5 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 font-sans transition"
+                      title="Réinitialiser la vue d'ensemble"
+                    >
+                      Vue d'ensemble
+                    </button>
+                  </div>
                   <div class="flex items-center gap-3">
-                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span><span class="text-emerald-400">En activité</span></span>
-                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span><span class="text-red-400">Fermé</span></span>
-                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span><span class="text-amber-400">Siège social</span></span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span><span class="text-emerald-700">En activité</span></span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span><span class="text-red-700">Fermé</span></span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span><span class="text-amber-700">Siège social</span></span>
                   </div>
                 </div>
-                <div id="mapContainer" class="w-full h-[420px] rounded-xl border border-slate-800 overflow-hidden relative shadow-2xl"></div>
+                <div id="mapContainer" class="w-full h-[420px] rounded-xl border border-slate-200 overflow-hidden relative"></div>
               </div>
             </div>
           </div>

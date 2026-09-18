@@ -1,69 +1,72 @@
 // ==========================================================================
-// CITADEL 360° — INSTITUTIONAL PALETTE & CHART.JS ENGINE
-// Theme: Or Ambré & Carbone Minéral (High Finance & Sovereign OSINT)
+// CITADEL 360° — INSTITUTIONAL PALETTE & CHART.JS ENGINE (LIGHT EDITION)
+// Theme: Blanc Albâtre, Ardoise Minérale & Vert Sceau d'État
+// Zero Shadow • Zero Neon • Zero Glow • Precision Data Lines
 // ==========================================================================
 const CITADEL_PALETTE = {
-  // Signature Chromatique Maîtresse Comparative (Règle Entreprise × État)
-  primary: '#F59E0B',        // Or Ambré Cible Principale
-  primaryLight: '#FBBF24',
-  primaryDark: '#D97706',
-  primaryBorder: '#FBBF24',
-  primaryMuted: 'rgba(245, 158, 11, 0.20)',
+  // Signature Chromatique Maîtresse (Vert Sceau d'État vs Bleu Cobalt)
+  primary: '#0F766E',        // Vert Sceau d'État (Cible Principale)
+  primaryLight: '#14B8A6',
+  primaryDark: '#047857',
+  primaryBorder: '#0F766E',
+  primaryMuted: 'rgba(15, 118, 110, 0.12)',
 
-  competitor: '#06B6D4',     // Bleu Cyan Électrique Concurrent Benchmark
-  competitorLight: '#22D3EE',
-  competitorDark: '#0891B2',
-  competitorBorder: '#22D3EE',
-  competitorMuted: 'rgba(6, 182, 212, 0.20)',
+  competitor: '#1D4ED8',     // Bleu Cobalt Royal (Benchmark / Concurrent)
+  competitorLight: '#3B82F6',
+  competitorDark: '#1E40AF',
+  competitorBorder: '#1D4ED8',
+  competitorMuted: 'rgba(29, 78, 216, 0.12)',
 
-  // Sovereign Entity (Or Ambré — Prestige, Autorité, Cible Principale)
-  gold: '#F59E0B',
-  goldLight: '#FBBF24',
-  goldDark: '#D97706',
-  goldGlow: 'rgba(245, 158, 11, 0.25)',
+  // Sovereign Entity (Vert Sceau d'État — Autorité, Stabilité, Cible)
+  gold: '#0F766E',
+  goldLight: '#14B8A6',
+  goldDark: '#047857',
+  goldGlow: 'transparent',
 
-  // Benchmark / Competitor (Bleu Cyan & Saphir Électrique — Altérité, Contrasté)
-  steel: '#06B6D4',
-  steelLight: '#22D3EE',
-  steelMuted: 'rgba(6, 182, 212, 0.25)',
-  silver: '#94A3B8',
+  // Benchmark / Competitor (Bleu Cobalt & Acier)
+  steel: '#1D4ED8',
+  steelLight: '#3B82F6',
+  steelMuted: 'rgba(29, 78, 216, 0.15)',
+  silver: '#64748B',
 
-  // Vitalité Opérationnelle & Solvabilité (Vert Émeraude / Sauge — Santé, Actifs, Fonds Propres)
-  emerald: '#10B981',
-  emeraldLight: '#34D399',
-  emeraldMuted: 'rgba(16, 185, 129, 0.22)',
-  sauge: '#10B981',
+  // Vitalité Opérationnelle & Solvabilité (Vert Forêt Fiscal)
+  emerald: '#059669',
+  emeraldLight: '#10B981',
+  emeraldMuted: 'rgba(5, 150, 105, 0.15)',
+  sauge: '#059669',
 
-  // Risque Légal, Cessation & Passif (Rouge Vermillon / Carmin — Alerte, Fermeture, Dette)
-  vermillon: '#EF4444',
-  vermillonLight: '#F87171',
-  vermillonMuted: 'rgba(239, 68, 68, 0.25)',
+  // Risque Légal, Cessation & Passif (Rouge Carmin Débit)
+  vermillon: '#DC2626',
+  vermillonLight: '#EF4444',
+  vermillonMuted: 'rgba(220, 38, 38, 0.15)',
 
-  // Mobilité Stratégique & Opérations (Bleu Cobalt / Saphir — Transfert, M&A, EBITDA)
-  cobalt: '#3B82F6',
-  cobaltLight: '#60A5FA',
-  cobaltMuted: 'rgba(59, 130, 246, 0.25)',
+  // Mobilité Stratégique & Opérations (Ambre Cuivré / Cobalt)
+  cobalt: '#D97706',
+  cobaltLight: '#F59E0B',
+  cobaltMuted: 'rgba(217, 119, 6, 0.15)',
 
-  // Gouvernance Neutre & Historique (Ardoise Minérale — Mandats secondaires, Statuts)
-  slate: '#64748B',
-  slateDark: '#475569',
+  // Gouvernance Neutre & Historique (Ardoise Minérale)
+  slate: '#475569',
+  slateDark: '#334155',
   slateMuted: '#94A3B8',
 
-  // Surfaces & Base (Carbone Minéral)
-  carbon: '#090D14',
-  surface: '#111726',
-  card: '#0F172A',
-  border: '#1E293B',
-  gridLine: 'rgba(30, 41, 59, 0.45)',
+  // Surfaces & Base (Clair Minéral)
+  carbon: '#F8FAFC',
+  surface: '#FFFFFF',
+  card: '#FFFFFF',
+  border: '#E2E8F0',
+  gridLine: '#E2E8F0',
   textMuted: '#64748B',
-  textLight: '#F1F5F9',
-  nobleDonut: ['#F59E0B', '#10B981', '#3B82F6', '#06B6D4', '#EF4444', '#94A3B8']
+  textLight: '#0F172A',
+  
+  // Palette Catégorielle 6 teintes (Parts de marché, actionnariat)
+  nobleDonut: ['#0F766E', '#1D4ED8', '#D97706', '#6D28D9', '#0284C7', '#475569']
 };
 
 if (window.Chart) {
-  Chart.defaults.color = CITADEL_PALETTE.silver;
-  Chart.defaults.font.family = "'IBM Plex Mono', monospace";
-  Chart.defaults.font.size = 10.5;
+  Chart.defaults.color = CITADEL_PALETTE.textMuted;
+  Chart.defaults.font.family = "'Plus Jakarta Sans', 'Inter', sans-serif";
+  Chart.defaults.font.size = 11;
 
   if (Chart.defaults.scale && Chart.defaults.scale.grid) {
     Chart.defaults.scale.grid.color = CITADEL_PALETTE.gridLine;
@@ -72,19 +75,20 @@ if (window.Chart) {
   }
 
   if (Chart.defaults.plugins && Chart.defaults.plugins.tooltip) {
-    Chart.defaults.plugins.tooltip.backgroundColor = CITADEL_PALETTE.surface;
-    Chart.defaults.plugins.tooltip.titleColor = CITADEL_PALETTE.gold;
-    Chart.defaults.plugins.tooltip.bodyColor = CITADEL_PALETTE.textLight;
-    Chart.defaults.plugins.tooltip.borderColor = 'rgba(217, 155, 67, 0.4)';
+    Chart.defaults.plugins.tooltip.backgroundColor = '#0F172A';
+    Chart.defaults.plugins.tooltip.titleColor = '#FFFFFF';
+    Chart.defaults.plugins.tooltip.bodyColor = '#F8FAFC';
+    Chart.defaults.plugins.tooltip.borderColor = '#E2E8F0';
     Chart.defaults.plugins.tooltip.borderWidth = 1;
-    Chart.defaults.plugins.tooltip.padding = 10;
+    Chart.defaults.plugins.tooltip.padding = 8;
     Chart.defaults.plugins.tooltip.cornerRadius = 6;
     Chart.defaults.plugins.tooltip.bodyFont = {
-      family: "'IBM Plex Mono', monospace",
-      weight: 'bold'
+      family: "'Plus Jakarta Sans', sans-serif",
+      weight: '600'
     };
   }
 }
+
 
     const { createApp, ref, computed, watch, onMounted, nextTick } = Vue;
 
@@ -98,6 +102,19 @@ if (window.Chart) {
         const executionTime = ref('0.00');
         const activeMetric = ref('revenue');
         const resultData = ref(null);
+
+        const sampleCompanies = ref([
+          { name: 'Decathlon', siren: '306138900' },
+          { name: 'Airbus', siren: '383474814' },
+          { name: 'Michelin', siren: '855200507' },
+          { name: 'Danone', siren: '552032534' },
+          { name: 'LVMH', siren: '775670417' },
+          { name: 'TotalEnergies', siren: '542051180' }
+        ]);
+
+        function launchSampleSearch(siren) {
+          selectPreset(siren);
+        }
 
         // Analytics & BI Studio Mode States
         const activeTab = ref('osint'); // 'osint' or 'analytics'
@@ -167,6 +184,12 @@ if (window.Chart) {
         const selectedNode = ref(null);
         let leafletMap = null;
         let markersGroup = null;
+        let markersMap = new Map();
+
+        function getNodeKey(node) {
+          if (!node) return null;
+          return String(node.siret || node.id || node.siren || '');
+        }
 
         const DEPT_TO_REGION = {
           "01": "Auvergne-Rhône-Alpes", "03": "Auvergne-Rhône-Alpes", "07": "Auvergne-Rhône-Alpes", "15": "Auvergne-Rhône-Alpes", "26": "Auvergne-Rhône-Alpes", "38": "Auvergne-Rhône-Alpes", "42": "Auvergne-Rhône-Alpes", "43": "Auvergne-Rhône-Alpes", "63": "Auvergne-Rhône-Alpes", "69": "Auvergne-Rhône-Alpes", "73": "Auvergne-Rhône-Alpes", "74": "Auvergne-Rhône-Alpes",
@@ -429,7 +452,7 @@ if (window.Chart) {
                 networkDonutChart = new Chart(donutCtx, {
                   type: 'bar',
                   data: {
-                    labels: ['🟢 Établissements Actifs', '⚪ Historiques Clos'],
+                    labels: ['Établissements Actifs', 'Historiques Clos'],
                     datasets: [
                       {
                         label: displayCompanyName.value,
@@ -453,19 +476,25 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                      x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } }, grid: { color: '#1e293b' } },
-                      y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                      x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                      y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                     },
                     plugins: {
-                      legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                     }
                   }
                 });
               } else {
+                const activeTot = activeCount + closedCount;
+                const pctAct = activeTot > 0 ? Math.round((activeCount / activeTot) * 100) : 0;
+                const pctClo = activeTot > 0 ? Math.round((closedCount / activeTot) * 100) : 0;
                 networkDonutChart = new Chart(donutCtx, {
                   type: 'doughnut',
                   data: {
-                    labels: ['🟢 Établissements Actifs', '⚪ Établissements Historiques Clos'],
+                    labels: [
+                      `Établissements Actifs (${activeCount} • ${pctAct}%)`,
+                      `Historiques Clos (${closedCount} • ${pctClo}%)`
+                    ],
                     datasets: [{
                       label: displayCompanyName.value,
                       data: [activeCount, closedCount],
@@ -478,7 +507,10 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                      legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: {
+                        position: 'bottom',
+                        labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                      }
                     }
                   }
                 });
@@ -590,11 +622,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -618,7 +653,7 @@ if (window.Chart) {
                 executivesDonutChart = new Chart(execCtx, {
                   type: 'bar',
                   data: {
-                    labels: ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
+                    labels: ['Personnes Physiques (Dirigeants)', 'Personnes Morales (Holdings)'],
                     datasets: [
                       {
                         label: displayCompanyName.value,
@@ -642,22 +677,30 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                      x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } }, grid: { color: '#1e293b' } },
-                      y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                      x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                      y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                     },
                     plugins: {
-                      legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                     }
                   }
                 });
               } else {
+                const phys = physicalCount.value || 0;
+                const mor = moralCount.value || 0;
+                const execTot = phys + mor;
+                const pctPhys = execTot > 0 ? Math.round((phys / execTot) * 100) : 0;
+                const pctMor = execTot > 0 ? Math.round((mor / execTot) * 100) : 0;
                 executivesDonutChart = new Chart(execCtx, {
                   type: 'doughnut',
                   data: {
-                    labels: ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
+                    labels: [
+                      `Personnes Physiques (${phys} • ${pctPhys}%)`,
+                      `Personnes Morales (${mor} • ${pctMor}%)`
+                    ],
                     datasets: [{
                       label: displayCompanyName.value,
-                      data: [physicalCount.value || 0, moralCount.value || 0],
+                      data: [phys, mor],
                       backgroundColor: [CITADEL_PALETTE.primary, CITADEL_PALETTE.cobalt],
                       borderWidth: 2,
                       borderColor: CITADEL_PALETTE.surface
@@ -667,7 +710,10 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                      legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: {
+                        position: 'bottom',
+                        labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                      }
                     }
                   }
                 });
@@ -749,11 +795,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -826,11 +875,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -896,11 +948,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -1058,12 +1113,12 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: { 
                     position: 'left',
                     ticks: { 
-                      color: '#94a3b8', 
-                      font: { family: 'IBM Plex Mono', size: 10 },
+                      color: '#64748B', 
+                      font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(value) {
                         if (Math.abs(value) >= 1000000000) return (value / 1000000000).toFixed(1) + 'B€';
                         if (Math.abs(value) >= 1000000) return (value / 1000000).toFixed(0) + 'M€';
@@ -1071,17 +1126,17 @@ if (window.Chart) {
                         return value + '€';
                       }
                     }, 
-                    grid: { color: '#1e293b' } 
+                    grid: { color: '#E2E8F0' } 
                   },
                   yAltman: {
                     position: 'right',
-                    title: { display: true, text: 'Score Altman Z\'', color: CITADEL_PALETTE.primaryLight, font: { family: 'IBM Plex Mono', size: 10, weight: 'bold' } },
-                    ticks: { color: CITADEL_PALETTE.primaryLight, font: { family: 'IBM Plex Mono', size: 10 } },
+                    title: { display: true, text: 'Score Altman Z\'', color: CITADEL_PALETTE.primaryLight, font: { family: 'Plus Jakarta Sans', size: 10, weight: 'bold' } },
+                    ticks: { color: CITADEL_PALETTE.primaryLight, font: { family: 'Plus Jakarta Sans', size: 10 } },
                     grid: { drawOnChartArea: false }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                 }
               }
             });
@@ -1190,21 +1245,21 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: {
                     type: 'linear',
                     position: 'left',
-                    title: { display: true, text: 'Marge (%)', color: CITADEL_PALETTE.emerald, font: { family: 'IBM Plex Mono', size: 10, weight: 'bold' } },
+                    title: { display: true, text: 'Marge (%)', color: CITADEL_PALETTE.emerald, font: { family: 'Plus Jakarta Sans', size: 10, weight: 'bold' } },
                     ticks: {
-                      color: '#94a3b8',
-                      font: { family: 'IBM Plex Mono', size: 10 },
+                      color: '#64748B',
+                      font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(v) { return v + '%'; }
                     },
-                    grid: { color: '#1e293b' }
+                    grid: { color: '#E2E8F0' }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                 }
               }
             });
@@ -1316,12 +1371,12 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: {
                     type: 'linear',
                     ticks: {
-                      color: '#94a3b8',
-                      font: { family: 'IBM Plex Mono', size: 10 },
+                      color: '#64748B',
+                      font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(value) {
                         if (Math.abs(value) >= 1000000000) return (value / 1000000000).toFixed(1) + 'B€';
                         if (Math.abs(value) >= 1000000) return (value / 1000000).toFixed(0) + 'M€';
@@ -1329,11 +1384,11 @@ if (window.Chart) {
                         return value + '€';
                       }
                     },
-                    grid: { color: '#1e293b' }
+                    grid: { color: '#E2E8F0' }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                 }
               }
             });
@@ -2210,11 +2265,11 @@ if (window.Chart) {
                 maintainAspectRatio: false,
                 interaction: { mode: 'index', intersect: false },
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                  y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } },
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } },
                   tooltip: {
                     callbacks: {
                       footer: function(tooltipItems) {
@@ -2251,7 +2306,7 @@ if (window.Chart) {
                   labels: items.map(i => i.name),
                   datasets: [
                     {
-                      label: `🏢 ${displayCompanyName.value} (Sites)`,
+                      label: `${displayCompanyName.value} (Sites)`,
                       data: items.map(i => i.primaryTotal),
                       backgroundColor: CITADEL_PALETTE.gold,
                       borderColor: CITADEL_PALETTE.goldLight,
@@ -2259,7 +2314,7 @@ if (window.Chart) {
                       borderRadius: 4
                     },
                     {
-                      label: `⚔️ ${benchmarkCompanyName.value} (Sites)`,
+                      label: `${benchmarkCompanyName.value} (Sites)`,
                       data: items.map(i => i.benchmarkTotal),
                       backgroundColor: CITADEL_PALETTE.competitor,
                       borderColor: CITADEL_PALETTE.competitorLight,
@@ -2272,10 +2327,10 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } } }
                 }
               });
             } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
@@ -2285,18 +2340,18 @@ if (window.Chart) {
                 data: {
                   labels: items.map(i => i.name),
                   datasets: [
-                    { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.competitor, borderRadius: 4 },
-                    { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
+                    { label: 'Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.competitor, borderRadius: 4 },
+                    { label: 'Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
                   ]
                 },
                 options: {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                    x: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } } }
                 }
               });
             } else {
@@ -2306,18 +2361,18 @@ if (window.Chart) {
                 data: {
                   labels: items.map(i => i.name),
                   datasets: [
-                    { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.emerald, borderRadius: 4 },
-                    { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
+                    { label: 'Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.emerald, borderRadius: 4 },
+                    { label: 'Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
                   ]
                 },
                 options: {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                    x: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } } }
                 }
               });
             }
@@ -2332,54 +2387,83 @@ if (window.Chart) {
               if (existing) existing.destroy();
             }
 
-            let datasets = [];
             if (benchmarkData.value && biGeoEntityFilter.value === 'all') {
-              datasets = [
-                {
-                  label: displayCompanyName.value,
-                  data: [biTotalRelocations.value, biTotalFinalClosures.value],
-                  backgroundColor: [CITADEL_PALETTE.gold, CITADEL_PALETTE.vermillon],
-                  borderWidth: 2,
-                  borderColor: CITADEL_PALETTE.surface
+              biClosureReasonChart = new Chart(donutCtx, {
+                type: 'bar',
+                data: {
+                  labels: ['Relocalisations / Transferts', 'Fermetures Définitives'],
+                  datasets: [
+                    {
+                      label: displayCompanyName.value,
+                      data: [biTotalRelocations.value, biTotalFinalClosures.value],
+                      backgroundColor: CITADEL_PALETTE.primary,
+                      borderColor: CITADEL_PALETTE.primaryLight,
+                      borderWidth: 1.5,
+                      borderRadius: 6
+                    },
+                    {
+                      label: benchmarkCompanyName.value,
+                      data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
+                      backgroundColor: CITADEL_PALETTE.competitor,
+                      borderColor: CITADEL_PALETTE.competitorLight,
+                      borderWidth: 1.5,
+                      borderRadius: 6
+                    }
+                  ]
                 },
-                {
-                  label: benchmarkCompanyName.value,
-                  data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
-                  backgroundColor: [CITADEL_PALETTE.competitor, CITADEL_PALETTE.rose],
-                  borderWidth: 2,
-                  borderColor: CITADEL_PALETTE.surface
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
+                  },
+                  plugins: {
+                    legend: {
+                      display: true,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
+                  }
                 }
-              ];
-            } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
-              datasets = [{
-                label: benchmarkCompanyName.value,
-                data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
-                backgroundColor: [CITADEL_PALETTE.competitor, CITADEL_PALETTE.vermillon],
-                borderWidth: 2,
-                borderColor: CITADEL_PALETTE.surface
-              }];
+              });
             } else {
-              datasets = [{
-                label: displayCompanyName.value,
-                data: [biTotalRelocations.value, biTotalFinalClosures.value],
-                backgroundColor: [CITADEL_PALETTE.cobalt, CITADEL_PALETTE.vermillon],
-                borderWidth: 2,
-                borderColor: CITADEL_PALETTE.surface
-              }];
-            }
+              const isBenchOnly = benchmarkData.value && biGeoEntityFilter.value === 'benchmark';
+              const relocs = isBenchOnly ? benchmarkBiTotalRelocations.value : biTotalRelocations.value;
+              const closures = isBenchOnly ? benchmarkBiTotalFinalClosures.value : biTotalFinalClosures.value;
+              const compName = isBenchOnly ? benchmarkCompanyName.value : displayCompanyName.value;
+              const relocColor = isBenchOnly ? CITADEL_PALETTE.competitor : CITADEL_PALETTE.cobalt;
 
-            biClosureReasonChart = new Chart(donutCtx, {
-              type: 'doughnut',
-              data: {
-                labels: ['Relocalisations 🔄', 'Fermetures Fermes ❌'],
-                datasets: datasets
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { position: 'bottom', labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
-              }
-            });
+              const total = relocs + closures;
+              const pctReloc = total > 0 ? Math.round((relocs / total) * 100) : 0;
+              const pctClose = total > 0 ? Math.round((closures / total) * 100) : 0;
+
+              biClosureReasonChart = new Chart(donutCtx, {
+                type: 'doughnut',
+                data: {
+                  labels: [
+                    `Relocalisations (${relocs} • ${pctReloc}%)`,
+                    `Fermetures Définitives (${closures} • ${pctClose}%)`
+                  ],
+                  datasets: [{
+                    label: compName,
+                    data: [relocs, closures],
+                    backgroundColor: [relocColor, CITADEL_PALETTE.vermillon],
+                    borderWidth: 2,
+                    borderColor: CITADEL_PALETTE.surface
+                  }]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                    legend: {
+                      position: 'bottom',
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
+                  }
+                }
+              });
+            }
           }
         }
 
@@ -2517,24 +2601,6 @@ if (window.Chart) {
           executeFull360Analysis(siren);
         }
 
-        function toggleDepartmentFilter(code) {
-          if (selectedDepartment.value === code) {
-            selectedDepartment.value = null;
-          } else {
-            selectedDepartment.value = code;
-          }
-          selectedNode.value = null;
-          updateMapMarkers();
-        }
-
-        function toggleNodeSelection(node) {
-          if (selectedNode.value && selectedNode.value.siren === node.siren) {
-            selectedNode.value = null;
-          } else {
-            selectedNode.value = node;
-          }
-          updateMapMarkers();
-        }
 
         // Computed Fields
         const displayCompanyName = computed(() => resultData.value?.name || resultData.value?.legal_profile?.name || searchQuery.value);
@@ -3074,11 +3140,6 @@ if (window.Chart) {
             });
           }
 
-          // Node Selection
-          if (selectedNode.value) {
-            list = list.filter(n => (n.siren === selectedNode.value.siren || n.siret === selectedNode.value.siren));
-          }
-
           return list;
         });
 
@@ -3102,9 +3163,21 @@ if (window.Chart) {
         }
 
         function centerMapOnSite(node) {
+          if (!node) return;
           selectedSiteNode.value = null;
           showEstablishmentsModal.value = false;
-          toggleNodeSelection(node);
+          activeTab.value = 'osint';
+
+          setTimeout(() => {
+            if (leafletMap) {
+              leafletMap.invalidateSize();
+            }
+            selectAndZoomNode(node, 15);
+            const mapEl = document.getElementById('mapContainer');
+            if (mapEl) {
+              mapEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }, 120);
         }
 
         const totalEstablishments = computed(() => resultData.value?.ownership_graph?.total_nodes || displayNodes.value.length);
@@ -3182,7 +3255,8 @@ if (window.Chart) {
 
         function setSiteStatusFilter(status) {
           siteStatusFilter.value = status;
-          updateMapMarkers();
+          selectedNode.value = null;
+          updateMapMarkers(true);
         }
 
         function toggleRegionFilter(regName) {
@@ -3194,7 +3268,7 @@ if (window.Chart) {
             selectedDepartment.value = null;
           }
           selectedNode.value = null;
-          updateMapMarkers();
+          updateMapMarkers(true);
         }
 
         function toggleDepartmentFilter(code) {
@@ -3204,7 +3278,7 @@ if (window.Chart) {
             selectedDepartment.value = code;
           }
           selectedNode.value = null;
-          updateMapMarkers();
+          updateMapMarkers(true);
         }
 
         // Raven v2 Computed Timeline & Risk Filters
@@ -3302,7 +3376,7 @@ if (window.Chart) {
             });
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-              className: 'dark-map-tiles',
+              className: 'map-tiles-standard',
               maxZoom: 19,
               attribution: 'CITADEL 360° OSINT'
             }).addTo(leafletMap);
@@ -3313,7 +3387,7 @@ if (window.Chart) {
           setTimeout(() => {
             if (leafletMap) {
               leafletMap.invalidateSize();
-              updateMapMarkers();
+              updateMapMarkers(true);
             }
           }, 150);
         }
@@ -3335,47 +3409,49 @@ if (window.Chart) {
           return [46.603354 + offsetLat, 1.888334 + offsetLng];
         }
 
-        function updateMapMarkers() {
+        function updateMapMarkers(autoFit = true) {
           if (!leafletMap || !markersGroup) return;
           markersGroup.clearLayers();
+          markersMap.clear();
 
           const nodesToMap = filteredNodes.value;
           if (nodesToMap.length === 0) return;
 
           const bounds = [];
+          const selectedKey = getNodeKey(selectedNode.value);
 
           nodesToMap.forEach((node, idx) => {
             const coords = getNodeCoords(node, idx);
             bounds.push(coords);
+            const nodeKey = getNodeKey(node);
 
-            const isSelected = selectedNode.value && (selectedNode.value.siren === node.siren || selectedNode.value.siret === node.siren);
+            const isSelected = selectedKey && selectedKey === nodeKey;
             const isActive = node.etat_administratif === 'A';
             const isSiege = (node.role && node.role.toLowerCase().includes('siège')) || node.is_siege || (node.details && node.details.is_siege);
 
-            let markerRadius = 5;
-            let markerWeight = 1;
-            let markerColor = 'rgba(255, 255, 255, 0.5)';
+            let markerRadius = 6;
+            let markerWeight = 1.5;
+            let markerColor = 'rgba(255, 255, 255, 0.7)';
             let markerFill = isActive ? CITADEL_PALETTE.emerald : CITADEL_PALETTE.vermillon;
             let markerOpacity = isActive ? 0.9 : 0.75;
             let markerFillOpacity = isActive ? 0.85 : 0.65;
 
             if (isSelected) {
-              markerRadius = 9;
-              markerWeight = 2.5;
-              markerColor = '#FFFFFF';
-              markerFill = isActive ? CITADEL_PALETTE.emeraldLight : CITADEL_PALETTE.vermillon;
+              markerRadius = 12;
+              markerWeight = 3;
+              markerColor = '#0F766E';
+              markerFill = '#0D9488';
               markerOpacity = 1;
               markerFillOpacity = 1;
             } else if (isSiege) {
-              // Siege social : or = identite de l'entreprise, priorite visuelle maximale
-              markerRadius = 8;
+              markerRadius = 9;
               markerWeight = 2;
               markerColor = '#FFFFFF';
               markerFill = CITADEL_PALETTE.gold;
               markerOpacity = 1;
               markerFillOpacity = 1;
             } else if (!isActive) {
-              markerRadius = 4;
+              markerRadius = 5;
               markerWeight = 1;
               markerColor = 'rgba(239,68,68,0.4)';
               markerFill = CITADEL_PALETTE.vermillon;
@@ -3393,14 +3469,16 @@ if (window.Chart) {
             });
 
             const popupHtml = `
-              <div style="font-family: 'IBM Plex Mono', monospace; background: #090D14; border: 1px solid #D99B43; border-radius: 6px; padding: 10px; min-width: 230px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.8);">
-                <div style="color: #64748B; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">ÉTABLISSEMENT REGISTRÉ</div>
-                <div style="color: #F1F5F9; font-weight: 700; font-size: 12px; margin-top: 3px;">${node.name}</div>
-                <div style="color: #D99B43; font-size: 11px; margin-top: 3px; font-variant-numeric: tabular-nums;">SIRET : ${node.siren || node.siret}</div>
-                <div style="color: #94A3B8; font-size: 10px; margin-top: 3px;">${node.details?.adresse || 'Adresse disponible'}</div>
-                <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid #1E293B; display: flex; justify-content: space-between; align-items: center;">
-                  <span style="font-size: 9px; color: #64748B;">STATUT RCS</span>
-                  <span style="font-size: 10px; font-weight: 700; color: ${isActive ? '#22C55E' : '#EF4444'};">
+              <div style="font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 8px; padding: 12px; min-width: 240px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); color: #0F172A;">
+                <div style="color: #64748B; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
+                  ${isSiege ? '★ SIÈGE SOCIAL' : 'ÉTABLISSEMENT REGISTRÉ'}
+                </div>
+                <div style="color: #0F172A; font-weight: 700; font-size: 13px; margin-top: 4px;">${node.name || 'Établissement'}</div>
+                <div style="color: #0F766E; font-size: 11px; margin-top: 3px; font-weight: 600; font-family: monospace;">SIRET : ${node.siret || node.siren || 'N/A'}</div>
+                <div style="color: #475569; font-size: 11px; margin-top: 4px;">${node.details?.adresse || node.details?.commune || 'Adresse enregistrée'}</div>
+                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 10px; color: #64748B; font-weight: 600;">STATUT RCS</span>
+                  <span style="font-size: 10px; font-weight: 700; color: ${isActive ? '#16A34A' : '#DC2626'};">
                     ${isActive ? '● EN ACTIVITÉ' : '○ FERMÉ DÉFINITIF'}
                   </span>
                 </div>
@@ -3409,24 +3487,84 @@ if (window.Chart) {
 
             circleMarker.bindPopup(popupHtml);
 
-            circleMarker.on('click', () => {
-              toggleNodeSelection(node);
+            circleMarker.on('click', (e) => {
+              if (e && e.originalEvent) {
+                e.originalEvent.stopPropagation();
+              }
+              selectAndZoomNode(node);
             });
 
             markersGroup.addLayer(circleMarker);
+            if (nodeKey) {
+              markersMap.set(nodeKey, circleMarker);
+            }
           });
 
-          if (bounds.length > 0) {
+          if (autoFit && bounds.length > 0 && !selectedNode.value) {
             if (nodesToMap.length === 1) {
-              leafletMap.flyTo(bounds[0], 12, { duration: 0.8 });
+              leafletMap.flyTo(bounds[0], 14, { duration: 0.8 });
             } else {
               leafletMap.fitBounds(bounds, { padding: [40, 40], maxZoom: 12 });
             }
           }
         }
 
+        function selectAndZoomNode(node, zoomLevel = 15) {
+          if (!node) return;
+          const currentKey = getNodeKey(selectedNode.value);
+          const targetKey = getNodeKey(node);
+
+          if (currentKey === targetKey) {
+            resetMapSelection();
+            return;
+          }
+
+          selectedNode.value = node;
+
+          // If node was hidden by a restrictive filter, reset filters
+          const isInFiltered = filteredNodes.value.some(n => getNodeKey(n) === targetKey);
+          if (!isInFiltered) {
+            siteStatusFilter.value = 'all';
+            selectedRegion.value = null;
+            selectedDepartment.value = null;
+          }
+
+          if (activeTab.value !== 'osint') {
+            activeTab.value = 'osint';
+          }
+
+          updateMapMarkers(false);
+
+          const nodes = filteredNodes.value;
+          const idx = nodes.findIndex(n => getNodeKey(n) === targetKey);
+          const coords = getNodeCoords(node, idx >= 0 ? idx : 0);
+
+          if (leafletMap && coords) {
+            leafletMap.flyTo(coords, zoomLevel, { duration: 0.8 });
+            setTimeout(() => {
+              const marker = markersMap.get(targetKey);
+              if (marker) {
+                marker.openPopup();
+              }
+            }, 350);
+          }
+        }
+
+        function resetMapSelection() {
+          selectedNode.value = null;
+          updateMapMarkers(true);
+          if (leafletMap) {
+            leafletMap.closePopup();
+          }
+        }
+
+        function toggleNodeSelection(node) {
+          selectAndZoomNode(node);
+        }
+
         return {
           searchQuery, activeSiren, pendingQuery, isLoading, hasSearched, executionTime, performSearch: handleSearchSubmit, handleSearchSubmit, selectPreset, resetToLanding,
+          sampleCompanies, launchSampleSearch,
           showDisambiguationModal, candidateList, confirmCandidateAndAnalyze,
           showErrorModal, errorMessage,
           resultData, displayCompanyName, displaySiren, displaySiretSiege, displayCodeLei, displayTvaIntracomm, displayCategorieEntreprise, displayAddressSiege, displayConventionsCollectives, displaySynchroDates, displayEtatAdmin, displayFormeJuridique, displayCodeNaf, displayRegistrationDate,
@@ -3459,7 +3597,7 @@ if (window.Chart) {
           // Ariadne & Leaflet
           displayNodes, filteredNodes, totalEstablishments, activeEstablishments, closedEstablishments, departmentList,
           siteStatusFilter, selectedRegion, selectedDepartment, regionList, availableDepartmentsInSelectedRegion,
-          setSiteStatusFilter, toggleRegionFilter, toggleDepartmentFilter, selectedNode, toggleNodeSelection,
+          setSiteStatusFilter, toggleRegionFilter, toggleDepartmentFilter, selectedNode, toggleNodeSelection, getNodeKey, selectAndZoomNode, resetMapSelection,
 
           // Raven v2 Timeline
           displayEvents, categoryCounts, totalRiskAlerts, ravenYears, filteredRavenEvents, selectedRavenCategory, selectedRavenYear, ravenSearchText, selectedNoticeEvent,

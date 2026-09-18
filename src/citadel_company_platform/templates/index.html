@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="fr">
 <head>
   {% include "layout/head.html" %}
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased min-h-screen">
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
   <div id="app">
-    <div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col relative overflow-x-hidden">
-      <!-- Cyber Grid Background -->
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+    <div class="min-h-screen bg-slate-50 text-slate-800 flex flex-col relative">
 
-      <!-- Sticky Command Header & Floating Alerts -->
+      <!-- Sticky Clean Header -->
       {% include "layout/header.html" %}
 
-      <!-- STATE 1: GOOGLE OSINT LANDING PAGE -->
+      <!-- STATE 1: LANDING PAGE -->
       {% include "tabs/landing.html" %}
 
       <!-- STATE 2: LOADING STATE -->
@@ -20,7 +18,7 @@
 
       <!-- STATE 3: FULL DASHBOARD RESULTS MODE -->
       <main v-else-if="resultData" class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 relative z-10">
-        <!-- Company Title Banner & Main Mode Switcher -->
+        <!-- Company Title Banner -->
         {% include "layout/company_banner.html" %}
 
         <!-- TAB 1: INVESTIGATION OSINT 360° VIEW -->
@@ -30,7 +28,7 @@
         {% include "tabs/bi_studio.html" %}
       </main>
 
-      <!-- 10 MODALS & INSPECTORS -->
+      <!-- MODALS & INSPECTORS -->
       {% include "modals/modal_disambiguation.html" %}
       {% include "modals/modal_benchmark_disambiguation.html" %}
       {% include "modals/modal_interconnections.html" %}
@@ -46,6 +44,6 @@
   </div>
 
   <!-- CITADEL VUE 3 APPLICATION LOGIC -->
-  <script src="/static/js/citadel_app.js?v=20260914_3"></script>
+  <script src="/static/js/citadel_app.js?v=20260918_light"></script>
 </body>
 </html>

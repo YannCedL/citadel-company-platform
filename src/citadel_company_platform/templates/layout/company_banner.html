@@ -1,41 +1,41 @@
 {% raw %}
 <!-- Company Title Banner & Main Mode Switcher -->
-        <div class="cyber-glass rounded-2xl p-6 border border-slate-800 space-y-5">
+        <div class="bg-white rounded-xl p-6 border border-slate-200 space-y-4">
           <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
-              <div class="flex items-center space-x-3">
-                <h2 class="text-2xl font-black tracking-tight text-white font-mono-cyber">{{ displayCompanyName }}</h2>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-mono-cyber font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">SIREN {{ displaySiren }}</span>
+              <div class="flex items-center space-x-3 flex-wrap gap-y-2">
+                <h2 class="text-2xl font-bold tracking-tight text-slate-900 font-sans">{{ displayCompanyName }}</h2>
+                <span class="px-2.5 py-0.5 rounded-md text-xs font-semibold bg-teal-50 text-teal-800 border border-teal-200">SIREN {{ displaySiren }}</span>
+                <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">RCS Officiel</span>
               </div>
-              <p class="text-xs text-slate-400 mt-1">Fiche Master 360° unifiée par l'orchestrateur Citadel (Hub 1) • 5 microservices asynchrones</p>
+              <p class="text-xs text-slate-500 mt-1">Dossier d'entreprise certifié • Données officielles RNE, Greffes & Finances</p>
             </div>
-            <div class="flex items-center space-x-3">
-              <button @click="resetToLanding" class="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-mono-cyber text-slate-300 transition">
-                Nouvelle Recherche
+            <div class="flex items-center space-x-2">
+              <button @click="resetToLanding" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-300 text-xs font-medium text-slate-700 transition">
+                Changer d'entreprise
               </button>
-              <div class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono-cyber text-slate-300 flex items-center space-x-2">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>Temps de Réponse: {{ executionTime }}s</span>
+              <div class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Actualisé en {{ executionTime }}s</span>
               </div>
             </div>
           </div>
 
           <!-- TOP NAVIGATION TAB SWITCHER: OSINT vs ANALYTICS STUDIO -->
-          <div class="flex items-center space-x-2 border-t border-slate-800/80 pt-4 font-mono-cyber text-xs">
+          <div class="flex items-center space-x-2 border-t border-slate-200 pt-3 text-xs">
             <button 
               @click="switchTab('osint')"
-              class="px-4 py-2 rounded-xl font-bold transition flex items-center space-x-2 border"
-              :class="activeTab === 'osint' ? 'bg-amber-500 text-slate-950 font-black border-amber-400 shadow-lg shadow-amber-500/20' : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700'"
+              class="px-4 py-2 rounded-lg font-semibold transition flex items-center space-x-2 border"
+              :class="activeTab === 'osint' ? 'bg-teal-700 text-white border-teal-700' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'"
             >
-              <span>🔍 Investigation OSINT 360°</span>
+              <span>Fiche d'Information 360°</span>
             </button>
             <button 
               @click="switchTab('analytics')"
-              class="px-4 py-2 rounded-xl font-bold transition flex items-center space-x-2 border"
-              :class="activeTab === 'analytics' ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black border-amber-400 shadow-lg shadow-amber-500/20' : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700'"
+              class="px-4 py-2 rounded-lg font-semibold transition flex items-center space-x-2 border"
+              :class="activeTab === 'analytics' ? 'bg-teal-700 text-white border-teal-700' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'"
             >
-              <span>📊 Analytics & BI Studio</span>
-              <span class="px-1.5 py-0.5 rounded text-[9px] bg-slate-950 text-amber-400 font-extrabold border border-amber-500/40 uppercase">STUDIO BI</span>
+              <span>Studio d'Analyse Comparative</span>
             </button>
           </div>
         </div>

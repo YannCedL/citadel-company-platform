@@ -1,39 +1,42 @@
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CITADEL 360° — Sovereign Enterprise OSINT Command Center</title>
+  <title>CITADEL 360° — Plateforme d'Intelligence Économique d'Entreprise</title>
+  <link rel="icon" type="image/svg+xml" href="/static/img/favicon.svg">
+  <link rel="alternate icon" href="/static/img/citadel_logo.svg">
   
-  <!-- Institutional Fonts: IBM Plex Mono (Tabular Data) & Space Grotesk (Titles) -->
+  <!-- Institutional Fonts: Space Grotesk (Titles) & Plus Jakarta Sans / Inter (Clean UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Citadel 360 Institutional Design System (Or Ambre & Carbone Mineral) -->
-  <link rel="stylesheet" href="/static/css/citadel_style.css">
+  <!-- Citadel 360 Institutional Design System (Light Edition) -->
+  <link rel="stylesheet" href="/static/css/citadel_style.css?v=20260918_light">
 
   <!-- Tailwind CSS Engine -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           colors: {
             citadel: {
-              bg: '#090D14',
-              surface: '#111726',
-              card: '#0F172A',
-              border: '#1E293B',
-              gold: '#D99B43',
-              'gold-light': '#F3BA63',
-              'gold-dark': '#8C6239',
-              muted: '#64748B',
-              steel: '#4A6FA5',
-              sauge: '#10B981',
-              vermillon: '#E11D48',
+              bg: '#F8FAFC',
+              surface: '#FFFFFF',
+              card: '#FFFFFF',
+              subtle: '#F1F5F9',
+              border: '#E2E8F0',
+              'border-strong': '#CBD5E1',
+              primary: '#0F766E',
+              'primary-hover': '#115E59',
+              'primary-active': '#134E4A',
+              'primary-subtle': '#ECFDF5',
+              text: '#0F172A',
+              'text-muted': '#64748B',
+              'text-secondary': '#334155',
             }
           },
           fontFamily: {
-            sans: ['Space Grotesk', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'Space Grotesk', 'sans-serif'],
             mono: ['IBM Plex Mono', 'monospace'],
             display: ['Space Grotesk', 'sans-serif']
           }
