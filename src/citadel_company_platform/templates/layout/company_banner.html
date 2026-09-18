@@ -8,15 +8,15 @@
                 <span class="px-2.5 py-0.5 rounded-md text-xs font-semibold bg-teal-50 text-teal-800 border border-teal-200">SIREN {{ displaySiren }}</span>
                 <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">RCS Officiel</span>
               </div>
-              <p class="text-xs text-slate-500 mt-1">Dossier d'investigation 360° certifié • Données légales, financières, gouvernance & liens capitalistiques</p>
+              <p class="text-xs text-slate-500 mt-1">Dossier d'entreprise certifié • Données officielles RNE, Greffes & Finances</p>
             </div>
             <div class="flex items-center space-x-2">
               <button @click="resetToLanding" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-300 text-xs font-medium text-slate-700 transition">
-                Nouvelle Recherche
+                Changer d'entreprise
               </button>
               <div class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-center space-x-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                <span>Audit complété en {{ executionTime }}s</span>
+                <span>Actualisé en {{ executionTime }}s</span>
               </div>
             </div>
           </div>
@@ -26,16 +26,16 @@
             <button 
               @click="switchTab('osint')"
               class="px-4 py-2 rounded-lg font-semibold transition flex items-center space-x-2 border"
-              :class="activeTab === 'osint' ? 'bg-teal-700 text-slate-900 border-teal-700' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'"
+              :class="activeTab === 'osint' ? 'bg-teal-700 text-white border-teal-700' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'"
             >
-              <span>🔍 Dossier d'Investigation 360°</span>
+              <span>Fiche d'Information 360°</span>
             </button>
             <button 
               @click="switchTab('analytics')"
               class="px-4 py-2 rounded-lg font-semibold transition flex items-center space-x-2 border"
-              :class="activeTab === 'analytics' ? 'bg-teal-700 text-slate-900 border-teal-700' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'"
+              :class="activeTab === 'analytics' ? 'bg-teal-700 text-white border-teal-700' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'"
             >
-              <span>📊 Studio Analytics & Ratios</span>
+              <span>Studio d'Analyse Comparative</span>
             </button>
           </div>
         </div>

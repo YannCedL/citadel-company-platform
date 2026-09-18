@@ -2,16 +2,14 @@
 <!-- STATE 1: RECHERCHE CLEAN LANDING PAGE -->
       <main v-if="!hasSearched" class="flex-1 flex flex-col items-center justify-center max-w-4xl w-full mx-auto px-4 py-16 space-y-8 relative z-10">
         <div class="text-center space-y-3">
-          <div class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto text-teal-700">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
+          <div class="w-20 h-20 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto p-2">
+            <img src="/static/img/citadel_logo.svg" alt="Citadel 360°" class="w-16 h-16 object-contain" />
           </div>
           <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-sans">
             CITADEL <span class="text-teal-700">360°</span>
           </h1>
           <p class="text-sm text-slate-500 max-w-lg mx-auto font-sans">
-            Plateforme d'intelligence économique, de solvabilité financière et de cartographie des liens capitalistiques.
+            Analyse financière, gouvernance et cartographie des entreprises françaises.
           </p>
         </div>
 
@@ -21,7 +19,7 @@
               v-model="searchQuery"
               @keyup.enter="handleSearchSubmit"
               type="text" 
-              placeholder="Entrez un numéro SIREN (ex: 383474814) ou un nom d'entreprise..."
+              placeholder="Numéro SIREN (ex: 383474814) ou raison sociale (Airbus, Decathlon)..."
               class="w-full pl-12 pr-32 py-3.5 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-teal-700 transition"
               autofocus
             />
@@ -31,15 +29,15 @@
             <button 
               @click="handleSearchSubmit"
               :disabled="isLoading"
-              class="absolute right-2 top-2 bottom-2 px-5 rounded-lg font-semibold text-xs bg-teal-700 hover:bg-teal-800 text-slate-900 flex items-center space-x-2 transition"
+              class="absolute right-2 top-2 bottom-2 px-5 rounded-lg font-semibold text-xs bg-teal-700 hover:bg-teal-800 text-white flex items-center space-x-2 transition"
             >
-              <span>{{ isLoading ? 'Recherche...' : 'ANALYSER' }}</span>
+              <span>{{ isLoading ? 'Recherche en cours...' : 'Consulter' }}</span>
             </button>
           </div>
 
           <!-- Fast Suggestions Pills -->
           <div class="flex items-center justify-center flex-wrap gap-2 text-xs pt-2">
-            <span class="text-slate-500 font-medium">Exemples rapides :</span>
+            <span class="text-slate-500 font-medium">Entreprises suggérées :</span>
             <button 
               v-for="sample in sampleCompanies" 
               :key="sample.siren"
@@ -54,19 +52,19 @@
         <!-- 3 Piliers Institutionnels -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pt-4">
           <div class="bg-white p-4 rounded-xl border border-slate-200 text-left">
-            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Registre National</div>
-            <div class="text-sm font-semibold text-slate-800">Données Légales RNE / INPI</div>
-            <div class="text-xs text-slate-500 mt-1">Identité juridique, dirigeants certifiés, statuts et établissements.</div>
+            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Identité Juridique</div>
+            <div class="text-sm font-semibold text-slate-800">RNE & Registre du Commerce</div>
+            <div class="text-xs text-slate-500 mt-1">Immatriculation, forme, siège et mandataires officiels.</div>
           </div>
           <div class="bg-white p-4 rounded-xl border border-slate-200 text-left">
-            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Analyse Financière</div>
-            <div class="text-sm font-semibold text-slate-800">Bilans & Ratios Comptables</div>
-            <div class="text-xs text-slate-500 mt-1">Chiffre d'affaires, EBITDA, trésorerie et score Altman Z'.</div>
+            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Santé Financière</div>
+            <div class="text-sm font-semibold text-slate-800">Bilans & Indicateurs de Solvabilité</div>
+            <div class="text-xs text-slate-500 mt-1">Comptes annuels, rentabilité, marges et risque de défaillance.</div>
           </div>
           <div class="bg-white p-4 rounded-xl border border-slate-200 text-left">
-            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Graphe Actionnarial</div>
-            <div class="text-sm font-semibold text-slate-800">Filiales & Bénéficiaires</div>
-            <div class="text-xs text-slate-500 mt-1">Cartographie des liens capitalistiques et des participations.</div>
+            <div class="text-teal-700 font-bold text-xs uppercase tracking-wider mb-1">Liens Capitalistiques</div>
+            <div class="text-sm font-semibold text-slate-800">Gouvernance & Filiales</div>
+            <div class="text-xs text-slate-500 mt-1">Holdings mères, mandats croisés et réseau d'implantations.</div>
           </div>
         </div>
       </main>

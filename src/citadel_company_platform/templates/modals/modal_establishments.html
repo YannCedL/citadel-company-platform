@@ -1,25 +1,28 @@
 {% raw %}
-<!-- MODAL 5: ARIADNE CARTOGRAPHIE 100% SITES INSPECTOR -->
-      <div v-if="showEstablishmentsModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white backdrop-blur-md">
-        <div class="bg-white rounded-xl border border-slate-200 rounded-2xl max-w-5xl w-full p-6 border border-slate-300  space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
+<!-- MODALE LISTE DES ÉTABLISSEMENTS -->
+      <div v-if="showEstablishmentsModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm">
+        <div class="bg-white rounded-xl border border-slate-200 max-w-5xl w-full p-6 space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
           <div class="flex justify-between items-start pb-4 border-b border-slate-200 shrink-0">
             <div>
               <div class="flex items-center space-x-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-indigo-500/20 text-indigo-400 border border-indigo-500/40">ARIADNE 100% SITES</span>
-                <h3 class="text-lg font-black text-slate-900 font-sans">Registre Exhaustif des Établissements ({{ totalEstablishments }} Sites)</h3>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-teal-50 text-teal-800 border border-teal-200">ÉTABLISSEMENTS</span>
+                <h3 class="text-lg font-bold text-slate-900 font-sans">Liste des Établissements ({{ totalEstablishments }} sites)</h3>
               </div>
-              <p class="text-xs text-slate-500 mt-1">Récolte OpenDataSoft SIRENE v3 des {{ activeEstablishments }} sites actifs et {{ closedEstablishments }} sites fermés</p>
+              <p class="text-xs text-slate-500 mt-1">Données officielles SIRENE : {{ activeEstablishments }} actifs et {{ closedEstablishments }} fermés</p>
             </div>
-            <button @click="showEstablishmentsModal = false" class="text-slate-500 hover:text-slate-900 font-sans text-sm">✕</button>
+            <button @click="showEstablishmentsModal = false" class="text-slate-400 hover:text-slate-700 font-sans text-sm">✕</button>
           </div>
 
           <div class="relative shrink-0 flex gap-3">
             <input 
               v-model="siteSearchQuery" 
               type="text" 
-              placeholder="🔍 Filtrer un site par SIRET, commune, rôle ou code postal..." 
-              class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-500 font-sans focus:outline-none focus:border-indigo-500"
+              placeholder="Filtrer un site par SIRET, commune, rôle ou code postal..." 
+              class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs text-slate-900 placeholder-slate-400 font-sans focus:outline-none focus:border-teal-500"
             />
+            <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
           </div>
 
           <div class="overflow-y-auto space-y-3 pr-1 font-sans text-xs flex-1 max-h-[55vh]">
@@ -35,35 +38,35 @@
                     <th class="py-2.5 px-3">SIRET</th>
                     <th class="py-2.5 px-3">RÔLE</th>
                     <th class="py-2.5 px-3">COMMUNE / CP</th>
-                    <th class="py-2.5 px-3">GPS REEL</th>
-                    <th class="py-2.5 px-3 text-right">INSPECTION</th>
+                    <th class="py-2.5 px-3">COORDONNÉES GPS</th>
+                    <th class="py-2.5 px-3 text-right">DÉTAILS</th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-slate-800/60">
+                <tbody class="divide-y divide-slate-100">
                   <tr 
                     v-for="(node, idx) in filteredModalEstablishments" 
                     :key="idx"
                     class="hover:bg-slate-50 transition"
-                    :class="node.role && node.role.includes('Siège') ? 'bg-indigo-950/20' : ''"
+                    :class="node.role && node.role.includes('Siège') ? 'bg-teal-50/30' : ''"
                   >
                     <td class="py-2.5 px-3">
                       <div class="font-bold text-slate-900 flex items-center space-x-1.5">
-                        <span class="w-2 h-2 rounded-full shrink-0" :class="node.etat_administratif === 'A' ? 'bg-emerald-400' : 'bg-rose-500'"></span>
+                        <span class="w-2 h-2 rounded-full shrink-0" :class="node.etat_administratif === 'A' ? 'bg-emerald-500' : 'bg-rose-500'"></span>
                         <span>{{ node.name }}</span>
                       </div>
                     </td>
-                    <td class="py-2.5 px-3 text-amber-400 font-bold">{{ node.siren || node.siret }}</td>
+                    <td class="py-2.5 px-3 text-slate-900 font-mono font-medium">{{ node.siren || node.siret }}</td>
                     <td class="py-2.5 px-3 text-slate-700">{{ node.role }}</td>
-                    <td class="py-2.5 px-3 text-indigo-300">{{ node.details?.commune || node.details?.code_postal || 'FR' }}</td>
-                    <td class="py-2.5 px-3 text-amber-300 font-mono text-[10px]">
-                      {{ (node.details && node.details.geoloc) ? node.details.geoloc.join(', ') : 'Approx' }}
+                    <td class="py-2.5 px-3 text-slate-600">{{ node.details?.commune || node.details?.code_postal || 'FR' }}</td>
+                    <td class="py-2.5 px-3 text-slate-600 font-mono text-[10px]">
+                      {{ (node.details && node.details.geoloc) ? node.details.geoloc.join(', ') : 'Non géolocalisé' }}
                     </td>
                     <td class="py-2.5 px-3 text-right">
                       <button 
                         @click="openSiteInspector(node)"
-                        class="px-2.5 py-1 rounded bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[10px] flex items-center space-x-1 ml-auto"
+                        class="px-2.5 py-1 rounded bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 text-[10px] font-medium ml-auto"
                       >
-                        <span>👁️ Inspecter</span>
+                        Détails
                       </button>
                     </td>
                   </tr>
@@ -73,8 +76,8 @@
           </div>
 
           <div class="flex justify-end pt-4 border-t border-slate-200 shrink-0">
-            <button @click="showEstablishmentsModal = false" class="px-5 py-2 rounded-xl bg-slate-50 hover:bg-slate-800 text-slate-700 border border-slate-200 font-sans text-xs transition">
-              Fermer l'inspecteur
+            <button @click="showEstablishmentsModal = false" class="px-5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 font-sans text-xs transition">
+              Fermer
             </button>
           </div>
         </div>

@@ -1,16 +1,16 @@
 {% raw %}
-<!-- MODAL 2: CHAMBER GOUVERNANCE 100% MANDATAIRES INSPECTOR -->
-      <div v-if="showGovernanceModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white backdrop-blur-md">
-        <div class="bg-white rounded-xl border border-slate-200 rounded-2xl max-w-4xl w-full p-6 border border-slate-300  space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
+<!-- MODALE GOUVERNANCE ET DIRIGEANTS -->
+      <div v-if="showGovernanceModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm">
+        <div class="bg-white rounded-xl border border-slate-200 max-w-4xl w-full p-6 space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
           <div class="flex justify-between items-start pb-4 border-b border-slate-200 shrink-0">
             <div>
               <div class="flex items-center space-x-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-amber-500/20 text-amber-300 border border-amber-500/40">CHAMBER 100% MANDATAIRES</span>
-                <h3 class="text-lg font-black text-slate-900 font-sans">Chambre des Dirigeants & Pouvoirs Exécutifs</h3>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-teal-50 text-teal-800 border border-teal-200">GOUVERNANCE</span>
+                <h3 class="text-lg font-bold text-slate-900 font-sans">Registre des Mandats et Dirigeants</h3>
               </div>
-              <p class="text-xs text-slate-500 mt-1">Liste intégrale des {{ displayExecutives.length }} dirigeants ({{ activeExecutivesCount }} En poste • {{ formerExecutivesCount }} Anciens | {{ physicalCount }} Physiques, {{ moralCount }} Morales)</p>
+              <p class="text-xs text-slate-500 mt-1">Liste des {{ displayExecutives.length }} mandats ({{ activeExecutivesCount }} en poste • {{ formerExecutivesCount }} anciens | {{ physicalCount }} personnes physiques, {{ moralCount }} personnes morales)</p>
             </div>
-            <button @click="showGovernanceModal = false" class="text-slate-500 hover:text-slate-900 font-sans text-sm">✕</button>
+            <button @click="showGovernanceModal = false" class="text-slate-400 hover:text-slate-700 font-sans text-sm">✕</button>
           </div>
 
           <!-- Governance Filter Controls -->
@@ -19,52 +19,48 @@
               <input 
                 v-model="execSearchQuery" 
                 type="text" 
-                placeholder="🔍 Filtrer un dirigeant (Nom, rôle, SIREN, ville)..." 
-                class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-500 font-sans focus:outline-none focus:border-amber-500"
+                placeholder="Filtrer un dirigeant (Nom, rôle, SIREN, ville)..." 
+                class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs text-slate-900 placeholder-slate-400 font-sans focus:outline-none focus:border-teal-500"
               />
-              <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </div>
-            <div class="flex items-center space-x-1 font-sans text-xs bg-slate-50 p-1 rounded-xl border border-slate-200 shrink-0 overflow-x-auto">
+            <div class="flex items-center space-x-1 font-sans text-xs bg-slate-50 p-1 rounded-lg border border-slate-200 shrink-0 overflow-x-auto">
               <button 
                 @click="execStatusFilter = 'all'" 
-                class="px-2.5 py-1 rounded-lg transition font-bold"
-                :class="execStatusFilter === 'all' ? 'bg-amber-600 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
+                class="px-2.5 py-1 rounded transition font-medium"
+                :class="execStatusFilter === 'all' ? 'bg-teal-700 text-white' : 'text-slate-600 hover:text-slate-900'"
               >
                 Tous ({{ displayExecutives.length }})
               </button>
               <button 
                 @click="execStatusFilter = 'direction'" 
-                class="px-2.5 py-1 rounded-lg transition font-bold flex items-center space-x-1"
-                :class="execStatusFilter === 'direction' ? 'bg-purple-800 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
+                class="px-2.5 py-1 rounded transition font-medium"
+                :class="execStatusFilter === 'direction' ? 'bg-teal-700 text-white' : 'text-slate-600 hover:text-slate-900'"
               >
-                <span>👔</span>
-                <span>Direction ({{ directionExecutives.length }})</span>
+                Direction ({{ directionExecutives.length }})
               </button>
               <button 
                 @click="execStatusFilter = 'audit'" 
-                class="px-2.5 py-1 rounded-lg transition font-bold flex items-center space-x-1"
-                :class="execStatusFilter === 'audit' ? 'bg-amber-600 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
+                class="px-2.5 py-1 rounded transition font-medium"
+                :class="execStatusFilter === 'audit' ? 'bg-teal-700 text-white' : 'text-slate-600 hover:text-slate-900'"
               >
-                <span>⚖️</span>
-                <span>CAC & Audit ({{ auditExecutives.length }})</span>
+                CAC & Audit ({{ auditExecutives.length }})
               </button>
               <button 
                 @click="execStatusFilter = 'active'" 
-                class="px-2.5 py-1 rounded-lg transition font-bold flex items-center space-x-1"
-                :class="execStatusFilter === 'active' ? 'bg-emerald-600 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
+                class="px-2.5 py-1 rounded transition font-medium"
+                :class="execStatusFilter === 'active' ? 'bg-teal-700 text-white' : 'text-slate-600 hover:text-slate-900'"
               >
-                <span>🟢</span>
-                <span>En poste ({{ activeExecutivesCount }})</span>
+                En poste ({{ activeExecutivesCount }})
               </button>
               <button 
                 @click="execStatusFilter = 'former'" 
-                class="px-2.5 py-1 rounded-lg transition font-bold flex items-center space-x-1"
-                :class="execStatusFilter === 'former' ? 'bg-slate-700 text-slate-900 shadow' : 'text-slate-500 hover:text-slate-900'"
+                class="px-2.5 py-1 rounded transition font-medium"
+                :class="execStatusFilter === 'former' ? 'bg-teal-700 text-white' : 'text-slate-600 hover:text-slate-900'"
               >
-                <span>⚪</span>
-                <span>Anciens ({{ formerExecutivesCount }})</span>
+                Anciens ({{ formerExecutivesCount }})
               </button>
             </div>
           </div>
@@ -78,57 +74,56 @@
               v-for="(exec, idx) in filteredModalExecutives" 
               :key="idx"
               @click="openExecutiveInspector(exec)"
-              class="p-4 rounded-xl border space-y-3 cursor-pointer transition hover:border-purple-400"
-              :class="exec.type_person === 'personne morale' ? 'bg-slate-50/20 border-amber-500/30 hover:bg-slate-50/40' : 'bg-slate-50/70 border-slate-200 hover:bg-slate-50'"
+              class="p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-teal-500 space-y-3 cursor-pointer transition"
             >
               <div class="flex justify-between items-start gap-4">
                 <div>
                   <div class="flex items-center space-x-2 flex-wrap gap-y-1">
                     <h4 class="font-bold text-sm text-slate-900 font-sans">{{ exec.full_name || exec.denomination }}</h4>
                     <span 
-                      class="px-2 py-0.5 rounded text-[9px] font-sans font-bold uppercase border"
-                      :class="exec.type_person === 'personne morale' ? 'bg-amber-500/20 text-amber-200 border-amber-500/40' : 'bg-amber-500/20 text-amber-300 border-amber-500/40'"
+                      class="px-2 py-0.5 rounded text-[9px] font-sans font-semibold uppercase border"
+                      :class="exec.type_person === 'personne morale' ? 'bg-blue-50 text-blue-800 border-blue-200' : 'bg-slate-100 text-slate-700 border-slate-200'"
                     >
                       {{ exec.type_person === 'personne morale' ? 'MORALE' : 'PHYSIQUE' }}
                     </span>
                     <span 
-                      class="px-2 py-0.5 rounded text-[9px] font-sans font-bold uppercase border"
-                      :class="isExecutiveActive(exec) ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-slate-800 text-slate-500 border-slate-300'"
+                      class="px-2 py-0.5 rounded text-[9px] font-sans font-semibold uppercase border"
+                      :class="isExecutiveActive(exec) ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-slate-100 text-slate-600 border-slate-200'"
                     >
-                      {{ isExecutiveActive(exec) ? '🟢 EN POSTE' : '⚪ ANCIEN DIRIGEANT' }}
+                      {{ isExecutiveActive(exec) ? 'EN POSTE' : 'ANCIEN DIRIGEANT' }}
                     </span>
                   </div>
-                  <p class="text-xs text-amber-400 font-sans font-bold mt-0.5">{{ getRoleTitle(exec) }}</p>
-                  <p class="text-[11px] text-slate-700 font-sans mt-1">📅 Mandat : <span class="text-slate-200 font-semibold">{{ getMandatePeriodLabel(exec) }}</span></p>
+                  <p class="text-xs text-teal-800 font-sans font-semibold mt-0.5">{{ getRoleTitle(exec) }}</p>
+                  <p class="text-[11px] text-slate-600 font-sans mt-1">Mandat : <span class="text-slate-900 font-medium">{{ getMandatePeriodLabel(exec) }}</span></p>
                 </div>
-                <button class="px-2.5 py-1 rounded bg-amber-500/10 hover:bg-amber-500/20 text-amber-200 border border-amber-500/30 text-[10px] shrink-0">
-                  Fiche Individuelle →
+                <button class="px-2.5 py-1 rounded bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 text-[10px] font-medium shrink-0">
+                  Détail du dirigeant →
                 </button>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] text-slate-500 pt-2 border-t border-slate-200">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] text-slate-600 pt-2 border-t border-slate-100">
                 <div v-if="exec.type_person === 'personne physique'">
-                  <span class="text-slate-500">Naissance :</span> {{ exec.birth_year ? 'En ' + exec.birth_year : 'Non renseigné' }}
+                  <span class="text-slate-400">Naissance :</span> {{ exec.birth_year ? 'En ' + exec.birth_year : 'Non renseigné' }}
                 </div>
                 <div v-else>
-                  <span class="text-slate-500">SIREN Entity :</span> <span class="text-amber-200 font-bold">{{ exec.siren_entity || 'N/A' }}</span>
+                  <span class="text-slate-400">SIREN :</span> <span class="text-slate-900 font-mono font-medium">{{ exec.siren_entity || 'N/A' }}</span>
                 </div>
                 <div v-if="exec.type_person === 'personne physique'">
-                  <span class="text-slate-500">Nationalité :</span> {{ exec.nationality || 'Non précisée' }}
+                  <span class="text-slate-400">Nationalité :</span> {{ exec.nationality || 'Non précisée' }}
                 </div>
                 <div v-else>
-                  <span class="text-slate-500">Statut :</span> <span class="text-emerald-400 font-semibold">Personne Morale</span>
+                  <span class="text-slate-400">Statut :</span> <span class="text-slate-800 font-medium">Personne Morale</span>
                 </div>
                 <div class="flex justify-end">
-                  <a :href="getBodaccUrl(exec)" target="_blank" @click.stop class="text-amber-400 hover:underline">Notice BODACC ↗</a>
+                  <a :href="getBodaccUrl(exec)" target="_blank" @click.stop class="text-teal-700 hover:text-teal-900 underline">Notice BODACC ↗</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="flex justify-end pt-4 border-t border-slate-200 shrink-0">
-            <button @click="showGovernanceModal = false" class="px-5 py-2 rounded-xl bg-slate-50 hover:bg-slate-800 text-slate-700 border border-slate-200 font-sans text-xs transition">
-              Fermer l'inspecteur
+            <button @click="showGovernanceModal = false" class="px-5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 font-sans text-xs transition">
+              Fermer
             </button>
           </div>
         </div>

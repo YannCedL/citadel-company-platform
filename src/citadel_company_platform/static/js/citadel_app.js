@@ -433,7 +433,7 @@ if (window.Chart) {
                 networkDonutChart = new Chart(donutCtx, {
                   type: 'bar',
                   data: {
-                    labels: ['🟢 Établissements Actifs', '⚪ Historiques Clos'],
+                    labels: ['Établissements Actifs', 'Historiques Clos'],
                     datasets: [
                       {
                         label: displayCompanyName.value,
@@ -457,19 +457,25 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                      x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
-                      y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
+                      x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                      y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                     },
                     plugins: {
-                      legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                      legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                     }
                   }
                 });
               } else {
+                const activeTot = activeCount + closedCount;
+                const pctAct = activeTot > 0 ? Math.round((activeCount / activeTot) * 100) : 0;
+                const pctClo = activeTot > 0 ? Math.round((closedCount / activeTot) * 100) : 0;
                 networkDonutChart = new Chart(donutCtx, {
                   type: 'doughnut',
                   data: {
-                    labels: ['🟢 Établissements Actifs', '⚪ Établissements Historiques Clos'],
+                    labels: [
+                      `Établissements Actifs (${activeCount} • ${pctAct}%)`,
+                      `Historiques Clos (${closedCount} • ${pctClo}%)`
+                    ],
                     datasets: [{
                       label: displayCompanyName.value,
                       data: [activeCount, closedCount],
@@ -482,7 +488,10 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                      legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                      legend: {
+                        position: 'bottom',
+                        labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                      }
                     }
                   }
                 });
@@ -594,11 +603,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -622,7 +634,7 @@ if (window.Chart) {
                 executivesDonutChart = new Chart(execCtx, {
                   type: 'bar',
                   data: {
-                    labels: ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
+                    labels: ['Personnes Physiques (Dirigeants)', 'Personnes Morales (Holdings)'],
                     datasets: [
                       {
                         label: displayCompanyName.value,
@@ -646,22 +658,30 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                      x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
-                      y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
+                      x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                      y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                     },
                     plugins: {
-                      legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                      legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                     }
                   }
                 });
               } else {
+                const phys = physicalCount.value || 0;
+                const mor = moralCount.value || 0;
+                const execTot = phys + mor;
+                const pctPhys = execTot > 0 ? Math.round((phys / execTot) * 100) : 0;
+                const pctMor = execTot > 0 ? Math.round((mor / execTot) * 100) : 0;
                 executivesDonutChart = new Chart(execCtx, {
                   type: 'doughnut',
                   data: {
-                    labels: ['👤 Personnes Physiques (Dirigeants)', '🏢 Personnes Morales (Holdings)'],
+                    labels: [
+                      `Personnes Physiques (${phys} • ${pctPhys}%)`,
+                      `Personnes Morales (${mor} • ${pctMor}%)`
+                    ],
                     datasets: [{
                       label: displayCompanyName.value,
-                      data: [physicalCount.value || 0, moralCount.value || 0],
+                      data: [phys, mor],
                       backgroundColor: [CITADEL_PALETTE.primary, CITADEL_PALETTE.cobalt],
                       borderWidth: 2,
                       borderColor: CITADEL_PALETTE.surface
@@ -671,7 +691,10 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                      legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                      legend: {
+                        position: 'bottom',
+                        labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                      }
                     }
                   }
                 });
@@ -753,11 +776,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -830,11 +856,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -900,11 +929,14 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                    legend: {
+                      display: !!benchmarkData.value,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
                   }
                 }
               });
@@ -1062,11 +1094,11 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: { 
                     position: 'left',
                     ticks: { 
-                      color: '#94a3b8', 
+                      color: '#64748B', 
                       font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(value) {
                         if (Math.abs(value) >= 1000000000) return (value / 1000000000).toFixed(1) + 'B€';
@@ -1085,7 +1117,7 @@ if (window.Chart) {
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                 }
               }
             });
@@ -1194,13 +1226,13 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: {
                     type: 'linear',
                     position: 'left',
                     title: { display: true, text: 'Marge (%)', color: CITADEL_PALETTE.emerald, font: { family: 'Plus Jakarta Sans', size: 10, weight: 'bold' } },
                     ticks: {
-                      color: '#94a3b8',
+                      color: '#64748B',
                       font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(v) { return v + '%'; }
                     },
@@ -1208,7 +1240,7 @@ if (window.Chart) {
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                 }
               }
             });
@@ -1320,11 +1352,11 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: {
                     type: 'linear',
                     ticks: {
-                      color: '#94a3b8',
+                      color: '#64748B',
                       font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(value) {
                         if (Math.abs(value) >= 1000000000) return (value / 1000000000).toFixed(1) + 'B€';
@@ -1337,7 +1369,7 @@ if (window.Chart) {
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } }
                 }
               }
             });
@@ -2214,11 +2246,11 @@ if (window.Chart) {
                 maintainAspectRatio: false,
                 interaction: { mode: 'index', intersect: false },
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
+                  x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                  y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                 },
                 plugins: {
-                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } },
+                  legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } },
                   tooltip: {
                     callbacks: {
                       footer: function(tooltipItems) {
@@ -2255,7 +2287,7 @@ if (window.Chart) {
                   labels: items.map(i => i.name),
                   datasets: [
                     {
-                      label: `🏢 ${displayCompanyName.value} (Sites)`,
+                      label: `${displayCompanyName.value} (Sites)`,
                       data: items.map(i => i.primaryTotal),
                       backgroundColor: CITADEL_PALETTE.gold,
                       borderColor: CITADEL_PALETTE.goldLight,
@@ -2263,7 +2295,7 @@ if (window.Chart) {
                       borderRadius: 4
                     },
                     {
-                      label: `⚔️ ${benchmarkCompanyName.value} (Sites)`,
+                      label: `${benchmarkCompanyName.value} (Sites)`,
                       data: items.map(i => i.benchmarkTotal),
                       backgroundColor: CITADEL_PALETTE.competitor,
                       borderColor: CITADEL_PALETTE.competitorLight,
@@ -2276,10 +2308,10 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } } }
                 }
               });
             } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
@@ -2289,18 +2321,18 @@ if (window.Chart) {
                 data: {
                   labels: items.map(i => i.name),
                   datasets: [
-                    { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.competitor, borderRadius: 4 },
-                    { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
+                    { label: 'Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.competitor, borderRadius: 4 },
+                    { label: 'Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
                   ]
                 },
                 options: {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
+                    x: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } } }
                 }
               });
             } else {
@@ -2310,18 +2342,18 @@ if (window.Chart) {
                 data: {
                   labels: items.map(i => i.name),
                   datasets: [
-                    { label: '🟢 Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.emerald, borderRadius: 4 },
-                    { label: '🔴 Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
+                    { label: 'Actifs', data: items.map(i => i.active), backgroundColor: CITADEL_PALETTE.emerald, borderRadius: 4 },
+                    { label: 'Clos', data: items.map(i => i.closed), backgroundColor: CITADEL_PALETTE.vermillon, borderRadius: 4 }
                   ]
                 },
                 options: {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
-                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
+                    x: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { stacked: true, ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } } }
                 }
               });
             }
@@ -2336,54 +2368,83 @@ if (window.Chart) {
               if (existing) existing.destroy();
             }
 
-            let datasets = [];
             if (benchmarkData.value && biGeoEntityFilter.value === 'all') {
-              datasets = [
-                {
-                  label: displayCompanyName.value,
-                  data: [biTotalRelocations.value, biTotalFinalClosures.value],
-                  backgroundColor: [CITADEL_PALETTE.gold, CITADEL_PALETTE.vermillon],
-                  borderWidth: 2,
-                  borderColor: CITADEL_PALETTE.surface
+              biClosureReasonChart = new Chart(donutCtx, {
+                type: 'bar',
+                data: {
+                  labels: ['Relocalisations / Transferts', 'Fermetures Définitives'],
+                  datasets: [
+                    {
+                      label: displayCompanyName.value,
+                      data: [biTotalRelocations.value, biTotalFinalClosures.value],
+                      backgroundColor: CITADEL_PALETTE.primary,
+                      borderColor: CITADEL_PALETTE.primaryLight,
+                      borderWidth: 1.5,
+                      borderRadius: 6
+                    },
+                    {
+                      label: benchmarkCompanyName.value,
+                      data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
+                      backgroundColor: CITADEL_PALETTE.competitor,
+                      borderColor: CITADEL_PALETTE.competitorLight,
+                      borderWidth: 1.5,
+                      borderRadius: 6
+                    }
+                  ]
                 },
-                {
-                  label: benchmarkCompanyName.value,
-                  data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
-                  backgroundColor: [CITADEL_PALETTE.competitor, CITADEL_PALETTE.rose],
-                  borderWidth: 2,
-                  borderColor: CITADEL_PALETTE.surface
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    x: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#64748B', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
+                  },
+                  plugins: {
+                    legend: {
+                      display: true,
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
+                  }
                 }
-              ];
-            } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
-              datasets = [{
-                label: benchmarkCompanyName.value,
-                data: [benchmarkBiTotalRelocations.value, benchmarkBiTotalFinalClosures.value],
-                backgroundColor: [CITADEL_PALETTE.competitor, CITADEL_PALETTE.vermillon],
-                borderWidth: 2,
-                borderColor: CITADEL_PALETTE.surface
-              }];
+              });
             } else {
-              datasets = [{
-                label: displayCompanyName.value,
-                data: [biTotalRelocations.value, biTotalFinalClosures.value],
-                backgroundColor: [CITADEL_PALETTE.cobalt, CITADEL_PALETTE.vermillon],
-                borderWidth: 2,
-                borderColor: CITADEL_PALETTE.surface
-              }];
-            }
+              const isBenchOnly = benchmarkData.value && biGeoEntityFilter.value === 'benchmark';
+              const relocs = isBenchOnly ? benchmarkBiTotalRelocations.value : biTotalRelocations.value;
+              const closures = isBenchOnly ? benchmarkBiTotalFinalClosures.value : biTotalFinalClosures.value;
+              const compName = isBenchOnly ? benchmarkCompanyName.value : displayCompanyName.value;
+              const relocColor = isBenchOnly ? CITADEL_PALETTE.competitor : CITADEL_PALETTE.cobalt;
 
-            biClosureReasonChart = new Chart(donutCtx, {
-              type: 'doughnut',
-              data: {
-                labels: ['Relocalisations 🔄', 'Fermetures Fermes ❌'],
-                datasets: datasets
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { position: 'bottom', labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
-              }
-            });
+              const total = relocs + closures;
+              const pctReloc = total > 0 ? Math.round((relocs / total) * 100) : 0;
+              const pctClose = total > 0 ? Math.round((closures / total) * 100) : 0;
+
+              biClosureReasonChart = new Chart(donutCtx, {
+                type: 'doughnut',
+                data: {
+                  labels: [
+                    `Relocalisations (${relocs} • ${pctReloc}%)`,
+                    `Fermetures Définitives (${closures} • ${pctClose}%)`
+                  ],
+                  datasets: [{
+                    label: compName,
+                    data: [relocs, closures],
+                    backgroundColor: [relocColor, CITADEL_PALETTE.vermillon],
+                    borderWidth: 2,
+                    borderColor: CITADEL_PALETTE.surface
+                  }]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                    legend: {
+                      position: 'bottom',
+                      labels: { color: '#1E293B', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } }
+                    }
+                  }
+                }
+              });
+            }
           }
         }
 

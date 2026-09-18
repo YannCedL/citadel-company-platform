@@ -1,16 +1,16 @@
 {% raw %}
-<!-- MODAL 1: FICHE LÉGALE & ÉTAT CIVIL 100% DATA INSPECTOR -->
-      <div v-if="showLegalProfileModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white backdrop-blur-md">
-        <div class="bg-white rounded-xl border border-slate-200 rounded-2xl max-w-4xl w-full p-6 border border-slate-300  space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
+<!-- MODALE FICHE LÉGALE ET STATUTS -->
+      <div v-if="showLegalProfileModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm">
+        <div class="bg-white rounded-xl border border-slate-200 max-w-4xl w-full p-6 space-y-6 transform animate-in fade-in zoom-in duration-200 max-h-[90vh] flex flex-col">
           <div class="flex justify-between items-start pb-4 border-b border-slate-200 shrink-0">
             <div>
               <div class="flex items-center space-x-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-amber-500/20 text-amber-400 border border-amber-500/40">ARGUS v2 100% DATA</span>
-                <h3 class="text-lg font-black text-slate-900 font-sans">Fiche Légale & État Civil Exhaustif</h3>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-sans bg-teal-50 text-teal-800 border border-teal-200">DONNÉES OFFICIELLES</span>
+                <h3 class="text-lg font-bold text-slate-900 font-sans">Identité Juridique & Statuts</h3>
               </div>
-              <p class="text-xs text-slate-500 mt-1">Données d'État certifiées INSEE & RNE pour {{ displayCompanyName }} (SIREN {{ displaySiren }})</p>
+              <p class="text-xs text-slate-500 mt-1">Données officielles INSEE & RNE pour {{ displayCompanyName }} (SIREN {{ displaySiren }})</p>
             </div>
-            <button @click="showLegalProfileModal = false" class="text-slate-500 hover:text-slate-900 font-sans text-sm">✕</button>
+            <button @click="showLegalProfileModal = false" class="text-slate-400 hover:text-slate-700 font-sans text-sm">✕</button>
           </div>
 
           <div class="overflow-y-auto space-y-6 pr-1 font-sans text-xs flex-1">
@@ -22,15 +22,15 @@
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">SIREN / SIRET Siège</div>
-                <div class="text-amber-400 font-bold text-sm">{{ displaySiren }} • {{ displaySiretSiege }}</div>
+                <div class="text-slate-900 font-bold font-mono text-sm">{{ displaySiren }} • {{ displaySiretSiege }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">N° TVA Intracommunautaire</div>
-                <div class="text-amber-300 font-bold text-sm">{{ displayTvaIntracomm }}</div>
+                <div class="text-slate-900 font-bold font-mono text-sm">{{ displayTvaIntracomm }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">Code LEI (Legal Entity Identifier)</div>
-                <div class="text-emerald-400 font-bold text-sm">{{ displayCodeLei }}</div>
+                <div class="text-slate-900 font-bold font-mono text-sm">{{ displayCodeLei }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">Forme Juridique</div>
@@ -42,57 +42,57 @@
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">Catégorie d'Entreprise (INSEE)</div>
-                <div class="text-indigo-300 font-bold">{{ displayCategorieEntreprise }}</div>
+                <div class="text-slate-900 font-bold">{{ displayCategorieEntreprise }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">État Administratif</div>
-                <div class="font-bold" :class="resultData?.legal_profile?.etat_administratif === 'A' ? 'text-emerald-400' : 'text-rose-400'">
+                <div class="font-bold" :class="resultData?.legal_profile?.etat_administratif === 'A' ? 'text-emerald-700' : 'text-rose-700'">
                   {{ displayEtatAdmin }}
                 </div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1 md:col-span-2">
                 <div class="text-slate-500">Adresse du Siège Social</div>
-                <div class="text-indigo-200 font-bold text-sm">{{ displayAddressSiege }}</div>
+                <div class="text-slate-800 font-medium text-sm">{{ displayAddressSiege }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
-                <div class="text-slate-500">Date Immatriculation Origine</div>
-                <div class="text-slate-200 font-bold">{{ displayRegistrationDate }}</div>
+                <div class="text-slate-500">Date d'Immatriculation</div>
+                <div class="text-slate-800 font-medium">{{ displayRegistrationDate }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
-                <div class="text-slate-500">Dernières Synchros Registres</div>
-                <div class="text-slate-700 font-bold">{{ displaySynchroDates }}</div>
+                <div class="text-slate-500">Dernières Mises à Jour</div>
+                <div class="text-slate-700 font-medium">{{ displaySynchroDates }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                 <div class="text-slate-500">Capital Social RNE</div>
-                <div class="text-amber-300 font-bold text-sm">{{ displayCapitalSocial }}</div>
+                <div class="text-slate-900 font-bold text-sm">{{ displayCapitalSocial }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
-                <div class="text-slate-500">Indice de Certitude RNE</div>
-                <div class="text-emerald-400 font-bold text-sm">{{ displayRneCertitudeScore }}</div>
+                <div class="text-slate-500">Conformité RNE</div>
+                <div class="text-teal-800 font-bold text-sm">{{ displayRneCertitudeScore }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1 md:col-span-2">
-                <div class="text-slate-500">Objet Social Officiel Certifié RNE</div>
-                <div class="text-slate-200 font-medium text-xs leading-relaxed max-h-32 overflow-y-auto">{{ displayObjetSocial }}</div>
+                <div class="text-slate-500">Objet social déclaré</div>
+                <div class="text-slate-700 font-medium text-xs leading-relaxed max-h-32 overflow-y-auto">{{ displayObjetSocial }}</div>
               </div>
               <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1 md:col-span-2">
                 <div class="text-slate-500">Conventions Collectives Déclarées (IDCC)</div>
-                <div class="text-amber-300 font-bold">{{ displayConventionsCollectives }}</div>
+                <div class="text-slate-800 font-medium">{{ displayConventionsCollectives }}</div>
               </div>
             </div>
 
             <!-- RAW JSON INSPECTOR TAB -->
             <div class="space-y-2 pt-2 border-t border-slate-200">
               <div class="flex justify-between items-center">
-                <span class="text-slate-500 font-bold uppercase text-[11px]">Inspection JSON Brut (0% Perte d'Information)</span>
-                <span class="text-slate-500 text-[10px]">OpenData & INSEE API Direct Stream</span>
+                <span class="text-slate-500 font-bold uppercase text-[11px]">Données brutes (JSON)</span>
+                <span class="text-slate-500 text-[10px]">Sources INSEE & RNE</span>
               </div>
-              <pre class="p-4 bg-slate-100 rounded-xl border border-slate-200 text-[11px] text-amber-300 overflow-x-auto max-h-60 selection:bg-sky-500 selection:text-slate-950">{{ JSON.stringify(resultData?.legal_profile || {}, null, 2) }}</pre>
+              <pre class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-slate-800 font-mono overflow-x-auto max-h-60">{{ JSON.stringify(resultData?.legal_profile || {}, null, 2) }}</pre>
             </div>
           </div>
 
           <div class="flex justify-end pt-4 border-t border-slate-200 shrink-0">
-            <button @click="showLegalProfileModal = false" class="px-5 py-2 rounded-xl bg-slate-50 hover:bg-slate-800 text-slate-700 border border-slate-200 font-sans text-xs transition">
-              Fermer l'inspecteur
+            <button @click="showLegalProfileModal = false" class="px-5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 font-sans text-xs transition">
+              Fermer
             </button>
           </div>
         </div>
