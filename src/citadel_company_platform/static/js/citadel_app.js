@@ -1,69 +1,72 @@
 // ==========================================================================
-// CITADEL 360° — INSTITUTIONAL PALETTE & CHART.JS ENGINE
-// Theme: Or Ambré & Carbone Minéral (High Finance & Sovereign OSINT)
+// CITADEL 360° — INSTITUTIONAL PALETTE & CHART.JS ENGINE (LIGHT EDITION)
+// Theme: Blanc Albâtre, Ardoise Minérale & Vert Sceau d'État
+// Zero Shadow • Zero Neon • Zero Glow • Precision Data Lines
 // ==========================================================================
 const CITADEL_PALETTE = {
-  // Signature Chromatique Maîtresse Comparative (Règle Entreprise × État)
-  primary: '#F59E0B',        // Or Ambré Cible Principale
-  primaryLight: '#FBBF24',
-  primaryDark: '#D97706',
-  primaryBorder: '#FBBF24',
-  primaryMuted: 'rgba(245, 158, 11, 0.20)',
+  // Signature Chromatique Maîtresse (Vert Sceau d'État vs Bleu Cobalt)
+  primary: '#0F766E',        // Vert Sceau d'État (Cible Principale)
+  primaryLight: '#14B8A6',
+  primaryDark: '#047857',
+  primaryBorder: '#0F766E',
+  primaryMuted: 'rgba(15, 118, 110, 0.12)',
 
-  competitor: '#06B6D4',     // Bleu Cyan Électrique Concurrent Benchmark
-  competitorLight: '#22D3EE',
-  competitorDark: '#0891B2',
-  competitorBorder: '#22D3EE',
-  competitorMuted: 'rgba(6, 182, 212, 0.20)',
+  competitor: '#1D4ED8',     // Bleu Cobalt Royal (Benchmark / Concurrent)
+  competitorLight: '#3B82F6',
+  competitorDark: '#1E40AF',
+  competitorBorder: '#1D4ED8',
+  competitorMuted: 'rgba(29, 78, 216, 0.12)',
 
-  // Sovereign Entity (Or Ambré — Prestige, Autorité, Cible Principale)
-  gold: '#F59E0B',
-  goldLight: '#FBBF24',
-  goldDark: '#D97706',
-  goldGlow: 'rgba(245, 158, 11, 0.25)',
+  // Sovereign Entity (Vert Sceau d'État — Autorité, Stabilité, Cible)
+  gold: '#0F766E',
+  goldLight: '#14B8A6',
+  goldDark: '#047857',
+  goldGlow: 'transparent',
 
-  // Benchmark / Competitor (Bleu Cyan & Saphir Électrique — Altérité, Contrasté)
-  steel: '#06B6D4',
-  steelLight: '#22D3EE',
-  steelMuted: 'rgba(6, 182, 212, 0.25)',
-  silver: '#94A3B8',
+  // Benchmark / Competitor (Bleu Cobalt & Acier)
+  steel: '#1D4ED8',
+  steelLight: '#3B82F6',
+  steelMuted: 'rgba(29, 78, 216, 0.15)',
+  silver: '#64748B',
 
-  // Vitalité Opérationnelle & Solvabilité (Vert Émeraude / Sauge — Santé, Actifs, Fonds Propres)
-  emerald: '#10B981',
-  emeraldLight: '#34D399',
-  emeraldMuted: 'rgba(16, 185, 129, 0.22)',
-  sauge: '#10B981',
+  // Vitalité Opérationnelle & Solvabilité (Vert Forêt Fiscal)
+  emerald: '#059669',
+  emeraldLight: '#10B981',
+  emeraldMuted: 'rgba(5, 150, 105, 0.15)',
+  sauge: '#059669',
 
-  // Risque Légal, Cessation & Passif (Rouge Vermillon / Carmin — Alerte, Fermeture, Dette)
-  vermillon: '#EF4444',
-  vermillonLight: '#F87171',
-  vermillonMuted: 'rgba(239, 68, 68, 0.25)',
+  // Risque Légal, Cessation & Passif (Rouge Carmin Débit)
+  vermillon: '#DC2626',
+  vermillonLight: '#EF4444',
+  vermillonMuted: 'rgba(220, 38, 38, 0.15)',
 
-  // Mobilité Stratégique & Opérations (Bleu Cobalt / Saphir — Transfert, M&A, EBITDA)
-  cobalt: '#3B82F6',
-  cobaltLight: '#60A5FA',
-  cobaltMuted: 'rgba(59, 130, 246, 0.25)',
+  // Mobilité Stratégique & Opérations (Ambre Cuivré / Cobalt)
+  cobalt: '#D97706',
+  cobaltLight: '#F59E0B',
+  cobaltMuted: 'rgba(217, 119, 6, 0.15)',
 
-  // Gouvernance Neutre & Historique (Ardoise Minérale — Mandats secondaires, Statuts)
-  slate: '#64748B',
-  slateDark: '#475569',
+  // Gouvernance Neutre & Historique (Ardoise Minérale)
+  slate: '#475569',
+  slateDark: '#334155',
   slateMuted: '#94A3B8',
 
-  // Surfaces & Base (Carbone Minéral)
-  carbon: '#090D14',
-  surface: '#111726',
-  card: '#0F172A',
-  border: '#1E293B',
-  gridLine: 'rgba(30, 41, 59, 0.45)',
+  // Surfaces & Base (Clair Minéral)
+  carbon: '#F8FAFC',
+  surface: '#FFFFFF',
+  card: '#FFFFFF',
+  border: '#E2E8F0',
+  gridLine: '#E2E8F0',
   textMuted: '#64748B',
-  textLight: '#F1F5F9',
-  nobleDonut: ['#F59E0B', '#10B981', '#3B82F6', '#06B6D4', '#EF4444', '#94A3B8']
+  textLight: '#0F172A',
+  
+  // Palette Catégorielle 6 teintes (Parts de marché, actionnariat)
+  nobleDonut: ['#0F766E', '#1D4ED8', '#D97706', '#6D28D9', '#0284C7', '#475569']
 };
 
 if (window.Chart) {
-  Chart.defaults.color = CITADEL_PALETTE.silver;
-  Chart.defaults.font.family = "'IBM Plex Mono', monospace";
-  Chart.defaults.font.size = 10.5;
+  Chart.defaults.color = CITADEL_PALETTE.textMuted;
+  Chart.defaults.font.family = "'Plus Jakarta Sans', 'Inter', sans-serif";
+  Chart.defaults.font.size = 11;
 
   if (Chart.defaults.scale && Chart.defaults.scale.grid) {
     Chart.defaults.scale.grid.color = CITADEL_PALETTE.gridLine;
@@ -72,19 +75,20 @@ if (window.Chart) {
   }
 
   if (Chart.defaults.plugins && Chart.defaults.plugins.tooltip) {
-    Chart.defaults.plugins.tooltip.backgroundColor = CITADEL_PALETTE.surface;
-    Chart.defaults.plugins.tooltip.titleColor = CITADEL_PALETTE.gold;
-    Chart.defaults.plugins.tooltip.bodyColor = CITADEL_PALETTE.textLight;
-    Chart.defaults.plugins.tooltip.borderColor = 'rgba(217, 155, 67, 0.4)';
+    Chart.defaults.plugins.tooltip.backgroundColor = '#0F172A';
+    Chart.defaults.plugins.tooltip.titleColor = '#FFFFFF';
+    Chart.defaults.plugins.tooltip.bodyColor = '#F8FAFC';
+    Chart.defaults.plugins.tooltip.borderColor = '#E2E8F0';
     Chart.defaults.plugins.tooltip.borderWidth = 1;
-    Chart.defaults.plugins.tooltip.padding = 10;
+    Chart.defaults.plugins.tooltip.padding = 8;
     Chart.defaults.plugins.tooltip.cornerRadius = 6;
     Chart.defaults.plugins.tooltip.bodyFont = {
-      family: "'IBM Plex Mono', monospace",
-      weight: 'bold'
+      family: "'Plus Jakarta Sans', sans-serif",
+      weight: '600'
     };
   }
 }
+
 
     const { createApp, ref, computed, watch, onMounted, nextTick } = Vue;
 
@@ -453,11 +457,11 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                      x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } }, grid: { color: '#1e293b' } },
-                      y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                      x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                      y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                     },
                     plugins: {
-                      legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                     }
                   }
                 });
@@ -478,7 +482,7 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                      legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                     }
                   }
                 });
@@ -590,11 +594,11 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                   }
                 }
               });
@@ -642,11 +646,11 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                      x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } }, grid: { color: '#1e293b' } },
-                      y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                      x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: '#E2E8F0' } },
+                      y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                     },
                     plugins: {
-                      legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                     }
                   }
                 });
@@ -667,7 +671,7 @@ if (window.Chart) {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                      legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                      legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                     }
                   }
                 });
@@ -749,11 +753,11 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                   }
                 }
               });
@@ -826,11 +830,11 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                   }
                 }
               });
@@ -896,11 +900,11 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } }
+                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } }
                   },
                   plugins: {
-                    legend: { labels: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 11 } } }
+                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                   }
                 }
               });
@@ -1058,12 +1062,12 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: { 
                     position: 'left',
                     ticks: { 
                       color: '#94a3b8', 
-                      font: { family: 'IBM Plex Mono', size: 10 },
+                      font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(value) {
                         if (Math.abs(value) >= 1000000000) return (value / 1000000000).toFixed(1) + 'B€';
                         if (Math.abs(value) >= 1000000) return (value / 1000000).toFixed(0) + 'M€';
@@ -1071,17 +1075,17 @@ if (window.Chart) {
                         return value + '€';
                       }
                     }, 
-                    grid: { color: '#1e293b' } 
+                    grid: { color: '#E2E8F0' } 
                   },
                   yAltman: {
                     position: 'right',
-                    title: { display: true, text: 'Score Altman Z\'', color: CITADEL_PALETTE.primaryLight, font: { family: 'IBM Plex Mono', size: 10, weight: 'bold' } },
-                    ticks: { color: CITADEL_PALETTE.primaryLight, font: { family: 'IBM Plex Mono', size: 10 } },
+                    title: { display: true, text: 'Score Altman Z\'', color: CITADEL_PALETTE.primaryLight, font: { family: 'Plus Jakarta Sans', size: 10, weight: 'bold' } },
+                    ticks: { color: CITADEL_PALETTE.primaryLight, font: { family: 'Plus Jakarta Sans', size: 10 } },
                     grid: { drawOnChartArea: false }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                 }
               }
             });
@@ -1190,21 +1194,21 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: {
                     type: 'linear',
                     position: 'left',
-                    title: { display: true, text: 'Marge (%)', color: CITADEL_PALETTE.emerald, font: { family: 'IBM Plex Mono', size: 10, weight: 'bold' } },
+                    title: { display: true, text: 'Marge (%)', color: CITADEL_PALETTE.emerald, font: { family: 'Plus Jakarta Sans', size: 10, weight: 'bold' } },
                     ticks: {
                       color: '#94a3b8',
-                      font: { family: 'IBM Plex Mono', size: 10 },
+                      font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(v) { return v + '%'; }
                     },
-                    grid: { color: '#1e293b' }
+                    grid: { color: '#E2E8F0' }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                 }
               }
             });
@@ -1316,12 +1320,12 @@ if (window.Chart) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
+                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
                   y: {
                     type: 'linear',
                     ticks: {
                       color: '#94a3b8',
-                      font: { family: 'IBM Plex Mono', size: 10 },
+                      font: { family: 'Plus Jakarta Sans', size: 10 },
                       callback: function(value) {
                         if (Math.abs(value) >= 1000000000) return (value / 1000000000).toFixed(1) + 'B€';
                         if (Math.abs(value) >= 1000000) return (value / 1000000).toFixed(0) + 'M€';
@@ -1329,11 +1333,11 @@ if (window.Chart) {
                         return value + '€';
                       }
                     },
-                    grid: { color: '#1e293b' }
+                    grid: { color: '#E2E8F0' }
                   }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } }
+                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } }
                 }
               }
             });
@@ -2210,11 +2214,11 @@ if (window.Chart) {
                 maintainAspectRatio: false,
                 interaction: { mode: 'index', intersect: false },
                 scales: {
-                  x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                  y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                  x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                  y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                 },
                 plugins: {
-                  legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } },
+                  legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } },
                   tooltip: {
                     callbacks: {
                       footer: function(tooltipItems) {
@@ -2272,10 +2276,10 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
                 }
               });
             } else if (benchmarkData.value && biGeoEntityFilter.value === 'benchmark') {
@@ -2293,10 +2297,10 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
                 }
               });
             } else {
@@ -2314,10 +2318,10 @@ if (window.Chart) {
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
-                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' } },
-                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'IBM Plex Mono', size: 10 } }, grid: { color: '#1e293b' }, beginAtZero: true }
+                    x: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' } },
+                    y: { stacked: true, ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 10 } }, grid: { color: '#E2E8F0' }, beginAtZero: true }
                   },
-                  plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                  plugins: { legend: { labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
                 }
               });
             }
@@ -2377,7 +2381,7 @@ if (window.Chart) {
               options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { position: 'bottom', labels: { color: '#f8fafc', font: { family: 'IBM Plex Mono', size: 11 } } } }
+                plugins: { legend: { position: 'bottom', labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 11 } } } }
               }
             });
           }
@@ -3393,7 +3397,7 @@ if (window.Chart) {
             });
 
             const popupHtml = `
-              <div style="font-family: 'IBM Plex Mono', monospace; background: #090D14; border: 1px solid #D99B43; border-radius: 6px; padding: 10px; min-width: 230px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.8);">
+              <div style="font-family: 'Plus Jakarta Sans', monospace; background: #090D14; border: 1px solid #D99B43; border-radius: 6px; padding: 10px; min-width: 230px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.8);">
                 <div style="color: #64748B; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">ÉTABLISSEMENT REGISTRÉ</div>
                 <div style="color: #F1F5F9; font-weight: 700; font-size: 12px; margin-top: 3px;">${node.name}</div>
                 <div style="color: #D99B43; font-size: 11px; margin-top: 3px; font-variant-numeric: tabular-nums;">SIRET : ${node.siren || node.siret}</div>
