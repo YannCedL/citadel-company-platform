@@ -103,6 +103,19 @@ if (window.Chart) {
         const activeMetric = ref('revenue');
         const resultData = ref(null);
 
+        const sampleCompanies = ref([
+          { name: 'Decathlon', siren: '306138900' },
+          { name: 'Airbus', siren: '383474814' },
+          { name: 'Michelin', siren: '855200507' },
+          { name: 'Danone', siren: '552032534' },
+          { name: 'LVMH', siren: '775670417' },
+          { name: 'TotalEnergies', siren: '542051180' }
+        ]);
+
+        function launchSampleSearch(siren) {
+          selectPreset(siren);
+        }
+
         // Analytics & BI Studio Mode States
         const activeTab = ref('osint'); // 'osint' or 'analytics'
         const analyticsSubTab = ref('network'); // 'network', 'governance', 'regulatory', 'financials'
@@ -171,6 +184,12 @@ if (window.Chart) {
         const selectedNode = ref(null);
         let leafletMap = null;
         let markersGroup = null;
+        let markersMap = new Map();
+
+        function getNodeKey(node) {
+          if (!node) return null;
+          return String(node.siret || node.id || node.siren || '');
+        }
 
         const DEPT_TO_REGION = {
           "01": "Auvergne-Rhône-Alpes", "03": "Auvergne-Rhône-Alpes", "07": "Auvergne-Rhône-Alpes", "15": "Auvergne-Rhône-Alpes", "26": "Auvergne-Rhône-Alpes", "38": "Auvergne-Rhône-Alpes", "42": "Auvergne-Rhône-Alpes", "43": "Auvergne-Rhône-Alpes", "63": "Auvergne-Rhône-Alpes", "69": "Auvergne-Rhône-Alpes", "73": "Auvergne-Rhône-Alpes", "74": "Auvergne-Rhône-Alpes",
@@ -2582,24 +2601,6 @@ if (window.Chart) {
           executeFull360Analysis(siren);
         }
 
-        function toggleDepartmentFilter(code) {
-          if (selectedDepartment.value === code) {
-            selectedDepartment.value = null;
-          } else {
-            selectedDepartment.value = code;
-          }
-          selectedNode.value = null;
-          updateMapMarkers();
-        }
-
-        function toggleNodeSelection(node) {
-          if (selectedNode.value && selectedNode.value.siren === node.siren) {
-            selectedNode.value = null;
-          } else {
-            selectedNode.value = node;
-          }
-          updateMapMarkers();
-        }
 
         // Computed Fields
         const displayCompanyName = computed(() => resultData.value?.name || resultData.value?.legal_profile?.name || searchQuery.value);
@@ -3139,11 +3140,6 @@ if (window.Chart) {
             });
           }
 
-          // Node Selection
-          if (selectedNode.value) {
-            list = list.filter(n => (n.siren === selectedNode.value.siren || n.siret === selectedNode.value.siren));
-          }
-
           return list;
         });
 
@@ -3167,9 +3163,21 @@ if (window.Chart) {
         }
 
         function centerMapOnSite(node) {
+          if (!node) return;
           selectedSiteNode.value = null;
           showEstablishmentsModal.value = false;
-          toggleNodeSelection(node);
+          activeTab.value = 'osint';
+
+          setTimeout(() => {
+            if (leafletMap) {
+              leafletMap.invalidateSize();
+            }
+            selectAndZoomNode(node, 15);
+            const mapEl = document.getElementById('mapContainer');
+            if (mapEl) {
+              mapEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }, 120);
         }
 
         const totalEstablishments = computed(() => resultData.value?.ownership_graph?.total_nodes || displayNodes.value.length);
@@ -3247,7 +3255,8 @@ if (window.Chart) {
 
         function setSiteStatusFilter(status) {
           siteStatusFilter.value = status;
-          updateMapMarkers();
+          selectedNode.value = null;
+          updateMapMarkers(true);
         }
 
         function toggleRegionFilter(regName) {
@@ -3259,7 +3268,7 @@ if (window.Chart) {
             selectedDepartment.value = null;
           }
           selectedNode.value = null;
-          updateMapMarkers();
+          updateMapMarkers(true);
         }
 
         function toggleDepartmentFilter(code) {
@@ -3269,7 +3278,7 @@ if (window.Chart) {
             selectedDepartment.value = code;
           }
           selectedNode.value = null;
-          updateMapMarkers();
+          updateMapMarkers(true);
         }
 
         // Raven v2 Computed Timeline & Risk Filters
@@ -3367,7 +3376,7 @@ if (window.Chart) {
             });
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-              className: 'dark-map-tiles',
+              className: 'map-tiles-standard',
               maxZoom: 19,
               attribution: 'CITADEL 360° OSINT'
             }).addTo(leafletMap);
@@ -3378,7 +3387,7 @@ if (window.Chart) {
           setTimeout(() => {
             if (leafletMap) {
               leafletMap.invalidateSize();
-              updateMapMarkers();
+              updateMapMarkers(true);
             }
           }, 150);
         }
@@ -3400,47 +3409,49 @@ if (window.Chart) {
           return [46.603354 + offsetLat, 1.888334 + offsetLng];
         }
 
-        function updateMapMarkers() {
+        function updateMapMarkers(autoFit = true) {
           if (!leafletMap || !markersGroup) return;
           markersGroup.clearLayers();
+          markersMap.clear();
 
           const nodesToMap = filteredNodes.value;
           if (nodesToMap.length === 0) return;
 
           const bounds = [];
+          const selectedKey = getNodeKey(selectedNode.value);
 
           nodesToMap.forEach((node, idx) => {
             const coords = getNodeCoords(node, idx);
             bounds.push(coords);
+            const nodeKey = getNodeKey(node);
 
-            const isSelected = selectedNode.value && (selectedNode.value.siren === node.siren || selectedNode.value.siret === node.siren);
+            const isSelected = selectedKey && selectedKey === nodeKey;
             const isActive = node.etat_administratif === 'A';
             const isSiege = (node.role && node.role.toLowerCase().includes('siège')) || node.is_siege || (node.details && node.details.is_siege);
 
-            let markerRadius = 5;
-            let markerWeight = 1;
-            let markerColor = 'rgba(255, 255, 255, 0.5)';
+            let markerRadius = 6;
+            let markerWeight = 1.5;
+            let markerColor = 'rgba(255, 255, 255, 0.7)';
             let markerFill = isActive ? CITADEL_PALETTE.emerald : CITADEL_PALETTE.vermillon;
             let markerOpacity = isActive ? 0.9 : 0.75;
             let markerFillOpacity = isActive ? 0.85 : 0.65;
 
             if (isSelected) {
-              markerRadius = 9;
-              markerWeight = 2.5;
-              markerColor = '#FFFFFF';
-              markerFill = isActive ? CITADEL_PALETTE.emeraldLight : CITADEL_PALETTE.vermillon;
+              markerRadius = 12;
+              markerWeight = 3;
+              markerColor = '#0F766E';
+              markerFill = '#0D9488';
               markerOpacity = 1;
               markerFillOpacity = 1;
             } else if (isSiege) {
-              // Siege social : or = identite de l'entreprise, priorite visuelle maximale
-              markerRadius = 8;
+              markerRadius = 9;
               markerWeight = 2;
               markerColor = '#FFFFFF';
               markerFill = CITADEL_PALETTE.gold;
               markerOpacity = 1;
               markerFillOpacity = 1;
             } else if (!isActive) {
-              markerRadius = 4;
+              markerRadius = 5;
               markerWeight = 1;
               markerColor = 'rgba(239,68,68,0.4)';
               markerFill = CITADEL_PALETTE.vermillon;
@@ -3458,14 +3469,16 @@ if (window.Chart) {
             });
 
             const popupHtml = `
-              <div style="font-family: 'Plus Jakarta Sans', monospace; background: #090D14; border: 1px solid #D99B43; border-radius: 6px; padding: 10px; min-width: 230px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.8);">
-                <div style="color: #64748B; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">ÉTABLISSEMENT REGISTRÉ</div>
-                <div style="color: #F1F5F9; font-weight: 700; font-size: 12px; margin-top: 3px;">${node.name}</div>
-                <div style="color: #D99B43; font-size: 11px; margin-top: 3px; font-variant-numeric: tabular-nums;">SIRET : ${node.siren || node.siret}</div>
-                <div style="color: #94A3B8; font-size: 10px; margin-top: 3px;">${node.details?.adresse || 'Adresse disponible'}</div>
-                <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid #1E293B; display: flex; justify-content: space-between; align-items: center;">
-                  <span style="font-size: 9px; color: #64748B;">STATUT RCS</span>
-                  <span style="font-size: 10px; font-weight: 700; color: ${isActive ? '#22C55E' : '#EF4444'};">
+              <div style="font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 8px; padding: 12px; min-width: 240px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); color: #0F172A;">
+                <div style="color: #64748B; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
+                  ${isSiege ? '★ SIÈGE SOCIAL' : 'ÉTABLISSEMENT REGISTRÉ'}
+                </div>
+                <div style="color: #0F172A; font-weight: 700; font-size: 13px; margin-top: 4px;">${node.name || 'Établissement'}</div>
+                <div style="color: #0F766E; font-size: 11px; margin-top: 3px; font-weight: 600; font-family: monospace;">SIRET : ${node.siret || node.siren || 'N/A'}</div>
+                <div style="color: #475569; font-size: 11px; margin-top: 4px;">${node.details?.adresse || node.details?.commune || 'Adresse enregistrée'}</div>
+                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 10px; color: #64748B; font-weight: 600;">STATUT RCS</span>
+                  <span style="font-size: 10px; font-weight: 700; color: ${isActive ? '#16A34A' : '#DC2626'};">
                     ${isActive ? '● EN ACTIVITÉ' : '○ FERMÉ DÉFINITIF'}
                   </span>
                 </div>
@@ -3474,24 +3487,84 @@ if (window.Chart) {
 
             circleMarker.bindPopup(popupHtml);
 
-            circleMarker.on('click', () => {
-              toggleNodeSelection(node);
+            circleMarker.on('click', (e) => {
+              if (e && e.originalEvent) {
+                e.originalEvent.stopPropagation();
+              }
+              selectAndZoomNode(node);
             });
 
             markersGroup.addLayer(circleMarker);
+            if (nodeKey) {
+              markersMap.set(nodeKey, circleMarker);
+            }
           });
 
-          if (bounds.length > 0) {
+          if (autoFit && bounds.length > 0 && !selectedNode.value) {
             if (nodesToMap.length === 1) {
-              leafletMap.flyTo(bounds[0], 12, { duration: 0.8 });
+              leafletMap.flyTo(bounds[0], 14, { duration: 0.8 });
             } else {
               leafletMap.fitBounds(bounds, { padding: [40, 40], maxZoom: 12 });
             }
           }
         }
 
+        function selectAndZoomNode(node, zoomLevel = 15) {
+          if (!node) return;
+          const currentKey = getNodeKey(selectedNode.value);
+          const targetKey = getNodeKey(node);
+
+          if (currentKey === targetKey) {
+            resetMapSelection();
+            return;
+          }
+
+          selectedNode.value = node;
+
+          // If node was hidden by a restrictive filter, reset filters
+          const isInFiltered = filteredNodes.value.some(n => getNodeKey(n) === targetKey);
+          if (!isInFiltered) {
+            siteStatusFilter.value = 'all';
+            selectedRegion.value = null;
+            selectedDepartment.value = null;
+          }
+
+          if (activeTab.value !== 'osint') {
+            activeTab.value = 'osint';
+          }
+
+          updateMapMarkers(false);
+
+          const nodes = filteredNodes.value;
+          const idx = nodes.findIndex(n => getNodeKey(n) === targetKey);
+          const coords = getNodeCoords(node, idx >= 0 ? idx : 0);
+
+          if (leafletMap && coords) {
+            leafletMap.flyTo(coords, zoomLevel, { duration: 0.8 });
+            setTimeout(() => {
+              const marker = markersMap.get(targetKey);
+              if (marker) {
+                marker.openPopup();
+              }
+            }, 350);
+          }
+        }
+
+        function resetMapSelection() {
+          selectedNode.value = null;
+          updateMapMarkers(true);
+          if (leafletMap) {
+            leafletMap.closePopup();
+          }
+        }
+
+        function toggleNodeSelection(node) {
+          selectAndZoomNode(node);
+        }
+
         return {
           searchQuery, activeSiren, pendingQuery, isLoading, hasSearched, executionTime, performSearch: handleSearchSubmit, handleSearchSubmit, selectPreset, resetToLanding,
+          sampleCompanies, launchSampleSearch,
           showDisambiguationModal, candidateList, confirmCandidateAndAnalyze,
           showErrorModal, errorMessage,
           resultData, displayCompanyName, displaySiren, displaySiretSiege, displayCodeLei, displayTvaIntracomm, displayCategorieEntreprise, displayAddressSiege, displayConventionsCollectives, displaySynchroDates, displayEtatAdmin, displayFormeJuridique, displayCodeNaf, displayRegistrationDate,
@@ -3524,7 +3597,7 @@ if (window.Chart) {
           // Ariadne & Leaflet
           displayNodes, filteredNodes, totalEstablishments, activeEstablishments, closedEstablishments, departmentList,
           siteStatusFilter, selectedRegion, selectedDepartment, regionList, availableDepartmentsInSelectedRegion,
-          setSiteStatusFilter, toggleRegionFilter, toggleDepartmentFilter, selectedNode, toggleNodeSelection,
+          setSiteStatusFilter, toggleRegionFilter, toggleDepartmentFilter, selectedNode, toggleNodeSelection, getNodeKey, selectAndZoomNode, resetMapSelection,
 
           // Raven v2 Timeline
           displayEvents, categoryCounts, totalRiskAlerts, ravenYears, filteredRavenEvents, selectedRavenCategory, selectedRavenYear, ravenSearchText, selectedNoticeEvent,

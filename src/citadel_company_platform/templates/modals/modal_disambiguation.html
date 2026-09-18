@@ -23,16 +23,16 @@
               <div class="flex justify-between items-start gap-4">
                 <div>
                   <div class="flex items-center space-x-2">
-                    <h4 class="font-bold text-sm text-slate-900 group-hover:text-teal-800 font-sans transition">{{ cand.name }}</h4>
+                    <h4 class="font-bold text-sm text-slate-900 group-hover:text-teal-800 font-sans transition">{{ cand.name || cand.nom_complet || cand.nom_raison_sociale }}</h4>
                     <span v-if="cand.is_major_entity" class="px-2 py-0.5 rounded text-[9px] font-bold bg-amber-50 text-amber-800 border border-amber-300">ENTITÉ PRINCIPALE</span>
                   </div>
                   <p class="text-xs text-slate-500 font-sans mt-0.5">SIREN : <span class="text-teal-800 font-semibold font-mono">{{ cand.siren }}</span> • SIRET Siège : {{ cand.siret_siege || 'Non renseigné' }}</p>
                 </div>
                 <span 
                   class="px-2.5 py-1 rounded text-[10px] font-sans font-bold uppercase shrink-0"
-                  :class="cand.etat_administratif === 'A' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-rose-50 text-rose-800 border border-rose-200'"
+                  :class="cand.etat_administratif === 'C' ? 'bg-rose-50 text-rose-800 border border-rose-200' : 'bg-emerald-50 text-emerald-800 border border-emerald-200'"
                 >
-                  {{ cand.etat_administratif === 'A' ? 'En Activité' : 'Fermé' }}
+                  {{ cand.etat_administratif === 'C' ? 'Fermé' : 'En Activité' }}
                 </span>
               </div>
 

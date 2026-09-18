@@ -720,8 +720,13 @@
               <!-- Left: Filtered Establishments Table -->
               <div class="space-y-3">
                 <div class="flex items-center justify-between text-xs font-sans text-slate-500">
-                  <span>LISTE DES SITES ({{ filteredNodes.length }} AFFICHIÉS)</span>
-                  <span v-if="selectedNode" class="text-teal-700 font-bold">1 Site Isolé</span>
+                  <span>LISTE DES SITES ({{ filteredNodes.length }} AFFICHÉS)</span>
+                  <div v-if="selectedNode" class="flex items-center space-x-2">
+                    <span class="text-teal-700 font-bold">1 Site Ciblé</span>
+                    <button @click.stop="resetMapSelection()" class="text-[11px] text-teal-700 hover:text-teal-900 underline font-semibold">
+                      Réinitialiser la vue
+                    </button>
+                  </div>
                 </div>
                 <div class="overflow-x-auto max-h-[420px] overflow-y-auto rounded-xl border border-slate-200">
                   <table class="w-full text-left text-xs font-sans">
@@ -739,7 +744,7 @@
                         :key="idx"
                         @click="toggleNodeSelection(node)"
                         class="cursor-pointer transition hover:bg-slate-50"
-                        :class="selectedNode && selectedNode.siren === node.siren ? 'bg-teal-50 border-l-4 border-teal-600 text-slate-900 font-bold' : (node.role && node.role.includes('Siège') ? 'bg-slate-50/50' : '')"
+                        :class="selectedNode && getNodeKey(selectedNode) === getNodeKey(node) ? 'bg-teal-50 border-l-4 border-teal-600 text-slate-900 font-bold' : (node.role && node.role.includes('Siège') ? 'bg-slate-50/50' : '')"
                       >
                         <td class="py-3 px-3">
                           <div class="font-bold text-slate-900 flex items-center space-x-1.5">
@@ -778,11 +783,21 @@
               <!-- Right: Interactive Leaflet Map -->
               <div class="space-y-3">
                 <div class="flex items-center justify-between text-xs font-sans text-slate-500">
-                  <span>CARTE DES ÉTABLISSEMENTS</span>
+                  <div class="flex items-center space-x-2">
+                    <span>CARTE DES ÉTABLISSEMENTS</span>
+                    <button 
+                      v-if="selectedNode" 
+                      @click="resetMapSelection()" 
+                      class="text-[10px] px-2 py-0.5 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 font-sans transition"
+                      title="Réinitialiser la vue d'ensemble"
+                    >
+                      Vue d'ensemble
+                    </button>
+                  </div>
                   <div class="flex items-center gap-3">
                     <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span><span class="text-emerald-700">En activité</span></span>
                     <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span><span class="text-red-700">Fermé</span></span>
-                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-teal-600 inline-block"></span><span class="text-teal-700">Siège social</span></span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span><span class="text-amber-700">Siège social</span></span>
                   </div>
                 </div>
                 <div id="mapContainer" class="w-full h-[420px] rounded-xl border border-slate-200 overflow-hidden relative"></div>

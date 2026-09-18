@@ -103,8 +103,11 @@ async def search_candidates(query: str):
         if upper_q in name or clean_q in s:
             cached_matches.append({
                 "siren": s,
+                "name": name,
                 "nom_complet": name,
                 "nom_raison_sociale": name,
+                "etat_administratif": "A",
+                "is_major_entity": True,
                 "source": "CATALOGUE_CERTIFIE_INSTANTANE"
             })
             if len(cached_matches) >= 5:
@@ -112,12 +115,21 @@ async def search_candidates(query: str):
 
     candidates = await search_candidates_fast_async(clean_q)
     
-    # Fusionner en priorité les résultats en cache pour une réactivité maximale
-    if cached_matches:
+    # Fusionner et enrichir en priorité avec les métadonnées certifiées de l'API
+    if candidates:
+        cand_map = {c.get("siren"): c for c in candidates if c.get("siren")}
+        for cm in cached_matches:
+            s = cm.get("siren")
+            if s in cand_map:
+                for k, v in cand_map[s].items():
+                    if v is not None:
+                        cm[k] = v
         existing_sirens = {c.get("siren") for c in cached_matches}
         for c in candidates:
             if c.get("siren") not in existing_sirens:
                 cached_matches.append(c)
+        candidates = cached_matches
+    elif cached_matches:
         candidates = cached_matches
 
     return {
